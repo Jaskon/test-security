@@ -11,6 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "apollo-server-core": "^3.3.0",
-    "undici": "^4.8.2"
+    "undici": "^5.28.5"
   }
 }
