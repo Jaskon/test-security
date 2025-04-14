@@ -1,15 +1,16 @@
 {
-  "name": "test-ox",
+  "name": "gitlab-webhooks-integration",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Yes, it's me agaain",
+  "main": "dvf.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "1.1.1",
-    "typescript": "3.3.9"
+    "apollo-server-core": "^3.3.0",
+    "undici": "^4.8.2"
   }
 }
