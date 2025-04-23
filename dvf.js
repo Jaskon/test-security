@@ -1,6 +1,7 @@
 export class DynamicCodeExecution {
     methodA() {}
     methodB() {}
+    methodC() {}  // New line here
 
     async addItemDCE(resource) {
         const data = await this[resource.name]();
