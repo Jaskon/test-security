@@ -9,12 +9,6 @@ export class DynamicCodeExecution {
     }
 }
 
-export class DenialOfServiceVulnerability {
-    replaceWithRegex(str, find, replace) {
-        return str.replace(new RegExp(find, 'g'), replace);
-    }
-}
-
 export class IncompleteSanitizationOfString {
     sanitize(input) {
         return input.replace('{', '').replace('}', '');
@@ -24,5 +18,12 @@ export class IncompleteSanitizationOfString {
 export class UnsafeDeserialization {
     parseUserData(jsonString) {
         return JSON.parse(jsonString);
+    }
+}
+
+// Moved this
+export class DenialOfServiceVulnerability {
+    replaceWithRegex(str, find, replace) {
+        return str.replace(new RegExp(find, 'g'), replace);
     }
 }
