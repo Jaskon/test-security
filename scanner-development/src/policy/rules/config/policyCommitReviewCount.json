@@ -1,0 +1,116 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "policy for pushes/pull requests without the specified number of reviewers",
+  "policyId": "oxPolicy_CommitReviewCount_1",
+  "ruleId": "oxRule_CommitReviewCount_1",
+  "exclusionCategory": "commits",
+  "name": "All code changes should be reviewed",
+  "categoryId": "devprocess",
+  "groupId": "",
+  "catId": 3,
+  "system": "Repo",
+  "description": "Pushed code should be reviewed by a minimum number of users as defined in the policy.",
+  "detailedDescription": "Reviews are one of the best ways to reduce the risk of security vulnerabilities making it to production. When researchers tried to intentionally insert malicious code in to the Linux Kernel, two man reviews caught the majority of issues.",
+  "severity": 2,
+  "selected": true,
+  "functionName": "policyCommitReviewCount",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "reviews",
+      "label": "Reviews Required",
+      "tooltip": "Please specify the minimum number of reviewers per code push for the policy.",
+      "type": "number",
+      "range": [1, 5],
+      "multiSelect": false,
+      "value": 1,
+      "visible": true
+    },
+    {
+      "id": "arg_2",
+      "name": "files",
+      "label": "Files Changed",
+      "tooltip": "Please specify the minimum number of files changed for the policy.",
+      "type": "number",
+      "range": [1, 100000],
+      "multiSelect": false,
+      "value": 1,
+      "visible": true
+    },
+    {
+      "id": "arg_3",
+      "name": "minConsideration",
+      "label": "Ignore Older Code Changes (Months)",
+      "tooltip": "Please specify the max number of months to find changes to evaluate",
+      "type": "number",
+      "range": [1, 1000],
+      "multiSelect": false,
+      "value": 4,
+      "visible": true
+    },
+    {
+      "id": "arg_4",
+      "name": "alwaysIgnoreFileTypes",
+      "label": "Ignore File Types",
+      "tooltip": "Choose the file types that will not trigger a violation",
+      "type": "stringArray",
+      "range": [],
+      "multiSelect": false,
+      "value": [".txt", ".yaml", ".yml", ".md", ".json", ".gitignore", ".png", ".jpeg", ".svg", ".gif"],
+      "visible": true
+    },
+    {
+      "id": "arg_5",
+      "name": "minBP",
+      "label": "Ignore Business Priority Less Than",
+      "tooltip": "Ignore repos with Business Priority less than the number entered",
+      "type": "number",
+      "range": [1, 99],
+      "multiSelect": false,
+      "value": 30,
+      "visible": true
+    },
+    {
+      "id": "arg_6",
+      "name": "ignoreAdminOwners",
+      "label": "Ignore Admins & Owners",
+      "tooltip": "An admin will not trigger a violation",
+      "type": "boolean",
+      "range": [],
+      "multiSelect": false,
+      "value": false,
+      "visible": true
+    },
+    {
+      "id": "arg_7",
+      "name": "dominantPercentage",
+      "label": "Dominant Language Percentage Min",
+      "tooltip": "A violation will not occur if dominant language percentage is lower than value",
+      "type": "number",
+      "range": [0, 100],
+      "multiSelect": false,
+      "value": 33,
+      "visible": true
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "pushedCommits",
+      "type": "code_repo"
+    },
+    {
+      "id": "rsc_2",
+      "name": "pulls",
+      "type": "code_repo"
+    },
+    {
+      "id": "rsc_3",
+      "name": "users",
+      "type": "code_repo"
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 4
+}

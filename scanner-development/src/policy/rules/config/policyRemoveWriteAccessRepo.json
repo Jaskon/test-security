@@ -1,0 +1,58 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "policy to ensure that every user who has not pushed code does not have write access",
+  "policyId": "oxPolicy_writeAccessRevokeForNonPushers_1",
+  "ruleId": "oxRule_writeAccessRevokeForNonPushers_1",
+  "exclusionCategory": "user",
+  "name": "Write access should be revoked for users not pushing code",
+  "categoryId": "supplychain",
+  "groupId": "",
+  "catId": 3,
+  "system": "Repo",
+  "description": "Users who have not pushed any code to a repo should not have write access.",
+  "detailedDescription": "Limiting access rights, like that of writes will reduce the risk of the code being tampered with in the event of a breach.",
+  "severity": 2,
+  "selected": true,
+  "functionName": "policyRemoveWriteAccessRepo",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "daysNewUser",
+      "label": "New User Definition",
+      "tooltip": "Define the time after which a user will no longer be considered a new user.",
+      "type": "number",
+      "range": [1, 10000],
+      "multiSelect": false,
+      "value": 60,
+      "visible": false
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "allUsers",
+      "type": "code_repo",
+      "global": true
+    },
+    {
+      "id": "rsc_2",
+      "name": "globalData",
+      "type": "code_repo",
+      "global": true
+    },
+    {
+      "id": "rsc_3",
+      "name": "users",
+      "type": "code_repo"
+    },
+    {
+      "id": "rsc_4",
+      "name": "allPulls",
+      "type": "code_repo",
+      "global": true
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 6
+}

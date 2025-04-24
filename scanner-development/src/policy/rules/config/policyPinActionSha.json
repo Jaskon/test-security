@@ -1,0 +1,63 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "Third-Party Actions should be pinned to a specific release",
+  "policyId": "oxPolicy_CICD_pin_action_commit_sha_1",
+  "ruleId": "oxRule_CICD_pin_action_commit_sha_1",
+  "exclusionCategory": "sast",
+  "name": "Third-Party Actions should be pinned to a specific release",
+  "categoryId": "cicd",
+  "catId": 25,
+  "order": 99,
+  "system": "Repo",
+  "description": "When using a Third-Party action, it is safer to tie an Action to a specific version than the latest version.",
+  "detailedDescription": "A compromise of a single action within a workflow can be very significant, as that compromised action would have access to all secrets configured on your repository and may be able to use the GITHUB_TOKEN to write to the repository. Consequently, there is a significant risk in sourcing actions from third-party repositories on GitHub. ",
+  "severity": 3,
+  "selected": true,
+  "notes": ["This policy currently only applies to GitHub. "],
+  "functionName": "policyPinActionSha",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "RepoType",
+      "label": "Repo Visibility",
+      "tooltip": "Determine if this policy applies to public repos, private repos or both.",
+      "type": "stringArray",
+      "range": ["Private", "Public", "Private or Public"],
+      "multiSelect": false,
+      "value": "Public",
+      "visible": true
+    },
+    {
+      "id": "arg_2",
+      "name": "skipVerified",
+      "label": "Skip Verified Creators",
+      "tooltip": "If the repo creator is verified, no violation will occur",
+      "type": "boolean",
+      "range": [],
+      "multiSelect": false,
+      "value": false,
+      "visible": true
+    },
+    {
+      "id": "arg_3",
+      "name": "excludedActions",
+      "label": "Exclude actions",
+      "tooltip": "If the repo creator is excluded, no violation will occur",
+      "type": "stringArray",
+      "range": [],
+      "multiSelect": false,
+      "value": "",
+      "visible": true
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "securityEvents",
+      "type": "code_repo"
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 0
+}

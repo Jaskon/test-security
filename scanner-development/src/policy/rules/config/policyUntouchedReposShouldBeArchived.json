@@ -1,0 +1,58 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "Repo with no recent code changes should be archived",
+  "policyId": "oxPolicy_dspm_UntouchedReposShouldBeArchived",
+  "ruleId": "oxRule_dspm_UntouchedReposShouldBeArchived",
+  "exclusionCategory": "repo",
+  "name": "Repo with no code changes recently should be archived",
+  "categoryId": "3",
+  "groupId": "",
+  "catId": 3,
+  "system": "Repo",
+  "description": "Repositories with no changes in the last few months may be candidates for archival.",
+  "detailedDescription": "Consider archiving repos that have become redundant or are no longer needed. Archiving a repo removes all write actions from the repo and prevents new issues from being created. Archiving a repo also informs all users with visibility to the repo that it is no longer in use and should not be used in anyway.",
+  "severity": 2,
+  "selected": true,
+  "functionName": "policyUntouchedReposShouldBeArchived",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "MonthsSinceCodeChange",
+      "label": "Months since code change",
+      "tooltip": "Choose a minimum number of months before a violation could occur",
+      "type": "number",
+      "range": [1, 100],
+      "multiSelect": false,
+      "value": 12,
+      "visible": true
+    },
+    {
+      "id": "arg_2",
+      "name": "RepoType",
+      "label": "Repo Type",
+      "tooltip": "Choose if the policy applies to private, public or all repo types.",
+      "type": "stringArray",
+      "range": ["Private", "Public", "Private or Public"],
+      "multiSelect": false,
+      "value": "Private or Public",
+      "visible": true
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "allUsers",
+      "type": "code_repo",
+      "global": true
+    },
+    {
+      "id": "rsc_2",
+      "name": "allOrgsRepos",
+      "type": "code_repo",
+      "global": true
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 5
+}

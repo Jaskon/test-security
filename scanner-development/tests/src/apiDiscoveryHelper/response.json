@@ -1,0 +1,50 @@
+[
+  {
+    "framework": "fastapi",
+    "apiFound": true,
+    "routes": [
+      {
+        "filepath": "/home/mir/src/lambda-app/test.py",
+        "snippet": "@app.post('/login_submit')",
+        "line": 36,
+        "endPoint": "/login_submit",
+        "method": "POST",
+        "parameters": [
+          {
+            "name": "item_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "name": "user_name",
+            "in": "path",
+            "required": false
+          }
+        ],
+        "responseStatusCode": ["404"]
+      },
+      {
+        "filepath": "/home/mir/src/lambda-app/test.py",
+        "snippet": "@app.post('/submit_order')",
+        "line": 75,
+        "endPoint": "/submit_order",
+        "method": "POST"
+      },
+      {
+        "filepath": "/home/mir/src/lambda-app/test.py",
+        "snippet": "@app.post('/add_to_cart')",
+        "line": 103,
+        "endPoint": "/add_to_cart",
+        "method": "POST"
+      },
+      {
+        "filepath": "/home/mir/src/lambda-app/test.py",
+        "snippet": "@app.post('/cart')",
+        "line": 123,
+        "endPoint": "/cart",
+        "method": "POST"
+      }
+    ],
+    "success": true
+  }
+]

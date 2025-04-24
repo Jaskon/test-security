@@ -1,0 +1,138 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "Rare code changes should be reviewed by a veteran dev",
+  "policyId": "oxPolicy_rare_code_changes_1",
+  "ruleId": "oxRule_rare_code_changes_1",
+  "exclusionCategory": "commits",
+  "name": "Rare code changes should be reviewed by a veteran dev",
+  "categoryId": "3",
+  "groupId": "",
+  "catId": 3,
+  "system": "Repo",
+  "description": "If a user is pushing code into a repo that they are not regular users of then the code needs to be reviewed by a veteran developer.",
+  "detailedDescription": "Developers who commit very infrequently to a repo have a higher chance of introducing a security vulnerability. In order to mitigate this, it is recommended that such code changes be reviewed by a veteran developer of the repo. Reviews are one of the best ways to reduce the risk of security vulnerabilities making it to production. When researchers tried to intentionally insert malicious code into the Linux Kernel, two-man reviews caught the majority of issues.",
+  "severity": 2,
+  "selected": true,
+  "functionName": "policyRareCodeChange",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "maxCodeChanges",
+      "label": "Infrequent Developer (Max Code Changes)",
+      "tooltip": "Please specify the number of pushes or pull requests that define an infrequent developer (less than).",
+      "type": "number",
+      "range": [1, 1000],
+      "multiSelect": false,
+      "value": 10,
+      "visible": true
+    },
+    {
+      "id": "arg_2",
+      "name": "minReviews",
+      "label": "Veteran Reviewer (Min Reviews)",
+      "tooltip": "Please specify the number of reviews that define a veteran reviewer (greater than or equal to).",
+      "type": "number",
+      "range": [1, 1000],
+      "multiSelect": false,
+      "value": 20,
+      "visible": true
+    },
+    {
+      "id": "arg_3",
+      "name": "minCodePushes",
+      "label": "Veteran Reviewer (Min Code Pushes)",
+      "tooltip": "Please specify the number of pushes that define a veteran reviewer (greater than or equal to).",
+      "type": "number",
+      "range": [1, 1000],
+      "multiSelect": false,
+      "value": 20,
+      "visible": true
+    },
+    {
+      "id": "arg_4",
+      "name": "alwaysIgnore",
+      "label": "Always a Veteran Reviewer",
+      "tooltip": "Users by name who will always be considered as veteran reviewers in the system",
+      "type": "stringArray",
+      "range": [],
+      "multiSelect": false,
+      "value": ["dor"],
+      "visible": true
+    },
+    {
+      "id": "arg_5",
+      "name": "ignoreOldChangesInMonths",
+      "label": "Ignore Older Code Changes (Months)",
+      "tooltip": "Please specify the max number of months to find changes to evaluate",
+      "type": "number",
+      "range": [1, 1000],
+      "multiSelect": false,
+      "value": 2,
+      "visible": true
+    },
+    {
+      "id": "arg_6",
+      "name": "minBP",
+      "label": "Ignore Business Priority Less Than",
+      "tooltip": "Ignore repos with Business Priority less than the number entered",
+      "type": "number",
+      "range": [1, 99],
+      "multiSelect": false,
+      "value": 0,
+      "visible": true
+    },
+    {
+      "id": "arg_7",
+      "name": "ignoreFileTypes",
+      "label": "Ignore File Types",
+      "tooltip": "Choose the file types that will not trigger a violation",
+      "type": "stringArray",
+      "range": [],
+      "multiSelect": false,
+      "value": [".txt", ".yaml", ".yml", ".md", ".json", ".gitignore", ".png", ".jpeg", ".svg", ".gif"],
+      "visible": true
+    },
+    {
+      "id": "arg_8",
+      "name": "repoCreatedinMonths",
+      "label": "Repo Created (Months)",
+      "tooltip": "If repo creation happened after value then ignore",
+      "type": "number",
+      "range": [1, 1000],
+      "multiSelect": false,
+      "value": 0,
+      "visible": false
+    },
+    {
+      "id": "arg_9",
+      "name": "ignoreAdminOwners",
+      "label": "Ignore Admins & Owners",
+      "tooltip": "An admin will not trigger a violation",
+      "type": "boolean",
+      "range": [1, 1000],
+      "multiSelect": false,
+      "value": false,
+      "visible": true
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "users",
+      "type": "code_repo"
+    },
+    {
+      "id": "rsc_2",
+      "name": "pulls",
+      "type": "code_repo"
+    },
+    {
+      "id": "rsc_3",
+      "name": "pushedCommits",
+      "type": "code_repo"
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 1
+}

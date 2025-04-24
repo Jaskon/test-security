@@ -1,0 +1,7 @@
+Listing...
+12.0 API Gateway security checks - [apigateway] ******************** -  []
+7.22 [extra722] Check if API Gateway has logging enabled - apigateway [Medium]
+7.43 [extra743] Check if API Gateway has client certificate enabled to access your backend endpoint - apigateway [Medium]
+7.44 [extra744] Check if API Gateway has a WAF ACL attached - apigateway [Medium]
+7.45 [extra745] Check if API Gateway endpoint is public or private - apigateway [Medium]
+7.46 [extra746] Check if API Gateway has configured authorizers - apigateway [Medium]

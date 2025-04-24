@@ -1,0 +1,26 @@
+{
+  "jsonVersion": "1.00",
+  "usage": "Prowler override issue fields",
+  "toolName": "prowler",
+  "Rules": [
+    {
+      "id": "ec2_instance_managed_by_ssm",
+      "severity": "medium",
+      "summaryTitle": "Found EC2 instance that are not managed by SSM",
+      "Why does it matter?": "SSM allows you to manage your EC2 instances centeally. A common use for SSM is to manage OS patching. If you are not using SSM to manage your EC2 instances, you may be missing out on a valuable tool.",
+      "How to fix": "It is highly recommended that you use SSM to manage your EC2 instances. You can use SSM to manage OS patching, run commands, and even access the EC2 instance via a web-based shell."
+    },
+    {
+      "id": "apigatewayv2_authorizers_enabled",
+      "summaryTitle": "API Gateway V2 Authorizers not enabled"
+    },
+    {
+      "id": "iam_root_mfa_enabled",
+      "summaryTitle": "MFA is not enabled for the root account"
+    },
+    {
+      "id": "iam_root_hardware_mfa_enabled",
+      "severity": "high"
+    }
+  ]
+}

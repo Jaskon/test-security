@@ -1,0 +1,77 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "policy for No approved CICD",
+  "policyId": "oxPolicy_noCicd_1",
+  "ruleId": "oxRule_noCicd_1",
+  "exclusionCategory": "general",
+  "name": "Repo should be associated with an approved CI/CD app",
+  "categoryId": "cicd",
+  "groupId": "",
+  "catId": 25,
+  "system": "CI/CD",
+  "description": "Code repo should be attached to an authorized CI/CD application.",
+  "detailedDescription": "By bypassing the authorized CI/CD application (either by using shadow CI/CD or manual building) guardrails, tests and additional checks may not be performed on code changes. This may result in significantly degraded security.",
+  "severity": 5,
+  "selected": true,
+  "functionName": "policyNoCicd",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "cicd",
+      "label": "CI/CD",
+      "tooltip": "Please choose one or more approved to be used CI/CD tools for this policy.",
+      "type": "stringArray",
+      "range": ["Jenkins", "CircleCI", "BuildKite", "GitLab", "GitHub", "Bitbucket", "Travis CI", "Generic", "Drone CI", "Azure Pipelines"],
+      "multiSelect": true,
+      "value": ["Jenkins", "CircleCI", "BuildKite", "GitLab", "GitHub", "BitBucket", "Travis CI", "Drone CI", "Generic", "Azure Pipelines"],
+      "visible": true
+    },
+    {
+      "id": "arg_2",
+      "name": "minBP",
+      "label": "Ignore Business Priority Less Than",
+      "tooltip": "Ignore repos with Business Priority less than the number entered",
+      "type": "number",
+      "range": [1, 99],
+      "multiSelect": false,
+      "value": 70,
+      "visible": true
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "files",
+      "type": "code_repo"
+    },
+    {
+      "id": "rsc_2",
+      "name": "repositories",
+      "type": "citool"
+    },
+    {
+      "id": "rsc_3",
+      "name": "jobs",
+      "type": "citool"
+    },
+    {
+      "id": "rsc_4",
+      "name": "users",
+      "type": "code_repo"
+    },
+    {
+      "id": "arg_5",
+      "name": "minBP",
+      "label": "Ignore Business Priority Less Than",
+      "tooltip": "Ignore repos with Business Priority less than the number entered",
+      "type": "number",
+      "range": [1, 99],
+      "multiSelect": false,
+      "value": 70,
+      "visible": true
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 9
+}

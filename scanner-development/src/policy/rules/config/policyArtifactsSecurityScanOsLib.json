@@ -1,0 +1,96 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "Operating System vulnerabilities should not exist in containers",
+  "policyId": "oxPolicy_securityScan_220",
+  "ruleId": "oxRule_securityScan_20",
+  "exclusionCategory": "general",
+  "name": "Vulnerable dependency (CVE) in container from Operating System",
+  "categoryId": "containerScan",
+  "catId": 12,
+  "system": "Container Scan",
+  "order": 4,
+  "description": "Containers have become an integral part of modern software development and deployment due to their ability to package applications and their dependencies into a single, portable, and efficient unit. Containers need an Operating System installed to function. Operating Systems also introduce potential security risks, including outdated, vulnerable, or misconfigured components.",
+  "detailedDescription": "OS-level vulnerability scanning in containers is crucial for detecting and mitigating security risks within the base operating system layer. This process helps ensure the foundational components of a container are secure, up-to-date, and compliant, reducing the attack surface and enabling a more robust security posture for containerized applications.",
+  "selected": true,
+  "functionName": "policySecurityScanSCA",
+  "category": "ContainerSecurity",
+  "displayIssueSeverity": 0,
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "scanType",
+      "label": "Scan Type",
+      "tooltip": "",
+      "type": "stringArray",
+      "range": ["SCA", "ArtifactsSCA", "ArtifactsIAC"],
+      "multiSelect": false,
+      "value": "ArtifactsSCA",
+      "visible": false
+    },
+    {
+      "id": "arg_2",
+      "name": "ignoreBusinessPriority",
+      "label": "Ignore Application Business Priority for severity calculation",
+      "tooltip": "If enabled the severity of an issue will not be affected by the Application Business Priority",
+      "type": "boolean",
+      "range": [],
+      "multiSelect": false,
+      "value": false,
+      "visible": true
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "securityEvents",
+      "type": "artifactory"
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 25,
+  "compliance": [
+    {
+      "standard": "ISO27001:2022",
+      "control": "A.8.8",
+      "description": "Management of Technical Vulnerabilities",
+      "category": "Asset Management",
+      "controlLink": ""
+    },
+    {
+      "standard": "NIST-800-53-Revision-5",
+      "control": "RA-5",
+      "description": "Vulnerability Monitoring and Scanning",
+      "category": "Risk Assessment",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/ra/ra-5"
+    },
+    {
+      "standard": "SOC2",
+      "control": "CC3.2",
+      "description": "Analyzes Threats and Vulnerabilities From Vendors, Business Partners, and Other Parties: The entity's risk assessment process includes the analysis of potential threats and vulnerabilities arising from vendors providing goods and services, as well as threats and vulnerabilities arising from business partners, customers, and others with access to the entity's information systems.",
+      "category": "Security",
+      "controlLink": ""
+    },
+    {
+      "standard": "PCI_DSS 4.0",
+      "control": "6.3.3",
+      "description": "All system components are protected from known vulnerabilities by installing applicable security patches/updates",
+      "category": "Develop and maintain secure systems and applications",
+      "controlLink": ""
+    },
+    {
+      "standard": "PCI_DSS 3.2.1",
+      "control": "6.2",
+      "description": "Ensure that all system components and software are protected from known vulnerabilities by installing the applicable security patches provided by the manufacturer. Install critical security patches within a month",
+      "category": "Develop and maintain secure systems and applications",
+      "controlLink": ""
+    },
+    {
+      "standard": "CIS Docker Benchmark v1.6.0",
+      "control": "4.4",
+      "description": "Ensure images are scanned and rebuilt to include security patches",
+      "category": "Container Images and Build File Configuration",
+      "controlLink": ""
+    }
+  ]
+}

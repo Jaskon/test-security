@@ -1,0 +1,6 @@
+{
+  "jsonVersion": "1.00",
+  "usage": "gitleaks config for severity",
+  "toolName": "gitleaks",
+  "severity": []
+}

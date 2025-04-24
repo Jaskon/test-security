@@ -1,0 +1,8 @@
+Listing...
+4.0 Networking - CIS only - [group4] ******************************* -  []
+4.1 [check41] Ensure no security groups allow ingress from 0.0.0.0/0 or ::/0 to port 22 - ec2 [High]
+4.2 [check42] Ensure no security groups allow ingress from 0.0.0.0/0 or ::/0 to port 3389 - ec2 [High]
+4.3 [check43] Ensure the default security group of every VPC restricts all traffic - ec2 [High]
+4.4 [check44] Ensure routing tables for VPC peering are "least access" - vpc [Medium]
+4.5 [check45] Ensure no Network ACLs allow ingress from 0.0.0.0/0 to SSH port 22 - ec2 [High]
+4.6 [check46] Ensure no Network ACLs allow ingress from 0.0.0.0/0 to Microsoft RDP port 3389 - ec2 [High]

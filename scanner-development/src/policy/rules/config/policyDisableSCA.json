@@ -1,0 +1,45 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "policy for approved SCA being disabled",
+  "policyId": "oxPolicy_disableSca_1",
+  "ruleId": "oxRule_disableSca_1",
+  "exclusionCategory": "general",
+  "name": "The approved open source scanner (SCA) should always be enabled",
+  "categoryId": "sectools",
+  "groupId": "",
+  "catId": 10,
+  "system": "SCA",
+  "description": "The approved SCA (Software Composition Analysis) application should always be enabled for the code repository.",
+  "detailedDescription": "The vast majority of cloud applications written today contain some set of external dependencies. Security issues in these dependencies can make applications using them insecure. The Log4J crisis is one example of this. SCA (Software Composition Analysis) scanning is the most basic way of determining if an application is using vulnerable dependencies.",
+  "severity": 3,
+  "selected": true,
+  "functionName": "policyDisableSCA",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "securityTools",
+      "label": "SCA",
+      "tooltip": "Please select one or more approved SCA applications for your policy.",
+      "type": "stringArray",
+      "range": ["Checkmarx", "Snyk", "Depandabot", "CxOSA", "CxSCA"],
+      "multiSelect": true,
+      "value": ["Checkmarx", "Snyk", "Depandabot", "CxOSA", "CxSCA"],
+      "visible": true
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "files",
+      "type": "code_repo"
+    },
+    {
+      "id": "rsc_2",
+      "name": "users",
+      "type": "code_repo"
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 5
+}

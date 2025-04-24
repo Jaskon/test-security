@@ -1,0 +1,12 @@
+Listing...
+22.0 Amazon SageMaker related security checks - [sagemaker] ******** -  []
+7.103 [extra7103] Check if Amazon SageMaker Notebook instances have root access disabled - sagemaker [Medium]
+7.104 [extra7104] Check if Amazon SageMaker Notebook instances have VPC settings configured - sagemaker [Medium]
+7.111 [extra7111] Check if Amazon SageMaker Notebook instances have direct internet access - sagemaker [Medium]
+7.112 [extra7112] Check if Amazon SageMaker Notebook instances have data encryption enabled - sagemaker [Medium]
+7.105 [extra7105] Check if Amazon SageMaker Models have network isolation enabled - sagemaker [Medium]
+7.106 [extra7106] Check if Amazon SageMaker Models have VPC settings configured - sagemaker [Medium]
+7.107 [extra7107] Check if Amazon SageMaker Training jobs have intercontainer encryption enabled - sagemaker [Medium]
+7.108 [extra7108] Check if Amazon SageMaker Training jobs have volume and output with KMS encryption enabled - sagemaker [Medium]
+7.109 [extra7109] Check if Amazon SageMaker Training jobs have network isolation enabled - sagemaker [Medium]
+7.110 [extra7110] Check if Amazon SageMaker Training job have VPC settings configured. - sagemaker [Medium]

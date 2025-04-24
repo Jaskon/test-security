@@ -1,0 +1,30 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "CI/CD context values should not flow directly into workflows",
+  "policyId": "oxPolicy_CICDcontextValues_1",
+  "ruleId": "oxRule_CICDcontextValues_1",
+  "exclusionCategory": "webhooks",
+  "name": "CI/CD context values should not flow directly into workflows",
+  "categoryId": "cicd",
+  "groupId": "",
+  "catId": 25,
+  "order": 99,
+  "system": "Repo",
+  "description": "CI/CD context should be treated as untrusted input. If these values flow into workflows, they could be interpreted as executable code.",
+  "detailedDescription": "Attackers can add their own malicious content to the CI/CD context, which should be treated as potentially untrusted input. You should ensure that these values do not flow directly into workflows, actions, API calls, or anywhere else where they could be interpreted as executable code.",
+  "severity": 4,
+  "selected": true,
+  "notes": ["This policy currently only applies to GitHub. "],
+  "functionName": "policyCICDContextValues",
+  "args": [],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "securityEvents",
+      "type": "code_repo"
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 0
+}

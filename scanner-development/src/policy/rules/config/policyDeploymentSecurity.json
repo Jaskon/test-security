@@ -1,0 +1,90 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "Base Image vulnerabilities should not exist in the DockerFile",
+  "policyId": "oxPolicy_deployment_221",
+  "ruleId": "oxRule_deployment_201",
+  "exclusionCategory": "sca",
+  "name": "Base Image vulnerabilities should not exist in the DockerFile",
+  "categoryId": "sca",
+  "catId": 6,
+  "system": "SCA",
+  "order": 4,
+  "description": "Scanning DockerFiles for base image vulnerabilities, rather than merely the container image, enhances security by identifying flaws at the source, allowing for a more proactive and comprehensive defense.",
+  "detailedDescription": "DockerFiles detail the blueprint for containers, specifying the base images used. By scanning DockerFiles directly for vulnerabilities in these base images, rather than just the resultant container image, organizations can identify and remediate security flaws at the foundational level. This approach allows for a more targeted and efficient response to vulnerabilities, potentially preventing unauthorized access, data breaches, and other security incidents before they occur.",
+  "selected": true,
+  "functionName": "policySecurityScanSCA",
+  "category": "OpenSourceSecurity",
+  "displayIssueSeverity": 0,
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "scanType",
+      "label": "Scan Type",
+      "tooltip": "",
+      "type": "stringArray",
+      "range": ["SCA", "ArtifactsSCA", "ArtifactsIAC", "Deployment"],
+      "multiSelect": false,
+      "value": "Deployment",
+      "visible": false
+    },
+    {
+      "id": "arg_2",
+      "name": "ignoreBusinessPriority",
+      "label": "Ignore Application Business Priority for severity calculation",
+      "tooltip": "If enabled the severity of an issue will not be affected by the Application Business Priority",
+      "type": "boolean",
+      "range": [],
+      "multiSelect": false,
+      "value": false,
+      "visible": true
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "securityEvents",
+      "type": "code_repo"
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 7,
+  "isGenericSeverityPolicy": true,
+  "compliance": [
+    {
+      "standard": "ISO27001:2022",
+      "control": "A.8.8",
+      "description": "Management of Technical Vulnerabilities",
+      "category": "Asset Management",
+      "controlLink": ""
+    },
+    {
+      "standard": "NIST-800-53-Revision-5",
+      "control": "RA-5",
+      "description": "Vulnerability Monitoring and Scanning",
+      "category": "Risk Assessment",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/ra/ra-5"
+    },
+    {
+      "standard": "SOC2",
+      "control": "CC3.2",
+      "description": "Analyzes Threats and Vulnerabilities From Vendors, Business Partners, and Other Parties: The entity's risk assessment process includes the analysis of potential threats and vulnerabilities arising from vendors providing goods and services, as well as threats and vulnerabilities arising from business partners, customers, and others with access to the entity's information systems.",
+      "category": "Security",
+      "controlLink": ""
+    },
+    {
+      "standard": "PCI_DSS 4.0",
+      "control": "6.3.3",
+      "description": "All system components are protected from known vulnerabilities by installing applicable security patches/updates",
+      "category": "Develop and maintain secure systems and applications",
+      "controlLink": ""
+    },
+    {
+      "standard": "PCI_DSS 3.2.1",
+      "control": "6.2",
+      "description": "Ensure that all system components and software are protected from known vulnerabilities by installing the applicable security patches provided by the manufacturer. Install critical security patches within a month",
+      "category": "Develop and maintain secure systems and applications",
+      "controlLink": ""
+    }
+  ]
+}

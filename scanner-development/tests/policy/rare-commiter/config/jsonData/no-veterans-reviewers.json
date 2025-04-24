@@ -1,0 +1,160 @@
+{
+  "code_repo": {
+    "languages": [],
+    "objType": 10,
+    "sast": [],
+    "sca": [],
+    "cicd": ["gitlab", "Generic"],
+    "webhook": 0,
+    "containerFiles": 2,
+    "id": "32425957",
+    "type": "gitlab",
+    "createdAt": "2021-10-28T13:12:22.026Z",
+    "link": "https://gitlab.com/oxsecurity/sectools/trivy",
+    "fullName": " security tools / trivy",
+    "description": "trivy",
+    "name": "trivy",
+    "defaultBranch": "main",
+    "ownerName": "inbar rose",
+    "lastPushTime": "2021-12-28T13:12:22.026Z",
+    "watchersCount": 0,
+    "sizeMB": 0,
+    "homepage": "https://gitlab.com/oxsecurity/sectools/trivy/-/blob/main/README.md",
+    "privateVisability": true,
+    "hasWiki": true,
+    "project": "",
+    "forksCount": 0,
+    "hasPages": true,
+    "downloadCount": 0,
+    "disable": false,
+    "hasIssues": false,
+    "tags": 0,
+    "settingLink": "https://gitlab.com/oxsecurity/sectools/trivy/edit",
+    "filesCount": 7,
+    "commitLink": "https://gitlab.com/oxsecurity/sectools/trivy/commit/",
+    "cloneDir": "/Users/dvir/Desktop/repos/clone/org_naRKuESdx3pcvOrx/scan_56727472_cd19_434a_b750_1807320de8aa/clone/gitlab/trivy_28d2c981_453d_4785_b1bb_21d4c3589914",
+    "securityResDir": "/Users/dvir/Desktop/repos/clone/org_naRKuESdx3pcvOrx/scan_56727472_cd19_434a_b750_1807320de8aa/securityResults/gitlab/trivy_28d2c981_453d_4785_b1bb_21d4c3589914",
+    "fileLink": "https://gitlab.com/oxsecurity/sectools/trivy/tree/main/",
+    "linkFilePreffix": "#L",
+    "repoImportance": {
+      "res": {
+        "repo_name": "trivy",
+        "repo_creation_date": "2021-12-28T13:12:22.026Z",
+        "repo_creator": "inbar rose",
+        "number_of_files": 7,
+        "repo_size_bytes": 0,
+        "main_branch_name": "main",
+        "numberOfcommits": 2,
+        "commit_count": 2,
+        "commit_score": 10,
+        "num_of_unique_user_with_commits": 2,
+        "num_of_unique_user_with_commits_score": 10,
+        "days_since_last_commit": 22,
+        "days_since_last_commit_score": 7.5,
+        "language_file_percentage": 0,
+        "language_file_score": 10,
+        "tag_score": 0,
+        "yaml_count": 1,
+        "yaml_score": 1.25,
+        "branch_count": 1,
+        "branch_score": 0,
+        "gitignore_file": true,
+        "gitignore_file_score": 0,
+        "readme_file": false,
+        "readme_file_score": 0,
+        "security_file": false,
+        "security_file_score": 0,
+        "license_file": false,
+        "license_file_score": 0,
+        "public_repo": false,
+        "public_repo_score": 0,
+        "extendedInfo": {
+          "version": "gitlab",
+          "has_open_issues": false,
+          "has_wiki": true,
+          "forks_count": 0,
+          "has_downloads": false,
+          "home_page": "https://gitlab.com/oxsecurity/sectools/trivy/-/blob/main/README.md",
+          "watchers_count": 0,
+          "description": "trivy"
+        }
+      },
+      "total": 0.3875
+    }
+  },
+  "pushedCommits": [
+    {
+      "pullsCommitInfo": [
+        {
+          "objType": 7,
+          "uniqueFiles": ["README.md"],
+          "createdAt": "Tue, 28 Dec 2021 13:12:22 +0000",
+          "link": "https://gitlab.com/oxsecurity/sectools/trivy/commit/b91144a3d3dd4e9ec66bd7c5e01bd2de7a60f9c2",
+          "email": "inbar@ox.security",
+          "description": "Initial commit",
+          "user": "inbar rose",
+          "sha": "b91144a3d3dd4e9ec66bd7c5e01bd2de7a60f9c2",
+          "additions": [
+            {
+              "path": "README.md"
+            }
+          ],
+          "deletions": [],
+          "modified": [],
+          "renamed": [],
+          "diffFromNowToCreatedAtInDays": 22
+        }
+      ],
+      "uniqueFilesChanged": ["README.md"],
+      "createdAt": "2021-12-28T13:12:22.841Z",
+      "link": "https://gitlab.com/oxsecurity/sectools/trivy/commit/b91144a3d3dd4e9ec66bd7c5e01bd2de7a60f9c2",
+      "description": "Initial commit",
+      "sha": "b91144a3d3dd4e9ec66bd7c5e01bd2de7a60f9c2",
+      "mergedAt": "2021-12-28T13:12:22.841Z",
+      "title": "Initial commit",
+      "reviewerCount": 0,
+      "author": "inbar rose",
+      "id": "",
+      "diffFromNowToCreatedAtInDays": 22,
+      "objType": 6,
+      "reviewers": []
+    },
+    {
+      "pullsCommitInfo": [
+        {
+          "objType": 7,
+          "uniqueFiles": ["file.ts"],
+          "createdAt": "Tue, 25 Dec 2021 13:12:22 +0000",
+          "link": "https://gitlab.com/oxsecurity/sectools/trivy/commit/b91144a3d3dd4e9ec66bd7c5e01bd2de7a60f9c2",
+          "email": "dvir.h@ox.security",
+          "description": "some commit",
+          "user": "dvir hacohen",
+          "sha": "b91144a3d3dd4e9ec66bd7c5e01bd2de7a60f9c2",
+          "additions": [
+            {
+              "path": "file.ts"
+            }
+          ],
+          "deletions": [],
+          "modified": [],
+          "renamed": [],
+          "diffFromNowToCreatedAtInDays": 22
+        }
+      ],
+      "uniqueFilesChanged": ["file.ts"],
+      "createdAt": "2021-12-28T13:12:22.841Z",
+      "link": "",
+      "description": "Initial commit",
+      "sha": "b91144a3d3dd4e9ec66bd7c5e01bd2de7a60f9c2",
+      "mergedAt": "2021-12-28T13:12:22.841Z",
+      "title": "Initial commit",
+      "reviewerCount": 0,
+      "author": "dvir hacohen",
+      "id": "",
+      "diffFromNowToCreatedAtInDays": 22,
+      "objType": 6,
+      "reviewers": []
+    }
+  ],
+  "pulls": []
+}

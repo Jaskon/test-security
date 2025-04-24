@@ -1,0 +1,83 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "policy for webhooks directing to URLs with unknown VT reputation",
+  "policyId": "oxPolicy_anomalousWebhooks_1",
+  "ruleId": "oxRule_anomalousWebhooks_1",
+  "exclusionCategory": "webhooks",
+  "name": "Webhook URL should be shared across repos",
+  "categoryId": "cicd",
+  "catId": 25,
+  "system": "CI/CD",
+  "order": 33,
+  "cwe": ["CWE-610"],
+  "oscarId": ["T0156", "T0179"],
+  "description":    "A malicious actor may attempt to access the code permanently by implementing a webhook. In addition, unauthorized webhooks may leak data like code and secrets.",
+  "detailedDescription":
+    "After successfully compromising a user's account, a malicious actor may attempt to access the code permanently by implementing a webhook. Separately, unauthorized webhooks may leak data like code and secrets. For these reasons, an inventory of uncommonly used webhooks is suitable for an organization.",
+  "severity": 2,
+  "selected": true,
+  "functionName": "policyAnomalousWebhooks",
+  "category": "CICDSecurity",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "MaxRepoPercent",
+      "label": "Max Repo Percent",
+      "tooltip":
+        "An issue will only be generated if the webhook URL is present in less than the selected percentage of repositories.",
+      "type": "number",
+      "range": [1, 99],
+      "multiSelect": false,
+      "value": 2,
+      "visible": true
+    },
+    {
+      "id": "arg_2",
+      "label": "Max Repo Count",
+      "name": "MaxRepoCount",
+      "tooltip":
+        "An issue will only be generated if the webhook URL is present in less than the selected count of repositories.",
+      "type": "number",
+      "range": [1, 1000],
+      "multiSelect": false,
+      "value": 100,
+      "visible":true
+    },
+    {
+      "id": "arg_3",
+      "label": "Domain Exclusions",
+      "name": "DomainExclusions",
+      "tooltip":
+        "Webhooks utilizing domains with the specific regex will not generate issues.",
+      "type": "stringArray",
+      "range": [],
+      "multiSelect": false,
+      "value": [
+        "^jira\\.*",
+        "^jenkins-*",
+        "^jenkins\\.*",
+        "^teamcity\\.*",
+        "^drone\\.*",
+        "^snyk-broker\\.*"
+      ],
+      "visible": true
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "webhooks",
+      "type": "code_repo"
+    },
+    {
+      "id": "rsc_2",
+      "name": "allUsers",
+      "type": "code_repo",
+      "global": true
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 8,
+  "ignoreMonoRepoChild": true
+}

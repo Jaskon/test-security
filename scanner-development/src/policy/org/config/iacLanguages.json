@@ -1,0 +1,16 @@
+{
+  "languages": [
+    "Terraform",
+    "AWS CloudFormation",
+    "Azure Resource Manager",
+    "Google Cloud Deployment Manager",
+    "Pulumi",
+    "Ansible",
+    "Chef",
+    "Puppet",
+    "Crossplane",
+    "Vagrant",
+    "Helm",
+    "Kubernetes"
+  ]
+}

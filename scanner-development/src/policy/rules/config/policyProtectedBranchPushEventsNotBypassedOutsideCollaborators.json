@@ -1,0 +1,39 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "Protected branch outside collaborators should not be able to bypass direct push restrictions",
+  "policyId": "oxPolicy_dspm_ProtectedBranchPushEventsBypassedOutsideCollaborators",
+  "ruleId": "oxRule_dspm_ProtectedBranchPushEventsBypassedOutsideCollaborators",
+  "exclusionCategory": "user",
+  "name": "Protected branch outside collaborators should not be able to bypass direct push restrictions",
+  "categoryId": "3",
+  "groupId": "",
+  "catId": 3,
+  "system": "Repo",
+  "description": "Repositories should enable branch protection, requiring all code changes to be reviewed. This means that push events should be disallowed. Allowing specific outside collaborators to bypass this should be done temporarily or in rare cases.",
+  "detailedDescription": "Code reviews are considered one of the best ways to limit bugs, and malicious code pushes by compromised source control accounts. This is why most compliance standards, such as SOC2, PCI-DSS, and ISO27001, require all code changes to be reviewed. To enforce this, outside collaborators should not be able to push code directly into a branch.",
+  "severity": 3,
+  "selected": true,
+  "functionName": "policyProtectedBranchPushEventsNotBypassedOutsideCollaborators",
+  "args": [],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "branchSettings",
+      "type": "code_repo"
+    },
+    {
+      "id": "rsc_2",
+      "name": "users",
+      "type": "code_repo"
+    },
+    {
+      "id": "rsc_3",
+      "name": "allUsers",
+      "type": "code_repo",
+      "global": true
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 1
+}

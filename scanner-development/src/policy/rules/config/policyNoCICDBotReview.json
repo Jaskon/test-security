@@ -1,0 +1,51 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "Repo should have branch protection with required code reviews ",
+  "policyId": "oxPolicy_No_CICD_Bot_review",
+  "ruleId": "oxRule_No_CICD_Bot_review",
+  "exclusionCategory": "general",
+  "name": "CI/CD Bots should not be able to review code changes",
+  "categoryId": "3",
+  "groupId": "",
+  "catId": 3,
+  "system": "Repo",
+  "description": "CI/CD Bots should not be able to review code changes. If the setting is enabled then users can “self-review” by manipulating the pipeline. This means that only one developer’s account needs to be compromised in order to push code in branches that require code reviews.",
+  "detailedDescription": "Branch protection best practices involve requiring at least one reviewer to review code changes made by a developer. Self-Reviews are typically not allowed.  However, a rather simple bypass is possible if the developer has the ability to access and initiate GitHub Actions.",
+  "severity": 3,
+  "selected": true,
+  "functionName": "policyNoCICDBotReview",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "repoType",
+      "label": "Repo Type",
+      "tooltip": "Choose if the policy applies to private, public, or all repo types.",
+      "type": "stringArray",
+      "range": ["Private", "Public", "Private or Public"],
+      "multiSelect": false,
+      "value": "Private or Public",
+      "visible": false
+    },
+    {
+      "id": "arg_2",
+      "name": "branchProtection",
+      "label": "Branch protection Requires Reviews",
+      "tooltip": " If enabled the policy will only be checked for repos with branch protection requiring code reviews",
+      "type": "boolean",
+      "range": [],
+      "multiSelect": false,
+      "value": true,
+      "visible": true
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "branchSettings",
+      "type": "code_repo"
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 1
+}

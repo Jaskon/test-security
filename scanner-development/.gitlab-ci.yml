@@ -1,0 +1,5 @@
+include:
+  - project: 'oxsecurity/dev/ox-gitlab-pipeline-templates'
+    ref: main
+    file: '/templates/repos/.gitlab-ci-scanner.yml'
+#  - local: '/pipeline/.gitlab-ci-scanner-build-optimize.yml'

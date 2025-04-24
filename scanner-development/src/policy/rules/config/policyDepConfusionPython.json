@@ -1,0 +1,45 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "policy for libraries indirectly referenced in code utilizing company approved licenses",
+  "policyId": "oxPolicy_policyDepConfusionPython",
+  "ruleId": "oxRule_policyDepConfusionPython",
+  "exclusionCategory": "sbom",
+  "name": "",
+  "categoryId": "SBOM",
+  "groupId": "",
+  "catId": 7,
+  "system": "SBOM",
+  "description": "",
+  "detailedDescription": "",
+  "severity": 4,
+  "selected": true,
+  "functionName": "policyDepConfusionPython",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "ignoreInternalPackageScopes",
+      "label": "Ignore internal package scopes",
+      "tooltip": "Ignore internal package scopes",
+      "type": "stringArray",
+      "range": [],
+      "multiSelect": true,
+      "value": [],
+      "visible": true
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "securityEvents",
+      "type": "code_repo"
+    },
+    {
+      "id": "rsc_2",
+      "name": "sbom",
+      "type": "code_repo"
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 7
+}

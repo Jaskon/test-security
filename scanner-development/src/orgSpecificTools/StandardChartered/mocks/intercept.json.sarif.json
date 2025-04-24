@@ -1,0 +1,261 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "informationUri": "https://intercept.cc",
+          "name": "intercept",
+          "rules": [
+            {
+              "id": "intercept.cc.json.policy.1: JSON ASSURE SSL PROXY LISTENERS",
+              "shortDescription": {
+                "text": "ssl proxy listeners"
+              },
+              "helpUri": "https://intercept.cc",
+              "help": {
+                "text": "",
+                "markdown": "# INTERCEPT.CC"
+              },
+              "properties": {
+                "impact": "Misconfiguration or omission is fatal",
+                "resolution": ""
+              }
+            },
+            {
+              "id": "intercept.cc.json.policy.2: JSON ASSURE LUA VERSION",
+              "shortDescription": {
+                "text": "lua version"
+              },
+              "helpUri": "https://intercept.cc",
+              "help": {
+                "text": "",
+                "markdown": "# INTERCEPT.CC"
+              },
+              "properties": {
+                "impact": "Misconfiguration or omission is fatal",
+                "resolution": ""
+              }
+            },
+            {
+              "id": "intercept.cc.json.policy.3: JSON ASSURE SSL PROXY LISTEN",
+              "shortDescription": {
+                "text": "ssl proxy listen"
+              },
+              "helpUri": "https://intercept.cc",
+              "help": {
+                "text": "",
+                "markdown": "# INTERCEPT.CC"
+              },
+              "properties": {
+                "impact": "Misconfiguration or omission is fatal",
+                "resolution": ""
+              }
+            },
+            {
+              "id": "intercept.cc.json.policy.4: JSON ASSURE SSL_PREFER_SERVER_CIPHERS",
+              "shortDescription": {
+                "text": "ssl_prefer_server_ciphers"
+              },
+              "helpUri": "https://intercept.cc",
+              "help": {
+                "text": "",
+                "markdown": "# INTERCEPT.CC"
+              },
+              "properties": {
+                "impact": "Misconfiguration or omission is fatal",
+                "resolution": ""
+              }
+            },
+            {
+              "id": "intercept.cc.json.policy.5: JSON ASSURE PG_SSL_VERIFY",
+              "shortDescription": {
+                "text": "pg_ssl_verify"
+              },
+              "helpUri": "https://intercept.cc",
+              "help": {
+                "text": "",
+                "markdown": "# INTERCEPT.CC"
+              },
+              "properties": {
+                "impact": "Misconfiguration or omission is fatal",
+                "resolution": ""
+              }
+            },
+            {
+              "id": "intercept.cc.json.policy.6: JSON ASSURE REGEX SOURCE REGISTRY",
+              "shortDescription": {
+                "text": "regex"
+              },
+              "helpUri": "https://intercept.cc",
+              "help": {
+                "text": "",
+                "markdown": "# INTERCEPT.CC"
+              },
+              "properties": {
+                "impact": "Misconfiguration or omission is fatal",
+                "resolution": ""
+              }
+            }
+          ],
+          "semanticVersion": "v1.5.9"
+        }
+      },
+      "artifacts": [
+        {
+          "location": {
+            "uri": "aeb248f545875a8368d66097ad7aa6d11836bade4c4944301d36535892180bca"
+          },
+          "length": -1
+        }
+      ],
+      "results": [
+        {
+          "ruleId": "intercept.cc.json.policy.1: JSON ASSURE SSL PROXY LISTENERS",
+          "ruleIndex": 0,
+          "level": "error",
+          "message": {
+            "text": "ssl proxy listeners"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/app/kong-configuration.json"
+                },
+                "region": {
+                  "startLine": 0,
+                  "endLine": 0,
+                  "snippet": {
+                    "text": "error validating json data against CUE schema: configuration.proxy_listeners.0.ssl: conflicting values false and true"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "intercept.cc.json.policy.2: JSON ASSURE LUA VERSION",
+          "ruleIndex": 1,
+          "level": "error",
+          "message": {
+            "text": "lua version"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/app/kong-configuration.json"
+                },
+                "region": {
+                  "startLine": 0,
+                  "endLine": 0,
+                  "snippet": {
+                    "text": "error validating json data against CUE schema: lua_version: conflicting values \"LuaJIT 2.1.0-20230410\" and \"LuaJIT 2.0.0-20220411\""
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "intercept.cc.json.policy.3: JSON ASSURE SSL PROXY LISTEN",
+          "ruleIndex": 2,
+          "level": "error",
+          "message": {
+            "text": "ssl proxy listen"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/app/kong-configuration.json"
+                },
+                "region": {
+                  "startLine": 0,
+                  "endLine": 0,
+                  "snippet": {
+                    "text": "error validating json data against CUE schema: configuration.proxy_listen.0: invalid value \"0.0.0.0:8000 reuseport backlog=16384\" (out of bound =~\".*ssl.*\")"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "intercept.cc.json.policy.4: JSON ASSURE SSL_PREFER_SERVER_CIPHERS",
+          "ruleIndex": 3,
+          "level": "note",
+          "message": {
+            "text": "ssl_prefer_server_ciphers"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/app/kong-configuration.json"
+                },
+                "region": {
+                  "startLine": 0,
+                  "endLine": 0,
+                  "snippet": {
+                    "text": "COMPLIANT"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "intercept.cc.json.policy.5: JSON ASSURE PG_SSL_VERIFY",
+          "ruleIndex": 4,
+          "level": "error",
+          "message": {
+            "text": "pg_ssl_verify"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/app/kong-configuration.json"
+                },
+                "region": {
+                  "startLine": 0,
+                  "endLine": 0,
+                  "snippet": {
+                    "text": "error validating json data against CUE schema: configuration.pg_ssl_verify: conflicting values \"true\" and false (mismatched types string and bool)"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "intercept.cc.json.policy.6: JSON ASSURE REGEX SOURCE REGISTRY",
+          "ruleIndex": 5,
+          "level": "warning",
+          "message": {
+            "text": "regex"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/app/kong-configuration.json"
+                },
+                "region": {
+                  "startLine": 0,
+                  "endLine": 0,
+                  "snippet": {
+                    "text": "Missing required keys "
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

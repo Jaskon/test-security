@@ -1,0 +1,73 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "policy for libraries directly referenced in code that need updating",
+  "policyId": "oxPolicy_sbomNeedUpdating_1",
+  "ruleId": "oxRule_sbomNeedUpdating_1",
+  "exclusionCategory": "sbom",
+  "name": "Open source directly referenced in code should be kept up to date",
+  "categoryId": "SBOM",
+  "groupId": "",
+  "catId": 7,
+  "system": "SBOM",
+  "description": "Utilizing libraries that are out of date may mean that fixes and improvements to the library are not being leveraged in your companies code.",
+  "detailedDescription": "Open source libraries are continuously being updated and improved. Newer versions can quite often have security fixes and new vulnerabilities. This is why it is critical to periodically update your dependencies.",
+  "severity": 2,
+  "selected": true,
+  "functionName": "policySbomCodeLibOutdated",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "compareMajorVersion",
+      "label": "Compare",
+      "tooltip": "When major version selected there will be no violation if the latest version of a library is just a minor version change.",
+      "type": "stringArray",
+      "range": ["Minor version", "Major version"],
+      "multiSelect": false,
+      "value": ["Major version"],
+      "visible": true
+    },
+    {
+      "id": "arg_2",
+      "name": "numberOfVersionsToSkip",
+      "label": "Major Version Drift",
+      "tooltip": "A violation will occur only if the difference between the latest major version and the deployed major version is more than or equal to the drift.",
+      "type": "number",
+      "range": [1, 100],
+      "multiSelect": false,
+      "value": 2,
+      "visible": true
+    },
+    {
+      "id": "arg_3",
+      "name": "type",
+      "label": "type",
+      "tooltip": "",
+      "type": "string",
+      "range": "",
+      "multiSelect": true,
+      "value": "direct",
+      "visible": false
+    },
+    {
+      "id": "arg_4",
+      "name": "daysCheck",
+      "label": "Days since update",
+      "tooltip": "Days that a library that has a newer version can remain without being updated.",
+      "type": "number",
+      "range": [1, 10000],
+      "multiSelect": false,
+      "value": 730,
+      "visible": true
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "sbom",
+      "type": "code_repo"
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 9
+}

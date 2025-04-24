@@ -1,0 +1,11 @@
+Listing...
+13.0 RDS security checks - [rds] *********************************** -  []
+7.8 [extra78] Ensure there are no Public Accessible RDS instances - rds [Critical]
+7.23 [extra723] Check if RDS Snapshots and Cluster Snapshots are public - rds [Critical]
+7.35 [extra735] Check if RDS instances storage is encrypted - rds [Medium]
+7.39 [extra739] Check if RDS instances have backup enabled - rds [Medium]
+7.47 [extra747] Check if RDS instances is integrated with CloudWatch Logs - rds [Medium]
+7.113 [extra7113] Check if RDS instances have deletion protection enabled  - rds [Medium]
+7.131 [extra7131] Ensure RDS instances have minor version upgrade enabled - rds [Low]
+7.132 [extra7132] Check if RDS instances has enhanced monitoring enabled - rds [Low]
+7.133 [extra7133] Check if RDS instances have multi-AZ enabled - rds [Medium]

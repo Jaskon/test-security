@@ -1,0 +1,426 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "informationUri": "https://intercept.cc",
+          "name": "intercept",
+          "rules": [
+            {
+              "id": "intercept.cc.audit.policy.2: SCAN AUDIT LOG FOR CRITICAL",
+              "shortDescription": {
+                "text": "In production CRITICAL events should not occour"
+              },
+              "helpUri": "https://intercept.cc",
+              "help": {
+                "text": "Tshoot and fix the CRITICAL audit events ",
+                "markdown": "# INTERCEPT.CC"
+              },
+              "properties": {
+                "impact": "This violation will be reviewed and will potentially prevent Stage2 / Stage3 SIA Cloud Security approval",
+                "resolution": "Tshoot and fix the CRITICAL audit events "
+              }
+            }
+          ],
+          "semanticVersion": "v1.5.9"
+        }
+      },
+      "artifacts": [
+        {
+          "location": {
+            "uri": "/app/logs/audit.log"
+          },
+          "length": -1
+        }
+      ],
+      "results": [
+        {
+          "ruleId": "intercept.cc.audit.policy.2: SCAN AUDIT LOG FOR CRITICAL",
+          "ruleIndex": 0,
+          "level": "warning",
+          "message": {
+            "text": "In production CRITICAL events should not occour"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/app/logs/audit.log"
+                },
+                "region": {
+                  "startLine": 5,
+                  "endLine": 5,
+                  "snippet": {
+                    "text": " [CRITICAL] "
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "intercept.cc.audit.policy.2: SCAN AUDIT LOG FOR CRITICAL",
+          "ruleIndex": 0,
+          "level": "warning",
+          "message": {
+            "text": "In production CRITICAL events should not occour"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/app/logs/audit.log"
+                },
+                "region": {
+                  "startLine": 9,
+                  "endLine": 9,
+                  "snippet": {
+                    "text": " [CRITICAL] "
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "intercept.cc.audit.policy.2: SCAN AUDIT LOG FOR CRITICAL",
+          "ruleIndex": 0,
+          "level": "warning",
+          "message": {
+            "text": "In production CRITICAL events should not occour"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/app/logs/audit.log"
+                },
+                "region": {
+                  "startLine": 13,
+                  "endLine": 13,
+                  "snippet": {
+                    "text": " [CRITICAL] "
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "intercept.cc.audit.policy.2: SCAN AUDIT LOG FOR CRITICAL",
+          "ruleIndex": 0,
+          "level": "warning",
+          "message": {
+            "text": "In production CRITICAL events should not occour"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/app/logs/audit.log"
+                },
+                "region": {
+                  "startLine": 20,
+                  "endLine": 20,
+                  "snippet": {
+                    "text": " [CRITICAL] "
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "intercept.cc.audit.policy.2: SCAN AUDIT LOG FOR CRITICAL",
+          "ruleIndex": 0,
+          "level": "warning",
+          "message": {
+            "text": "In production CRITICAL events should not occour"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/app/logs/audit.log"
+                },
+                "region": {
+                  "startLine": 28,
+                  "endLine": 28,
+                  "snippet": {
+                    "text": " [CRITICAL] "
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "intercept.cc.audit.policy.2: SCAN AUDIT LOG FOR CRITICAL",
+          "ruleIndex": 0,
+          "level": "warning",
+          "message": {
+            "text": "In production CRITICAL events should not occour"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/app/logs/audit.log"
+                },
+                "region": {
+                  "startLine": 32,
+                  "endLine": 32,
+                  "snippet": {
+                    "text": " [CRITICAL] "
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "intercept.cc.audit.policy.2: SCAN AUDIT LOG FOR CRITICAL",
+          "ruleIndex": 0,
+          "level": "warning",
+          "message": {
+            "text": "In production CRITICAL events should not occour"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/app/logs/audit.log"
+                },
+                "region": {
+                  "startLine": 38,
+                  "endLine": 38,
+                  "snippet": {
+                    "text": " [CRITICAL] "
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "intercept.cc.audit.policy.2: SCAN AUDIT LOG FOR CRITICAL",
+          "ruleIndex": 0,
+          "level": "warning",
+          "message": {
+            "text": "In production CRITICAL events should not occour"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/app/logs/audit.log"
+                },
+                "region": {
+                  "startLine": 40,
+                  "endLine": 40,
+                  "snippet": {
+                    "text": " [CRITICAL] "
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "intercept.cc.audit.policy.2: SCAN AUDIT LOG FOR CRITICAL",
+          "ruleIndex": 0,
+          "level": "warning",
+          "message": {
+            "text": "In production CRITICAL events should not occour"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/app/logs/audit.log"
+                },
+                "region": {
+                  "startLine": 46,
+                  "endLine": 46,
+                  "snippet": {
+                    "text": " [CRITICAL] "
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "intercept.cc.audit.policy.2: SCAN AUDIT LOG FOR CRITICAL",
+          "ruleIndex": 0,
+          "level": "warning",
+          "message": {
+            "text": "In production CRITICAL events should not occour"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/app/logs/audit.log"
+                },
+                "region": {
+                  "startLine": 53,
+                  "endLine": 53,
+                  "snippet": {
+                    "text": " [CRITICAL] "
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "intercept.cc.audit.policy.2: SCAN AUDIT LOG FOR CRITICAL",
+          "ruleIndex": 0,
+          "level": "warning",
+          "message": {
+            "text": "In production CRITICAL events should not occour"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/app/logs/audit.log"
+                },
+                "region": {
+                  "startLine": 59,
+                  "endLine": 59,
+                  "snippet": {
+                    "text": " [CRITICAL] "
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "intercept.cc.audit.policy.2: SCAN AUDIT LOG FOR CRITICAL",
+          "ruleIndex": 0,
+          "level": "warning",
+          "message": {
+            "text": "In production CRITICAL events should not occour"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/app/logs/audit.log"
+                },
+                "region": {
+                  "startLine": 68,
+                  "endLine": 68,
+                  "snippet": {
+                    "text": " [CRITICAL] "
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "intercept.cc.audit.policy.2: SCAN AUDIT LOG FOR CRITICAL",
+          "ruleIndex": 0,
+          "level": "warning",
+          "message": {
+            "text": "In production CRITICAL events should not occour"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/app/logs/audit.log"
+                },
+                "region": {
+                  "startLine": 80,
+                  "endLine": 80,
+                  "snippet": {
+                    "text": " [CRITICAL] "
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "intercept.cc.audit.policy.2: SCAN AUDIT LOG FOR CRITICAL",
+          "ruleIndex": 0,
+          "level": "warning",
+          "message": {
+            "text": "In production CRITICAL events should not occour"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/app/logs/audit.log"
+                },
+                "region": {
+                  "startLine": 87,
+                  "endLine": 87,
+                  "snippet": {
+                    "text": " [CRITICAL] "
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "intercept.cc.audit.policy.2: SCAN AUDIT LOG FOR CRITICAL",
+          "ruleIndex": 0,
+          "level": "warning",
+          "message": {
+            "text": "In production CRITICAL events should not occour"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/app/logs/audit.log"
+                },
+                "region": {
+                  "startLine": 94,
+                  "endLine": 94,
+                  "snippet": {
+                    "text": " [CRITICAL] "
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "intercept.cc.audit.policy.2: SCAN AUDIT LOG FOR CRITICAL",
+          "ruleIndex": 0,
+          "level": "warning",
+          "message": {
+            "text": "In production CRITICAL events should not occour"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/app/logs/audit.log"
+                },
+                "region": {
+                  "startLine": 98,
+                  "endLine": 98,
+                  "snippet": {
+                    "text": " [CRITICAL] "
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

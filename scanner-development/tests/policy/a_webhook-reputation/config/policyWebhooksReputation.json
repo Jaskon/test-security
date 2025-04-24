@@ -1,0 +1,42 @@
+{
+  "jsonVersion": "7.00",
+  "usage": "policy for webhooks directing to URLs with specific VT reputation",
+  "category": "",
+  "categoryOrder": 3,
+  "categoryDescription": "",
+  "exclusionCategory": "webhooks",
+  "policyId": "oxPolicy_webhookReputation_1",
+  "ruleId": "oxRule_webhookReputation_1",
+  "name": "Webhook URLs must not have malicious reputation",
+  "categoryId": "compipe",
+  "system": "Repo",
+  "description": "A webhook URL should not be malicious based on Virus Total reputation.",
+  "detailedDescription": "A malicious destination webhook URL may have been planted during a breach to gain visibility in changes to your code and environments.",
+  "severity": 5,
+  "selected": true,
+  "execType": "",
+  "functionName": "webhooksReputation",
+  "args": [
+    {
+      "id": "ox_1",
+      "name": "reputation",
+      "label": "Reputation",
+      "tooltip": "Select on or more Virus Total reputations to generate the policy",
+      "type": "stringArray",
+      "range": ["Malicious", "Suspicious", "harmless", "Unknown"],
+      "multiSelect": true,
+      "value": ["Malicious"],
+      "visible": false
+    }
+  ],
+  "resources": [
+    {
+      "id": "ox_1",
+      "name": "webhooks",
+      "type": "code_repo"
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "res": {}
+}

@@ -1,0 +1,38 @@
+{
+  "jsonVersion": "7.00",
+  "usage": "policy for webhooks directing to URLs with unknown VT reputation",
+  "policyId": "oxPolicy_webhookReputation_3",
+  "ruleId": "oxRule_webhookReputation_1",
+  "name": "Webhook URLs must not have unknown reputation",
+  "categoryId": "compipe",
+  "exclusionCategory": "webhooks",
+  "system": "Repo",
+  "description": "A webhook URL should not be unknown based on Virus Total reputation.",
+  "detailedDescription": "An unknown destination webhook URL may have been planted during a breach to gain visibility in changes to your code and environments.",
+  "severity": 2,
+  "selected": true,
+  "execType": "",
+  "functionName": "webhooksReputation",
+  "args": [
+    {
+      "id": "ox_1",
+      "name": "reputation",
+      "label": "Reputation",
+      "tooltip": "Select on or more Virus Total reputations to generate the policy",
+      "type": "stringArray",
+      "range": ["Malicious", "Suspicious", "Harmless", "Unknown"],
+      "multiSelect": true,
+      "value": ["Unknown"],
+      "visible": false
+    }
+  ],
+  "resources": [
+    {
+      "id": "ox_1",
+      "name": "webhooks",
+      "type": "code_repo"
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": []
+}

@@ -1,0 +1,53 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "Members should have 2FA enabled to access source control",
+  "policyId": "oxPolicy_outside_member_2FA_enabled_1",
+  "ruleId": "oxRule_outside_member_2FA_enabled_1",
+  "exclusionCategory": "user",
+  "name": "Members should have 2FA enabled to access source control",
+  "categoryId": "3",
+  "groupId": "",
+  "catId": 3,
+  "system": "Repo",
+  "description": "2FA is generally considered more secure than using just IDP or a username and password. Enable 2FA to harden the access to your repositories",
+  "detailedDescription": "Two-Factor Authentication (2FA) helps reduce the probability that a user's account will be compromised. Admins in particular should have 2FA enabled as a compromise can be devastating. Therefore, in order to reduce the attack surface, it is recommended to have 2FA enabled.",
+  "severity": 2,
+  "selected": true,
+  "functionName": "policy2FAEnabled",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "EnforceFor",
+      "label": "Enforce For",
+      "tooltip": "Choose what type of users the policy will apply to.",
+      "type": "stringArray",
+      "range": ["Admin", "Member", "Admin or Member"],
+      "multiSelect": false,
+      "value": "Admin or Member",
+      "visible": true
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "allUsers",
+      "type": "code_repo",
+      "global": true
+    },
+    {
+      "id": "rsc_2",
+      "name": "auditLog",
+      "type": "code_repo",
+      "global": true
+    },
+    {
+      "id": "rsc_3",
+      "name": "allPulls",
+      "type": "code_repo",
+      "global": true
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 3
+}

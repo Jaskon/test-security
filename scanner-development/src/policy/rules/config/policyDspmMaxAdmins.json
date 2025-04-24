@@ -1,0 +1,70 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "Organizations should not have too many owners/admins",
+  "policyId": "oxPolicy_dspm_MaxAdmins_1",
+  "ruleId": "oxRule_dspm_MaxAdmins_1",
+  "exclusionCategory": "user",
+  "name": "Organizations should not have too many owners/admins",
+  "categoryId": "3",
+  "groupId": "",
+  "catId": 3,
+  "system": "Repo",
+  "description": "Organization or first-level group owners/admins should be relatively small compared to the total number of users.",
+  "detailedDescription": "An organization or first-level group admin/owner has the authority to create, edit, delete repositories and manage permissions and access to repositories. A compromise of an admin/owner account can be devastating as a result. Therefore, in order to reduce the attack surface it is recommended to reduce the number of admins/owners of an organization or group.",
+  "severity": 3,
+  "selected": true,
+  "functionName": "policyDspmMaxAdmins",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "minAdmins",
+      "label": "Min Admins",
+      "tooltip": "No issue will be created if the number of admins is less than or equal to the value entered.",
+      "type": "number",
+      "range": [2, 1000],
+      "multiSelect": false,
+      "value": 2,
+      "visible": true
+    },
+    {
+      "id": "arg_2",
+      "name": "minAdminsPercentage",
+      "label": "Min Admin Percent",
+      "tooltip": "No issue will be created if the percentage of admins is less than or equal to the value entered.",
+      "type": "number",
+      "range": [1, 99],
+      "multiSelect": false,
+      "value": 1,
+      "visible": true
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "allUsers",
+      "type": "code_repo",
+      "global": true
+    },
+    {
+      "id": "rsc_2",
+      "name": "auditLog",
+      "type": "code_repo",
+      "global": true
+    },
+    {
+      "id": "rsc_3",
+      "name": "allPulls",
+      "type": "code_repo",
+      "global": true
+    },
+    {
+      "id": "rsc_4",
+      "name": "allRepos",
+      "type": "code_repo",
+      "global": true
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 8
+}

@@ -1,0 +1,81 @@
+[
+  {
+    "framework": "expressjs",
+    "apiFound": true,
+    "routes": [
+      {
+        "uuid": "29bf511a-6a3e-4ae5-9b91-02f06ce43e9d",
+        "filepath": "/home/mir/src/lambda-app/test.py",
+        "snippet": "@app.post('/login_submit')",
+        "line": 36,
+        "endPoint": "/login_submit",
+        "method": "POST",
+        "functions": [
+          {
+            "filepath": "/Users/miriam/repos/arkime/cont3xt/linkGroup.js",
+            "function": "atlassianAddon.authenticate",
+            "line": 10,
+            "snippet": "<some other snippet>",
+            "funcPath": "*/common/arkimeUtil*"
+          },
+          {
+            "filepath": "/Users/miriam/repos/arkime/viewer/viewer.js",
+            "function": "anonymous function",
+            "line": 185,
+            "snippet": "addonRouter.post('/uninstalled', atlassianAddon.authenticate(), async (req, res, next) => {\n        // pass the event on to the framework\n        next();\n        // proceed to handle internal logic\n        const { key: appKey, clientKey } = req.body;\n        try {\n            const dbService = new OrgBitbucketAppInstallationsDBService();\n            const orgId = await dbService.getInstallationsOrgId(appKey, clientKey);\n            await dbService.deleteInstallation(appKey, clientKey);\n            sendBitbucketAppInstallationTelemetry(BitbucketAppInstallationMetrics.Uninstalled, { appKey, clientKey }, orgId);\n            if (orgId) {\n                await new ConnectorsService(orgId).removeBitbucketAppInstallationCredentials();\n            }\n            logger.info(`[uninstalled] handled event for appKey: ${appKey}, clientKey: ${clientKey}, orgId: ${orgId}`);\n        } catch (e) {\n            logger.error(`[uninstalled] unable to handle event for appKey: ${appKey}, clientKey: ${clientKey}, e: ${stringifyError(e)}`);\n        }\n    });",
+            "funcPath": "*/common/user*"
+          }
+        ],
+        "parameters": [
+          {
+            "name": "item_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "name": "user_name",
+            "in": "path",
+            "required": false
+          }
+        ],
+        "responseStatusCode": ["404"]
+      },
+      {
+        "uuid": "43078b56-fcbd-46d5-8834-22e26528fed3",
+        "filepath": "/home/mir/src/lambda-app/test_new.py",
+        "snippet": "@app.post('/login_submit')",
+        "line": 75,
+        "title": "test_title",
+        "endPoint": "/login_submit",
+        "method": "POST",
+        "description": "test_desc",
+        "functions": [
+          {
+            "filepath": "/Users/miriam/repos/arkime/common/arkimeUtil.js",
+            "funcPath": "*/common/arkimeUtil*",
+            "function": "login_test_new",
+            "snippet": "  static noCacheJson (req, res, next) {\n    res.header('Cache-Control', 'no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0');\n    res.header('Content-Type', 'application/json');\n    res.header('X-Content-Type-Options', 'nosniff');\n    return next();\n  }",
+            "line": 76
+          }
+        ]
+      },
+      {
+        "uuid": "92ae31cb-ff4a-4c40-99ff-9e428e8ef24b",
+        "filepath": "/home/mir/src/lambda-app/test.py",
+        "snippet": "@app.post('/add_to_cart')",
+        "line": 103,
+        "endPoint": "/add_to_cart",
+        "method": "POST",
+        "parameters": [
+          {
+            "name": "user_name",
+            "in": "path",
+            "required": false
+          }
+        ],
+        "responseStatusCode": ["404", "403"]
+      }
+    ],
+    "success": true
+  }
+]

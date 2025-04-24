@@ -1,0 +1,27 @@
+{
+  "jsonVersion": "1.00",
+  "usage": "hadolint config for severity",
+  "toolName": "hadolint",
+  "severity": [
+    {
+      "id": "DL3008",
+      "severity": "low",
+      "description": "Pin versions in apt get install"
+    },
+    {
+      "id": "DL3025",
+      "severity": "medium",
+      "description": "Use arguments JSON notation for CMD and ENTRYPOINT arguments"
+    },
+    {
+      "id": "DL3004",
+      "severity": "medium",
+      "description": "Do not use sudo"
+    },
+    {
+      "id": "DL1000",
+      "severity": "medium",
+      "description": "Unknown instruction"
+    }
+  ]
+}

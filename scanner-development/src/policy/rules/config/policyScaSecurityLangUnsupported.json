@@ -1,0 +1,55 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "policy for repo containing languages not covered by approved SCA",
+  "policyId": "oxPolicy_UnprotectedDevLan_2",
+  "ruleId": "oxRule_UnprotectedDevLan_1",
+  "exclusionCategory": "general",
+  "name": "All languages should be covered by open source scan (SCA)",
+  "categoryId": "sectools",
+  "groupId": "",
+  "catId": 10,
+  "system": "SCA",
+  "description": "The approved SCA (Software Composition Analysis) application should scan all dependencies regardless of language.",
+  "detailedDescription": "The vast majority of cloud applications written today contain some set of external dependencies. Security issues in these dependencies can make applications using them insecure. The Log4J crisis is one example of this. SCA (Software Composition Analysis) scanning is the most basic way of determining if an application is using vulnerable dependencies.",
+  "severity": 3,
+  "selected": true,
+  "functionName": "policyUnprotectedDevLan",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "scanType",
+      "label": "Scan Type",
+      "tooltip": "Choose one or more static security engines to generate the policy for.",
+      "type": "stringArray",
+      "range": ["SAST", "SCA"],
+      "multiSelect": false,
+      "value": "SCA",
+      "visible": false
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "webhooks",
+      "type": "code_repo"
+    },
+    {
+      "id": "rsc_2",
+      "name": "workflows",
+      "type": "code_repo"
+    },
+    {
+      "id": "rsc_3",
+      "name": "securityEvents",
+      "type": "code_repo"
+    },
+    {
+      "id": "rsc_4",
+      "name": "files",
+      "type": "code_repo"
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 3
+}

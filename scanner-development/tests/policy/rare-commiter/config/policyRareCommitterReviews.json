@@ -1,0 +1,110 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "policy for reviews by an infrequent pusher to a repo",
+  "policyId": "oxPolicy_RarePusherReview_1",
+  "ruleId": "oxRule_RarePusherReview_1",
+  "name": "Infrequent code pushes should have a veteran reviewer",
+  "categoryId": "devprocess",
+  "category": "dsdsds",
+  "categoryOrder": 1,
+  "categoryDescription": "string",
+  "system": "Repo",
+  "description": "If a user is pushing code into a repo that they are not regular users of then the code needs to be reviewed by a veteran developer.",
+  "detailedDescription": "Reviews are one of the best ways to reduce the risk of security vulnerabilities making it to production. When researchers tried to intentionally insert malicious code in to the Linux Kernel, two man reviews caught the majority of issues.",
+  "severity": 3,
+  "selected": true,
+  "functionName": "policyRarePusherVeteranReviews",
+  "args": [
+    {
+      "id": "ox_1",
+      "name": "pusherPushes",
+      "label": "Infrequent Pusher (Max Pushes)",
+      "tooltip": "Please specify the number of pushes or pull requests that define an infrequent pusher (less than).",
+      "type": "number",
+      "range": [1, 100000],
+      "multiSelect": false,
+      "value": 10,
+      "visible": true
+    },
+    {
+      "id": "ox_2",
+      "name": "pusherDays",
+      "label": "Infrequent Pusher (Max Days)",
+      "tooltip": "Please specify the number of days between the last and first push that define an infrequent pusher (less than).",
+      "type": "number",
+      "range": [1, 100000],
+      "multiSelect": false,
+      "value": 30,
+      "visible": true
+    },
+    {
+      "id": "ox_4",
+      "name": "reviewerReviews",
+      "label": "Veteran Reviewer (Min Reviews)",
+      "tooltip": "Please specify the number of reviews that define a veteran reviewer (greater than or equal to).",
+      "type": "number",
+      "range": [1, 100000],
+      "multiSelect": false,
+      "value": 15,
+      "visible": true
+    },
+    {
+      "id": "ox_5",
+      "name": "reviewerPushes",
+      "label": "Veteran Reviewer (Min Pushes)",
+      "tooltip": "Please specify the number of pushes that define a veteran reviewer (greater than or equal to).",
+      "type": "number",
+      "range": [1, 100000],
+      "multiSelect": false,
+      "value": 10,
+      "visible": true
+    },
+    {
+      "id": "ox_6",
+      "name": "maxTimeIdentify",
+      "label": "Max Days to Identify",
+      "tooltip": "Please specify the max number of days to use to determine the push and review counts.",
+      "type": "number",
+      "range": [1, 100000],
+      "multiSelect": false,
+      "value": 365,
+      "visible": false
+    },
+    {
+      "id": "ox_7",
+      "name": "minConsideration",
+      "label": "Ignore Older Pushes (days)",
+      "tooltip": "Please specify the max number of days to find pushes to evaluate",
+      "type": "number",
+      "range": [1, 100000],
+      "multiSelect": false,
+      "value": 60,
+      "visible": true
+    },
+    {
+      "id": "ox_8",
+      "name": "alwaysIgnoreFileTypes",
+      "label": "Ignore File Types",
+      "tooltip": "Choose the file types that will not trigger a violation",
+      "type": "stringArray",
+      "range": [],
+      "multiSelect": false,
+      "value": [".txt", ".yaml", ".yml", ".md", ".json", ".gitignore", ".png", ".jpeg", ".svg", ".gif"],
+      "visible": true
+    }
+  ],
+  "resources": [
+    {
+      "id": "ox_1",
+      "name": "pushedCommits",
+      "type": "code_repo"
+    },
+    {
+      "id": "ox_2",
+      "name": "pulls",
+      "type": "code_repo"
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": []
+}

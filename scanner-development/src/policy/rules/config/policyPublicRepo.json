@@ -1,0 +1,89 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "policy for approved SAST being disabled",
+  "policyId": "oxPolicy_publicRepo_1",
+  "ruleId": "oxRule_publicRepo_1",
+  "exclusionCategory": "general",
+  "name": "Repos should not be public",
+  "categoryId": "supplychain",
+  "groupId": "",
+  "catId": 3,
+  "system": "SAST",
+  "description": "Code Repository should not be publically visible or modifiable.",
+  "detailedDescription": "Code repositories for open source projects are typically public and proprietary apps should typically be private. If proprietary code is exposed to the internet, attackers can utilize it to understand weaknesses and vulnerabilities in the application, allowing for easier hacks and breaches.",
+  "severity": 4,
+  "selected": true,
+  "functionName": "policyPublicRepo",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "publicreponumber",
+      "label": "Exclusion Threshold %",
+      "tooltip": "If there are more than the defined percentage of apps public then we assume this is intentional and will not throw a violation on public apps.",
+      "type": "number",
+      "range": [0, 100],
+      "multiSelect": false,
+      "value": 25,
+      "visible": true
+    },
+    {
+      "id": "arg_2",
+      "name": "checkLicense",
+      "label": "Ignore if license present",
+      "tooltip": "If set to true and a public repo has a license file no issue will be generated",
+      "type": "stringArray",
+      "range": ["True", "False"],
+      "multiSelect": false,
+      "value": ["True"],
+      "visible": true
+    },
+    {
+      "id": "arg_3",
+      "name": "licenseFileNames",
+      "label": "License File Names",
+      "tooltip": "License File names to search for",
+      "type": "stringArray",
+      "range": [],
+      "multiSelect": false,
+      "value": ["LICENSE", "LICENSE.txt", "LICENSE.md", "LICENSE.rst"],
+      "visible": true
+    },
+    {
+      "id": "arg_4",
+      "name": "fileDisplayName",
+      "label": "",
+      "tooltip": "",
+      "type": "string",
+      "range": [],
+      "multiSelect": false,
+      "value": "LICENSE",
+      "visible": false
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "webhooks",
+      "type": "code_repo"
+    },
+    {
+      "id": "rsc_2",
+      "name": "users",
+      "type": "code_repo"
+    },
+    {
+      "id": "rsc_3",
+      "name": "files",
+      "type": "code_repo"
+    },
+    {
+      "id": "rsc_4",
+      "name": "allUsers",
+      "type": "code_repo",
+      "global": true
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 7
+}

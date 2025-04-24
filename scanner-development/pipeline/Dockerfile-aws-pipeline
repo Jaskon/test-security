@@ -1,0 +1,3 @@
+FROM amazon/aws-cli
+ENTRYPOINT [""]
+RUN amazon-linux-extras install docker

@@ -1,0 +1,54 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "Operating System vulnerabilities should not exist in the container",
+  "policyId": "oxPolicy_securityScan_222",
+  "ruleId": "oxRule_securityScan_20",
+  "exclusionCategory": "general",
+  "name": "Vulnerable dependency (CVE) in container from base image",
+  "categoryId": "containerScan",
+  "catId": 12,
+  "system": "Container Scan",
+  "order": 6,
+  "description": "Containers have become an integral part of modern software development and deployment due to their ability to package applications and their dependencies into a single, portable, and efficient unit. Containers need an Operating System installed to function. Operating Systems also introduce potential security risks, including outdated, vulnerable, or misconfigured components.",
+  "detailedDescription": "OS-level vulnerability scanning in containers is crucial for detecting and mitigating security risks within the base operating system layer. This process helps ensure the foundational components of a container are secure, up-to-date, and compliant, reducing the attack surface and enabling a more robust security posture for containerized applications.",
+  "severity": 2,
+  "selected": true,
+  "functionName": "policySecurityScanSCA",
+  "category": "ContainerSecurity",
+  "displayIssueSeverity": 0,
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "scanType",
+      "label": "Scan Type",
+      "tooltip": "",
+      "type": "stringArray",
+      "range": ["SCA", "ArtifactsSCA", "ArtifactsIAC"],
+      "multiSelect": false,
+      "value": "ArtifactsSCA",
+      "visible": false
+    },
+    {
+      "id": "arg_2",
+      "name": "isSingleIssueArtifacts",
+      "label": "Aggregate into a single issue all libraries belonging to a specific Operating System version",
+      "tooltip": "If this setting is disabled, every component of an Operating System having vulnerabilities will generate a separate issue. Note: Regardless of the setting the results will be aggregated by artifact name as well.  It is highly recommended to keep this setting enabled",
+      "type": "boolean",
+      "range": [],
+      "multiSelect": false,
+      "value": true,
+      "visible": true
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "securityEvents",
+      "type": "artifactory"
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "isPipeline": true,
+  "version": 14
+}

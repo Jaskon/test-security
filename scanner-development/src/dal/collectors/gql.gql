@@ -1,0 +1,1 @@
+curl -X POST -H "Authorization: bearer " -H "Content-Type: application/json" -d '{"query": "{ repository(owner: \"OWNER_USERNAME\", name: \"REPO_NAME\") { forks(first: 10) { edges { node { name owner { login } } } } } }"}' https://api.github.com/graphql

@@ -1,0 +1,59 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "Organization scope should not be vulnerable to Dependency Confusion",
+  "policyId": "oxPolicy_depConfusion",
+  "ruleId": "oxRule_depConfusion",
+  "exclusionCategory": "sbom",
+  "name": "Organization scope should not be vulnerable to Dependency Confusion",
+  "categoryId": "SBOM",
+  "groupId": "",
+  "catId": 7,
+  "system": "SBOM",
+  "description": "Dependency confusion or substitution attacks pose a significant risk by leveraging weaknesses in software dependency management systems.",
+  "detailedDescription": "Dependency confusion arises when software applications mistakenly use a rogue version of a dependency due to naming collisions between internal and public software dependencies. This can lead to unauthorized code execution, data breaches, and service disruption. With the growing reliance on open-source components in software development, the threat and potential consequences of these attacks are amplified.",
+  "severity": 4,
+  "selected": true,
+  "functionName": "policyDepConfusion",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "ignoreInternalPackageScopes",
+      "label": "Ignore internal package scopes",
+      "tooltip": "Ignore internal package scopes",
+      "type": "stringArray",
+      "range": [],
+      "multiSelect": true,
+      "value": [],
+      "visible": true
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "allUsers",
+      "type": "code_repo",
+      "global": true
+    },
+    {
+      "id": "rsc_2",
+      "name": "scopesRepoMap",
+      "type": "code_repo",
+      "global": true
+    },
+    {
+      "id": "rsc_3",
+      "name": "allOrgsRepos",
+      "type": "code_repo",
+      "global": true
+    },
+    {
+      "id": "rsc_4",
+      "name": "allSecEvents",
+      "type": "code_repo",
+      "global": true
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 1
+}

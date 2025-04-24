@@ -1,0 +1,6141 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:2629a474-d347-48e0-9ac3-5f08e52cf972",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2022-05-31T12:26:26.2669621Z",
+    "tools": [
+      {
+        "vendor": "aquasecurity",
+        "name": "trivy",
+        "version": "0.28.0"
+      }
+    ],
+    "component": {
+      "bom-ref": "pkg:oci/airbyte-source-firebolt@sha256:8b7b51eb2cf103738efc1c688c189bfa7127e31ce3cd3b93eb30a6d8e097e7b6?repository_url=ghcr.io%2Ffirebolt-db%2Fairbyte-source-firebolt&arch=amd64",
+      "type": "container",
+      "name": "ghcr.io/firebolt-db/airbyte-source-firebolt:0.0.2",
+      "purl": "pkg:oci/airbyte-source-firebolt@sha256:8b7b51eb2cf103738efc1c688c189bfa7127e31ce3cd3b93eb30a6d8e097e7b6?repository_url=ghcr.io%2Ffirebolt-db%2Fairbyte-source-firebolt&arch=amd64",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SchemaVersion",
+          "value": "2"
+        },
+        {
+          "name": "aquasecurity:trivy:ImageID",
+          "value": "sha256:ca7dc18481f0d4758515f108f3a752158f662348bb86bea1e9cbc85849746294"
+        },
+        {
+          "name": "aquasecurity:trivy:RepoDigest",
+          "value": "ghcr.io/firebolt-db/airbyte-source-firebolt@sha256:8b7b51eb2cf103738efc1c688c189bfa7127e31ce3cd3b93eb30a6d8e097e7b6"
+        },
+        {
+          "name": "aquasecurity:trivy:DiffID",
+          "value": "sha256:e2eb06d8af8218cfec8210147357a68b7e13f7c485b991c288c2d01dc228bb68"
+        },
+        {
+          "name": "aquasecurity:trivy:DiffID",
+          "value": "sha256:a2f23be74558248e1b9f79e055f6161ceaf7541c5af98048adb6b372e6e4bae0"
+        },
+        {
+          "name": "aquasecurity:trivy:DiffID",
+          "value": "sha256:434f871e66514b362185c2851543fc731400ff8ba17ca088cb35378dc9819e1c"
+        },
+        {
+          "name": "aquasecurity:trivy:DiffID",
+          "value": "sha256:dd0e25d390fd577f383f9a056fa6be4d11f65d178f4f9d0c26fb71fd6183fdfb"
+        },
+        {
+          "name": "aquasecurity:trivy:DiffID",
+          "value": "sha256:317fce04ba84d7cf5f07e43366f156f623189c745c1a45dbcf855b7591b75abb"
+        },
+        {
+          "name": "aquasecurity:trivy:DiffID",
+          "value": "sha256:0b080519a1b683142019ea6116ca33ee400a211190cc5ed3a44dd656c3fb58b2"
+        },
+        {
+          "name": "aquasecurity:trivy:DiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        },
+        {
+          "name": "aquasecurity:trivy:DiffID",
+          "value": "sha256:4307626342a8fa5a8f5815104773f897181553d8584560126de92613677f4707"
+        },
+        {
+          "name": "aquasecurity:trivy:DiffID",
+          "value": "sha256:09cb25b8575401c0e62ceecbf5e3c0b8612468a08d414b9a213b916fa927bb70"
+        },
+        {
+          "name": "aquasecurity:trivy:DiffID",
+          "value": "sha256:605cf010423d5ec2ba867ee55ccaae8e91dd6cf67f968fd48d6846d1a238eeaa"
+        },
+        {
+          "name": "aquasecurity:trivy:DiffID",
+          "value": "sha256:5303a633051eaee3f30be041c4012cb45ec6f82c9cdfcfcfb15fd8d6b718b8f0"
+        },
+        {
+          "name": "aquasecurity:trivy:DiffID",
+          "value": "sha256:b596299f95f64d2eae416bf0a883b990157cd6b2e6a30ef1d9d70b172ec31270"
+        },
+        {
+          "name": "aquasecurity:trivy:RepoTag",
+          "value": "ghcr.io/firebolt-db/airbyte-source-firebolt:0.0.2"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "pkg:apk/alpine/.python-rundeps@20210828.000534?distro=3.14.2",
+      "type": "library",
+      "name": ".python-rundeps",
+      "version": "20210828.000534",
+      "purl": "pkg:apk/alpine/.python-rundeps@20210828.000534?distro=3.14.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:434f871e66514b362185c2851543fc731400ff8ba17ca088cb35378dc9819e1c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/alpine-baselayout@3.2.0-r16?distro=3.14.2",
+      "type": "library",
+      "name": "alpine-baselayout",
+      "version": "3.2.0-r16",
+      "licenses": [
+        {
+          "expression": "GPL-2.0-only"
+        }
+      ],
+      "purl": "pkg:apk/alpine/alpine-baselayout@3.2.0-r16?distro=3.14.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "alpine-baselayout"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "3.2.0-r16"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:e2eb06d8af8218cfec8210147357a68b7e13f7c485b991c288c2d01dc228bb68"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/alpine-keys@2.3-r1?distro=3.14.2",
+      "type": "library",
+      "name": "alpine-keys",
+      "version": "2.3-r1",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:apk/alpine/alpine-keys@2.3-r1?distro=3.14.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "alpine-keys"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.3-r1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:e2eb06d8af8218cfec8210147357a68b7e13f7c485b991c288c2d01dc228bb68"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/apk-tools@2.12.7-r0?distro=3.14.2",
+      "type": "library",
+      "name": "apk-tools",
+      "version": "2.12.7-r0",
+      "licenses": [
+        {
+          "expression": "GPL-2.0-only"
+        }
+      ],
+      "purl": "pkg:apk/alpine/apk-tools@2.12.7-r0?distro=3.14.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "apk-tools"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.12.7-r0"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:e2eb06d8af8218cfec8210147357a68b7e13f7c485b991c288c2d01dc228bb68"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/bash@5.1.16-r0?distro=3.14.2",
+      "type": "library",
+      "name": "bash",
+      "version": "5.1.16-r0",
+      "licenses": [
+        {
+          "expression": "GPL-3.0-or-later"
+        }
+      ],
+      "purl": "pkg:apk/alpine/bash@5.1.16-r0?distro=3.14.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "bash"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "5.1.16-r0"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:605cf010423d5ec2ba867ee55ccaae8e91dd6cf67f968fd48d6846d1a238eeaa"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/busybox@1.33.1-r3?distro=3.14.2",
+      "type": "library",
+      "name": "busybox",
+      "version": "1.33.1-r3",
+      "licenses": [
+        {
+          "expression": "GPL-2.0-only"
+        }
+      ],
+      "purl": "pkg:apk/alpine/busybox@1.33.1-r3?distro=3.14.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "busybox"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.33.1-r3"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:e2eb06d8af8218cfec8210147357a68b7e13f7c485b991c288c2d01dc228bb68"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/ca-certificates@20191127-r5?distro=3.14.2",
+      "type": "library",
+      "name": "ca-certificates",
+      "version": "20191127-r5",
+      "licenses": [
+        {
+          "expression": "MPL-2.0 AND MIT"
+        }
+      ],
+      "purl": "pkg:apk/alpine/ca-certificates@20191127-r5?distro=3.14.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "ca-certificates"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "20191127-r5"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:a2f23be74558248e1b9f79e055f6161ceaf7541c5af98048adb6b372e6e4bae0"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/ca-certificates-bundle@20191127-r5?distro=3.14.2",
+      "type": "library",
+      "name": "ca-certificates-bundle",
+      "version": "20191127-r5",
+      "licenses": [
+        {
+          "expression": "MPL-2.0 AND MIT"
+        }
+      ],
+      "purl": "pkg:apk/alpine/ca-certificates-bundle@20191127-r5?distro=3.14.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "ca-certificates"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "20191127-r5"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:e2eb06d8af8218cfec8210147357a68b7e13f7c485b991c288c2d01dc228bb68"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/expat@2.4.1-r0?distro=3.14.2",
+      "type": "library",
+      "name": "expat",
+      "version": "2.4.1-r0",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:apk/alpine/expat@2.4.1-r0?distro=3.14.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "expat"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.4.1-r0"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:434f871e66514b362185c2851543fc731400ff8ba17ca088cb35378dc9819e1c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/gdbm@1.19-r0?distro=3.14.2",
+      "type": "library",
+      "name": "gdbm",
+      "version": "1.19-r0",
+      "licenses": [
+        {
+          "expression": "GPL-3.0-or-later"
+        }
+      ],
+      "purl": "pkg:apk/alpine/gdbm@1.19-r0?distro=3.14.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "gdbm"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.19-r0"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:434f871e66514b362185c2851543fc731400ff8ba17ca088cb35378dc9819e1c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/keyutils-libs@1.6.3-r0?distro=3.14.2",
+      "type": "library",
+      "name": "keyutils-libs",
+      "version": "1.6.3-r0",
+      "licenses": [
+        {
+          "expression": "GPL-2.0-or-later LGPL-2.0-or-later"
+        }
+      ],
+      "purl": "pkg:apk/alpine/keyutils-libs@1.6.3-r0?distro=3.14.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "keyutils"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.6.3-r0"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:434f871e66514b362185c2851543fc731400ff8ba17ca088cb35378dc9819e1c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/krb5-conf@1.0-r2?distro=3.14.2",
+      "type": "library",
+      "name": "krb5-conf",
+      "version": "1.0-r2",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:apk/alpine/krb5-conf@1.0-r2?distro=3.14.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "krb5-conf"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.0-r2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:434f871e66514b362185c2851543fc731400ff8ba17ca088cb35378dc9819e1c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/krb5-libs@1.18.4-r0?distro=3.14.2",
+      "type": "library",
+      "name": "krb5-libs",
+      "version": "1.18.4-r0",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:apk/alpine/krb5-libs@1.18.4-r0?distro=3.14.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "krb5"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.18.4-r0"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:434f871e66514b362185c2851543fc731400ff8ba17ca088cb35378dc9819e1c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libbz2@1.0.8-r1?distro=3.14.2",
+      "type": "library",
+      "name": "libbz2",
+      "version": "1.0.8-r1",
+      "licenses": [
+        {
+          "expression": "bzip2-1.0.6"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libbz2@1.0.8-r1?distro=3.14.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "bzip2"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.0.8-r1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:434f871e66514b362185c2851543fc731400ff8ba17ca088cb35378dc9819e1c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libc-utils@0.7.2-r3?distro=3.14.2",
+      "type": "library",
+      "name": "libc-utils",
+      "version": "0.7.2-r3",
+      "licenses": [
+        {
+          "expression": "BSD-2-Clause AND BSD-3-Clause"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libc-utils@0.7.2-r3?distro=3.14.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "libc-dev"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "0.7.2-r3"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:e2eb06d8af8218cfec8210147357a68b7e13f7c485b991c288c2d01dc228bb68"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libcom_err@1.46.2-r0?distro=3.14.2",
+      "type": "library",
+      "name": "libcom_err",
+      "version": "1.46.2-r0",
+      "licenses": [
+        {
+          "expression": "GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libcom_err@1.46.2-r0?distro=3.14.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "e2fsprogs"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.46.2-r0"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:434f871e66514b362185c2851543fc731400ff8ba17ca088cb35378dc9819e1c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libcrypto1.1@1.1.1l-r0?distro=3.14.2",
+      "type": "library",
+      "name": "libcrypto1.1",
+      "version": "1.1.1l-r0",
+      "licenses": [
+        {
+          "expression": "OpenSSL"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libcrypto1.1@1.1.1l-r0?distro=3.14.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "openssl"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.1.1l-r0"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:e2eb06d8af8218cfec8210147357a68b7e13f7c485b991c288c2d01dc228bb68"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libffi@3.3-r2?distro=3.14.2",
+      "type": "library",
+      "name": "libffi",
+      "version": "3.3-r2",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libffi@3.3-r2?distro=3.14.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "libffi"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "3.3-r2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:434f871e66514b362185c2851543fc731400ff8ba17ca088cb35378dc9819e1c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libintl@0.21-r0?distro=3.14.2",
+      "type": "library",
+      "name": "libintl",
+      "version": "0.21-r0",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1-or-later"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libintl@0.21-r0?distro=3.14.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "gettext"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "0.21-r0"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:434f871e66514b362185c2851543fc731400ff8ba17ca088cb35378dc9819e1c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libnsl@1.3.0-r0?distro=3.14.2",
+      "type": "library",
+      "name": "libnsl",
+      "version": "1.3.0-r0",
+      "licenses": [
+        {
+          "expression": "LGPL-2.0-or-later"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libnsl@1.3.0-r0?distro=3.14.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "libnsl"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.3.0-r0"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:434f871e66514b362185c2851543fc731400ff8ba17ca088cb35378dc9819e1c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libretls@3.3.3p1-r2?distro=3.14.2",
+      "type": "library",
+      "name": "libretls",
+      "version": "3.3.3p1-r2",
+      "licenses": [
+        {
+          "expression": "ISC AND (BSD-3-Clause OR MIT)"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libretls@3.3.3p1-r2?distro=3.14.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "libretls"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "3.3.3p1-r2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:e2eb06d8af8218cfec8210147357a68b7e13f7c485b991c288c2d01dc228bb68"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libssl1.1@1.1.1l-r0?distro=3.14.2",
+      "type": "library",
+      "name": "libssl1.1",
+      "version": "1.1.1l-r0",
+      "licenses": [
+        {
+          "expression": "OpenSSL"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libssl1.1@1.1.1l-r0?distro=3.14.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "openssl"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.1.1l-r0"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:e2eb06d8af8218cfec8210147357a68b7e13f7c485b991c288c2d01dc228bb68"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libtirpc@1.3.2-r0?distro=3.14.2",
+      "type": "library",
+      "name": "libtirpc",
+      "version": "1.3.2-r0",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libtirpc@1.3.2-r0?distro=3.14.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "libtirpc"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.3.2-r0"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:434f871e66514b362185c2851543fc731400ff8ba17ca088cb35378dc9819e1c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libtirpc-conf@1.3.2-r0?distro=3.14.2",
+      "type": "library",
+      "name": "libtirpc-conf",
+      "version": "1.3.2-r0",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libtirpc-conf@1.3.2-r0?distro=3.14.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "libtirpc"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.3.2-r0"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:434f871e66514b362185c2851543fc731400ff8ba17ca088cb35378dc9819e1c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libuuid@2.37-r0?distro=3.14.2",
+      "type": "library",
+      "name": "libuuid",
+      "version": "2.37-r0",
+      "licenses": [
+        {
+          "expression": "GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libuuid@2.37-r0?distro=3.14.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "util-linux"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.37-r0"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:434f871e66514b362185c2851543fc731400ff8ba17ca088cb35378dc9819e1c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libverto@0.3.2-r0?distro=3.14.2",
+      "type": "library",
+      "name": "libverto",
+      "version": "0.3.2-r0",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libverto@0.3.2-r0?distro=3.14.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "libverto"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "0.3.2-r0"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:434f871e66514b362185c2851543fc731400ff8ba17ca088cb35378dc9819e1c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/musl@1.2.2-r3?distro=3.14.2",
+      "type": "library",
+      "name": "musl",
+      "version": "1.2.2-r3",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:apk/alpine/musl@1.2.2-r3?distro=3.14.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "musl"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.2.2-r3"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:e2eb06d8af8218cfec8210147357a68b7e13f7c485b991c288c2d01dc228bb68"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/musl-utils@1.2.2-r3?distro=3.14.2",
+      "type": "library",
+      "name": "musl-utils",
+      "version": "1.2.2-r3",
+      "licenses": [
+        {
+          "expression": "MIT BSD GPL2+"
+        }
+      ],
+      "purl": "pkg:apk/alpine/musl-utils@1.2.2-r3?distro=3.14.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "musl"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.2.2-r3"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:e2eb06d8af8218cfec8210147357a68b7e13f7c485b991c288c2d01dc228bb68"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/ncurses-libs@6.2_p20210612-r0?distro=3.14.2",
+      "type": "library",
+      "name": "ncurses-libs",
+      "version": "6.2_p20210612-r0",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:apk/alpine/ncurses-libs@6.2_p20210612-r0?distro=3.14.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "ncurses"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "6.2_p20210612-r0"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:434f871e66514b362185c2851543fc731400ff8ba17ca088cb35378dc9819e1c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/ncurses-terminfo-base@6.2_p20210612-r0?distro=3.14.2",
+      "type": "library",
+      "name": "ncurses-terminfo-base",
+      "version": "6.2_p20210612-r0",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:apk/alpine/ncurses-terminfo-base@6.2_p20210612-r0?distro=3.14.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "ncurses"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "6.2_p20210612-r0"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:434f871e66514b362185c2851543fc731400ff8ba17ca088cb35378dc9819e1c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/readline@8.1.0-r0?distro=3.14.2",
+      "type": "library",
+      "name": "readline",
+      "version": "8.1.0-r0",
+      "licenses": [
+        {
+          "expression": "GPL-2.0-or-later"
+        }
+      ],
+      "purl": "pkg:apk/alpine/readline@8.1.0-r0?distro=3.14.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "readline"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "8.1.0-r0"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:434f871e66514b362185c2851543fc731400ff8ba17ca088cb35378dc9819e1c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/scanelf@1.3.2-r0?distro=3.14.2",
+      "type": "library",
+      "name": "scanelf",
+      "version": "1.3.2-r0",
+      "licenses": [
+        {
+          "expression": "GPL-2.0-only"
+        }
+      ],
+      "purl": "pkg:apk/alpine/scanelf@1.3.2-r0?distro=3.14.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "pax-utils"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.3.2-r0"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:e2eb06d8af8218cfec8210147357a68b7e13f7c485b991c288c2d01dc228bb68"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/sqlite-libs@3.35.5-r0?distro=3.14.2",
+      "type": "library",
+      "name": "sqlite-libs",
+      "version": "3.35.5-r0",
+      "licenses": [
+        {
+          "expression": "Public-Domain"
+        }
+      ],
+      "purl": "pkg:apk/alpine/sqlite-libs@3.35.5-r0?distro=3.14.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "sqlite"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "3.35.5-r0"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:434f871e66514b362185c2851543fc731400ff8ba17ca088cb35378dc9819e1c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/ssl_client@1.33.1-r3?distro=3.14.2",
+      "type": "library",
+      "name": "ssl_client",
+      "version": "1.33.1-r3",
+      "licenses": [
+        {
+          "expression": "GPL-2.0-only"
+        }
+      ],
+      "purl": "pkg:apk/alpine/ssl_client@1.33.1-r3?distro=3.14.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "busybox"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.33.1-r3"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:e2eb06d8af8218cfec8210147357a68b7e13f7c485b991c288c2d01dc228bb68"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/xz-libs@5.2.5-r0?distro=3.14.2",
+      "type": "library",
+      "name": "xz-libs",
+      "version": "5.2.5-r0",
+      "licenses": [
+        {
+          "expression": "GPL-2.0-or-later AND Public-Domain AND LGPL-2.1-or-later"
+        }
+      ],
+      "purl": "pkg:apk/alpine/xz-libs@5.2.5-r0?distro=3.14.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "xz"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "5.2.5-r0"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:434f871e66514b362185c2851543fc731400ff8ba17ca088cb35378dc9819e1c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/zlib@1.2.11-r3?distro=3.14.2",
+      "type": "library",
+      "name": "zlib",
+      "version": "1.2.11-r3",
+      "licenses": [
+        {
+          "expression": "Zlib"
+        }
+      ],
+      "purl": "pkg:apk/alpine/zlib@1.2.11-r3?distro=3.14.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "zlib"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.2.11-r3"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:e2eb06d8af8218cfec8210147357a68b7e13f7c485b991c288c2d01dc228bb68"
+        }
+      ]
+    },
+    {
+      "bom-ref": "0e4890cd-6d4a-4821-ab41-ce695eae59b9",
+      "type": "operating-system",
+      "name": "alpine",
+      "version": "3.14.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "alpine"
+        },
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "os-pkgs"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/certifi@2022.5.18.1?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fcertifi-2022.5.18.1.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "certifi",
+      "version": "2022.5.18.1",
+      "licenses": [
+        {
+          "expression": "MPL-2.0"
+        }
+      ],
+      "purl": "pkg:pypi/certifi@2022.5.18.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/certifi-2022.5.18.1.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/httpcore@0.14.7?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fhttpcore-0.14.7.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "httpcore",
+      "version": "0.14.7",
+      "licenses": [
+        {
+          "expression": "BSD"
+        }
+      ],
+      "purl": "pkg:pypi/httpcore@0.14.7",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/httpcore-0.14.7.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/hyperframe@6.0.1?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fhyperframe-6.0.1.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "hyperframe",
+      "version": "6.0.1",
+      "licenses": [
+        {
+          "expression": "MIT License"
+        }
+      ],
+      "purl": "pkg:pypi/hyperframe@6.0.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/hyperframe-6.0.1.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/multidict@6.0.2?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fmultidict-6.0.2.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "multidict",
+      "version": "6.0.2",
+      "licenses": [
+        {
+          "expression": "Apache 2"
+        }
+      ],
+      "purl": "pkg:pypi/multidict@6.0.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/multidict-6.0.2.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/python-dotenv@0.20.0?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fpython_dotenv-0.20.0.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "python-dotenv",
+      "version": "0.20.0",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause"
+        }
+      ],
+      "purl": "pkg:pypi/python-dotenv@0.20.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/python_dotenv-0.20.0.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/readerwriterlock@1.0.9?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Freaderwriterlock-1.0.9.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "readerwriterlock",
+      "version": "1.0.9",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:pypi/readerwriterlock@1.0.9",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/readerwriterlock-1.0.9.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/cryptography@37.0.2?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fcryptography-37.0.2.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "cryptography",
+      "version": "37.0.2",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause OR Apache-2.0"
+        }
+      ],
+      "purl": "pkg:pypi/cryptography@37.0.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/cryptography-37.0.2.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/pydantic@1.8.2?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fpydantic-1.8.2.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "pydantic",
+      "version": "1.8.2",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:pypi/pydantic@1.8.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/pydantic-1.8.2.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/requests@2.27.1?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Frequests-2.27.1.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "requests",
+      "version": "2.27.1",
+      "licenses": [
+        {
+          "expression": "Apache 2.0"
+        }
+      ],
+      "purl": "pkg:pypi/requests@2.27.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/requests-2.27.1.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/sentry-sdk@1.5.12?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fsentry_sdk-1.5.12.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "sentry-sdk",
+      "version": "1.5.12",
+      "licenses": [
+        {
+          "expression": "BSD"
+        }
+      ],
+      "purl": "pkg:pypi/sentry-sdk@1.5.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/sentry_sdk-1.5.12.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/zipp@3.8.0?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fzipp-3.8.0.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "zipp",
+      "version": "3.8.0",
+      "licenses": [
+        {
+          "expression": "UNKNOWN"
+        }
+      ],
+      "purl": "pkg:pypi/zipp@3.8.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/zipp-3.8.0.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/setuptools@57.4.0?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fsetuptools-57.4.0.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "setuptools",
+      "version": "57.4.0",
+      "licenses": [
+        {
+          "expression": "UNKNOWN"
+        }
+      ],
+      "purl": "pkg:pypi/setuptools@57.4.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/setuptools-57.4.0.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:317fce04ba84d7cf5f07e43366f156f623189c745c1a45dbcf855b7591b75abb"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/wheel@0.37.0?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fwheel-0.37.0.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "wheel",
+      "version": "0.37.0",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:pypi/wheel@0.37.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/wheel-0.37.0.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:317fce04ba84d7cf5f07e43366f156f623189c745c1a45dbcf855b7591b75abb"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/cffi@1.15.0?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fcffi-1.15.0.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "cffi",
+      "version": "1.15.0",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:pypi/cffi@1.15.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/cffi-1.15.0.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/hpack@4.0.0?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fhpack-4.0.0.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "hpack",
+      "version": "4.0.0",
+      "licenses": [
+        {
+          "expression": "MIT License"
+        }
+      ],
+      "purl": "pkg:pypi/hpack@4.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/hpack-4.0.0.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/python-dateutil@2.8.2?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fpython_dateutil-2.8.2.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "python-dateutil",
+      "version": "2.8.2",
+      "licenses": [
+        {
+          "expression": "Dual License"
+        }
+      ],
+      "purl": "pkg:pypi/python-dateutil@2.8.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/python_dateutil-2.8.2.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/jsonref@0.2?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fjsonref-0.2.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "jsonref",
+      "version": "0.2",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:pypi/jsonref@0.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/jsonref-0.2.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/pendulum@2.1.2?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fpendulum-2.1.2.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "pendulum",
+      "version": "2.1.2",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:pypi/pendulum@2.1.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/pendulum-2.1.2.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/wrapt@1.14.1?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fwrapt-1.14.1.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "wrapt",
+      "version": "1.14.1",
+      "licenses": [
+        {
+          "expression": "BSD"
+        }
+      ],
+      "purl": "pkg:pypi/wrapt@1.14.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/wrapt-1.14.1.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/deprecated@1.2.13?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2FDeprecated-1.2.13.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "Deprecated",
+      "version": "1.2.13",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:pypi/deprecated@1.2.13",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/Deprecated-1.2.13.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/h2@4.1.0?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fh2-4.1.0.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "h2",
+      "version": "4.1.0",
+      "licenses": [
+        {
+          "expression": "MIT License"
+        }
+      ],
+      "purl": "pkg:pypi/h2@4.1.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/h2-4.1.0.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/importlib-metadata@4.11.4?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fimportlib_metadata-4.11.4.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "importlib-metadata",
+      "version": "4.11.4",
+      "purl": "pkg:pypi/importlib-metadata@4.11.4",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/importlib_metadata-4.11.4.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/sniffio@1.2.0?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fsniffio-1.2.0.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "sniffio",
+      "version": "1.2.0",
+      "licenses": [
+        {
+          "expression": "MIT -or- Apache License 2.0"
+        }
+      ],
+      "purl": "pkg:pypi/sniffio@1.2.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/sniffio-1.2.0.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/source-firebolt@0.0.0?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fsource_firebolt-0.0.0.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "source-firebolt",
+      "version": "0.0.0",
+      "licenses": [
+        {
+          "expression": "UNKNOWN"
+        }
+      ],
+      "purl": "pkg:pypi/source-firebolt@0.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/source_firebolt-0.0.0.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/urllib3@1.26.9?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Furllib3-1.26.9.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "urllib3",
+      "version": "1.26.9",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:pypi/urllib3@1.26.9",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/urllib3-1.26.9.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/vcrpy@4.1.1?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fvcrpy-4.1.1.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "vcrpy",
+      "version": "4.1.1",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:pypi/vcrpy@4.1.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/vcrpy-4.1.1.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/yarl@1.7.2?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fyarl-1.7.2.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "yarl",
+      "version": "1.7.2",
+      "licenses": [
+        {
+          "expression": "Apache 2"
+        }
+      ],
+      "purl": "pkg:pypi/yarl@1.7.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/yarl-1.7.2.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/pip@21.2.4?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fpip-21.2.4.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "pip",
+      "version": "21.2.4",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:pypi/pip@21.2.4",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/pip-21.2.4.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:317fce04ba84d7cf5f07e43366f156f623189c745c1a45dbcf855b7591b75abb"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/airbyte-cdk@0.1.53?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fairbyte_cdk-0.1.53.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "airbyte-cdk",
+      "version": "0.1.53",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:pypi/airbyte-cdk@0.1.53",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/airbyte_cdk-0.1.53.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/appdirs@1.4.4?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fappdirs-1.4.4.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "appdirs",
+      "version": "1.4.4",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:pypi/appdirs@1.4.4",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/appdirs-1.4.4.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/firebolt-sdk@0.7.1?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Ffirebolt_sdk-0.7.1.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "firebolt-sdk",
+      "version": "0.7.1",
+      "licenses": [
+        {
+          "expression": "Apache-2.0"
+        }
+      ],
+      "purl": "pkg:pypi/firebolt-sdk@0.7.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/firebolt_sdk-0.7.1.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/h11@0.12.0?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fh11-0.12.0.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "h11",
+      "version": "0.12.0",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:pypi/h11@0.12.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/h11-0.12.0.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/pycparser@2.21?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fpycparser-2.21.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "pycparser",
+      "version": "2.21",
+      "licenses": [
+        {
+          "expression": "BSD"
+        }
+      ],
+      "purl": "pkg:pypi/pycparser@2.21",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/pycparser-2.21.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/sqlparse@0.4.2?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fsqlparse-0.4.2.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "sqlparse",
+      "version": "0.4.2",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause"
+        }
+      ],
+      "purl": "pkg:pypi/sqlparse@0.4.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/sqlparse-0.4.2.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/aiorwlock@1.1.0?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Faiorwlock-1.1.0.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "aiorwlock",
+      "version": "1.1.0",
+      "licenses": [
+        {
+          "expression": "Apache 2"
+        }
+      ],
+      "purl": "pkg:pypi/aiorwlock@1.1.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/aiorwlock-1.1.0.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/appdirs-stubs@0.1.0?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fappdirs_stubs-0.1.0.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "appdirs-stubs",
+      "version": "0.1.0",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:pypi/appdirs-stubs@0.1.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/appdirs_stubs-0.1.0.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/charset-normalizer@2.0.12?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fcharset_normalizer-2.0.12.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "charset-normalizer",
+      "version": "2.0.12",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:pypi/charset-normalizer@2.0.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/charset_normalizer-2.0.12.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/httpx@0.21.3?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fhttpx-0.21.3.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "httpx",
+      "version": "0.21.3",
+      "licenses": [
+        {
+          "expression": "BSD"
+        }
+      ],
+      "purl": "pkg:pypi/httpx@0.21.3",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/httpx-0.21.3.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/idna@3.3?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fidna-3.3.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "idna",
+      "version": "3.3",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause"
+        }
+      ],
+      "purl": "pkg:pypi/idna@3.3",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/idna-3.3.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/jsonschema@3.2.0?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fjsonschema-3.2.0.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "jsonschema",
+      "version": "3.2.0",
+      "licenses": [
+        {
+          "expression": "UNKNOWN"
+        }
+      ],
+      "purl": "pkg:pypi/jsonschema@3.2.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/jsonschema-3.2.0.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/pytzdata@2020.1?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fpytzdata-2020.1.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "pytzdata",
+      "version": "2020.1",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:pypi/pytzdata@2020.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/pytzdata-2020.1.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/pyyaml@5.4.1?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2FPyYAML-5.4.1.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "PyYAML",
+      "version": "5.4.1",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:pypi/pyyaml@5.4.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/PyYAML-5.4.1.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/anyio@3.6.1?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fanyio-3.6.1.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "anyio",
+      "version": "3.6.1",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:pypi/anyio@3.6.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/anyio-3.6.1.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/async-property@0.2.1?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fasync_property-0.2.1.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "async-property",
+      "version": "0.2.1",
+      "licenses": [
+        {
+          "expression": "MIT license"
+        }
+      ],
+      "purl": "pkg:pypi/async-property@0.2.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/async_property-0.2.1.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/attrs@21.4.0?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fattrs-21.4.0.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "attrs",
+      "version": "21.4.0",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:pypi/attrs@21.4.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/attrs-21.4.0.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/backoff@2.0.1?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fbackoff-2.0.1.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "backoff",
+      "version": "2.0.1",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:pypi/backoff@2.0.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/backoff-2.0.1.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/dpath@2.0.6?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fdpath-2.0.6.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "dpath",
+      "version": "2.0.6",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:pypi/dpath@2.0.6",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/dpath-2.0.6.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/pyrsistent@0.18.1?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fpyrsistent-0.18.1.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "pyrsistent",
+      "version": "0.18.1",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:pypi/pyrsistent@0.18.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/pyrsistent-0.18.1.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/rfc3986@1.5.0?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Frfc3986-1.5.0.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "rfc3986",
+      "version": "1.5.0",
+      "licenses": [
+        {
+          "expression": "Apache 2.0"
+        }
+      ],
+      "purl": "pkg:pypi/rfc3986@1.5.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/rfc3986-1.5.0.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/six@1.16.0?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fsix-1.16.0.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "six",
+      "version": "1.16.0",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:pypi/six@1.16.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/six-1.16.0.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/typing-extensions@4.2.0?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Ftyping_extensions-4.2.0.dist-info%2FMETADATA",
+      "type": "library",
+      "name": "typing_extensions",
+      "version": "4.2.0",
+      "purl": "pkg:pypi/typing-extensions@4.2.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.7/site-packages/typing_extensions-4.2.0.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:9326cbbcf8142704eb877cccaa614146f66832e2fafc763434f1084a9c08fa50"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "0e4890cd-6d4a-4821-ab41-ce695eae59b9",
+      "dependsOn": [
+        "pkg:apk/alpine/.python-rundeps@20210828.000534?distro=3.14.2",
+        "pkg:apk/alpine/alpine-baselayout@3.2.0-r16?distro=3.14.2",
+        "pkg:apk/alpine/alpine-keys@2.3-r1?distro=3.14.2",
+        "pkg:apk/alpine/apk-tools@2.12.7-r0?distro=3.14.2",
+        "pkg:apk/alpine/bash@5.1.16-r0?distro=3.14.2",
+        "pkg:apk/alpine/busybox@1.33.1-r3?distro=3.14.2",
+        "pkg:apk/alpine/ca-certificates@20191127-r5?distro=3.14.2",
+        "pkg:apk/alpine/ca-certificates-bundle@20191127-r5?distro=3.14.2",
+        "pkg:apk/alpine/expat@2.4.1-r0?distro=3.14.2",
+        "pkg:apk/alpine/gdbm@1.19-r0?distro=3.14.2",
+        "pkg:apk/alpine/keyutils-libs@1.6.3-r0?distro=3.14.2",
+        "pkg:apk/alpine/krb5-conf@1.0-r2?distro=3.14.2",
+        "pkg:apk/alpine/krb5-libs@1.18.4-r0?distro=3.14.2",
+        "pkg:apk/alpine/libbz2@1.0.8-r1?distro=3.14.2",
+        "pkg:apk/alpine/libc-utils@0.7.2-r3?distro=3.14.2",
+        "pkg:apk/alpine/libcom_err@1.46.2-r0?distro=3.14.2",
+        "pkg:apk/alpine/libcrypto1.1@1.1.1l-r0?distro=3.14.2",
+        "pkg:apk/alpine/libffi@3.3-r2?distro=3.14.2",
+        "pkg:apk/alpine/libintl@0.21-r0?distro=3.14.2",
+        "pkg:apk/alpine/libnsl@1.3.0-r0?distro=3.14.2",
+        "pkg:apk/alpine/libretls@3.3.3p1-r2?distro=3.14.2",
+        "pkg:apk/alpine/libssl1.1@1.1.1l-r0?distro=3.14.2",
+        "pkg:apk/alpine/libtirpc@1.3.2-r0?distro=3.14.2",
+        "pkg:apk/alpine/libtirpc-conf@1.3.2-r0?distro=3.14.2",
+        "pkg:apk/alpine/libuuid@2.37-r0?distro=3.14.2",
+        "pkg:apk/alpine/libverto@0.3.2-r0?distro=3.14.2",
+        "pkg:apk/alpine/musl@1.2.2-r3?distro=3.14.2",
+        "pkg:apk/alpine/musl-utils@1.2.2-r3?distro=3.14.2",
+        "pkg:apk/alpine/ncurses-libs@6.2_p20210612-r0?distro=3.14.2",
+        "pkg:apk/alpine/ncurses-terminfo-base@6.2_p20210612-r0?distro=3.14.2",
+        "pkg:apk/alpine/readline@8.1.0-r0?distro=3.14.2",
+        "pkg:apk/alpine/scanelf@1.3.2-r0?distro=3.14.2",
+        "pkg:apk/alpine/sqlite-libs@3.35.5-r0?distro=3.14.2",
+        "pkg:apk/alpine/ssl_client@1.33.1-r3?distro=3.14.2",
+        "pkg:apk/alpine/xz-libs@5.2.5-r0?distro=3.14.2",
+        "pkg:apk/alpine/zlib@1.2.11-r3?distro=3.14.2"
+      ]
+    },
+    {
+      "ref": "pkg:oci/airbyte-source-firebolt@sha256:8b7b51eb2cf103738efc1c688c189bfa7127e31ce3cd3b93eb30a6d8e097e7b6?repository_url=ghcr.io%2Ffirebolt-db%2Fairbyte-source-firebolt&arch=amd64",
+      "dependsOn": [
+        "0e4890cd-6d4a-4821-ab41-ce695eae59b9",
+        "pkg:pypi/certifi@2022.5.18.1?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fcertifi-2022.5.18.1.dist-info%2FMETADATA",
+        "pkg:pypi/httpcore@0.14.7?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fhttpcore-0.14.7.dist-info%2FMETADATA",
+        "pkg:pypi/hyperframe@6.0.1?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fhyperframe-6.0.1.dist-info%2FMETADATA",
+        "pkg:pypi/multidict@6.0.2?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fmultidict-6.0.2.dist-info%2FMETADATA",
+        "pkg:pypi/python-dotenv@0.20.0?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fpython_dotenv-0.20.0.dist-info%2FMETADATA",
+        "pkg:pypi/readerwriterlock@1.0.9?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Freaderwriterlock-1.0.9.dist-info%2FMETADATA",
+        "pkg:pypi/cryptography@37.0.2?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fcryptography-37.0.2.dist-info%2FMETADATA",
+        "pkg:pypi/pydantic@1.8.2?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fpydantic-1.8.2.dist-info%2FMETADATA",
+        "pkg:pypi/requests@2.27.1?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Frequests-2.27.1.dist-info%2FMETADATA",
+        "pkg:pypi/sentry-sdk@1.5.12?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fsentry_sdk-1.5.12.dist-info%2FMETADATA",
+        "pkg:pypi/zipp@3.8.0?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fzipp-3.8.0.dist-info%2FMETADATA",
+        "pkg:pypi/setuptools@57.4.0?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fsetuptools-57.4.0.dist-info%2FMETADATA",
+        "pkg:pypi/wheel@0.37.0?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fwheel-0.37.0.dist-info%2FMETADATA",
+        "pkg:pypi/cffi@1.15.0?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fcffi-1.15.0.dist-info%2FMETADATA",
+        "pkg:pypi/hpack@4.0.0?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fhpack-4.0.0.dist-info%2FMETADATA",
+        "pkg:pypi/python-dateutil@2.8.2?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fpython_dateutil-2.8.2.dist-info%2FMETADATA",
+        "pkg:pypi/jsonref@0.2?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fjsonref-0.2.dist-info%2FMETADATA",
+        "pkg:pypi/pendulum@2.1.2?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fpendulum-2.1.2.dist-info%2FMETADATA",
+        "pkg:pypi/wrapt@1.14.1?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fwrapt-1.14.1.dist-info%2FMETADATA",
+        "pkg:pypi/deprecated@1.2.13?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2FDeprecated-1.2.13.dist-info%2FMETADATA",
+        "pkg:pypi/h2@4.1.0?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fh2-4.1.0.dist-info%2FMETADATA",
+        "pkg:pypi/importlib-metadata@4.11.4?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fimportlib_metadata-4.11.4.dist-info%2FMETADATA",
+        "pkg:pypi/sniffio@1.2.0?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fsniffio-1.2.0.dist-info%2FMETADATA",
+        "pkg:pypi/source-firebolt@0.0.0?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fsource_firebolt-0.0.0.dist-info%2FMETADATA",
+        "pkg:pypi/urllib3@1.26.9?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Furllib3-1.26.9.dist-info%2FMETADATA",
+        "pkg:pypi/vcrpy@4.1.1?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fvcrpy-4.1.1.dist-info%2FMETADATA",
+        "pkg:pypi/yarl@1.7.2?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fyarl-1.7.2.dist-info%2FMETADATA",
+        "pkg:pypi/pip@21.2.4?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fpip-21.2.4.dist-info%2FMETADATA",
+        "pkg:pypi/airbyte-cdk@0.1.53?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fairbyte_cdk-0.1.53.dist-info%2FMETADATA",
+        "pkg:pypi/appdirs@1.4.4?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fappdirs-1.4.4.dist-info%2FMETADATA",
+        "pkg:pypi/firebolt-sdk@0.7.1?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Ffirebolt_sdk-0.7.1.dist-info%2FMETADATA",
+        "pkg:pypi/h11@0.12.0?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fh11-0.12.0.dist-info%2FMETADATA",
+        "pkg:pypi/pycparser@2.21?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fpycparser-2.21.dist-info%2FMETADATA",
+        "pkg:pypi/sqlparse@0.4.2?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fsqlparse-0.4.2.dist-info%2FMETADATA",
+        "pkg:pypi/aiorwlock@1.1.0?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Faiorwlock-1.1.0.dist-info%2FMETADATA",
+        "pkg:pypi/appdirs-stubs@0.1.0?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fappdirs_stubs-0.1.0.dist-info%2FMETADATA",
+        "pkg:pypi/charset-normalizer@2.0.12?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fcharset_normalizer-2.0.12.dist-info%2FMETADATA",
+        "pkg:pypi/httpx@0.21.3?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fhttpx-0.21.3.dist-info%2FMETADATA",
+        "pkg:pypi/idna@3.3?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fidna-3.3.dist-info%2FMETADATA",
+        "pkg:pypi/jsonschema@3.2.0?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fjsonschema-3.2.0.dist-info%2FMETADATA",
+        "pkg:pypi/pytzdata@2020.1?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fpytzdata-2020.1.dist-info%2FMETADATA",
+        "pkg:pypi/pyyaml@5.4.1?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2FPyYAML-5.4.1.dist-info%2FMETADATA",
+        "pkg:pypi/anyio@3.6.1?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fanyio-3.6.1.dist-info%2FMETADATA",
+        "pkg:pypi/async-property@0.2.1?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fasync_property-0.2.1.dist-info%2FMETADATA",
+        "pkg:pypi/attrs@21.4.0?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fattrs-21.4.0.dist-info%2FMETADATA",
+        "pkg:pypi/backoff@2.0.1?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fbackoff-2.0.1.dist-info%2FMETADATA",
+        "pkg:pypi/dpath@2.0.6?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fdpath-2.0.6.dist-info%2FMETADATA",
+        "pkg:pypi/pyrsistent@0.18.1?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fpyrsistent-0.18.1.dist-info%2FMETADATA",
+        "pkg:pypi/rfc3986@1.5.0?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Frfc3986-1.5.0.dist-info%2FMETADATA",
+        "pkg:pypi/six@1.16.0?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Fsix-1.16.0.dist-info%2FMETADATA",
+        "pkg:pypi/typing-extensions@4.2.0?file_path=usr%2Flocal%2Flib%2Fpython3.7%2Fsite-packages%2Ftyping_extensions-4.2.0.dist-info%2FMETADATA"
+      ]
+    }
+  ],
+  "vulnerabilities": [
+    {
+      "id": "CVE-2022-28391",
+      "source": {
+        "name": "alpine",
+        "url": "https://secdb.alpinelinux.org/"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "critical"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 7.5,
+          "severity": "high",
+          "method": "CVSSv2",
+          "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 9.8,
+          "severity": "critical",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 6.5,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "low"
+        }
+      ],
+      "cwes": null,
+      "description": "BusyBox through 1.35.0 allows remote attackers to execute arbitrary code if netstat is used to print a DNS PTR record's value to a VT compatible terminal. Alternatively, the attacker could choose to change the terminal's colors.",
+      "advisories": [
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2022-28391"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-28391"
+        },
+        {
+          "url": "https://git.alpinelinux.org/aports/plain/main/busybox/0001-libbb-sockaddr2str-ensure-only-printable-characters-.patch"
+        },
+        {
+          "url": "https://git.alpinelinux.org/aports/plain/main/busybox/0002-nslookup-sanitize-all-printed-strings-with-printable.patch"
+        },
+        {
+          "url": "https://gitlab.alpinelinux.org/alpine/aports/-/issues/13661"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-28391"
+        }
+      ],
+      "published": "2022-04-03 21:15:00 +0000 UTC",
+      "updated": "2022-04-12 17:31:00 +0000 UTC",
+      "affects": [
+        {
+          "ref": "pkg:apk/alpine/busybox@1.33.1-r3?distro=3.14.2",
+          "versions": [
+            {
+              "version": "1.33.1-r3",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:apk/alpine/ssl_client@1.33.1-r3?distro=3.14.2",
+          "versions": [
+            {
+              "version": "1.33.1-r3",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2022-25315",
+      "source": {
+        "name": "alpine",
+        "url": "https://secdb.alpinelinux.org/"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "alma"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "amazon"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "critical"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 7.5,
+          "severity": "high",
+          "method": "CVSSv2",
+          "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 9.8,
+          "severity": "critical",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
+            "name": "oracle-oval"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "photon"
+          },
+          "severity": "critical"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 9.8,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "medium"
+        }
+      ],
+      "cwes": [190],
+      "description": "In Expat (aka libexpat) before 2.4.5, there is an integer overflow in storeRawNames.",
+      "advisories": [
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2022/02/19/1"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2022-25315"
+        },
+        {
+          "url": "https://blog.hartwork.org/posts/expat-2-4-5-released/"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-25315"
+        },
+        {
+          "url": "https://github.com/libexpat/libexpat/pull/559"
+        },
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2022-25315.html"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-9359.html"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2022/03/msg00007.html"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3UFRBA3UQVIQKXTBUQXDWQOVWNBKLERU/"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/Y27XO3JMKAOMQZVPS3B4MJGEAHCZF5OM/"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-25315"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20220303-0008/"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-5320-1"
+        },
+        {
+          "url": "https://www.debian.org/security/2022/dsa-5085"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpuapr2022.html"
+        }
+      ],
+      "published": "2022-02-18 05:15:00 +0000 UTC",
+      "updated": "2022-04-27 19:12:00 +0000 UTC",
+      "affects": [
+        {
+          "ref": "pkg:apk/alpine/expat@2.4.1-r0?distro=3.14.2",
+          "versions": [
+            {
+              "version": "2.4.1-r0",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2022-25314",
+      "source": {
+        "name": "alpine",
+        "url": "https://secdb.alpinelinux.org/"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 5,
+          "severity": "medium",
+          "method": "CVSSv2",
+          "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 7.5,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "source": {
+            "name": "photon"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 7.5,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "medium"
+        }
+      ],
+      "cwes": [190],
+      "description": "In Expat (aka libexpat) before 2.4.5, there is an integer overflow in copyString.",
+      "advisories": [
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2022/02/19/1"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2022-25314"
+        },
+        {
+          "url": "https://blog.hartwork.org/posts/expat-2-4-5-released/"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-25314"
+        },
+        {
+          "url": "https://github.com/libexpat/libexpat/pull/560"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3UFRBA3UQVIQKXTBUQXDWQOVWNBKLERU/"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/Y27XO3JMKAOMQZVPS3B4MJGEAHCZF5OM/"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-25314"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20220303-0008/"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-5320-1"
+        },
+        {
+          "url": "https://www.debian.org/security/2022/dsa-5085"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpuapr2022.html"
+        }
+      ],
+      "published": "2022-02-18 05:15:00 +0000 UTC",
+      "updated": "2022-04-27 19:02:00 +0000 UTC",
+      "affects": [
+        {
+          "ref": "pkg:apk/alpine/expat@2.4.1-r0?distro=3.14.2",
+          "versions": [
+            {
+              "version": "2.4.1-r0",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2022-25313",
+      "source": {
+        "name": "alpine",
+        "url": "https://secdb.alpinelinux.org/"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 4.3,
+          "severity": "medium",
+          "method": "CVSSv2",
+          "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 6.5,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+        },
+        {
+          "source": {
+            "name": "photon"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 6.5,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "medium"
+        }
+      ],
+      "cwes": [400],
+      "description": "In Expat (aka libexpat) before 2.4.5, an attacker can trigger stack exhaustion in build_model via a large nesting depth in the DTD element.",
+      "advisories": [
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2022/02/19/1"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2022-25313"
+        },
+        {
+          "url": "https://blog.hartwork.org/posts/expat-2-4-5-released/"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-25313"
+        },
+        {
+          "url": "https://github.com/libexpat/libexpat/pull/558"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2022/03/msg00007.html"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3UFRBA3UQVIQKXTBUQXDWQOVWNBKLERU/"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/Y27XO3JMKAOMQZVPS3B4MJGEAHCZF5OM/"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-25313"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20220303-0008/"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-5320-1"
+        },
+        {
+          "url": "https://www.debian.org/security/2022/dsa-5085"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpuapr2022.html"
+        }
+      ],
+      "published": "2022-02-18 05:15:00 +0000 UTC",
+      "updated": "2022-04-27 19:12:00 +0000 UTC",
+      "affects": [
+        {
+          "ref": "pkg:apk/alpine/expat@2.4.1-r0?distro=3.14.2",
+          "versions": [
+            {
+              "version": "2.4.1-r0",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2022-25236",
+      "source": {
+        "name": "alpine",
+        "url": "https://secdb.alpinelinux.org/"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "alma"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "amazon"
+          },
+          "severity": "critical"
+        },
+        {
+          "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "critical"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 7.5,
+          "severity": "high",
+          "method": "CVSSv2",
+          "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 9.8,
+          "severity": "critical",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
+            "name": "oracle-oval"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "photon"
+          },
+          "severity": "critical"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 9.8,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "high"
+        }
+      ],
+      "cwes": [668],
+      "description": "xmlparse.c in Expat (aka libexpat) before 2.4.5 allows attackers to insert namespace-separator characters into namespace URIs.",
+      "advisories": [
+        {
+          "url": "http://packetstormsecurity.com/files/167238/Zoom-XMPP-Stanza-Smuggling-Remote-Code-Execution.html"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2022/02/19/1"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2022-25236"
+        },
+        {
+          "url": "https://blog.hartwork.org/posts/expat-2-4-5-released/"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-25236"
+        },
+        {
+          "url": "https://github.com/libexpat/libexpat/pull/561"
+        },
+        {
+          "url": "https://github.com/libexpat/libexpat/pull/561/commits/2de077423fb22750ebea599677d523b53cb93b1d (test)"
+        },
+        {
+          "url": "https://github.com/libexpat/libexpat/pull/561/commits/a2fe525e660badd64b6c557c2b1ec26ddc07f6e4 (fix)"
+        },
+        {
+          "url": "https://github.com/libexpat/libexpat/pull/577"
+        },
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2022-25236.html"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-9359.html"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2022/03/msg00007.html"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3UFRBA3UQVIQKXTBUQXDWQOVWNBKLERU/"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/Y27XO3JMKAOMQZVPS3B4MJGEAHCZF5OM/"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-25236"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20220303-0008/"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-5288-1"
+        },
+        {
+          "url": "https://www.debian.org/security/2022/dsa-5085"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpuapr2022.html"
+        }
+      ],
+      "published": "2022-02-16 01:15:00 +0000 UTC",
+      "updated": "2022-05-24 20:15:00 +0000 UTC",
+      "affects": [
+        {
+          "ref": "pkg:apk/alpine/expat@2.4.1-r0?distro=3.14.2",
+          "versions": [
+            {
+              "version": "2.4.1-r0",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2022-25235",
+      "source": {
+        "name": "alpine",
+        "url": "https://secdb.alpinelinux.org/"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "alma"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "amazon"
+          },
+          "severity": "critical"
+        },
+        {
+          "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "critical"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 7.5,
+          "severity": "high",
+          "method": "CVSSv2",
+          "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 9.8,
+          "severity": "critical",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
+            "name": "oracle-oval"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "photon"
+          },
+          "severity": "critical"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 9.8,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "high"
+        }
+      ],
+      "cwes": [116],
+      "description": "xmltok_impl.c in Expat (aka libexpat) before 2.4.5 lacks certain validation of encoding, such as checks for whether a UTF-8 character is valid in a certain context.",
+      "advisories": [
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2022/02/19/1"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2022-25235"
+        },
+        {
+          "url": "https://blog.hartwork.org/posts/expat-2-4-5-released/"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-25235"
+        },
+        {
+          "url": "https://github.com/libexpat/libexpat/pull/562"
+        },
+        {
+          "url": "https://github.com/libexpat/libexpat/pull/562/commits/367ae600b48d74261bbc339b17e9318424049791 (fix)"
+        },
+        {
+          "url": "https://github.com/libexpat/libexpat/pull/562/commits/97cfdc3fa7dca759880d81e371901f4620279106 (tests)"
+        },
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2022-25235.html"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-9359.html"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2022/03/msg00007.html"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3UFRBA3UQVIQKXTBUQXDWQOVWNBKLERU/"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/Y27XO3JMKAOMQZVPS3B4MJGEAHCZF5OM/"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-25235"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20220303-0008/"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-5288-1"
+        },
+        {
+          "url": "https://www.debian.org/security/2022/dsa-5085"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpuapr2022.html"
+        }
+      ],
+      "published": "2022-02-16 01:15:00 +0000 UTC",
+      "updated": "2022-04-27 19:01:00 +0000 UTC",
+      "affects": [
+        {
+          "ref": "pkg:apk/alpine/expat@2.4.1-r0?distro=3.14.2",
+          "versions": [
+            {
+              "version": "2.4.1-r0",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2022-23990",
+      "source": {
+        "name": "alpine",
+        "url": "https://secdb.alpinelinux.org/"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "critical"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 7.5,
+          "severity": "high",
+          "method": "CVSSv2",
+          "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 9.8,
+          "severity": "critical",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
+            "name": "oracle-oval"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "photon"
+          },
+          "severity": "critical"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 9.8,
+          "severity": "low",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "medium"
+        }
+      ],
+      "cwes": [190],
+      "description": "Expat (aka libexpat) before 2.4.4 has an integer overflow in the doProlog function.",
+      "advisories": [
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2022-23990"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23990"
+        },
+        {
+          "url": "https://github.com/libexpat/libexpat/pull/551"
+        },
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2022-23990.html"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-9232.html"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/34NXVL2RZC2YZRV74ZQ3RNFB7WCEUP7D/"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/R7FF2UH7MPXKTADYSJUAHI2Y5UHBSHUH/"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-23990"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-5288-1"
+        },
+        {
+          "url": "https://www.debian.org/security/2022/dsa-5073"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpuapr2022.html"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2022-05"
+        }
+      ],
+      "published": "2022-01-26 19:15:00 +0000 UTC",
+      "updated": "2022-04-27 18:58:00 +0000 UTC",
+      "affects": [
+        {
+          "ref": "pkg:apk/alpine/expat@2.4.1-r0?distro=3.14.2",
+          "versions": [
+            {
+              "version": "2.4.1-r0",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2022-23852",
+      "source": {
+        "name": "alpine",
+        "url": "https://secdb.alpinelinux.org/"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "amazon"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "critical"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 7.5,
+          "severity": "high",
+          "method": "CVSSv2",
+          "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 9.8,
+          "severity": "critical",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
+            "name": "oracle-oval"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "photon"
+          },
+          "severity": "critical"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 9.8,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "medium"
+        }
+      ],
+      "cwes": [190],
+      "description": "Expat (aka libexpat) before 2.4.4 has a signed integer overflow in XML_GetBuffer, for configurations with a nonzero XML_CONTEXT_BYTES.",
+      "advisories": [
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2022-23852"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23852"
+        },
+        {
+          "url": "https://github.com/libexpat/libexpat/pull/550"
+        },
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2022-23852.html"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-1069.html"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2022/03/msg00007.html"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-23852"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20220217-0001/"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-5288-1"
+        },
+        {
+          "url": "https://www.debian.org/security/2022/dsa-5073"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpuapr2022.html"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2022-05"
+        }
+      ],
+      "published": "2022-01-24 02:15:00 +0000 UTC",
+      "updated": "2022-04-25 19:59:00 +0000 UTC",
+      "affects": [
+        {
+          "ref": "pkg:apk/alpine/expat@2.4.1-r0?distro=3.14.2",
+          "versions": [
+            {
+              "version": "2.4.1-r0",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2022-22827",
+      "source": {
+        "name": "alpine",
+        "url": "https://secdb.alpinelinux.org/"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 6.8,
+          "severity": "medium",
+          "method": "CVSSv2",
+          "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 8.8,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
+            "name": "oracle-oval"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "photon"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 8.8,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "medium"
+        }
+      ],
+      "cwes": [190],
+      "description": "storeAtts in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow.",
+      "advisories": [
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2022/01/17/3"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2022-22827"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22827"
+        },
+        {
+          "url": "https://github.com/libexpat/libexpat/pull/539"
+        },
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2022-22827.html"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-1069.html"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-22827"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-5288-1"
+        },
+        {
+          "url": "https://www.debian.org/security/2022/dsa-5073"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2022-05"
+        }
+      ],
+      "published": "2022-01-10 14:12:00 +0000 UTC",
+      "updated": "2022-02-25 18:50:00 +0000 UTC",
+      "affects": [
+        {
+          "ref": "pkg:apk/alpine/expat@2.4.1-r0?distro=3.14.2",
+          "versions": [
+            {
+              "version": "2.4.1-r0",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2022-22826",
+      "source": {
+        "name": "alpine",
+        "url": "https://secdb.alpinelinux.org/"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 6.8,
+          "severity": "medium",
+          "method": "CVSSv2",
+          "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 8.8,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
+            "name": "oracle-oval"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "photon"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 8.8,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "medium"
+        }
+      ],
+      "cwes": [190],
+      "description": "nextScaffoldPart in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow.",
+      "advisories": [
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2022/01/17/3"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2022-22826"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22826"
+        },
+        {
+          "url": "https://github.com/libexpat/libexpat/pull/539"
+        },
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2022-22826.html"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-1069.html"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-22826"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-5288-1"
+        },
+        {
+          "url": "https://www.debian.org/security/2022/dsa-5073"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2022-05"
+        }
+      ],
+      "published": "2022-01-10 14:12:00 +0000 UTC",
+      "updated": "2022-02-25 18:51:00 +0000 UTC",
+      "affects": [
+        {
+          "ref": "pkg:apk/alpine/expat@2.4.1-r0?distro=3.14.2",
+          "versions": [
+            {
+              "version": "2.4.1-r0",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2022-22825",
+      "source": {
+        "name": "alpine",
+        "url": "https://secdb.alpinelinux.org/"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 6.8,
+          "severity": "medium",
+          "method": "CVSSv2",
+          "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 8.8,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
+            "name": "oracle-oval"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "photon"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 8.8,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "medium"
+        }
+      ],
+      "cwes": [190],
+      "description": "lookup in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow.",
+      "advisories": [
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2022/01/17/3"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2022-22825"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22825"
+        },
+        {
+          "url": "https://github.com/libexpat/libexpat/pull/539"
+        },
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2022-22825.html"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-1069.html"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-22825"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-5288-1"
+        },
+        {
+          "url": "https://www.debian.org/security/2022/dsa-5073"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2022-05"
+        }
+      ],
+      "published": "2022-01-10 14:12:00 +0000 UTC",
+      "updated": "2022-02-25 18:50:00 +0000 UTC",
+      "affects": [
+        {
+          "ref": "pkg:apk/alpine/expat@2.4.1-r0?distro=3.14.2",
+          "versions": [
+            {
+              "version": "2.4.1-r0",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2022-22824",
+      "source": {
+        "name": "alpine",
+        "url": "https://secdb.alpinelinux.org/"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "critical"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 7.5,
+          "severity": "high",
+          "method": "CVSSv2",
+          "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 9.8,
+          "severity": "critical",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
+            "name": "oracle-oval"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "photon"
+          },
+          "severity": "critical"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 9.8,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "medium"
+        }
+      ],
+      "cwes": [190],
+      "description": "defineAttribute in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow.",
+      "advisories": [
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2022/01/17/3"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2022-22824"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22824"
+        },
+        {
+          "url": "https://github.com/libexpat/libexpat/pull/539"
+        },
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2022-22824.html"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-1069.html"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-22824"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-5288-1"
+        },
+        {
+          "url": "https://www.debian.org/security/2022/dsa-5073"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2022-05"
+        }
+      ],
+      "published": "2022-01-10 14:12:00 +0000 UTC",
+      "updated": "2022-02-25 18:49:00 +0000 UTC",
+      "affects": [
+        {
+          "ref": "pkg:apk/alpine/expat@2.4.1-r0?distro=3.14.2",
+          "versions": [
+            {
+              "version": "2.4.1-r0",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2022-22823",
+      "source": {
+        "name": "alpine",
+        "url": "https://secdb.alpinelinux.org/"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "critical"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 7.5,
+          "severity": "high",
+          "method": "CVSSv2",
+          "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 9.8,
+          "severity": "critical",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
+            "name": "oracle-oval"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "photon"
+          },
+          "severity": "critical"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 9.8,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "medium"
+        }
+      ],
+      "cwes": [190],
+      "description": "build_model in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow.",
+      "advisories": [
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2022/01/17/3"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2022-22823"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22823"
+        },
+        {
+          "url": "https://github.com/libexpat/libexpat/pull/539"
+        },
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2022-22823.html"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-1069.html"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-22823"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-5288-1"
+        },
+        {
+          "url": "https://www.debian.org/security/2022/dsa-5073"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2022-05"
+        }
+      ],
+      "published": "2022-01-10 14:12:00 +0000 UTC",
+      "updated": "2022-02-25 18:49:00 +0000 UTC",
+      "affects": [
+        {
+          "ref": "pkg:apk/alpine/expat@2.4.1-r0?distro=3.14.2",
+          "versions": [
+            {
+              "version": "2.4.1-r0",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2022-22822",
+      "source": {
+        "name": "alpine",
+        "url": "https://secdb.alpinelinux.org/"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "critical"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 7.5,
+          "severity": "high",
+          "method": "CVSSv2",
+          "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 9.8,
+          "severity": "critical",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
+            "name": "oracle-oval"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "photon"
+          },
+          "severity": "critical"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 9.8,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "medium"
+        }
+      ],
+      "cwes": [190],
+      "description": "addBinding in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow.",
+      "advisories": [
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2022/01/17/3"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2022-22822"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22822"
+        },
+        {
+          "url": "https://github.com/libexpat/libexpat/pull/539"
+        },
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2022-22822.html"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-1069.html"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-22822"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-5288-1"
+        },
+        {
+          "url": "https://www.debian.org/security/2022/dsa-5073"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2022-05"
+        }
+      ],
+      "published": "2022-01-10 14:12:00 +0000 UTC",
+      "updated": "2022-02-25 18:49:00 +0000 UTC",
+      "affects": [
+        {
+          "ref": "pkg:apk/alpine/expat@2.4.1-r0?distro=3.14.2",
+          "versions": [
+            {
+              "version": "2.4.1-r0",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2022-1271",
+      "source": {
+        "name": "alpine",
+        "url": "https://secdb.alpinelinux.org/"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "alma"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "amazon"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "arch-linux"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "oracle-oval"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "photon"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 7.1,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "medium"
+        }
+      ],
+      "cwes": null,
+      "description": "No description is available for this CVE.",
+      "advisories": [
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2022-1271"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1271"
+        },
+        {
+          "url": "https://errata.almalinux.org/8/ALSA-2022-1537.html"
+        },
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2022-1271.html"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-2191.html"
+        },
+        {
+          "url": "https://lists.gnu.org/r/bug-gzip/2022-04/msg00011.html"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-5378-1"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-5378-2"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-5378-3"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-5378-4"
+        },
+        {
+          "url": "https://www.openwall.com/lists/oss-security/2022/04/07/8"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:apk/alpine/xz-libs@5.2.5-r0?distro=3.14.2",
+          "versions": [
+            {
+              "version": "5.2.5-r0",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2022-0778",
+      "source": {
+        "name": "alpine",
+        "url": "https://secdb.alpinelinux.org/"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "alma"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "amazon"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 5,
+          "severity": "medium",
+          "method": "CVSSv2",
+          "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 7.5,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "source": {
+            "name": "oracle-oval"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "photon"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 7.5,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "source": {
+            "name": "rocky"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "high"
+        }
+      ],
+      "cwes": [835],
+      "description": "The BN_mod_sqrt() function, which computes a modular square root, contains a bug that can cause it to loop forever for non-prime moduli. Internally this function is used when parsing certificates that contain elliptic curve public keys in compressed form or explicit elliptic curve parameters with a base point encoded in compressed form. It is possible to trigger the infinite loop by crafting a certificate that has invalid explicit curve parameters. Since certificate parsing happens prior to verification of the certificate signature, any process that parses an externally supplied certificate may thus be subject to a denial of service attack. The infinite loop can also be reached when parsing crafted private keys as they can contain explicit elliptic curve parameters. Thus vulnerable situations include: - TLS clients consuming server certificates - TLS servers consuming client certificates - Hosting providers taking certificates or private keys from customers - Certificate authorities parsing certification requests from subscribers - Anything else which parses ASN.1 elliptic curve parameters Also any other applications that use the BN_mod_sqrt() where the attacker can control the parameter values are vulnerable to this DoS issue. In the OpenSSL 1.0.2 version the public key is not parsed during initial parsing of the certificate which makes it slightly harder to trigger the infinite loop. However any operation which requires the public key from the certificate will trigger the infinite loop. In particular the attacker can use a self-signed certificate to trigger the loop during verification of the certificate signature. This issue affects OpenSSL versions 1.0.2, 1.1.1 and 3.0. It was addressed in the releases of 1.1.1n and 3.0.2 on the 15th March 2022. Fixed in OpenSSL 3.0.2 (Affected 3.0.0,3.0.1). Fixed in OpenSSL 1.1.1n (Affected 1.1.1-1.1.1m). Fixed in OpenSSL 1.0.2zd (Affected 1.0.2-1.0.2zc).",
+      "advisories": [
+        {
+          "url": "http://seclists.org/fulldisclosure/2022/May/33"
+        },
+        {
+          "url": "http://seclists.org/fulldisclosure/2022/May/35"
+        },
+        {
+          "url": "http://seclists.org/fulldisclosure/2022/May/38"
+        },
+        {
+          "url": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-0778.json"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2022-0778"
+        },
+        {
+          "url": "https://crates.io/crates/openssl-src"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0778"
+        },
+        {
+          "url": "https://errata.almalinux.org/8/ALSA-2022-1065.html"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=3118eb64934499d93db3230748a452351d1d9a65"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=380085481c64de749a6dd25cdf0bcf4360b30f83"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=a466912611aa6cbdf550cd10601390e587451246"
+        },
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2022-0778.html"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-9272.html"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2022/03/msg00023.html"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2022/03/msg00024.html"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/323SNN6ZX7PRJJWP2BUAFLPUAE42XWLZ/"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GDB3GQVJPXJE7X5C5JN6JAA4XUDWD6E6/"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/W6K3PR542DXWLEFFMFIDMME4CWMHJRMG/"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-0778"
+        },
+        {
+          "url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2022-0002"
+        },
+        {
+          "url": "https://rustsec.org/advisories/RUSTSEC-2022-0014.html"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20220321-0002/"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20220429-0005/"
+        },
+        {
+          "url": "https://support.apple.com/kb/HT213255"
+        },
+        {
+          "url": "https://support.apple.com/kb/HT213256"
+        },
+        {
+          "url": "https://support.apple.com/kb/HT213257"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-5328-1"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-5328-2"
+        },
+        {
+          "url": "https://www.debian.org/security/2022/dsa-5103"
+        },
+        {
+          "url": "https://www.openssl.org/news/secadv/20220315.txt"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpuapr2022.html"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2022-06"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2022-07"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2022-08"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2022-09"
+        }
+      ],
+      "published": "2022-03-15 17:15:00 +0000 UTC",
+      "updated": "2022-05-17 07:15:00 +0000 UTC",
+      "affects": [
+        {
+          "ref": "pkg:apk/alpine/libcrypto1.1@1.1.1l-r0?distro=3.14.2",
+          "versions": [
+            {
+              "version": "1.1.1l-r0",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:apk/alpine/libretls@3.3.3p1-r2?distro=3.14.2",
+          "versions": [
+            {
+              "version": "3.3.3p1-r2",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:apk/alpine/libssl1.1@1.1.1l-r0?distro=3.14.2",
+          "versions": [
+            {
+              "version": "1.1.1l-r0",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2022-0563",
+      "source": {
+        "name": "alpine",
+        "url": "https://secdb.alpinelinux.org/"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 1.9,
+          "severity": "info",
+          "method": "CVSSv2",
+          "vector": "AV:L/AC:M/Au:N/C:P/I:N/A:N"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 5.5,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+        },
+        {
+          "source": {
+            "name": "photon"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 5.5,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "cwes": [209],
+      "description": "A flaw was found in the util-linux chfn and chsh utilities when compiled with Readline support. The Readline library uses an \"INPUTRC\" environment variable to get a path to the library config file. When the library cannot parse the specified file, it prints an error message containing data from the file. This flaw allows an unprivileged user to read root-owned files, potentially leading to privilege escalation. This flaw affects util-linux versions prior to 2.37.4.",
+      "advisories": [
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2022-0563"
+        },
+        {
+          "url": "https://lore.kernel.org/util-linux/20220214110609.msiwlm457ngoic6w@ws.net.home/T/#u"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-0563"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20220331-0002/"
+        }
+      ],
+      "published": "2022-02-21 19:15:00 +0000 UTC",
+      "updated": "2022-03-31 09:15:00 +0000 UTC",
+      "affects": [
+        {
+          "ref": "pkg:apk/alpine/libuuid@2.37-r0?distro=3.14.2",
+          "versions": [
+            {
+              "version": "2.37-r0",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2021-46143",
+      "source": {
+        "name": "alpine",
+        "url": "https://secdb.alpinelinux.org/"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 6.8,
+          "severity": "medium",
+          "method": "CVSSv2",
+          "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 7.8,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
+            "name": "oracle-oval"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "photon"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 7.8,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "medium"
+        }
+      ],
+      "cwes": [190],
+      "description": "In doProlog in xmlparse.c in Expat (aka libexpat) before 2.4.3, an integer overflow exists for m_groupSize.",
+      "advisories": [
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2022/01/17/3"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2021-46143"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-46143"
+        },
+        {
+          "url": "https://github.com/libexpat/libexpat/issues/532"
+        },
+        {
+          "url": "https://github.com/libexpat/libexpat/pull/538"
+        },
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2021-46143.html"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-9227.html"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-46143"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20220121-0006/"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-5288-1"
+        },
+        {
+          "url": "https://www.debian.org/security/2022/dsa-5073"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2022-05"
+        }
+      ],
+      "published": "2022-01-06 04:15:00 +0000 UTC",
+      "updated": "2022-02-25 18:42:00 +0000 UTC",
+      "affects": [
+        {
+          "ref": "pkg:apk/alpine/expat@2.4.1-r0?distro=3.14.2",
+          "versions": [
+            {
+              "version": "2.4.1-r0",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2021-45960",
+      "source": {
+        "name": "alpine",
+        "url": "https://secdb.alpinelinux.org/"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "amazon"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 9,
+          "severity": "high",
+          "method": "CVSSv2",
+          "vector": "AV:N/AC:L/Au:S/C:C/I:C/A:C"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 8.8,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
+            "name": "oracle-oval"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "photon"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 8.8,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "low"
+        }
+      ],
+      "cwes": [400],
+      "description": "In Expat (aka libexpat) before 2.4.3, a left shift by 29 (or more) places in the storeAtts function in xmlparse.c can lead to realloc misbehavior (e.g., allocating too few bytes, or only freeing memory).",
+      "advisories": [
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2022/01/17/3"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2021-45960"
+        },
+        {
+          "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1217609"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-45960"
+        },
+        {
+          "url": "https://github.com/libexpat/libexpat/issues/531"
+        },
+        {
+          "url": "https://github.com/libexpat/libexpat/pull/534"
+        },
+        {
+          "url": "https://github.com/libexpat/libexpat/pull/534/commits/0adcb34c49bee5b19bd29b16a578c510c23597ea"
+        },
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2021-45960.html"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-1069.html"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-45960"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20220121-0004/"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-5288-1"
+        },
+        {
+          "url": "https://www.debian.org/security/2022/dsa-5073"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2022-05"
+        }
+      ],
+      "published": "2022-01-01 19:15:00 +0000 UTC",
+      "updated": "2022-03-17 17:02:00 +0000 UTC",
+      "affects": [
+        {
+          "ref": "pkg:apk/alpine/expat@2.4.1-r0?distro=3.14.2",
+          "versions": [
+            {
+              "version": "2.4.1-r0",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2021-42386",
+      "source": {
+        "name": "alpine",
+        "url": "https://secdb.alpinelinux.org/"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "amazon"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "arch-linux"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 6.5,
+          "severity": "medium",
+          "method": "CVSSv2",
+          "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 7.2,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 6.6,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "low"
+        }
+      ],
+      "cwes": [416],
+      "description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the nvalloc function",
+      "advisories": [
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2021-42386"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42386"
+        },
+        {
+          "url": "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-42386"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20211223-0002/"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-5179-1"
+        }
+      ],
+      "published": "2021-11-15 21:15:00 +0000 UTC",
+      "updated": "2022-01-04 17:14:00 +0000 UTC",
+      "affects": [
+        {
+          "ref": "pkg:apk/alpine/busybox@1.33.1-r3?distro=3.14.2",
+          "versions": [
+            {
+              "version": "1.33.1-r3",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:apk/alpine/ssl_client@1.33.1-r3?distro=3.14.2",
+          "versions": [
+            {
+              "version": "1.33.1-r3",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2021-42385",
+      "source": {
+        "name": "alpine",
+        "url": "https://secdb.alpinelinux.org/"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "amazon"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "arch-linux"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 6.5,
+          "severity": "medium",
+          "method": "CVSSv2",
+          "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 7.2,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 6.6,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "low"
+        }
+      ],
+      "cwes": [416],
+      "description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the evaluate function",
+      "advisories": [
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2021-42385"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42385"
+        },
+        {
+          "url": "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-42385"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20211223-0002/"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-5179-1"
+        }
+      ],
+      "published": "2021-11-15 21:15:00 +0000 UTC",
+      "updated": "2022-01-04 17:14:00 +0000 UTC",
+      "affects": [
+        {
+          "ref": "pkg:apk/alpine/busybox@1.33.1-r3?distro=3.14.2",
+          "versions": [
+            {
+              "version": "1.33.1-r3",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:apk/alpine/ssl_client@1.33.1-r3?distro=3.14.2",
+          "versions": [
+            {
+              "version": "1.33.1-r3",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2021-42384",
+      "source": {
+        "name": "alpine",
+        "url": "https://secdb.alpinelinux.org/"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "amazon"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "arch-linux"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 6.5,
+          "severity": "medium",
+          "method": "CVSSv2",
+          "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 7.2,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 6.6,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "low"
+        }
+      ],
+      "cwes": [416],
+      "description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the handle_special function",
+      "advisories": [
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2021-42384"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42384"
+        },
+        {
+          "url": "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-42384"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20211223-0002/"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-5179-1"
+        }
+      ],
+      "published": "2021-11-15 21:15:00 +0000 UTC",
+      "updated": "2022-01-04 17:15:00 +0000 UTC",
+      "affects": [
+        {
+          "ref": "pkg:apk/alpine/busybox@1.33.1-r3?distro=3.14.2",
+          "versions": [
+            {
+              "version": "1.33.1-r3",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:apk/alpine/ssl_client@1.33.1-r3?distro=3.14.2",
+          "versions": [
+            {
+              "version": "1.33.1-r3",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2021-42383",
+      "source": {
+        "name": "alpine",
+        "url": "https://secdb.alpinelinux.org/"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "arch-linux"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 6.5,
+          "severity": "medium",
+          "method": "CVSSv2",
+          "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 7.2,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 6.6,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes": [416],
+      "description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the evaluate function",
+      "advisories": [
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2021-42383"
+        },
+        {
+          "url": "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20211223-0002/"
+        }
+      ],
+      "published": "2021-11-15 21:15:00 +0000 UTC",
+      "updated": "2022-01-04 17:16:00 +0000 UTC",
+      "affects": [
+        {
+          "ref": "pkg:apk/alpine/busybox@1.33.1-r3?distro=3.14.2",
+          "versions": [
+            {
+              "version": "1.33.1-r3",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:apk/alpine/ssl_client@1.33.1-r3?distro=3.14.2",
+          "versions": [
+            {
+              "version": "1.33.1-r3",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2021-42382",
+      "source": {
+        "name": "alpine",
+        "url": "https://secdb.alpinelinux.org/"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "arch-linux"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 6.5,
+          "severity": "medium",
+          "method": "CVSSv2",
+          "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 7.2,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 6.6,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "low"
+        }
+      ],
+      "cwes": [416],
+      "description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the getvar_s function",
+      "advisories": [
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2021-42382"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42382"
+        },
+        {
+          "url": "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-42382"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20211223-0002/"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-5179-1"
+        }
+      ],
+      "published": "2021-11-15 21:15:00 +0000 UTC",
+      "updated": "2022-01-04 17:16:00 +0000 UTC",
+      "affects": [
+        {
+          "ref": "pkg:apk/alpine/busybox@1.33.1-r3?distro=3.14.2",
+          "versions": [
+            {
+              "version": "1.33.1-r3",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:apk/alpine/ssl_client@1.33.1-r3?distro=3.14.2",
+          "versions": [
+            {
+              "version": "1.33.1-r3",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2021-42381",
+      "source": {
+        "name": "alpine",
+        "url": "https://secdb.alpinelinux.org/"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "arch-linux"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 6.5,
+          "severity": "medium",
+          "method": "CVSSv2",
+          "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 7.2,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 6.6,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "low"
+        }
+      ],
+      "cwes": [416],
+      "description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the hash_init function",
+      "advisories": [
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2021-42381"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42381"
+        },
+        {
+          "url": "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-42381"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20211223-0002/"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-5179-1"
+        }
+      ],
+      "published": "2021-11-15 21:15:00 +0000 UTC",
+      "updated": "2022-01-04 17:13:00 +0000 UTC",
+      "affects": [
+        {
+          "ref": "pkg:apk/alpine/busybox@1.33.1-r3?distro=3.14.2",
+          "versions": [
+            {
+              "version": "1.33.1-r3",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:apk/alpine/ssl_client@1.33.1-r3?distro=3.14.2",
+          "versions": [
+            {
+              "version": "1.33.1-r3",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2021-42380",
+      "source": {
+        "name": "alpine",
+        "url": "https://secdb.alpinelinux.org/"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "arch-linux"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 6.5,
+          "severity": "medium",
+          "method": "CVSSv2",
+          "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 7.2,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 6.6,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "low"
+        }
+      ],
+      "cwes": [416],
+      "description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the clrvar function",
+      "advisories": [
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2021-42380"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42380"
+        },
+        {
+          "url": "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-42380"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20211223-0002/"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-5179-1"
+        }
+      ],
+      "published": "2021-11-15 21:15:00 +0000 UTC",
+      "updated": "2022-01-04 17:10:00 +0000 UTC",
+      "affects": [
+        {
+          "ref": "pkg:apk/alpine/busybox@1.33.1-r3?distro=3.14.2",
+          "versions": [
+            {
+              "version": "1.33.1-r3",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:apk/alpine/ssl_client@1.33.1-r3?distro=3.14.2",
+          "versions": [
+            {
+              "version": "1.33.1-r3",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2021-42379",
+      "source": {
+        "name": "alpine",
+        "url": "https://secdb.alpinelinux.org/"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "amazon"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "arch-linux"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 6.5,
+          "severity": "medium",
+          "method": "CVSSv2",
+          "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 7.2,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 6.6,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "low"
+        }
+      ],
+      "cwes": [416],
+      "description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the next_input_file function",
+      "advisories": [
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2021-42379"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42379"
+        },
+        {
+          "url": "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-42379"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20211223-0002/"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-5179-1"
+        }
+      ],
+      "published": "2021-11-15 21:15:00 +0000 UTC",
+      "updated": "2022-01-04 17:22:00 +0000 UTC",
+      "affects": [
+        {
+          "ref": "pkg:apk/alpine/busybox@1.33.1-r3?distro=3.14.2",
+          "versions": [
+            {
+              "version": "1.33.1-r3",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:apk/alpine/ssl_client@1.33.1-r3?distro=3.14.2",
+          "versions": [
+            {
+              "version": "1.33.1-r3",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2021-42378",
+      "source": {
+        "name": "alpine",
+        "url": "https://secdb.alpinelinux.org/"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "amazon"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "arch-linux"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 6.5,
+          "severity": "medium",
+          "method": "CVSSv2",
+          "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 7.2,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 6.6,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "low"
+        }
+      ],
+      "cwes": [416],
+      "description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the getvar_i function",
+      "advisories": [
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2021-42378"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42378"
+        },
+        {
+          "url": "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-42378"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20211223-0002/"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-5179-1"
+        }
+      ],
+      "published": "2021-11-15 21:15:00 +0000 UTC",
+      "updated": "2022-01-04 17:22:00 +0000 UTC",
+      "affects": [
+        {
+          "ref": "pkg:apk/alpine/busybox@1.33.1-r3?distro=3.14.2",
+          "versions": [
+            {
+              "version": "1.33.1-r3",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:apk/alpine/ssl_client@1.33.1-r3?distro=3.14.2",
+          "versions": [
+            {
+              "version": "1.33.1-r3",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2021-42375",
+      "source": {
+        "name": "alpine",
+        "url": "https://secdb.alpinelinux.org/"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "arch-linux"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 1.9,
+          "severity": "info",
+          "method": "CVSSv2",
+          "vector": "AV:L/AC:M/Au:N/C:N/I:N/A:P"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 5.5,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 4.1,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "cwes": null,
+      "description": "An incorrect handling of a special element in Busybox's ash applet leads to denial of service when processing a crafted shell command, due to the shell mistaking specific characters for reserved characters. This may be used for DoS under rare conditions of filtered command input.",
+      "advisories": [
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2021-42375"
+        },
+        {
+          "url": "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20211223-0002/"
+        }
+      ],
+      "published": "2021-11-15 21:15:00 +0000 UTC",
+      "updated": "2022-03-31 16:29:00 +0000 UTC",
+      "affects": [
+        {
+          "ref": "pkg:apk/alpine/busybox@1.33.1-r3?distro=3.14.2",
+          "versions": [
+            {
+              "version": "1.33.1-r3",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:apk/alpine/ssl_client@1.33.1-r3?distro=3.14.2",
+          "versions": [
+            {
+              "version": "1.33.1-r3",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2021-42374",
+      "source": {
+        "name": "alpine",
+        "url": "https://secdb.alpinelinux.org/"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "arch-linux"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 3.3,
+          "severity": "info",
+          "method": "CVSSv2",
+          "vector": "AV:L/AC:M/Au:N/C:P/I:N/A:P"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 5.3,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:H"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 5.7,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:H"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "low"
+        }
+      ],
+      "cwes": [125],
+      "description": "An out-of-bounds heap read in Busybox's unlzma applet leads to information leak and denial of service when crafted LZMA-compressed input is decompressed. This can be triggered by any applet/format that",
+      "advisories": [
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2021-42374"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42374"
+        },
+        {
+          "url": "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-42374"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20211223-0002/"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-5179-1"
+        }
+      ],
+      "published": "2021-11-15 21:15:00 +0000 UTC",
+      "updated": "2022-03-31 16:29:00 +0000 UTC",
+      "affects": [
+        {
+          "ref": "pkg:apk/alpine/busybox@1.33.1-r3?distro=3.14.2",
+          "versions": [
+            {
+              "version": "1.33.1-r3",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:apk/alpine/ssl_client@1.33.1-r3?distro=3.14.2",
+          "versions": [
+            {
+              "version": "1.33.1-r3",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2021-3996",
+      "source": {
+        "name": "alpine",
+        "url": "https://secdb.alpinelinux.org/"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "photon"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 5.5,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "medium"
+        }
+      ],
+      "cwes": null,
+      "description": "A logic error was found in the libmount library of util-linux in the function that allows an unprivileged user to unmount a FUSE filesystem. This flaw allows a local user on a vulnerable system to unmount other users' filesystems that are either world-writable themselves (like /tmp) or mounted in a world-writable directory. An attacker may use this flaw to cause a denial of service to applications that use the affected filesystems.",
+      "advisories": [
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2021-3996"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3996"
+        },
+        {
+          "url": "https://mirrors.edge.kernel.org/pub/linux/utils/util-linux/v2.37/v2.37.3-ReleaseNotes"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-5279-1"
+        },
+        {
+          "url": "https://www.openwall.com/lists/oss-security/2022/01/24/2"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:apk/alpine/libuuid@2.37-r0?distro=3.14.2",
+          "versions": [
+            {
+              "version": "2.37-r0",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2021-3995",
+      "source": {
+        "name": "alpine",
+        "url": "https://secdb.alpinelinux.org/"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "photon"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 4.7,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "medium"
+        }
+      ],
+      "cwes": null,
+      "description": "A logic error was found in the libmount library of util-linux in the function that allows an unprivileged user to unmount a FUSE filesystem. This flaw allows an unprivileged local attacker to unmount FUSE filesystems that belong to certain other users who have a UID that is a prefix of the UID of the attacker in its string form. An attacker may use this flaw to cause a denial of service to applications that use the affected filesystems.",
+      "advisories": [
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2021-3995"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3995"
+        },
+        {
+          "url": "https://mirrors.edge.kernel.org/pub/linux/utils/util-linux/v2.37/v2.37.3-ReleaseNotes"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-5279-1"
+        },
+        {
+          "url": "https://www.openwall.com/lists/oss-security/2022/01/24/2"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:apk/alpine/libuuid@2.37-r0?distro=3.14.2",
+          "versions": [
+            {
+              "version": "2.37-r0",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2021-37750",
+      "source": {
+        "name": "alpine",
+        "url": "https://secdb.alpinelinux.org/"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "amazon"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "arch-linux"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 4,
+          "severity": "medium",
+          "method": "CVSSv2",
+          "vector": "AV:N/AC:L/Au:S/C:N/I:N/A:P"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 6.5,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "source": {
+            "name": "oracle-oval"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "photon"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 6.5,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "medium"
+        }
+      ],
+      "cwes": [476],
+      "description": "The Key Distribution Center (KDC) in MIT Kerberos 5 (aka krb5) before 1.18.5 and 1.19.x before 1.19.3 has a NULL pointer dereference in kdc/do_tgs_req.c via a FAST inner body that lacks a server field.",
+      "advisories": [
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2021-37750"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-37750"
+        },
+        {
+          "url": "https://github.com/krb5/krb5/commit/d775c95af7606a51bf79547a94fa52ddd1cb7f49"
+        },
+        {
+          "url": "https://github.com/krb5/krb5/releases"
+        },
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2021-37750.html"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2021-4788.html"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2021/09/msg00019.html"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MFCLW7D46E4VCREKKH453T5DA4XOLHU2/"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-37750"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20210923-0002/"
+        },
+        {
+          "url": "https://web.mit.edu/kerberos/advisories/"
+        }
+      ],
+      "published": "2021-08-23 05:15:00 +0000 UTC",
+      "updated": "2021-10-07 19:06:00 +0000 UTC",
+      "affects": [
+        {
+          "ref": "pkg:apk/alpine/krb5-libs@1.18.4-r0?distro=3.14.2",
+          "versions": [
+            {
+              "version": "1.18.4-r0",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2021-37600",
+      "source": {
+        "name": "alpine",
+        "url": "https://secdb.alpinelinux.org/"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "arch-linux"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 1.2,
+          "severity": "info",
+          "method": "CVSSv2",
+          "vector": "AV:L/AC:H/Au:N/C:N/I:N/A:P"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 5.5,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+        },
+        {
+          "source": {
+            "name": "photon"
+          },
+          "severity": "critical"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 4.7,
+          "severity": "low",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "cwes": [190],
+      "description": "** DISPUTED ** An integer overflow in util-linux through 2.37.1 can potentially cause a buffer overflow if an attacker were able to use system resources in a way that leads to a large number in the /proc/sysvipc/sem file. NOTE: this is unexploitable in GNU C Library environments, and possibly in all realistic environments.",
+      "advisories": [
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2021-37600"
+        },
+        {
+          "url": "https://github.com/karelzak/util-linux/commit/1c9143d0c1f979c3daf10e1c37b5b1e916c22a1c"
+        },
+        {
+          "url": "https://github.com/karelzak/util-linux/issues/1395"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-37600"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20210902-0002/"
+        }
+      ],
+      "published": "2021-07-30 14:15:00 +0000 UTC",
+      "updated": "2021-10-18 12:18:00 +0000 UTC",
+      "affects": [
+        {
+          "ref": "pkg:apk/alpine/libuuid@2.37-r0?distro=3.14.2",
+          "versions": [
+            {
+              "version": "2.37-r0",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2018-25032",
+      "source": {
+        "name": "alpine",
+        "url": "https://secdb.alpinelinux.org/"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "alma"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "amazon"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "arch-linux"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 5,
+          "severity": "medium",
+          "method": "CVSSv2",
+          "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 7.5,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "source": {
+            "name": "oracle-oval"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "photon"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 8.2,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H"
+        },
+        {
+          "source": {
+            "name": "ruby-advisory-db"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "medium"
+        }
+      ],
+      "cwes": [787],
+      "description": "zlib before 1.2.12 allows memory corruption when deflating (i.e., when compressing) if the input has many distant matches.",
+      "advisories": [
+        {
+          "url": "http://seclists.org/fulldisclosure/2022/May/33"
+        },
+        {
+          "url": "http://seclists.org/fulldisclosure/2022/May/35"
+        },
+        {
+          "url": "http://seclists.org/fulldisclosure/2022/May/38"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2022/03/25/2"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2022/03/26/1"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2018-25032"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-25032"
+        },
+        {
+          "url": "https://errata.almalinux.org/8/ALSA-2022-2201.html"
+        },
+        {
+          "url": "https://github.com/madler/zlib/commit/5c44459c3b28a9bd3283aaceab7c615f8020c531"
+        },
+        {
+          "url": "https://github.com/madler/zlib/compare/v1.2.11...v1.2.12"
+        },
+        {
+          "url": "https://github.com/madler/zlib/issues/605"
+        },
+        {
+          "url": "https://github.com/sparklemotion/nokogiri/releases/tag/v1.13.4"
+        },
+        {
+          "url": "https://github.com/sparklemotion/nokogiri/security/advisories/GHSA-v6gp-9mmm-c6p5"
+        },
+        {
+          "url": "https://groups.google.com/g/ruby-security-ann/c/vX7qSjsvWis/m/TJWN4oOKBwAJ"
+        },
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2018-25032.html"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-2213.html"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2022/04/msg00000.html"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2022/05/msg00008.html"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/NS2D2GFPFGOJUL4WQ3DUAY7HF4VWQ77F/"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VOKNP2L734AEL47NRYGVZIKEFOUBQY5Y/"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XOKFMSNQ5D5WGMALBNBXU3GE442V74WU/"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-25032"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20220526-0009/"
+        },
+        {
+          "url": "https://support.apple.com/kb/HT213255"
+        },
+        {
+          "url": "https://support.apple.com/kb/HT213256"
+        },
+        {
+          "url": "https://support.apple.com/kb/HT213257"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-5355-1"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-5355-2"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-5359-1"
+        },
+        {
+          "url": "https://www.debian.org/security/2022/dsa-5111"
+        },
+        {
+          "url": "https://www.openwall.com/lists/oss-security/2022/03/24/1"
+        },
+        {
+          "url": "https://www.openwall.com/lists/oss-security/2022/03/28/1"
+        },
+        {
+          "url": "https://www.openwall.com/lists/oss-security/2022/03/28/3"
+        }
+      ],
+      "published": "2022-03-25 09:15:00 +0000 UTC",
+      "updated": "2022-05-26 08:15:00 +0000 UTC",
+      "affects": [
+        {
+          "ref": "pkg:apk/alpine/zlib@1.2.11-r3?distro=3.14.2",
+          "versions": [
+            {
+              "version": "1.2.11-r3",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

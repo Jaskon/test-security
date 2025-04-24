@@ -1,0 +1,29 @@
+prebuild:
+  stage: build
+  needs: []
+  image: docker:19.03.13
+  services:
+    - docker:19.03.13-dind
+  retry:
+    max: 2
+    when:
+      - runner_system_failure
+      - stuck_or_timeout_failure
+      - scheduler_failure
+      - unknown_failure
+  rules:
+    # run when build runs
+    - !reference [.build, rules]
+  script:
+    - echo "prebuild"
+
+build:
+  variables:
+    # extra resources for building
+    KUBERNETES_CPU_REQUEST: "2"
+    KUBERNETES_CPU_LIMIT: "3"
+    KUBERNETES_MEMORY_REQUEST: 3Gi
+    KUBERNETES_MEMORY_LIMIT: 4Gi
+  needs:
+    # modify the job to run after prebuild
+    - prebuild

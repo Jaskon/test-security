@@ -1,0 +1,7 @@
+Listing...
+19.0 CIS EKS Benchmark - [eks-cis] ********************************* -  []
+7.65 [extra765] Check if ECR image scan on push is enabled  - ecr [Medium]
+7.94 [extra794] Ensure EKS Control Plane Audit Logging is enabled for all log types - eks [Medium]
+7.95 [extra795] Ensure EKS Clusters are created with Private Endpoint Enabled and Public Access Disabled - eks [High]
+7.96 [extra796] Restrict Access to the EKS Control Plane Endpoint - eks [High]
+7.97 [extra797] Ensure Kubernetes Secrets are encrypted using Customer Master Keys (CMKs) - eks [Medium]

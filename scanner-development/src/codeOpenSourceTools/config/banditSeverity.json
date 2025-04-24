@@ -1,0 +1,37 @@
+{
+  "jsonVersion": "1.00",
+  "usage": "bandit config for severity",
+  "toolName": "bandit",
+  "severity": [
+    {
+      "id": "B602",
+      "severity": "medium",
+      "description": "subprocess execution"
+    },
+    {
+      "id": "B605",
+      "severity": "medium",
+      "description": "subprocess execution"
+    },
+    {
+      "id": "B608",
+      "severity": "high",
+      "description": "hardcoded sql expressions"
+    },
+    {
+      "id": "B301",
+      "severity": "low",
+      "description": "pickle"
+    },
+    {
+      "id": "B302",
+      "severity": "low",
+      "description": "marshal"
+    },
+    {
+      "id": "B310",
+      "severity": "none",
+      "description": "urllib_urlopen"
+    }
+  ]
+}

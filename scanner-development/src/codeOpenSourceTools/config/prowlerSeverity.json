@@ -1,0 +1,37 @@
+{
+  "jsonVersion": "1.00",
+  "usage": "prowler config for severity",
+  "toolName": "prowler",
+  "severity": [
+    {
+      "id": "[extra759] Find secrets in Lambda functions variables",
+      "severity": "high",
+      "description": "secrets in lambdas"
+    },
+    {
+      "id": "[extra742] Find secrets in CloudFormation outputs",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "[extra741] Find secrets in EC2 User Data",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "[extra768] Find secrets in ECS task definitions environment variables",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "[extra7141] Find secrets in SSM Documents",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "[extra775] Find secrets in EC2 Auto Scaling Launch Configuration",
+      "severity": "high",
+      "description": ""
+    }
+  ]
+}

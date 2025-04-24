@@ -1,0 +1,82 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "policy for any type of static security Scan by Severity",
+  "policyId": "oxPolicy_securityScan_205",
+  "ruleId": "oxRule_securityScan_1",
+  "exclusionCategory": "sast",
+  "name": "Static analyzer (SAST) alerts should not occur",
+  "categoryId": "sast",
+  "catId": 4,
+  "system": "SAST",
+  "order": 1,
+  "description": "SAST (Static Application Security Testing) issues in your code files should not be present.",
+  "detailedDescription": "SAST (Static Application Security Testing) applications are the most basic type of security vulnerability detection applications that an organization should use. From SQL injections to cross-site scripting SAST applications are a basic requirement to stop easily preventable issues from making their way to production.",
+  "severity": 2,
+  "selected": true,
+  "functionName": "policySecurityScanNew",
+  "displayIssueSeverity": 0,
+  "category": "CodeSecurity",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "scanType",
+      "label": "Scan Type",
+      "tooltip": "Choose one or more static security engines to generate the policy for.",
+      "type": "stringArray",
+      "range": ["Secrets", "SAST", "SCA", "IaC"],
+      "multiSelect": false,
+      "value": "SAST",
+      "visible": false
+    },
+    {
+      "id": "arg_2",
+      "name": "ignoreBusinessPriority",
+      "label": "Ignore Business priority",
+      "tooltip": "The policy will execute regardless of the business priority",
+      "type": "boolean",
+      "range": [],
+      "multiSelect": false,
+      "value": false,
+      "visible": false
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "securityEvents",
+      "type": "code_repo"
+    },
+    {
+      "id": "rsc_2",
+      "name": "securityEvents",
+      "type": "external"
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "isGenericSeverityPolicy": true,
+  "version": 7,
+  "compliance": [
+    {
+      "standard": "ISO27001:2022",
+      "control": "A.8.28",
+      "description": "Secure Coding",
+      "category": "Asset Management",
+      "controlLink": ""
+    },
+    {
+      "standard": "SOC2",
+      "control": "CC8.1",
+      "description": "The entity authorizes, designs, develops or acquires, configures, documents, tests, approves, and implements changes to infrastructure, data, software, and procedures to meet its objectives",
+      "category": "Change Management",
+      "controlLink": ""
+    },
+    {
+      "standard": "NIST-800-53-Revision-5",
+      "control": "SA-11",
+      "description": "Developer Security Testing and Evaluation",
+      "category": "System and Services Acquisition",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/ra/ra-5"
+    }
+  ]
+}

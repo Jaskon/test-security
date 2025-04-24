@@ -1,0 +1,11 @@
+Listing...
+24.0 Amazon Glue related security checks - [glue] ****************** -  []
+7.114 [extra7114] Check if Glue development endpoints have S3 encryption enabled. - glue [Medium]
+7.115 [extra7115] Check if Glue database connection has SSL connection enabled. - glue [Medium]
+7.116 [extra7116] Check if Glue data catalog settings have metadata encryption enabled. - glue [Medium]
+7.117 [extra7117] Check if Glue data catalog settings have encrypt connection password enabled. - glue [Medium]
+7.118 [extra7118] Check if Glue ETL Jobs have S3 encryption enabled. - glue [Medium]
+7.119 [extra7119] Check if Glue development endpoints have CloudWatch logs encryption enabled. - glue [Medium]
+7.120 [extra7120] Check if Glue ETL Jobs have CloudWatch Logs encryption enabled. - glue [Medium]
+7.121 [extra7121] Check if Glue development endpoints have Job bookmark encryption enabled. - glue [Medium]
+7.122 [extra7122] Check if Glue ETL Jobs have Job bookmark encryption enabled. - glue [Medium]

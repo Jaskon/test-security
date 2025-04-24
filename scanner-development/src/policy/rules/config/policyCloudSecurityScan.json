@@ -1,0 +1,43 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "policy for any type of static security Scan by Severity",
+  "policyId": "oxPolicy_securityCloudScan_100",
+  "ruleId": "oxRule_securityCloudScan_1",
+  "exclusionCategory": "cspm",
+  "name": "Cloud security (CSPM) alerts should not occur",
+  "categoryId": "CSPM",
+  "catId": 15,
+  "system": "CSPM",
+  "order": 1,
+  "cwe": [""],
+  "description": "CSPM (Cloud Security Posture Management) issues should not be present.",
+  "detailedDescription": "Cloud misconfigurations can lead to catastrophic security issues like breaches, exposure of data and exposure of infrastructure. In 2021, Codecov published a public Docker image containing static credentials for a GCP service account. These credentials were used to replace the install script hosted in Google Cloud Storage with a malicious script stealing environment variables.",
+  "severity": 2,
+  "selected": true,
+  "displayIssueSeverity": 0,
+  "functionName": "policyCloudSecurityScanNew",
+  "category": "CloudSecurity",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "ignoreBusinessPriority",
+      "label": "Ignore Business priority",
+      "tooltip": "The policy will execute regardless of the business priority",
+      "type": "boolean",
+      "range": [],
+      "multiSelect": false,
+      "value": false,
+      "visible": true
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "cloudSecurityEvents",
+      "type": "cloud"
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 5
+}

@@ -1,0 +1,233 @@
+[
+  {
+    "type": "file",
+    "subType": "CloudFront",
+    "name": "main.e1a7853b.chunk.css.map",
+    "size": "",
+    "hashType": "SHA256",
+    "hash": "033d4c55c10dc0714b2b59a5bb3ed0026aef021785eafed7381f611803c5e5c6",
+    "resolved": true,
+    "inputHash": "9d8d8950876a72efb6c838808e93338d"
+  },
+  {
+    "type": "file",
+    "subType": "CloudFront",
+    "name": "manifest.json",
+    "size": "",
+    "hashType": "SHA256",
+    "hash": "e31f0110b526284a53ff43c78264756b488bab96ef5bfb8999c1aea8ea15f9da",
+    "resolved": true,
+    "inputHash": "9d8d8950876a72efb6c838808e93338d"
+  },
+  {
+    "type": "file",
+    "subType": "CloudFront",
+    "name": "2.f04a7ad9.chunk.js.LICENSE.txt",
+    "size": "",
+    "hashType": "SHA256",
+    "hash": "cb4acfedb857b6012b26627cdf5f719b31cdd186521610cb53d6de9a487427a7",
+    "resolved": true,
+    "inputHash": "9d8d8950876a72efb6c838808e93338d"
+  },
+  {
+    "type": "file",
+    "subType": "CloudFront",
+    "name": "favicon.ico",
+    "size": "",
+    "hashType": "SHA256",
+    "hash": "5ae7158a9c5c848f496b1017f919af60b5d038522fcbd502c2ac7abe4d9e7506",
+    "resolved": true,
+    "inputHash": "9d8d8950876a72efb6c838808e93338d"
+  },
+  {
+    "type": "file",
+    "subType": "CloudFront",
+    "name": "runtime-main.bede180e.js",
+    "size": "",
+    "hashType": "SHA256",
+    "hash": "bef64296028f072db878ef80e336cca8f01af0394e0b07f986446235facee62f",
+    "resolved": true,
+    "inputHash": "9d8d8950876a72efb6c838808e93338d"
+  },
+  {
+    "type": "file",
+    "subType": "CloudFront",
+    "name": "runtime-main.bede180e.js.map",
+    "size": "",
+    "hashType": "SHA256",
+    "hash": "6c423d767900611240d427eee9523aeb55ac466203d470ba3b81fc35c34e4378",
+    "resolved": true,
+    "inputHash": "9d8d8950876a72efb6c838808e93338d"
+  },
+  {
+    "type": "file",
+    "subType": "CloudFront",
+    "name": "circle-ci-logo.01ff5ab1.svg",
+    "size": "",
+    "hashType": "SHA256",
+    "hash": "c6b32f63acf9609a7d1ad04ad34a22e20647cf5182eff2115678dd4a6b321809",
+    "resolved": true,
+    "inputHash": "9d8d8950876a72efb6c838808e93338d"
+  },
+  {
+    "type": "file",
+    "subType": "CloudFront",
+    "name": "github.51d6f044.svg",
+    "size": "",
+    "hashType": "SHA256",
+    "hash": "08ff742dd79255f5054a46eb226a61cb385b2bfaffdac940b05e4585630615ee",
+    "resolved": true,
+    "inputHash": "9d8d8950876a72efb6c838808e93338d"
+  },
+  {
+    "type": "file",
+    "subType": "CloudFront",
+    "name": "2.f04a7ad9.chunk.js",
+    "size": "",
+    "hashType": "SHA256",
+    "hash": "4f3f4ea913aee0627b5a42402ebd7955a3b4ebb13a08d6ffff7b6dc06e9c7a91",
+    "resolved": true,
+    "inputHash": "9d8d8950876a72efb6c838808e93338d"
+  },
+  {
+    "type": "file",
+    "subType": "CloudFront",
+    "name": "gitleaks-logo.c7828271.svg",
+    "size": "",
+    "hashType": "SHA256",
+    "hash": "612dadf83e6fe3205283a35f2b4d0215671d1bd51e9514026e48420cc33b5d8a",
+    "resolved": true,
+    "inputHash": "9d8d8950876a72efb6c838808e93338d"
+  },
+  {
+    "type": "file",
+    "subType": "CloudFront",
+    "name": "2.f04a7ad9.chunk.js.map",
+    "size": "",
+    "hashType": "SHA256",
+    "hash": "221f8046e4147a149b33717e55a601bef793229722b20ecc3f885dc9ff6eee56",
+    "resolved": true,
+    "inputHash": "9d8d8950876a72efb6c838808e93338d"
+  },
+  {
+    "type": "file",
+    "subType": "Serverless",
+    "name": "api-organization-management.zip",
+    "size": "5.84 MB",
+    "hashType": "SHA256",
+    "hash": "39ce20c6ebef80eb7f5f181c5362b636725047c26e393982a74eeb104d59d4b6",
+    "resolved": true,
+    "inputHash": "9d8d8950876a72efb6c838808e93338d"
+  },
+  {
+    "type": "file",
+    "subType": "Docker Container",
+    "name": "us-docker.pkg.dev/oxappsec/oxpoc/appmgr",
+    "size": "5978",
+    "hashType": "SHA-256",
+    "hash": "e0a1d9c052196423590a8ab6f8ad4ffaba69b85425595ea27a45cae47c4a1256",
+    "resolved": true,
+    "inputHash": "9d8d8950876a72efb6c838808e93338d"
+  },
+  {
+    "type": "file",
+    "subType": "NPM",
+    "name": "@oxappsec/ox-unified-logger-1.0.2.tgz",
+    "size": "21.8 kB",
+    "hashType": "SHA1",
+    "hash": "d70f2c8231818638214e645fe19be192ecf281fa",
+    "resolved": true,
+    "inputHash": "9d8d8950876a72efb6c838808e93338d"
+  },
+  {
+    "type": "Helm",
+    "subType": "upgrade",
+    "name": "default/ox-gke-demo",
+    "size": "0",
+    "hashType": "SHA256",
+    "hash": "d191439cbef92931941ab2f24e47374e04c42b3f5f3e7d55cce69dcf7c47455a",
+    "resolved": true,
+    "revision": "46",
+    "inputHash": "9d8d8950876a72efb6c838808e93338d"
+  },
+  {
+    "type": "Terraform",
+    "subType": "resource",
+    "name": "update:aws_ecs_service/ec2_megalinter_scan_service",
+    "size": "0",
+    "hashType": "sha256",
+    "hash": "9deeb93957dba6d4788b48f9efdcef94ea59df31199ba1e1a142e6042085bbdf",
+    "resolved": true,
+    "inputHash": "9d8d8950876a72efb6c838808e93338d"
+  },
+  {
+    "type": "Terraform",
+    "subType": "resource",
+    "name": "update:aws_ecs_service/ec2_scan_service",
+    "size": "0",
+    "hashType": "sha256",
+    "hash": "5b6a15770c82d32e91e43b09fc5a09760dc81285b0a26d8191131154e56e5d72",
+    "resolved": true,
+    "inputHash": "9d8d8950876a72efb6c838808e93338d"
+  },
+  {
+    "type": "Terraform",
+    "subType": "resource",
+    "name": "update:aws_ecs_service/fargate_megalinter_scan_service",
+    "size": "0",
+    "hashType": "sha256",
+    "hash": "541dc8360281b77ce5149d38c858ff664a45480ebc291dece8d804b88b337080",
+    "resolved": true,
+    "inputHash": "9d8d8950876a72efb6c838808e93338d"
+  },
+  {
+    "type": "Terraform",
+    "subType": "resource",
+    "name": "update:aws_ecs_service/fargate_scan_service",
+    "size": "0",
+    "hashType": "sha256",
+    "hash": "4be7a39e40d4f69654a0b2c9538a7d0fc7be7fd88e2c9150c3e277e50eee7453",
+    "resolved": true,
+    "inputHash": "9d8d8950876a72efb6c838808e93338d"
+  },
+  {
+    "type": "Terraform",
+    "subType": "resource",
+    "name": "update:aws_ecs_service/fargate_scanner_service",
+    "size": "0",
+    "hashType": "sha256",
+    "hash": "db0968e0a63cf0d7510c5b989c368f7fcbebbd4d8dffc5e209798c2fda5200e5",
+    "resolved": true,
+    "inputHash": "9d8d8950876a72efb6c838808e93338d"
+  },
+  {
+    "type": "Terraform",
+    "subType": "resource",
+    "name": "replace:aws_ecs_task_definition/fargate_scanner",
+    "size": "0",
+    "hashType": "sha256",
+    "hash": "465a36889e1566a9c51e703c323b3269873933fd1eff13d92a8051d7ae0e4672",
+    "resolved": true,
+    "inputHash": "9d8d8950876a72efb6c838808e93338d"
+  },
+  {
+    "type": "file",
+    "subType": "Yarn-Semantic-Release",
+    "name": "gitlab.com/noogata/platform/noogata-components:2.31.0",
+    "size": "",
+    "hashType": "MD5",
+    "hash": "9d8d8950876a72efb6c838808e93338d",
+    "resolved": true,
+    "inputHash": "9d8d8950876a72efb6c838808e93338d"
+  },
+  {
+    "type": "terraform-plan",
+    "subType": "plan",
+    "name": "$CI_PROJECT_DIR/plan-$OX_ENV:9d8d8950876a72efb6c838808e93338d",
+    "size": "",
+    "hashType": "MD5",
+    "hash": "9d8d8950876a72efb6c838808e93338d",
+    "resolved": true,
+    "inputHash": "9d8d8950876a72efb6c838808e93338d"
+  }
+]

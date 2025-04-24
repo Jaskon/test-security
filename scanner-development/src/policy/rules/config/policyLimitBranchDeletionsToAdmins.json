@@ -1,0 +1,51 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "",
+  "policyId": "oxPolicy_dspm_LimitBranchDeletionsToAdmins",
+  "ruleId": "oxRule_dspm_LimitBranchDeletionsToAdmins",
+  "exclusionCategory": "general",
+  "name": "Protected branches should only be deletable by admins",
+  "categoryId": "3",
+  "groupId": "",
+  "catId": 3,
+  "system": "Repo",
+  "description": "While the default branch can’t be deleted directly even if the setting is on, in general, it is best practice to prevent branches from being deleted by anyone with write access.",
+  "detailedDescription": "Accidental or malicious deletion of the main/master branch of a repo can be a real headache. Deletion of the branch will also prevent the merging of the code to the main branch and generation of artifacts etc. While recovery is possible it is not guaranteed. It is highly recommended that protected branch deletion be allowed only for admins.",
+  "severity": 1,
+  "selected": true,
+  "functionName": "policyLimitBranchDeletionsToAdmins",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "RepoType",
+      "label": "Repo types applied by the policy",
+      "tooltip": "Choose if the policy applies to private, public, or all repo types",
+      "type": "stringArray",
+      "range": ["Private", "Public", "Private or Public"],
+      "multiSelect": false,
+      "value": "Private or Public",
+      "visible": true
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "branchSettings",
+      "type": "code_repo"
+    },
+    {
+      "id": "rsc_2",
+      "name": "users",
+      "type": "code_repo"
+    },
+    {
+      "id": "rsc_3",
+      "name": "allUsers",
+      "type": "code_repo",
+      "global": true
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 2
+}

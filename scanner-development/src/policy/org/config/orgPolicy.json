@@ -1,0 +1,16 @@
+{
+  "globals": {
+    "cicd": ["Jenkins", "Buildkite", "gitlab", "Generic", "Bitbucket", "Travis CI"],
+    "securityTools": ["Checkmarx", "Snyk", "CxSAST", "CodeQL", "Dependabot", "Snyk Infrastructure", "ESLint"]
+  },
+
+  "connectors": [
+    {
+      "type": "code_repo",
+      "scanSCA": true,
+      "scanSAST": true,
+      "scanSecrets": true,
+      "inclusions": []
+    }
+  ]
+}

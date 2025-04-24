@@ -1,0 +1,45 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "policy for webhooks directing to URLs with suspicious VT reputation",
+  "policyId": "oxPolicy_webhookReputation_2",
+  "ruleId": "oxRule_webhookReputation_1",
+  "exclusionCategory": "webhooks",
+  "name": "Webhook URLs must not have suspicious reputation",
+  "categoryId": "cicd",
+  "groupId": "",
+  "catId": 25,
+  "system": "Repo",
+  "description": "A webhook URL should not be suspicious based on Virus Total reputation.",
+  "detailedDescription": "A suspicious destination webhook URL may have been planted during a breach to gain visibility in changes to your code and environments.",
+  "severity": 3,
+  "selected": true,
+  "functionName": "webhooksReputation",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "reputation",
+      "label": "Reputation",
+      "tooltip": "Select on or more Virus Total reputations to generate the policy",
+      "type": "stringArray",
+      "range": ["Malicious", "Suspicious", "harmless", "Unknown"],
+      "multiSelect": true,
+      "value": ["Suspicious"],
+      "visible": false
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "webhooks",
+      "type": "code_repo"
+    },
+    {
+      "id": "rsc_2",
+      "name": "users",
+      "type": "code_repo"
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 5
+}

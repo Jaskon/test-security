@@ -1,0 +1,41 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "Two-Factor Authentication (2FA) should be enabled for outside collaborators",
+  "policyId": "oxPolicy_outside_c_2FA_enabled_1",
+  "ruleId": "oxRule_outside_member_2FA_enabled_1",
+  "exclusionCategory": "user",
+  "name": "Two-Factor Authentication (2FA) should be enabled for outside collaborators",
+  "categoryId": "3",
+  "groupId": "",
+  "catId": 3,
+  "system": "Repo",
+  "description": "2FA is generally considered more secure than using just IDP or a username and password. Enable 2FA to harden the access to your repositories.",
+  "detailedDescription": "Two-Factor Authentication (2FA) helps reduce the probability that a user's account will be compromised. Outside collaborators should have 2FA enabled as they are users who are not actually part of your organization. Compromising an outside collaborator is one of the vectors that attackers will use to get access to source control data. Therefore, in order to reduce the attack surface, it is recommended to have 2FA enabled.",
+  "severity": 3,
+  "selected": true,
+  "functionName": "policyOutsideCollaborators2FAEnabled",
+  "args": [],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "allUsers",
+      "type": "code_repo",
+      "global": true
+    },
+    {
+      "id": "rsc_2",
+      "name": "auditLog",
+      "type": "code_repo",
+      "global": true
+    },
+    {
+      "id": "rsc_3",
+      "name": "allPulls",
+      "type": "code_repo",
+      "global": true
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 3
+}

@@ -1,0 +1,45 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "policy for webhooks configuration issues",
+  "policyId": "oxPolicy_webhookConfiguration_1",
+  "ruleId": "oxRule_webhookConfiguration_1",
+  "exclusionCategory": "webhooks",
+  "name": "Webhooks should use SSL/TLS",
+  "categoryId": "cicd",
+  "groupId": "",
+  "catId": 25,
+  "system": "Repo",
+  "description": "All URLs assigned to webhooks are being accessed via SSL/TLS.",
+  "detailedDescription": "If communication to your server is not happening via SSL, then your data may be intercepted. This means that your code may be visible to an attacker.",
+  "severity": 2,
+  "selected": true,
+  "functionName": "policyWebhookConfiguration",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "webhookParam",
+      "label": "Webhook Parameter",
+      "tooltip": "Choose the parameter for the webhook that needs to be validated.",
+      "type": "stringArray",
+      "range": ["Secrets", "SSL"],
+      "multiSelect": false,
+      "value": "SSL",
+      "visible": false
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "webhooks",
+      "type": "code_repo"
+    },
+    {
+      "id": "rsc_2",
+      "name": "users",
+      "type": "code_repo"
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 5
+}

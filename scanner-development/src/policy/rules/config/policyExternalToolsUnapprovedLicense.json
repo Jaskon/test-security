@@ -1,0 +1,38 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "policy for license violation from external security tools",
+  "policyId": "oxPolicy_externalToolsUnapprovedLicense_1",
+  "ruleId": "oxRule_externalToolsUnapprovedLicense_1",
+  "exclusionCategory": "general",
+  "name": "License Violations should not be discovered by external tools.",
+  "categoryId": "SBOM",
+  "catId": 7,
+  "system": "SBOM",
+  "description": "Utilizing libraries with unauthorized licenses may open a company up to copyright infringement.",
+  "detailedDescription": "Using unauthorized libraries based on their licenses may require your project to be open sourced or lead to copyright infringement. A U.S. Federal court has ruled that an open-source license is an enforceable contract.",
+  "severity": 4,
+  "selected": true,
+  "functionName": "policyExternalToolsLicenseViolations",
+  "args": [],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "securityEvents",
+      "type": "code_repo"
+    },
+    {
+      "id": "rsc_2",
+      "name": "securityEvents",
+      "type": "external"
+    },
+    {
+      "id": "rsc_3",
+      "name": "auditLog",
+      "type": "code_repo",
+      "global": true
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 1
+}

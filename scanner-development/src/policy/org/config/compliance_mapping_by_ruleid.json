@@ -1,0 +1,4006 @@
+{
+  "CKV_AWS_340": [
+    {
+      "control": "SI-2(5)",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "System and Information Integrity",
+      "description": "Automatic Software and Firmware Updates",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-2/si-2-5"
+    },
+    {
+      "control": "CC3.2",
+      "standard": "SOC2",
+      "category": "CC3.0 - Common Criteria Related to Risk Assessment",
+      "description": "CC3.2 COSO Principle 7: The entity identifies risks to the achievement of its objectives across the entity and analyzes risks as a basis for determining how the risks should be managed",
+      "controlLink": ""
+    },
+    {
+      "control": "A.12.6.1",
+      "standard": "ISO27001:2022",
+      "category": "Operational Procedures and Responsibilities",
+      "description": "Management of Technical Vulnerabilities",
+      "controlLink": ""
+    },
+    {
+      "control": "6.3.3",
+      "standard": "PCI_DSS 4.0",
+      "category": "Maintain a Vulnerability Management Program",
+      "description": "All system components are protected from known vulnerabilities by installing applicable security patches/updates",
+      "controlLink": ""
+    },
+    {
+      "control": "6.2",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Maintain a Vulnerability Management Program",
+      "description": "Ensure that all system components and software are protected from known vulnerabilities by installing the applicable security patches provided by the manufacturer",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_313": [
+    {
+      "control": "CM-2(2)",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "Configuration Management",
+      "description": "Automation Support for Accuracy and Currency",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/cm/cm-2/cm-2-2"
+    }
+  ],
+  "CKV_AWS_303": [
+    {
+      "control": "SC-7(9)",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "System and Communications Protection",
+      "description": "Restrict Threatening Outgoing Communications Traffic",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-7/sc-7-9"
+    },
+    {
+      "control": "CC6.6",
+      "standard": "SOC2",
+      "category": "CC6.0 - Logical and Physical Access",
+      "description": "CC6.6 The entity implements logical access security measures to protect against threats from sources outside its system boundaries",
+      "controlLink": ""
+    },
+    {
+      "control": "A.9.4.1",
+      "standard": "ISO27001:2022",
+      "category": "Access Control",
+      "description": "Information Access Restriction",
+      "controlLink": ""
+    },
+    {
+      "control": "1.3.2",
+      "standard": "PCI_DSS 4.0",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Outbound traffic from the CDE is restricted",
+      "controlLink": ""
+    },
+    {
+      "control": "1.3.4",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Do not allow unauthorized traffic to the internet from the cardholder data environment",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_314": [
+    {
+      "control": "SI-7(8)",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "System and Information Integrity",
+      "description": "Auditing Capability for Significant Events",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-7/si-7-8"
+    },
+    {
+      "control": "A.12.4.1",
+      "standard": "ISO27001:2022",
+      "category": "Operational Procedures and Responsibilities",
+      "description": "Event Logging",
+      "controlLink": ""
+    },
+    {
+      "control": "10.2",
+      "standard": "PCI_DSS 4.0",
+      "category": "Regularly Monitor and Test Networks",
+      "description": "Audit logs are implemented to support the detection of anomalies and suspicious activity, and the forensic analysis of events",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_336": [
+    {
+      "control": "AC-6",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "Access Control",
+      "description": "Least Privilege",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/ac/ac-6"
+    },
+    {
+      "control": "A.9.2.4",
+      "standard": "ISO27001:2022",
+      "category": "Access Control",
+      "description": "Management of Privileged Access Rights",
+      "controlLink": ""
+    },
+    {
+      "control": "2.2.6",
+      "standard": "PCI_DSS 4.0",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "System security parameters are configured to prevent misuse",
+      "controlLink": ""
+    },
+    {
+      "control": "2.2.4",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Configure system security parameters to prevent abuse",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_301": [
+    {
+      "control": "SC-7(9)",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "System and Communications Protection",
+      "description": "Restrict Threatening Outgoing Communications Traffic",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-7/sc-7-9"
+    },
+    {
+      "control": "CC6.6",
+      "standard": "SOC2",
+      "category": "CC6.0 - Logical and Physical Access",
+      "description": "CC6.6 The entity implements logical access security measures to protect against threats from sources outside its system boundaries",
+      "controlLink": ""
+    },
+    {
+      "control": "A.9.4.1",
+      "standard": "ISO27001:2022",
+      "category": "Access Control",
+      "description": "Information Access Restriction",
+      "controlLink": ""
+    },
+    {
+      "control": "1.4",
+      "standard": "PCI_DSS 4.0",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Network connections between trusted and untrusted networks are controlled",
+      "controlLink": ""
+    },
+    {
+      "control": "1.3",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Restrict direct global access to any system component of the cardholder data medium over the internet",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_319": [
+    {
+      "control": "SI-4(12)",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "System and Information Integrity",
+      "description": "Automated Organization-generated Alerts",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-4/si-4-12"
+    },
+    {
+      "control": "12.10",
+      "standard": "PCI_DSS 4.0",
+      "category": "Support Information Security with Organizational Policies and Programs",
+      "description": "Suspected and confirmed security incidents that could impact the CDE are responded to immediately",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_311": [
+    {
+      "control": "SI-7(6)",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "System and Information Integrity",
+      "description": "Cryptographic Protection",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-7/si-7-6"
+    },
+    {
+      "control": "10.3",
+      "standard": "PCI_DSS 4.0",
+      "category": "Regularly Monitor and Test Networks",
+      "description": "Audit logs are protected from destruction and unauthorized modifications",
+      "controlLink": ""
+    },
+    {
+      "control": "10.5.2",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Regularly Monitor and Test Networks",
+      "description": "Protect audit trail files from unauthorized changes",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_315": [
+    {
+      "control": "CM-2(2)",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "Configuration Management",
+      "description": "Automation Support for Accuracy and Currency",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/cm/cm-2/cm-2-2"
+    }
+  ],
+  "CKV_AWS_333": [
+    {
+      "control": "SC-7(9)",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "System and Communications Protection",
+      "description": "Restrict Threatening Outgoing Communications Traffic",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-7/sc-7-9"
+    },
+    {
+      "control": "CC6.6",
+      "standard": "SOC2",
+      "category": "CC6.0 - Logical and Physical Access",
+      "description": "CC6.6 The entity implements logical access security measures to protect against threats from sources outside its system boundaries",
+      "controlLink": ""
+    },
+    {
+      "control": "A.9.4.1",
+      "standard": "ISO27001:2022",
+      "category": "Access Control",
+      "description": "Information Access Restriction",
+      "controlLink": ""
+    },
+    {
+      "control": "1.3",
+      "standard": "PCI_DSS 4.0",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Network access to and from the cardholder data environment is restricted",
+      "controlLink": ""
+    },
+    {
+      "control": "1.2.1",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Limit inbound and outbound traffic to only what is required for the cardholder data environment and specifically reject all other traffic",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_321": [
+    {
+      "control": "SC-7(9)",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "System and Communications Protection",
+      "description": "Restrict Threatening Outgoing Communications Traffic",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-7/sc-7-9"
+    },
+    {
+      "control": "CC6.6",
+      "standard": "SOC2",
+      "category": "CC6.0 - Logical and Physical Access",
+      "description": "CC6.6 The entity implements logical access security measures to protect against threats from sources outside its system boundaries",
+      "controlLink": ""
+    },
+    {
+      "control": "A.9.4.1",
+      "standard": "ISO27001:2022",
+      "category": "Access Control",
+      "description": "Information Access Restriction",
+      "controlLink": ""
+    },
+    {
+      "control": "1.2",
+      "standard": "PCI_DSS 4.0",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Network security controls (NSCs) are configured and maintained",
+      "controlLink": ""
+    },
+    {
+      "control": "1.1",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Set and implement firewall and router configuration standards",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_307": [
+    {
+      "control": "AC-6(2)",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "Access Control",
+      "description": "Non-privileged Access for Nonsecurity Functions",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/ac/ac-6/ac-6-2"
+    },
+    {
+      "control": "CC6.3",
+      "standard": "SOC2",
+      "category": "CC6.0 - Logical and Physical Access",
+      "description": "CC6.3 The entity authorizes, modifies, or removes access to data, software, functions, and other protected information assets based on roles, responsibilities, or the system design and changes, giving consideration to the concepts of least privilege and segregation of duties, to meet the entity\u2019s objectives",
+      "controlLink": ""
+    },
+    {
+      "control": "A.9.2.3",
+      "standard": "ISO27001:2022",
+      "category": "Access Control",
+      "description": "Information Access Restriction",
+      "controlLink": ""
+    },
+    {
+      "control": "7.2.5",
+      "standard": "PCI_DSS 4.0",
+      "category": "Restrict Access to System Components and Cardholder Data",
+      "description": "All application and system accounts and related access privileges are assigned and managed",
+      "controlLink": ""
+    },
+    {
+      "control": "7.1.4",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Restrict Access to System Components and Cardholder Data",
+      "description": "Request documented approval from the competent parties that indicate the required privileges",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_338": [
+    {
+      "control": "SI-12",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "System and Information Integrity",
+      "description": "Information Management and Retention",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-12"
+    },
+    {
+      "control": "10.5.1",
+      "standard": "PCI_DSS 4.0",
+      "category": "Log and Monitor All Access to System Components and Cardholder Data",
+      "description": "Retain audit log history for at least 12 months, with at least the most recent three months immediately available for analysis",
+      "controlLink": ""
+    },
+    {
+      "control": "10.7",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Log and Monitor All Access to System Components and Cardholder Data",
+      "description": "Retain audit trail history for at least one year and have at least three months of data ready for analysis",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_320": [
+    {
+      "control": "CM-2",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "Configuration Management",
+      "description": "Baseline Configuration",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/cm/cm-2"
+    },
+    {
+      "control": "2.2",
+      "standard": "PCI_DSS 4.0",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "System components are configured and managed securely",
+      "controlLink": ""
+    },
+    {
+      "control": "2.1",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Always change the vendor-supplied defaults and remove or disable unnecessary default accounts before installing a system on the network",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_334": [
+    {
+      "control": "AC-6",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "Access Control",
+      "description": "Least Privilege",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/ac/ac-6"
+    },
+    {
+      "control": "A.9.2.3",
+      "standard": "ISO27001:2022",
+      "category": "Access Control",
+      "description": "Information Access Restriction",
+      "controlLink": ""
+    },
+    {
+      "control": "7.2.5",
+      "standard": "PCI_DSS 4.0",
+      "category": "Restrict Access to System Components and Cardholder Data",
+      "description": "All application and system accounts and related access privileges are assigned and managed",
+      "controlLink": ""
+    },
+    {
+      "control": "7.1.4",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Restrict Access to System Components and Cardholder Data",
+      "description": "Request documented approval from the competent parties that indicate the required privileges",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_343": [
+    {
+      "control": "SI-13(5)",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "System and Information Integrity",
+      "description": "Failover Capability",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-13/si-13-5"
+    }
+  ],
+  "CKV_AWS_306": [
+    {
+      "control": "SC-7(9)",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "System and Communications Protection",
+      "description": "Restrict Threatening Outgoing Communications Traffic",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-7/sc-7-9"
+    },
+    {
+      "control": "CC6.6",
+      "standard": "SOC2",
+      "category": "CC6.0 - Logical and Physical Access",
+      "description": "CC6.6 The entity implements logical access security measures to protect against threats from sources outside its system boundaries",
+      "controlLink": ""
+    },
+    {
+      "control": "A.9.4.1",
+      "standard": "ISO27001:2022",
+      "category": "Access Control",
+      "description": "Information Access Restriction",
+      "controlLink": ""
+    },
+    {
+      "control": "1.3",
+      "standard": "PCI_DSS 4.0",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Network access to and from the cardholder data environment is restricted",
+      "controlLink": ""
+    },
+    {
+      "control": "1.2.1",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Limit inbound and outbound traffic to only what is required for the cardholder data environment and specifically reject all other traffic",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_316": [
+    {
+      "control": "AC-6(2)",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "Access Control",
+      "description": "Non-privileged Access for Nonsecurity Functions",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/ac/ac-6/ac-6-2"
+    },
+    {
+      "control": "CC6.3",
+      "standard": "SOC2",
+      "category": "CC6.0 - Logical and Physical Access",
+      "description": "CC6.3 The entity authorizes, modifies, or removes access to data, software, functions, and other protected information assets based on roles, responsibilities, or the system design and changes, giving consideration to the concepts of least privilege and segregation of duties, to meet the entity\u2019s objectives",
+      "controlLink": ""
+    },
+    {
+      "control": "A.9.2.3",
+      "standard": "ISO27001:2022",
+      "category": "Access Control",
+      "description": "Management of Privileged Access Rights",
+      "controlLink": ""
+    },
+    {
+      "control": "2.2.6",
+      "standard": "PCI_DSS 4.0",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "System security parameters are configured to prevent misuse",
+      "controlLink": ""
+    },
+    {
+      "control": "2.2.4",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Configure system security parameters to prevent abuse",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_329": [
+    {
+      "control": "AC-6(10)",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "Access Control",
+      "description": "Prohibit Non-privileged Users from Executing Privileged Functions",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/ac/ac-6/ac-6-10"
+    },
+    {
+      "control": "A.9.2.3",
+      "standard": "ISO27001:2022",
+      "category": "Access Control",
+      "description": "Management of Privileged Access Rights",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_328": [
+    {
+      "control": "CM-2",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "Configuration Management",
+      "description": "Baseline Configuration",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/cm/cm-2"
+    },
+    {
+      "control": "1.2",
+      "standard": "PCI_DSS 4.0",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Network security controls (NSCs) are configured and maintained",
+      "controlLink": ""
+    },
+    {
+      "control": "1.1",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Set and implement firewall and router configuration standards",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_339": [
+    {
+      "control": "SI-2(5)",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "System and Information Integrity",
+      "description": "Automatic Software and Firmware Updates",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-2/si-2-5"
+    },
+    {
+      "control": "CC3.2",
+      "standard": "SOC2",
+      "category": "CC3.0 - Common Criteria Related to Risk Assessment",
+      "description": "CC3.2 COSO Principle 7: The entity identifies risks to the achievement of its objectives across the entity and analyzes risks as a basis for determining how the risks should be managed",
+      "controlLink": ""
+    },
+    {
+      "control": "A.12.6.1",
+      "standard": "ISO27001:2022",
+      "category": "Operational Procedures and Responsibilities",
+      "description": "Management of Technical Vulnerabilities",
+      "controlLink": ""
+    },
+    {
+      "control": "6.3.3",
+      "standard": "PCI_DSS 4.0",
+      "category": "Maintain a Vulnerability Management Program",
+      "description": "All system components are protected from known vulnerabilities by installing applicable security patches/updates",
+      "controlLink": ""
+    },
+    {
+      "control": "6.2",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Maintain a Vulnerability Management Program",
+      "description": "Ensure that all system components and software are protected from known vulnerabilities by installing the applicable security patches provided by the manufacturer. Install critical security patches within a month",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_330": [
+    {
+      "control": "AC-6(2)",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "Access Control",
+      "description": "Non-privileged Access for Nonsecurity Functions",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/ac/ac-6/ac-6-2"
+    },
+    {
+      "control": "CC6.3",
+      "standard": "SOC2",
+      "category": "CC6.0 - Logical and Physical Access",
+      "description": "CC6.3 The entity authorizes, modifies, or removes access to data, software, functions, and other protected information assets based on roles, responsibilities, or the system design and changes, giving consideration to the concepts of least privilege and segregation of duties, to meet the entity\u2019s objectives",
+      "controlLink": ""
+    },
+    {
+      "control": "A.9.2.3",
+      "standard": "ISO27001:2022",
+      "category": "Access Control",
+      "description": "Management of Privileged Access Rights",
+      "controlLink": ""
+    },
+    {
+      "control": "8.1",
+      "standard": "PCI_DSS 4.0",
+      "category": "Implement Strong Access Control Measures",
+      "description": "Processes and mechanisms for identifying users and authenticating access to system components are defined and understood",
+      "controlLink": ""
+    },
+    {
+      "control": "8.1.1",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Implement Strong Access Control Measures",
+      "description": "Define and implement policies and procedures to provide accurate user identity management for non-consumer users and administrators in all system components",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_312": [
+    {
+      "control": "SI-2",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "System and Information Integrity",
+      "description": "Flaw Remediation",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-2"
+    }
+  ],
+  "CKV_AWS_331": [
+    {
+      "control": "CM-2",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "Configuration Management",
+      "description": "Baseline Configuration",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/cm/cm-2"
+    },
+    {
+      "control": "1.2",
+      "standard": "PCI_DSS 4.0",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Network security controls (NSCs) are configured and maintained",
+      "controlLink": ""
+    },
+    {
+      "control": "1.1",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Set and implement firewall and router configuration standards",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_310": [
+    {
+      "control": "SI-13(5)",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "System and Information Integrity",
+      "description": "Failover Capability",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-13/si-13-5"
+    }
+  ],
+  "CKV_AWS_305": [
+    {
+      "control": "SC-7(16)",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "System and Communications Protection",
+      "description": "Prevent Discovery of System Components",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-7/sc-7-16"
+    }
+  ],
+  "CKV_AWS_326": [
+    {
+      "control": "SI-13(5)",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "System and Information Integrity",
+      "description": "Failover Capability",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-13/si-13-5"
+    }
+  ],
+  "CKV_AWS_335": [
+    {
+      "control": "CM-2",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "Configuration Management",
+      "description": "Baseline Configuration",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/cm/cm-2"
+    },
+    {
+      "control": "2.2.6",
+      "standard": "PCI_DSS 4.0",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "System security parameters are configured to prevent misuse",
+      "controlLink": ""
+    },
+    {
+      "control": "2.2.4",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Configure system security parameters to prevent abuse",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_325": [
+    {
+      "control": "SI-7(8)",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "System and Information Integrity",
+      "description": "Auditing Capability for Significant Events",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-7/si-7-8"
+    },
+    {
+      "control": "A.12.4.1",
+      "standard": "ISO27001:2022",
+      "category": "Operational Procedures and Responsibilities",
+      "description": "Event Logging",
+      "controlLink": ""
+    },
+    {
+      "control": "10.2",
+      "standard": "PCI_DSS 4.0",
+      "category": "Regularly Monitor and Test Networks",
+      "description": "Audit logs are implemented to support the detection of anomalies and suspicious activity, and the forensic analysis of events",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_308": [
+    {
+      "control": "SI-7(6)",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "System and Information Integrity",
+      "description": "Cryptographic Protection",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-7/si-7-6"
+    },
+    {
+      "control": "4.1",
+      "standard": "PCI_DSS 4.0",
+      "category": "Protect Cardholder Data with Strong Cryptography During Transmission Over Open, Public Networks",
+      "description": "Processes and mechanisms for protecting cardholder data with strong cryptography during transmission over open, public networks are defined and documented",
+      "controlLink": ""
+    },
+    {
+      "control": "4.1",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Protect Cardholder Data with Strong Cryptography During Transmission Over Open, Public Networks",
+      "description": "Use strong encryption and security protocols to protect sensitive cardholder data during transmission over open, public networks",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_309": [
+    {
+      "control": "CM-2(2)",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "Configuration Management",
+      "description": "Automation Support for Accuracy and Currency",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/cm/cm-2/cm-2-2"
+    },
+    {
+      "control": "7.2",
+      "standard": "PCI_DSS 4.0",
+      "category": "Restrict Access to System Components and Cardholder Data",
+      "description": "Access to system components and data is appropriately defined and assigned",
+      "controlLink": ""
+    },
+    {
+      "control": "7",
+      "standard": "PCI_DSS 4.0",
+      "category": "Restrict Access to System Components and Cardholder Data",
+      "description": "Restrict access to cardholder data based on business requirements",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_322": [
+    {
+      "control": "SI-2(5)",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "System and Information Integrity",
+      "description": "Automatic Software and Firmware Updates",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-2/si-2-5"
+    },
+    {
+      "control": "CC3.2",
+      "standard": "SOC2",
+      "category": "CC3.0 - Common Criteria Related to Risk Assessment",
+      "description": "CC3.2 COSO Principle 7: The entity identifies risks to the achievement of its objectives across the entity and analyzes risks as a basis for determining how the risks should be managed",
+      "controlLink": ""
+    },
+    {
+      "control": "A.12.6.1",
+      "standard": "ISO27001:2022",
+      "category": "Operational Procedures and Responsibilities",
+      "description": "Management of Technical Vulnerabilities",
+      "controlLink": ""
+    },
+    {
+      "control": "6.3.3",
+      "standard": "PCI_DSS 4.0",
+      "category": "Maintain a Vulnerability Management Program",
+      "description": "All system components are protected from known vulnerabilities by installing applicable security patches/updates",
+      "controlLink": ""
+    },
+    {
+      "control": "6.2",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Maintain a Vulnerability Management Program",
+      "description": "Ensure that all system components and software are protected from known vulnerabilities by installing the applicable security patches provided by the manufacturer. Install critical security patches within a month",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_332": [
+    {
+      "control": "SI-2(5)",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "System and Information Integrity",
+      "description": "Automatic Software and Firmware Updates",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-2/si-2-5"
+    },
+    {
+      "control": "CC3.2",
+      "standard": "SOC2",
+      "category": "CC3.0 - Common Criteria Related to Risk Assessment",
+      "description": "CC3.2 COSO Principle 7: The entity identifies risks to the achievement of its objectives across the entity and analyzes risks as a basis for determining how the risks should be managed",
+      "controlLink": ""
+    },
+    {
+      "control": "A.12.6.1",
+      "standard": "ISO27001:2022",
+      "category": "Operational Procedures and Responsibilities",
+      "description": "Management of Technical Vulnerabilities",
+      "controlLink": ""
+    },
+    {
+      "control": "6.3.3",
+      "standard": "PCI_DSS 4.0",
+      "category": "Maintain a Vulnerability Management Program",
+      "description": "All system components are protected from known vulnerabilities by installing applicable security patches/updates",
+      "controlLink": ""
+    },
+    {
+      "control": "6.2",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Maintain a Vulnerability Management Program",
+      "description": "Ensure that all system components and software are protected from known vulnerabilities by installing the applicable security patches provided by the manufacturer. Install critical security patches within a month",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_323": [
+    {
+      "control": "SC-7(5)",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "System and Communications Protection",
+      "description": "Deny by Default \u2014 Allow by Exception",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-7/sc-7-5"
+    },
+    {
+      "control": "1.3",
+      "standard": "PCI_DSS 4.0",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Network access to and from the cardholder data environment is restricted",
+      "controlLink": ""
+    },
+    {
+      "control": "1.2.1",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Limit inbound and outbound traffic to only what is required for the cardholder data environment and specifically reject all other traffic",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_318": [
+    {
+      "control": "SI-13(5)",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "System and Information Integrity",
+      "description": "Failover Capability",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-13/si-13-5"
+    }
+  ],
+  "CKV_AWS_341": [
+    {
+      "control": "CM-2(2)",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "Configuration Management",
+      "description": "Automation Support for Accuracy and Currency",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/cm/cm-2/cm-2-2"
+    }
+  ],
+  "CKV_AWS_324": [
+    {
+      "control": "SI-7(8)",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "System and Information Integrity",
+      "description": "Auditing Capability for Significant Events",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-7/si-7-8"
+    },
+    {
+      "control": "A.12.4.1",
+      "standard": "ISO27001:2022",
+      "category": "Operational Procedures and Responsibilities",
+      "description": "Event Logging",
+      "controlLink": ""
+    },
+    {
+      "control": "10.2",
+      "standard": "PCI_DSS 4.0",
+      "category": "Regularly Monitor and Test Networks",
+      "description": "Audit logs are implemented to support the detection of anomalies and suspicious activity, and the forensic analysis of events",
+      "controlLink": ""
+    }
+  ],
+  "CKV2_GHA_1": [
+    {
+      "control": "AC-3(13)",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "Access Control",
+      "description": "Attribute-based Access Control",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/ac/ac-3/ac-3-13"
+    },
+    {
+      "control": "CC6.3",
+      "standard": "SOC2",
+      "category": "CC6.0 - Logical and Physical Access",
+      "description": "CC6.3 The entity authorizes, modifies, or removes access to data, software, functions, and other protected information assets based on roles, responsibilities, or the system design and changes, giving consideration to the concepts of least privilege and segregation of duties, to meet the entity\u2019s objectives",
+      "controlLink": ""
+    },
+    {
+      "control": "A.9.2.3",
+      "standard": "ISO27001:2022",
+      "category": "Access Control",
+      "description": "Management of Privileged Access Rights",
+      "controlLink": ""
+    },
+    {
+      "control": "2.2.6",
+      "standard": "PCI_DSS 4.0",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "System security parameters are configured to prevent misuse",
+      "controlLink": ""
+    },
+    {
+      "control": "2.2.4",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Configure system security parameters to prevent abuse",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_117": [
+    {
+      "control": "AC-4(21)",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "Access Control",
+      "description": "Physical or Logical Separation of Information Flows",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/ac/ac-4/ac-4-21"
+    },
+    {
+      "control": "1.4",
+      "standard": "PCI_DSS 4.0",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Network connections between trusted and untrusted networks are controlled",
+      "controlLink": ""
+    },
+    {
+      "control": "1.3",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Restrict direct global access to any system component of the cardholder data medium over the internet",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_76": [
+    {
+      "control": "AU-2",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "Audit and Accountability",
+      "description": "Event Logging",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/au/au-2"
+    },
+    {
+      "control": "10.2",
+      "standard": "PCI_DSS 4.0",
+      "category": "Regularly Monitor and Test Networks",
+      "description": "Audit logs are implemented to support the detection of anomalies and suspicious activity, and the forensic analysis of events",
+      "controlLink": ""
+    }
+  ],
+  "CKV_K8S_20": [
+    {
+      "control": "AC-6",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "Access Control",
+      "description": "Least Privilege",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/ac/ac-6"
+    },
+    {
+      "control": "A.9.2.3",
+      "standard": "ISO27001:2022",
+      "category": "Access Control",
+      "description": "Management of Privileged Access Rights",
+      "controlLink": ""
+    },
+    {
+      "control": "2.2.6",
+      "standard": "PCI_DSS 4.0",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "System security parameters are configured to prevent misuse",
+      "controlLink": ""
+    },
+    {
+      "control": "2.2.4",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Configure system security parameters to prevent abuse",
+      "controlLink": ""
+    }
+  ],
+  "CKV_K8S_23": [
+    {
+      "control": "AC-6",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "Access Control",
+      "description": "Least Privilege",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/ac/ac-6"
+    },
+    {
+      "control": "A.9.2.3",
+      "standard": "ISO27001:2022",
+      "category": "Access Control",
+      "description": "Management of Privileged Access Rights",
+      "controlLink": ""
+    },
+    {
+      "control": "2.2.6",
+      "standard": "PCI_DSS 4.0",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "System security parameters are configured to prevent misuse",
+      "controlLink": ""
+    },
+    {
+      "control": "2.2.4",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Configure system security parameters to prevent abuse",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_18": [
+    {
+      "control": "AU-2",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "Audit and Accountability",
+      "description": "Event Logging",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/au/au-2"
+    },
+    {
+      "control": "10.2",
+      "standard": "PCI_DSS 4.0",
+      "category": "Regularly Monitor and Test Networks",
+      "description": "Audit logs are implemented to support the detection of anomalies and suspicious activity, and the forensic analysis of events",
+      "controlLink": ""
+    }
+  ],
+  "CKV2_K8S_6": [
+    {
+      "control": "AC-6",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "Access Control",
+      "description": "Least Privilege",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/ac/ac-6"
+    },
+    {
+      "control": "A.9.2.3",
+      "standard": "ISO27001:2022",
+      "category": "Access Control",
+      "description": "Management of Privileged Access Rights",
+      "controlLink": ""
+    },
+    {
+      "control": "1.2",
+      "standard": "PCI_DSS 4.0",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Network security controls (NSCs) are configured and maintained",
+      "controlLink": ""
+    },
+    {
+      "control": "1.1",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Set and implement firewall and router configuration standards",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_55": [
+    {
+      "control": "MP-2",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "Media Protection",
+      "description": "Media Access",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/mp/mp-2"
+    },
+    {
+      "control": "9.4",
+      "standard": "PCI_DSS 4.0",
+      "category": "Implement Strong Access Control Measures",
+      "description": "Media with cardholder data is securely stored, accessed, distributed, and destroyed",
+      "controlLink": ""
+    },
+    {
+      "control": "9.7",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Implement Strong Access Control Measures",
+      "description": "Have strict control over media storage and accessibility",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_56": [
+    {
+      "control": "MP-2",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "Media Protection",
+      "description": "Media Access",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/mp/mp-2"
+    },
+    {
+      "control": "9.4",
+      "standard": "PCI_DSS 4.0",
+      "category": "Implement Strong Access Control Measures",
+      "description": "Media with cardholder data is securely stored, accessed, distributed, and destroyed",
+      "controlLink": ""
+    },
+    {
+      "control": "9.7",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Implement Strong Access Control Measures",
+      "description": "Have strict control over media storage and accessibility",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_111": [
+    {
+      "control": "AC-3",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "Access Control",
+      "description": "Access Enforcement",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/ac/ac-3"
+    },
+    {
+      "control": "CC6.3",
+      "standard": "SOC2",
+      "category": "CC6.0 - Logical and Physical Access",
+      "description": "CC6.3 The entity authorizes, modifies, or removes access to data, software, functions, and other protected information assets based on roles, responsibilities, or the system design and changes, giving consideration to the concepts of least privilege and segregation of duties, to meet the entity\u2019s objectives",
+      "controlLink": ""
+    },
+    {
+      "control": "A.9.4.1",
+      "standard": "ISO27001:2022",
+      "category": "Access Control",
+      "description": "Information Access Restriction",
+      "controlLink": ""
+    },
+    {
+      "control": "7.2",
+      "standard": "PCI_DSS 4.0",
+      "category": "Implement Strong Access Control Measures",
+      "description": "Access to system components and data is appropriately defined and assigned",
+      "controlLink": ""
+    },
+    {
+      "control": "7.1.2",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Implement Strong Access Control Measures",
+      "description": "Restrict access to privileged user IDs to the minimum privileges required to fulfill job responsibilities",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_53": [
+    {
+      "control": "MP-2",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "Media Protection",
+      "description": "Media Access",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/mp/mp-2"
+    },
+    {
+      "control": "9.4",
+      "standard": "PCI_DSS 4.0",
+      "category": "Implement Strong Access Control Measures",
+      "description": "Media with cardholder data is securely stored, accessed, distributed, and destroyed",
+      "controlLink": ""
+    },
+    {
+      "control": "9.7",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Implement Strong Access Control Measures",
+      "description": "Have strict control over media storage and accessibility",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_54": [
+    {
+      "control": "MP-2",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "Media Protection",
+      "description": "Media Access",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/mp/mp-2"
+    },
+    {
+      "control": "9.4",
+      "standard": "PCI_DSS 4.0",
+      "category": "Implement Strong Access Control Measures",
+      "description": "Media with cardholder data is securely stored, accessed, distributed, and destroyed",
+      "controlLink": ""
+    },
+    {
+      "control": "9.7",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Implement Strong Access Control Measures",
+      "description": "Have strict control over media storage and accessibility",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_68": [
+    {
+      "control": "AC-4(21)",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "Access Control",
+      "description": "Physical or Logical Separation of Information Flows",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/ac/ac-4/ac-4-21"
+    },
+    {
+      "control": "6.4.1",
+      "standard": "PCI_DSS 4.0",
+      "category": "Maintain a Vulnerability Management Program",
+      "description": "An automated technical solution(s) that continually detects and prevents web-based attacks is installed",
+      "controlLink": ""
+    },
+    {
+      "control": "6.6",
+      "standard": "PCI_DSS 4.0",
+      "category": "Maintain a Vulnerability Management Program",
+      "description": "Constantly address new threats and vulnerabilities for Internet-facing web applications and ensure that these applications are protected from known attacks",
+      "controlLink": ""
+    }
+  ],
+  "CKV_K8S_16": [
+    {
+      "control": "AC-6",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "Access Control",
+      "description": "Least Privilege",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/ac/ac-6"
+    },
+    {
+      "control": "A.9.2.3",
+      "standard": "ISO27001:2022",
+      "category": "Access Control",
+      "description": "Management of Privileged Access Rights",
+      "controlLink": ""
+    },
+    {
+      "control": "2.2.6",
+      "standard": "PCI_DSS 4.0",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "System security parameters are configured to prevent misuse",
+      "controlLink": ""
+    },
+    {
+      "control": "2.2.4",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Configure system security parameters to prevent abuse",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_103": [
+    {
+      "control": "AC-17(2)",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "Access Control",
+      "description": "Protection of Confidentiality and Integrity Using Encryption",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/ac/ac-17/ac-17-2"
+    },
+    {
+      "control": "4.1",
+      "standard": "PCI_DSS 4.0",
+      "category": "Protect Cardholder Data with Strong Cryptography During Transmission Over Open, Public Networks",
+      "description": "Processes and mechanisms for protecting cardholder data with strong cryptography during transmission over open, public networks are defined and documented.",
+      "controlLink": ""
+    },
+    {
+      "control": "4.1",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Protect Cardholder Data with Strong Cryptography During Transmission Over Open, Public Networks",
+      "description": "Use strong encryption and security protocols to protect sensitive cardholder data during transmission over open, public networks",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_8": [
+    {
+      "control": "SC-13",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "System and Communications Protection",
+      "description": "Cryptographic Protection",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-13"
+    }
+  ],
+  "CKV2_AWS_11": [
+    {
+      "control": "SI-4(17)",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "System and Information Integrity",
+      "description": "Integrated Situational Awareness",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-4/si-4-17"
+    },
+    {
+      "control": "10.2",
+      "standard": "PCI_DSS 4.0",
+      "category": "Regularly Monitor and Test Networks",
+      "description": "Audit logs are implemented to support the detection of anomalies and suspicious activity, and the forensic analysis of events",
+      "controlLink": ""
+    }
+  ],
+  "CKV2_AWS_12": [
+    {
+      "control": "AC-4(21)",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "Access Control",
+      "description": "Physical or Logical Separation of Information Flows",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/ac/ac-4/ac-4-21"
+    },
+    {
+      "control": "1.2",
+      "standard": "PCI_DSS 4.0",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Network security controls (NSCs) are configured and maintained",
+      "controlLink": ""
+    },
+    {
+      "control": "1.1",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Set and implement firewall and router configuration standards",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_24": [
+    {
+      "control": "AC-4(21)",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "Access Control",
+      "description": "Physical or Logical Separation of Information Flows",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/ac/ac-4/ac-4-21"
+    },
+    {
+      "control": "1.4",
+      "standard": "PCI_DSS 4.0",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Network connections between trusted and untrusted networks are controlled",
+      "controlLink": ""
+    },
+    {
+      "control": "1.3",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Restrict direct global access to any system component of the cardholder data medium over the internet",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_39": [
+    {
+      "control": "SC-7",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "System and Communications Protection",
+      "description": "Boundary Protection",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-7"
+    },
+    {
+      "control": "CC6.6",
+      "standard": "SOC2",
+      "category": "CC6.0 - Logical and Physical Access",
+      "description": "CC6.6 The entity implements logical access security measures to protect against threats from sources outside its system boundaries",
+      "controlLink": ""
+    },
+    {
+      "control": "A.9.4.1",
+      "standard": "ISO27001:2022",
+      "category": "Access Control",
+      "description": "Information Access Restriction",
+      "controlLink": ""
+    },
+    {
+      "control": "1.4",
+      "standard": "PCI_DSS 4.0",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Network connections between trusted and untrusted networks are controlled",
+      "controlLink": ""
+    },
+    {
+      "control": "1.3",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Restrict direct global access to any system component of the cardholder data medium over the internet",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_7": [
+    {
+      "control": "CM-6",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "Configuration Management",
+      "description": "Configuration Settings",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/cm/cm-6"
+    },
+    {
+      "control": "3.6",
+      "standard": "PCI_DSS 4.0",
+      "category": "Protect Account Data",
+      "description": "Cryptographic keys used to protect stored account data are secured.",
+      "controlLink": ""
+    },
+    {
+      "control": "3.5",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Protect Account Data",
+      "description": "Create and implement procedures to protect keys used to protect stored cardholder data against disclosure and misuse",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_110": [
+    {
+      "control": "AC-5",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "Access Control",
+      "description": "Separation of Duties",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/ac/ac-5"
+    },
+    {
+      "control": "7.1",
+      "standard": "PCI_DSS 4.0",
+      "category": "Restrict Access to System Components and Cardholder Data",
+      "description": "Processes and mechanisms for restricting access to system components and cardholder data by business need to know are defined and understood",
+      "controlLink": ""
+    },
+    {
+      "control": "7.1",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Restrict Access to System Components and Cardholder Data",
+      "description": "Limit access to system components and cardholder data only to people who require this access",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_16": [
+    {
+      "control": "SC-28",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "System and Communications Protection",
+      "description": "Protection of Information at Rest",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-28"
+    },
+    {
+      "control": "CC6.1",
+      "standard": "SOC2",
+      "category": "CC6.0 - Logical and Physical Access",
+      "description": "CC6.1 The entity implements logical access security software, infrastructure, and architectures over protected information assets to protect them from security events to meet the entity's objectives",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_38": [
+    {
+      "control": "SC-7",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "System and Communications Protection",
+      "description": "Boundary Protection",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-7"
+    },
+    {
+      "control": "CC6.6",
+      "standard": "SOC2",
+      "category": "CC6.0 - Logical and Physical Access",
+      "description": "CC6.6 The entity implements logical access security measures to protect against threats from sources outside its system boundaries",
+      "controlLink": ""
+    },
+    {
+      "control": "A.9.4.1",
+      "standard": "ISO27001:2022",
+      "category": "Access Control",
+      "description": "Information Access Restriction",
+      "controlLink": ""
+    },
+    {
+      "control": "1.4",
+      "standard": "PCI_DSS 4.0",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Network connections between trusted and untrusted networks are controlled",
+      "controlLink": ""
+    },
+    {
+      "control": "1.3",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Restrict direct global access to any system component of the cardholder data medium over the internet",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_88": [
+    {
+      "control": "AC-4(21)",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "Access Control",
+      "description": "Physical or Logical Separation of Information Flows",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/ac/ac-4/ac-4-21"
+    },
+    {
+      "control": "1.4.5",
+      "standard": "PCI_DSS 4.0",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "The disclosure of internal IP addresses and routing information is limited to only authorized parties",
+      "controlLink": ""
+    },
+    {
+      "control": "1.3",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Restrict direct global access to any system component of the cardholder data medium over the internet",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_20": [
+    {
+      "control": "MP-2",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "Media Protection",
+      "description": "Media Access",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/mp/mp-2"
+    },
+    {
+      "control": "9.4",
+      "standard": "PCI_DSS 4.0",
+      "category": "Implement Strong Access Control Measures",
+      "description": "Media with cardholder data is securely stored, accessed, distributed, and destroyed",
+      "controlLink": ""
+    },
+    {
+      "control": "9.7",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Implement Strong Access Control Measures",
+      "description": "Have strict control over media storage and accessibility",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_61": [
+    {
+      "control": "AC-3(13)",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "Access Control",
+      "description": "Attribute-based Access Control",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/ac/ac-3/ac-3-13"
+    },
+    {
+      "control": "CC6.3",
+      "standard": "SOC2",
+      "category": "CC6.0 - Logical and Physical Access",
+      "description": "CC6.3 The entity authorizes, modifies, or removes access to data, software, functions, and other protected information assets based on roles, responsibilities, or the system design and changes, giving consideration to the concepts of least privilege and segregation of duties, to meet the entity\u2019s objectives",
+      "controlLink": ""
+    },
+    {
+      "control": "A.9.4.1",
+      "standard": "ISO27001:2022",
+      "category": "Access Control",
+      "description": "Information Access Restriction",
+      "controlLink": ""
+    },
+    {
+      "control": "7.1",
+      "standard": "PCI_DSS 4.0",
+      "category": "Restrict Access to System Components and Cardholder Data",
+      "description": "Processes and mechanisms for restricting access to system components and cardholder data by business need to know are defined and understood",
+      "controlLink": ""
+    },
+    {
+      "control": "7.1",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Restrict Access to System Components and Cardholder Data",
+      "description": "Limit access to system components and cardholder data only to people who require this access",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_17": [
+    {
+      "control": "AC-3",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "Access Control",
+      "description": "Access Enforcement",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/ac/ac-3"
+    },
+    {
+      "control": "CC6.3",
+      "standard": "SOC2",
+      "category": "CC6.0 - Logical and Physical Access",
+      "description": "CC6.3 The entity authorizes, modifies, or removes access to data, software, functions, and other protected information assets based on roles, responsibilities, or the system design and changes, giving consideration to the concepts of least privilege and segregation of duties, to meet the entity\u2019s objectives",
+      "controlLink": ""
+    },
+    {
+      "control": "A.9.4.1",
+      "standard": "ISO27001:2022",
+      "category": "Access Control",
+      "description": "Information Access Restriction",
+      "controlLink": ""
+    },
+    {
+      "control": "1.4",
+      "standard": "PCI_DSS 4.0",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Network connections between trusted and untrusted networks are controlled",
+      "controlLink": ""
+    },
+    {
+      "control": "1.3",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Restrict direct global access to any system component of the cardholder data medium over the internet",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_60": [
+    {
+      "control": "AC-3(13)",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "Access Control",
+      "description": "Attribute-based Access Control",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/ac/ac-3/ac-3-13"
+    },
+    {
+      "control": "CC6.3",
+      "standard": "SOC2",
+      "category": "CC6.0 - Logical and Physical Access",
+      "description": "CC6.3 The entity authorizes, modifies, or removes access to data, software, functions, and other protected information assets based on roles, responsibilities, or the system design and changes, giving consideration to the concepts of least privilege and segregation of duties, to meet the entity\u2019s objectives",
+      "controlLink": ""
+    },
+    {
+      "control": "A.9.2.3",
+      "standard": "ISO27001:2022",
+      "category": "Access Control",
+      "description": "Management of Privileged Access Rights",
+      "controlLink": ""
+    },
+    {
+      "control": "7.2.5",
+      "standard": "PCI_DSS 4.0",
+      "category": "Restrict Access to System Components and Cardholder Data",
+      "description": "All application and system accounts and related access privileges are assigned and managed",
+      "controlLink": ""
+    },
+    {
+      "control": "7.1.4",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Restrict Access to System Components and Cardholder Data",
+      "description": "Request documented approval from the competent parties that indicate the required privileges",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AWS_96": [
+    {
+      "control": "SC-28",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "System and Communications Protection",
+      "description": "Protection of Information at Rest",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-28"
+    },
+    {
+      "control": "CC6.1",
+      "standard": "SOC2",
+      "category": "CC6.0 - Logical and Physical Access",
+      "description": "CC6.1 The entity implements logical access security software, infrastructure, and architectures over protected information assets to protect them from security events to meet the entity's objectives",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AZURE_34": [
+    {
+      "control": "MP-2",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "Media Protection",
+      "description": "Media Access",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/mp/mp-2"
+    },
+    {
+      "control": "9.4",
+      "standard": "PCI_DSS 4.0",
+      "category": "Implement Strong Access Control Measures",
+      "description": "Media with cardholder data is securely stored, accessed, distributed, and destroyed",
+      "controlLink": ""
+    },
+    {
+      "control": "9.7",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Implement Strong Access Control Measures",
+      "description": "Have strict control over media storage and accessibility",
+      "controlLink": ""
+    }
+  ],
+  "CKV_K8S_2": [
+    {
+      "control": "AC-6",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "Access Control",
+      "description": "Least Privilege",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/ac/ac-6"
+    },
+    {
+      "control": "A.9.2.3",
+      "standard": "ISO27001:2022",
+      "category": "Access Control",
+      "description": "Management of Privileged Access Rights",
+      "controlLink": ""
+    },
+    {
+      "control": "2.2.6",
+      "standard": "PCI_DSS 4.0",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "System components are configured and managed securely",
+      "controlLink": ""
+    },
+    {
+      "control": "2.2.4",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Configure system security parameters to prevent abuse",
+      "controlLink": ""
+    }
+  ],
+  "iam_password_policy_minimum_length_14": [
+    {
+      "control": "SC-23(3)",
+      "description": "Unique System-generated Session Identifiers",
+      "category": "System and Communications Protection",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-23/sc-23-3"
+    },
+    {
+      "control": "8.3.6",
+      "standard": "PCI_DSS 4.0",
+      "category": "Identify Users and Authenticate Access to System Components",
+      "description": "If passwords/passphrases are used as authentication factors to meet Requirement 8.3.1, they meet the following minimum level of complexity",
+      "controlLink": ""
+    },
+    {
+      "control": "8.2.3",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Identify Users and Authenticate Access to System Components",
+      "description": "Passwords must be at least seven characters and contain numeric and alphabetic characters",
+      "controlLink": ""
+    }
+  ],
+  "iam_policy_attached_only_to_group_or_roles": [
+    {
+      "control": "SC-23(3)",
+      "description": "Unique System-generated Session Identifiers",
+      "category": "System and Communications Protection",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-23/sc-23-3"
+    },
+    {
+      "control": "CC.1.3",
+      "description": "CC1.3 COSO Principle 3: Management establishes, with board oversight, structures, reporting lines, and appropriate authorities and responsibilities in the pursuit of objectives",
+      "category": "CC1.0 - Common Criteria Related to Control Environment",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "7.1",
+      "standard": "PCI_DSS 4.0",
+      "category": "Restrict Access to System Components and Cardholder Data",
+      "description": "Processes and mechanisms for restricting access to system components and cardholder data by business need to know are defined and understood",
+      "controlLink": ""
+    },
+    {
+      "control": "7.1",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Restrict Access to System Components and Cardholder Data",
+      "description": "Limit access to system components and cardholder data only to people who require this access",
+      "controlLink": ""
+    }
+  ],
+  "iam_aws_attached_policy_no_administrative_privileges": [
+    {
+      "control": "SC-25",
+      "description": "Thin Nodes",
+      "category": "System and Communications Protection",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-25"
+    },
+    {
+      "control": "CC.1.3",
+      "description": "CC1.3 COSO Principle 3: Management establishes, with board oversight, structures, reporting lines, and appropriate authorities and responsibilities in the pursuit of objectives",
+      "category": "CC1.0 - Common Criteria Related to Control Environment",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.6.3",
+      "description": "CC6.3 The entity authorizes, modifies, or removes access to data, software, functions, and other protected information assets based on roles, responsibilities, or the system design and changes, giving consideration to the concepts of least privilege and segregation of duties, to meet the entity\u2019s objectives",
+      "category": "CC6.0 - Logical and Physical Access",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "7.1",
+      "standard": "PCI_DSS 4.0",
+      "category": "Restrict Access to System Components and Cardholder Data",
+      "description": "Processes and mechanisms for restricting access to system components and cardholder data by business need to know are defined and understood",
+      "controlLink": ""
+    },
+    {
+      "control": "7.1",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Restrict Access to System Components and Cardholder Data",
+      "description": "Limit access to system components and cardholder data only to people who require this access",
+      "controlLink": ""
+    }
+  ],
+  "iam_customer_attached_policy_no_administrative_privileges": [
+    {
+      "control": "SC-25",
+      "description": "Thin Nodes",
+      "category": "System and Communications Protection",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-25"
+    },
+    {
+      "control": "CC.1.3",
+      "description": "CC1.3 COSO Principle 3: Management establishes, with board oversight, structures, reporting lines, and appropriate authorities and responsibilities in the pursuit of objectives",
+      "category": "CC1.0 - Common Criteria Related to Control Environment",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.6.3",
+      "description": "CC6.3 The entity authorizes, modifies, or removes access to data, software, functions, and other protected information assets based on roles, responsibilities, or the system design and changes, giving consideration to the concepts of least privilege and segregation of duties, to meet the entity\u2019s objectives",
+      "category": "CC6.0 - Logical and Physical Access",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "7.1",
+      "standard": "PCI_DSS 4.0",
+      "category": "Restrict Access to System Components and Cardholder Data",
+      "description": "Processes and mechanisms for restricting access to system components and cardholder data by business need to know are defined and understood",
+      "controlLink": ""
+    },
+    {
+      "control": "7.1",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Restrict Access to System Components and Cardholder Data",
+      "description": "Limit access to system components and cardholder data only to people who require this access",
+      "controlLink": ""
+    }
+  ],
+  "iam_root_hardware_mfa_enabled": [
+    {
+      "control": "SC-23(3)",
+      "description": "Unique System-generated Session Identifiers",
+      "category": "System and Communications Protection",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-23/sc-23-3"
+    },
+    {
+      "control": "8.4",
+      "standard": "PCI_DSS 4.0",
+      "category": "Identify Users and Authenticate Access to System Components",
+      "description": "Multi-factor authentication (MFA) is implemented to secure access into the CDE",
+      "controlLink": ""
+    },
+    {
+      "control": "8.3",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Identify Users and Authenticate Access to System Components",
+      "description": "Secure all non-console administrative access and all remote access to CDE using multi-factor authentication",
+      "controlLink": ""
+    }
+  ],
+  "iam_root_mfa_enabled": [
+    {
+      "control": "SC-23(3)",
+      "description": "Unique System-generated Session Identifiers",
+      "category": "System and Communications Protection",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-23/sc-23-3"
+    },
+    {
+      "control": "8.4",
+      "standard": "PCI_DSS 4.0",
+      "category": "Identify Users and Authenticate Access to System Components",
+      "description": "Multi-factor authentication (MFA) is implemented to secure access into the CDE",
+      "controlLink": ""
+    },
+    {
+      "control": "8.3",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Identify Users and Authenticate Access to System Components",
+      "description": "Secure all non-console administrative access and all remote access to CDE using multi-factor authentication",
+      "controlLink": ""
+    }
+  ],
+  "iam_no_root_access_key": [
+    {
+      "control": "SC-25",
+      "description": "Thin Nodes",
+      "category": "System and Communications Protection",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-25"
+    },
+    {
+      "control": "7.2",
+      "standard": "PCI_DSS 4.0",
+      "category": "Restrict Access to System Components and Cardholder Data",
+      "description": "Access to system components and data is appropriately defined and assigned",
+      "controlLink": ""
+    },
+    {
+      "control": "7.1.2",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Implement Strong Access Control Measures",
+      "description": "Restrict access to privileged user IDs to the minimum privileges required to fulfill job responsibilities",
+      "controlLink": ""
+    }
+  ],
+  "iam_rotate_access_key_90_days": [
+    {
+      "control": "SC-23(3)",
+      "description": "Unique System-generated Session Identifiers",
+      "category": "System and Communications Protection",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-23/sc-23-3"
+    },
+    {
+      "control": "3.6",
+      "standard": "PCI_DSS 4.0",
+      "category": "Protect Account Data",
+      "description": "Cryptographic keys used to protect stored account data are secured.",
+      "controlLink": ""
+    },
+    {
+      "control": "3.5",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Protect Account Data",
+      "description": "Create and implement procedures to protect keys used to protect stored cardholder data against disclosure and misuse",
+      "controlLink": ""
+    }
+  ],
+  "iam_user_mfa_enabled_console_access": [
+    {
+      "control": "SC-23(3)",
+      "description": "Unique System-generated Session Identifiers",
+      "category": "System and Communications Protection",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-23/sc-23-3"
+    },
+    {
+      "control": "8.4",
+      "standard": "PCI_DSS 4.0",
+      "category": "Identify Users and Authenticate Access to System Components",
+      "description": "Multi-factor authentication (MFA) is implemented to secure access into the CDE",
+      "controlLink": ""
+    },
+    {
+      "control": "8.3",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Identify Users and Authenticate Access to System Components",
+      "description": "Secure all non-console administrative access and all remote access to CDE using multi-factor authentication",
+      "controlLink": ""
+    }
+  ],
+  "iam_disable_90_days_credentials": [
+    {
+      "control": "SC-23(3)",
+      "description": "Unique System-generated Session Identifiers",
+      "category": "System and Communications Protection",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-23/sc-23-3"
+    },
+    {
+      "control": "CC.1.3",
+      "description": "CC1.3 COSO Principle 3: Management establishes, with board oversight, structures, reporting lines, and appropriate authorities and responsibilities in the pursuit of objectives",
+      "category": "CC1.0 - Common Criteria Related to Control Environment",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "8.2.6",
+      "standard": "PCI_DSS 4.0",
+      "category": "Identify Users and Authenticate Access to System Components",
+      "description": "Inactive user accounts are removed or disabled within 90 days of inactivity",
+      "controlLink": ""
+    },
+    {
+      "control": "8.1.4",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Identify Users and Authenticate Access to System Components",
+      "description": "Remove or disable inactive user accounts within 90 days",
+      "controlLink": ""
+    }
+  ],
+  "secretsmanager_automatic_rotation_enabled": [
+    {
+      "control": "SC-23(3)",
+      "description": "Unique System-generated Session Identifiers",
+      "category": "System and Communications Protection",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-23/sc-23-3"
+    }
+  ],
+  "cloudtrail_multi_region_enabled": [
+    {
+      "control": "SI-10(1)",
+      "description": "Manual Override Capability",
+      "category": "System and Information Integrity",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-10/si-10-1"
+    },
+    {
+      "control": "CC.2.1",
+      "description": "CC2.1 COSO Principle 13: The entity obtains or generates and uses relevant, quality information to support the functioning of internal control",
+      "category": "CC2.0 - Common Criteria Related to Communication and Information",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.7.2",
+      "description": "CC7.2 The entity monitors system components and the operation of those components for anomalies that are indicative of malicious acts, natural disasters, and errors affecting the entity's ability to meet its objectives; anomalies are analyzed to determine whether they represent security events",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.7.2",
+      "description": "CC7.2 The entity monitors system components and the operation of those components for anomalies that are indicative of malicious acts, natural disasters, and errors affecting the entity's ability to meet its objectives; anomalies are analyzed to determine whether they represent security events",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.A.1.2",
+      "description": "A1.2 The entity authorizes, designs, develops or acquires, implements, operates, approves, maintains, and monitors environmental protections, software, data back-up processes, and recovery infrastructure to meet its objectives",
+      "category": "CCA1.0 - Additional Criterial for Availability",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.A.1.2",
+      "description": "A1.2 The entity authorizes, designs, develops or acquires, implements, operates, approves, maintains, and monitors environmental protections, software, data back-up processes, and recovery infrastructure to meet its objectives",
+      "category": "CCA1.0 - Additional Criterial for Availability",
+      "standard": "SOC2",
+      "controlLink": ""
+    }
+  ],
+  "cloudtrail_s3_dataevents_read_enabled": [
+    {
+      "control": "SI-10(1)",
+      "description": "Manual Override Capability",
+      "category": "System and Information Integrity",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-10/si-10-1"
+    },
+    {
+      "control": "CC.2.1",
+      "description": "CC2.1 COSO Principle 13: The entity obtains or generates and uses relevant, quality information to support the functioning of internal control",
+      "category": "CC2.0 - Common Criteria Related to Communication and Information",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.7.2",
+      "description": "CC7.2 The entity monitors system components and the operation of those components for anomalies that are indicative of malicious acts, natural disasters, and errors affecting the entity's ability to meet its objectives; anomalies are analyzed to determine whether they represent security events",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    }
+  ],
+  "cloudtrail_s3_dataevents_write_enabled": [
+    {
+      "control": "SI-10(1)",
+      "description": "Manual Override Capability",
+      "category": "System and Information Integrity",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-10/si-10-1"
+    },
+    {
+      "control": "CC.2.1",
+      "description": "CC2.1 COSO Principle 13: The entity obtains or generates and uses relevant, quality information to support the functioning of internal control",
+      "category": "CC2.0 - Common Criteria Related to Communication and Information",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.7.2",
+      "description": "CC7.2 The entity monitors system components and the operation of those components for anomalies that are indicative of malicious acts, natural disasters, and errors affecting the entity's ability to meet its objectives; anomalies are analyzed to determine whether they represent security events",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    }
+  ],
+  "cloudtrail_cloudwatch_logging_enabled": [
+    {
+      "control": "SI-10(1)",
+      "description": "Manual Override Capability",
+      "category": "System and Information Integrity",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-10/si-10-1"
+    },
+    {
+      "control": "CC.7.2",
+      "description": "CC7.2 The entity monitors system components and the operation of those components for anomalies that are indicative of malicious acts, natural disasters, and errors affecting the entity's ability to meet its objectives; anomalies are analyzed to determine whether they represent security events",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.7.3",
+      "description": "CC7.3 The entity evaluates security events to determine whether they could or have resulted in a failure of the entity to meet its objectives (security incidents) and, if so, takes actions to prevent or address such failures",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.A.1.2",
+      "description": "A1.2 The entity authorizes, designs, develops or acquires, implements, operates, approves, maintains, and monitors environmental protections, software, data back-up processes, and recovery infrastructure to meet its objectives",
+      "category": "CCA1.0 - Additional Criterial for Availability",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "10.2",
+      "standard": "PCI_DSS 4.0",
+      "category": "Regularly Monitor and Test Networks",
+      "description": "Audit logs are implemented to support the detection of anomalies and suspicious activity, and the forensic analysis of events",
+      "controlLink": ""
+    }
+  ],
+  "rds_instance_integration_cloudwatch_logs": [
+    {
+      "control": "SI-10(1)",
+      "description": "Manual Override Capability",
+      "category": "System and Information Integrity",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-10/si-10-1"
+    },
+    {
+      "control": "CC.7.2",
+      "description": "CC7.2 The entity monitors system components and the operation of those components for anomalies that are indicative of malicious acts, natural disasters, and errors affecting the entity's ability to meet its objectives; anomalies are analyzed to determine whether they represent security events",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.7.3",
+      "description": "CC7.3 The entity evaluates security events to determine whether they could or have resulted in a failure of the entity to meet its objectives (security incidents) and, if so, takes actions to prevent or address such failures",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.A.1.2",
+      "description": "A1.2 The entity authorizes, designs, develops or acquires, implements, operates, approves, maintains, and monitors environmental protections, software, data back-up processes, and recovery infrastructure to meet its objectives",
+      "category": "CCA1.0 - Additional Criterial for Availability",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "10.2",
+      "standard": "PCI_DSS 4.0",
+      "category": "Regularly Monitor and Test Networks",
+      "description": "Audit logs are implemented to support the detection of anomalies and suspicious activity, and the forensic analysis of events",
+      "controlLink": ""
+    }
+  ],
+  "redshift_cluster_audit_logging": [
+    {
+      "control": "SI-19(4)",
+      "description": "Removal, Masking, Encryption, Hashing, or Replacement of Direct Identifiers",
+      "category": "System and Information Integrity",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-19/si-19-4"
+    },
+    {
+      "control": "CC.7.2",
+      "description": "CC7.2 The entity monitors system components and the operation of those components for anomalies that are indicative of malicious acts, natural disasters, and errors affecting the entity's ability to meet its objectives; anomalies are analyzed to determine whether they represent security events",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "10.2",
+      "standard": "PCI_DSS 4.0",
+      "category": "Regularly Monitor and Test Networks",
+      "description": "Audit logs are implemented to support the detection of anomalies and suspicious activity, and the forensic analysis of events",
+      "controlLink": ""
+    }
+  ],
+  "s3_bucket_server_access_logging_enabled": [
+    {
+      "control": "SI-10(1)",
+      "description": "Manual Override Capability",
+      "category": "System and Information Integrity",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-10/si-10-1"
+    },
+    {
+      "control": "CC.7.2",
+      "description": "CC7.2 The entity monitors system components and the operation of those components for anomalies that are indicative of malicious acts, natural disasters, and errors affecting the entity's ability to meet its objectives; anomalies are analyzed to determine whether they represent security events",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.7.3",
+      "description": "CC7.3 The entity evaluates security events to determine whether they could or have resulted in a failure of the entity to meet its objectives (security incidents) and, if so, takes actions to prevent or address such failures",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "10.2",
+      "standard": "PCI_DSS 4.0",
+      "category": "Regularly Monitor and Test Networks",
+      "description": "Audit logs are implemented to support the detection of anomalies and suspicious activity, and the forensic analysis of events",
+      "controlLink": ""
+    }
+  ],
+  "ec2_ebs_public_snapshot": [
+    {
+      "control": "SC-25",
+      "description": "Thin Nodes",
+      "category": "System and Communications Protection",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-25"
+    },
+    {
+      "control": "1.4",
+      "standard": "PCI_DSS 4.0",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Network connections between trusted and untrusted networks are controlled",
+      "controlLink": ""
+    },
+    {
+      "control": "1.3",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Restrict direct global access to any system component of the cardholder data medium over the internet",
+      "controlLink": ""
+    }
+  ],
+  "ec2_instance_public_ip": [
+    {
+      "control": "SC-25",
+      "description": "Thin Nodes",
+      "category": "System and Communications Protection",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-25"
+    },
+    {
+      "control": "CC.6.6",
+      "description": "CC6.6 The entity implements logical access security measures to protect against threats from sources outside its system boundaries",
+      "category": "CC6.0 - Logical and Physical Access",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "1.4",
+      "standard": "PCI_DSS 4.0",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Network connections between trusted and untrusted networks are controlled",
+      "controlLink": ""
+    },
+    {
+      "control": "1.3",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Restrict direct global access to any system component of the cardholder data medium over the internet",
+      "controlLink": ""
+    }
+  ],
+  "ec2_instance_imdsv2_enabled": [
+    {
+      "control": "SC-23(3)",
+      "description": "Unique System-generated Session Identifiers",
+      "category": "System and Communications Protection",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-23/sc-23-3"
+    },
+    {
+      "control": "CC.7.2",
+      "description": "CC7.2 The entity monitors system components and the operation of those components for anomalies that are indicative of malicious acts, natural disasters, and errors affecting the entity's ability to meet its objectives; anomalies are analyzed to determine whether they represent security events",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    }
+  ],
+  "emr_cluster_master_nodes_no_public_ip": [
+    {
+      "control": "SC-25",
+      "description": "Thin Nodes",
+      "category": "System and Communications Protection",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-25"
+    },
+    {
+      "control": "1.4",
+      "standard": "PCI_DSS 4.0",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Network connections between trusted and untrusted networks are controlled",
+      "controlLink": ""
+    },
+    {
+      "control": "1.3",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Restrict direct global access to any system component of the cardholder data medium over the internet",
+      "controlLink": ""
+    }
+  ],
+  "awslambda_function_not_publicly_accessible": [
+    {
+      "control": "SC-25",
+      "description": "Thin Nodes",
+      "category": "System and Communications Protection",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-25"
+    },
+    {
+      "control": "1.4",
+      "standard": "PCI_DSS 4.0",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Network connections between trusted and untrusted networks are controlled",
+      "controlLink": ""
+    },
+    {
+      "control": "1.3",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Restrict direct global access to any system component of the cardholder data medium over the internet",
+      "controlLink": ""
+    }
+  ],
+  "awslambda_function_url_public": [
+    {
+      "control": "SC-25",
+      "description": "Thin Nodes",
+      "category": "System and Communications Protection",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-25"
+    },
+    {
+      "control": "1.4",
+      "standard": "PCI_DSS 4.0",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Network connections between trusted and untrusted networks are controlled",
+      "controlLink": ""
+    },
+    {
+      "control": "1.3",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Restrict direct global access to any system component of the cardholder data medium over the internet",
+      "controlLink": ""
+    }
+  ],
+  "rds_instance_no_public_access": [
+    {
+      "control": "SC-25",
+      "description": "Thin Nodes",
+      "category": "System and Communications Protection",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-25"
+    },
+    {
+      "control": "CC.6.2",
+      "description": "CC6.2 Prior to issuing system credentials and granting system access, the entity registers and authorizes new internal and external users whose access is administered by the entity",
+      "category": "CC6.0 - Logical and Physical Access",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "1.4",
+      "standard": "PCI_DSS 4.0",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Network connections between trusted and untrusted networks are controlled",
+      "controlLink": ""
+    },
+    {
+      "control": "1.3",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Restrict direct global access to any system component of the cardholder data medium over the internet",
+      "controlLink": ""
+    }
+  ],
+  "rds_snapshots_public_access": [
+    {
+      "control": "SC-25",
+      "description": "Thin Nodes",
+      "category": "System and Communications Protection",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-25"
+    },
+    {
+      "control": "1.4",
+      "standard": "PCI_DSS 4.0",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Network connections between trusted and untrusted networks are controlled",
+      "controlLink": ""
+    },
+    {
+      "control": "1.3",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Restrict direct global access to any system component of the cardholder data medium over the internet",
+      "controlLink": ""
+    }
+  ],
+  "redshift_cluster_public_access": [
+    {
+      "control": "SC-25",
+      "description": "Thin Nodes",
+      "category": "System and Communications Protection",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-25"
+    },
+    {
+      "control": "1.4",
+      "standard": "PCI_DSS 4.0",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Network connections between trusted and untrusted networks are controlled",
+      "controlLink": ""
+    },
+    {
+      "control": "1.3",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Restrict direct global access to any system component of the cardholder data medium over the internet",
+      "controlLink": ""
+    }
+  ],
+  "s3_bucket_public_access": [
+    {
+      "control": "SC-25",
+      "description": "Thin Nodes",
+      "category": "System and Communications Protection",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-25"
+    },
+    {
+      "control": "CC.6.1",
+      "description": "CC6.1 The entity implements logical access security software, infrastructure, and architectures over protected information assets to protect them from security events to meet the entity's objectives",
+      "category": "CC6.0 - Logical and Physical Access",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "1.4",
+      "standard": "PCI_DSS 4.0",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Network connections between trusted and untrusted networks are controlled",
+      "controlLink": ""
+    },
+    {
+      "control": "1.3",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Restrict direct global access to any system component of the cardholder data medium over the internet",
+      "controlLink": ""
+    }
+  ],
+  "s3_bucket_policy_public_write_access": [
+    {
+      "control": "SC-25",
+      "description": "Thin Nodes",
+      "category": "System and Communications Protection",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-25"
+    },
+    {
+      "control": "7.2.2",
+      "standard": "PCI_DSS 4.0",
+      "category": "Restrict Access to System Components and Cardholder Data by Business Need to Know",
+      "description": "Access is assigned to users, including privileged users, based on: Job classification and function. Least privileges necessary to perform job responsibilities",
+      "controlLink": ""
+    },
+    {
+      "control": "7.1.2",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Restrict Access to System Components and Cardholder Data by Business Need to Know",
+      "description": "Restrict access to privileged user IDs to the minimum privileges required to fulfill job responsibilities",
+      "controlLink": ""
+    }
+  ],
+  "s3_account_level_public_access_blocks": [
+    {
+      "control": "SC-25",
+      "description": "Thin Nodes",
+      "category": "System and Communications Protection",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-25"
+    },
+    {
+      "control": "1.4",
+      "standard": "PCI_DSS 4.0",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Network connections between trusted and untrusted networks are controlled",
+      "controlLink": ""
+    },
+    {
+      "control": "1.3",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Restrict direct global access to any system component of the cardholder data medium over the internet",
+      "controlLink": ""
+    }
+  ],
+  "sagemaker_notebook_instance_without_direct_internet_access_configured": [
+    {
+      "control": "SC-25",
+      "description": "Thin Nodes",
+      "category": "System and Communications Protection",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-25"
+    },
+    {
+      "control": "1.4",
+      "standard": "PCI_DSS 4.0",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Network connections between trusted and untrusted networks are controlled",
+      "controlLink": ""
+    },
+    {
+      "control": "1.3",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Restrict direct global access to any system component of the cardholder data medium over the internet",
+      "controlLink": ""
+    }
+  ],
+  "guardduty_is_enabled": [
+    {
+      "control": "CC.3.1",
+      "description": "CC3.1 COSO Principle 6: The entity specifies objectives with sufficient clarity to enable the identification and assessment of risks relating to objectives",
+      "category": "CC3.0 - Common Criteria Related to Risk Assessment",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.3.2",
+      "description": "CC3.2 COSO Principle 7: The entity identifies risks to the achievement of its objectives across the entity and analyzes risks as a basis for determining how the risks should be managed",
+      "category": "CC3.0 - Common Criteria Related to Risk Assessment",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.4.2",
+      "description": "CC4.2 COSO Principle 17: The entity evaluates and communicates internal control deficiencies in a timely manner to those parties responsible for taking corrective action, including senior management and the board of directors, as appropriate",
+      "category": "CC4.0 - Monitoring Activities",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.6.8",
+      "description": "CC6.8 The entity implements controls to prevent or detect and act upon the introduction of unauthorized or malicious software to meet the entity\u2019s objectives",
+      "category": "CC6.0 - Logical and Physical Access",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.7.1",
+      "description": "CC7.1 To meet its objectives, the entity uses detection and monitoring procedures to identify (1) changes to configurations that result in the introduction of new vulnerabilities, and (2) susceptibilities to newly discovered vulnerabilities",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.7.2",
+      "description": "CC7.2 The entity monitors system components and the operation of those components for anomalies that are indicative of malicious acts, natural disasters, and errors affecting the entity's ability to meet its objectives; anomalies are analyzed to determine whether they represent security events",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.7.3",
+      "description": "CC7.3 The entity evaluates security events to determine whether they could or have resulted in a failure of the entity to meet its objectives (security incidents) and, if so, takes actions to prevent or address such failures",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.7.4",
+      "description": "CC7.4 The entity responds to identified security incidents by executing a defined incident response program to understand, contain, remediate, and communicate security incidents, as appropriate",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    }
+  ],
+  "apigateway_waf_acl_attached": [
+    {
+      "control": "AC-4(21)",
+      "description": "Physical or Logical Separation of Information Flows",
+      "category": "Access Control",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/ac/ac-4/ac-4-21"
+    },
+    {
+      "control": "6.4.1",
+      "standard": "PCI_DSS 4.0",
+      "category": "Maintain a Vulnerability Management Program",
+      "description": "An automated technical solution(s) that continually detects and prevents web-based attacks is installed",
+      "controlLink": ""
+    },
+    {
+      "control": "6.6",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Maintain a Vulnerability Management Program",
+      "description": "Constantly address new threats and vulnerabilities for Internet-facing web applications and ensure that these applications are protected from known attacks",
+      "controlLink": ""
+    }
+  ],
+  "elbv2_waf_acl_attached": [
+    {
+      "control": "AC-4(21)",
+      "description": "Physical or Logical Separation of Information Flows",
+      "category": "Access Control",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/ac/ac-4/ac-4-21"
+    },
+    {
+      "control": "6.4.1",
+      "standard": "PCI_DSS 4.0",
+      "category": "Maintain a Vulnerability Management Program",
+      "description": "An automated technical solution(s) that continually detects and prevents web-based attacks is installed",
+      "controlLink": ""
+    },
+    {
+      "control": "6.6",
+      "standard": "PCI_DSS 4.0",
+      "category": "Maintain a Vulnerability Management Program",
+      "description": "Constantly address new threats and vulnerabilities for Internet-facing web applications and ensure that these applications are protected from known attacks",
+      "controlLink": ""
+    }
+  ],
+  "apigateway_logging_enabled": [
+    {
+      "control": "SI-7(8)",
+      "description": "Auditing Capability for Significant Events",
+      "category": "System and Information Integrity",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-7/si-7-8"
+    },
+    {
+      "control": "CC.7.2",
+      "description": "CC7.2 The entity monitors system components and the operation of those components for anomalies that are indicative of malicious acts, natural disasters, and errors affecting the entity's ability to meet its objectives; anomalies are analyzed to determine whether they represent security events",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.7.3",
+      "description": "CC7.3 The entity evaluates security events to determine whether they could or have resulted in a failure of the entity to meet its objectives (security incidents) and, if so, takes actions to prevent or address such failures",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.A.1.2",
+      "description": "A1.2 The entity authorizes, designs, develops or acquires, implements, operates, approves, maintains, and monitors environmental protections, software, data back-up processes, and recovery infrastructure to meet its objectives",
+      "category": "CCA1.0 - Additional Criterial for Availability",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "10.2",
+      "standard": "PCI_DSS 4.0",
+      "category": "Regularly Monitor and Test Networks",
+      "description": "Audit logs are implemented to support the detection of anomalies and suspicious activity, and the forensic analysis of events",
+      "controlLink": ""
+    }
+  ],
+  "elbv2_logging_enabled": [
+    {
+      "control": "SI-7(8)",
+      "description": "Auditing Capability for Significant Events",
+      "category": "System and Information Integrity",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-7/si-7-8"
+    },
+    {
+      "control": "CC.7.2",
+      "description": "CC7.2 The entity monitors system components and the operation of those components for anomalies that are indicative of malicious acts, natural disasters, and errors affecting the entity's ability to meet its objectives; anomalies are analyzed to determine whether they represent security events",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.7.3",
+      "description": "CC7.3 The entity evaluates security events to determine whether they could or have resulted in a failure of the entity to meet its objectives (security incidents) and, if so, takes actions to prevent or address such failures",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.A.1.2",
+      "description": "A1.2 The entity authorizes, designs, develops or acquires, implements, operates, approves, maintains, and monitors environmental protections, software, data back-up processes, and recovery infrastructure to meet its objectives",
+      "category": "CCA1.0 - Additional Criterial for Availability",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "10.2",
+      "standard": "PCI_DSS 4.0",
+      "category": "Regularly Monitor and Test Networks",
+      "description": "Audit logs are implemented to support the detection of anomalies and suspicious activity, and the forensic analysis of events",
+      "controlLink": ""
+    }
+  ],
+  "elb_logging_enabled": [
+    {
+      "control": "SI-7(8)",
+      "description": "Auditing Capability for Significant Events",
+      "category": "System and Information Integrity",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-7/si-7-8"
+    },
+    {
+      "control": "CC.7.2",
+      "description": "CC7.2 The entity monitors system components and the operation of those components for anomalies that are indicative of malicious acts, natural disasters, and errors affecting the entity's ability to meet its objectives; anomalies are analyzed to determine whether they represent security events",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.7.3",
+      "description": "CC7.3 The entity evaluates security events to determine whether they could or have resulted in a failure of the entity to meet its objectives (security incidents) and, if so, takes actions to prevent or address such failures",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.A.1.2",
+      "description": "A1.2 The entity authorizes, designs, develops or acquires, implements, operates, approves, maintains, and monitors environmental protections, software, data back-up processes, and recovery infrastructure to meet its objectives",
+      "category": "CCA1.0 - Additional Criterial for Availability",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "10.2",
+      "standard": "PCI_DSS 4.0",
+      "category": "Regularly Monitor and Test Networks",
+      "description": "Audit logs are implemented to support the detection of anomalies and suspicious activity, and the forensic analysis of events",
+      "controlLink": ""
+    }
+  ],
+  "vpc_flow_logs_enabled": [
+    {
+      "control": "SI-7(8)",
+      "description": "Auditing Capability for Significant Events",
+      "category": "System and Information Integrity",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-7/si-7-8"
+    },
+    {
+      "control": "CC.7.2",
+      "description": "CC7.2 The entity monitors system components and the operation of those components for anomalies that are indicative of malicious acts, natural disasters, and errors affecting the entity's ability to meet its objectives; anomalies are analyzed to determine whether they represent security events",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.7.3",
+      "description": "CC7.3 The entity evaluates security events to determine whether they could or have resulted in a failure of the entity to meet its objectives (security incidents) and, if so, takes actions to prevent or address such failures",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "10.2",
+      "standard": "PCI_DSS 4.0",
+      "category": "Regularly Monitor and Test Networks",
+      "description": "Audit logs are implemented to support the detection of anomalies and suspicious activity, and the forensic analysis of events",
+      "controlLink": ""
+    }
+  ],
+  "cloudwatch_log_group_retention_policy_specific_days_enabled": [
+    {
+      "control": "SI-12",
+      "description": "Information Management and Retention",
+      "category": "System and Information Integrity",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-12"
+    },
+    {
+      "control": "CC.7.2",
+      "description": "CC7.2 The entity monitors system components and the operation of those components for anomalies that are indicative of malicious acts, natural disasters, and errors affecting the entity's ability to meet its objectives; anomalies are analyzed to determine whether they represent security events",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.7.3",
+      "description": "CC7.3 The entity evaluates security events to determine whether they could or have resulted in a failure of the entity to meet its objectives (security incidents) and, if so, takes actions to prevent or address such failures",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "10.5",
+      "standard": "PCI_DSS 4.0",
+      "category": "Log and Monitor All Access to System Components and Cardholder Data",
+      "description": "Audit log history is retained and available for analysis",
+      "controlLink": ""
+    },
+    {
+      "control": "10.7",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Log and Monitor All Access to System Components and Cardholder Data",
+      "description": "Retain audit trail history for at least one year and have at least three months of data ready for analysis",
+      "controlLink": ""
+    }
+  ],
+  "ec2_securitygroup_allow_ingress_from_internet_to_tcp_port_22": [
+    {
+      "control": "CC.7.2",
+      "description": "CC7.2 The entity monitors system components and the operation of those components for anomalies that are indicative of malicious acts, natural disasters, and errors affecting the entity's ability to meet its objectives; anomalies are analyzed to determine whether they represent security events",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "1.4",
+      "standard": "PCI_DSS 4.0",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Network connections between trusted and untrusted networks are controlled",
+      "controlLink": ""
+    },
+    {
+      "control": "1.3",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Restrict direct global access to any system component of the cardholder data medium over the internet",
+      "controlLink": ""
+    }
+  ],
+  "cloudwatch_changes_to_network_acls_alarm_configured": [
+    {
+      "control": "CC.7.2",
+      "description": "CC7.2 The entity monitors system components and the operation of those components for anomalies that are indicative of malicious acts, natural disasters, and errors affecting the entity's ability to meet its objectives; anomalies are analyzed to determine whether they represent security events",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.7.3",
+      "description": "CC7.3 The entity evaluates security events to determine whether they could or have resulted in a failure of the entity to meet its objectives (security incidents) and, if so, takes actions to prevent or address such failures",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.7.4",
+      "description": "CC7.4 The entity responds to identified security incidents by executing a defined incident response program to understand, contain, remediate, and communicate security incidents, as appropriate",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "12.10",
+      "standard": "PCI_DSS 4.0",
+      "category": "Support Information Security with Organizational Policies and Programs",
+      "description": "Suspected and confirmed security incidents that could impact the CDE are responded to immediately",
+      "controlLink": ""
+    }
+  ],
+  "cloudwatch_changes_to_network_gateways_alarm_configured": [
+    {
+      "control": "CC.7.2",
+      "description": "CC7.2 The entity monitors system components and the operation of those components for anomalies that are indicative of malicious acts, natural disasters, and errors affecting the entity's ability to meet its objectives; anomalies are analyzed to determine whether they represent security events",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.7.3",
+      "description": "CC7.3 The entity evaluates security events to determine whether they could or have resulted in a failure of the entity to meet its objectives (security incidents) and, if so, takes actions to prevent or address such failures",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.7.4",
+      "description": "CC7.4 The entity responds to identified security incidents by executing a defined incident response program to understand, contain, remediate, and communicate security incidents, as appropriate",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "12.10",
+      "standard": "PCI_DSS 4.0",
+      "category": "Support Information Security with Organizational Policies and Programs",
+      "description": "Suspected and confirmed security incidents that could impact the CDE are responded to immediately",
+      "controlLink": ""
+    }
+  ],
+  "cloudwatch_changes_to_network_route_tables_alarm_configured": [
+    {
+      "control": "CC.7.2",
+      "description": "CC7.2 The entity monitors system components and the operation of those components for anomalies that are indicative of malicious acts, natural disasters, and errors affecting the entity's ability to meet its objectives; anomalies are analyzed to determine whether they represent security events",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.7.3",
+      "description": "CC7.3 The entity evaluates security events to determine whether they could or have resulted in a failure of the entity to meet its objectives (security incidents) and, if so, takes actions to prevent or address such failures",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.7.4",
+      "description": "CC7.4 The entity responds to identified security incidents by executing a defined incident response program to understand, contain, remediate, and communicate security incidents, as appropriate",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "12.10",
+      "standard": "PCI_DSS 4.0",
+      "category": "Support Information Security with Organizational Policies and Programs",
+      "description": "Suspected and confirmed security incidents that could impact the CDE are responded to immediately",
+      "controlLink": ""
+    }
+  ],
+  "cloudwatch_changes_to_vpcs_alarm_configured": [
+    {
+      "control": "CC.7.2",
+      "description": "CC7.2 The entity monitors system components and the operation of those components for anomalies that are indicative of malicious acts, natural disasters, and errors affecting the entity's ability to meet its objectives; anomalies are analyzed to determine whether they represent security events",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.7.3",
+      "description": "CC7.3 The entity evaluates security events to determine whether they could or have resulted in a failure of the entity to meet its objectives (security incidents) and, if so, takes actions to prevent or address such failures",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.7.4",
+      "description": "CC7.4 The entity responds to identified security incidents by executing a defined incident response program to understand, contain, remediate, and communicate security incidents, as appropriate",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "12.10",
+      "standard": "PCI_DSS 4.0",
+      "category": "Support Information Security with Organizational Policies and Programs",
+      "description": "Suspected and confirmed security incidents that could impact the CDE are responded to immediately",
+      "controlLink": ""
+    }
+  ],
+  "securityhub_enabled": [
+    {
+      "control": "PM-31",
+      "description": "Continuous Monitoring Strategy",
+      "category": "Program Management",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/pm/pm-31"
+    },
+    {
+      "control": "CC.3.1",
+      "description": "CC3.1 COSO Principle 6: The entity specifies objectives with sufficient clarity to enable the identification and assessment of risks relating to objectives",
+      "category": "CC3.0 - Common Criteria Related to Risk Assessment",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.6.8",
+      "description": "CC6.8 The entity implements controls to prevent or detect and act upon the introduction of unauthorized or malicious software to meet the entity\u2019s objectives",
+      "category": "CC6.0 - Logical and Physical Access",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.7.1",
+      "description": "CC7.1 To meet its objectives, the entity uses detection and monitoring procedures to identify (1) changes to configurations that result in the introduction of new vulnerabilities, and (2) susceptibilities to newly discovered vulnerabilities",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.7.2",
+      "description": "CC7.2 The entity monitors system components and the operation of those components for anomalies that are indicative of malicious acts, natural disasters, and errors affecting the entity's ability to meet its objectives; anomalies are analyzed to determine whether they represent security events",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.7.3",
+      "description": "CC7.3 The entity evaluates security events to determine whether they could or have resulted in a failure of the entity to meet its objectives (security incidents) and, if so, takes actions to prevent or address such failures",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.7.4",
+      "description": "CC7.4 The entity responds to identified security incidents by executing a defined incident response program to understand, contain, remediate, and communicate security incidents, as appropriate",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    }
+  ],
+  "cloudtrail_log_file_validation_enabled": [
+    {
+      "control": "CC.7.3",
+      "description": "CC7.3 The entity evaluates security events to determine whether they could or have resulted in a failure of the entity to meet its objectives (security incidents) and, if so, takes actions to prevent or address such failures",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    }
+  ],
+  "s3_bucket_object_versioning": [
+    {
+      "control": "SI-13(5)",
+      "description": "Failover Capability",
+      "category": "System and Information Integrity",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-13/si-13-5"
+    },
+    {
+      "control": "CC.7.4",
+      "description": "CC7.4 The entity responds to identified security incidents by executing a defined incident response program to understand, contain, remediate, and communicate security incidents, as appropriate",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.A.1.2",
+      "description": "A1.2 The entity authorizes, designs, develops or acquires, implements, operates, approves, maintains, and monitors environmental protections, software, data back-up processes, and recovery infrastructure to meet its objectives",
+      "category": "CCA1.0 - Additional Criterial for Availability",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.C.1.2",
+      "description": "C1.2 The entity disposes of confidential information to meet the entity\u2019s objectives related to confidentiality",
+      "category": "CCC1.0 - Additional Criterial for Confidentiality",
+      "standard": "SOC2",
+      "controlLink": ""
+    }
+  ],
+  "cloudtrail_kms_encryption_enabled": [
+    {
+      "control": "SI-19(4)",
+      "description": "Removal, Masking, Encryption, Hashing, or Replacement of Direct Identifiers",
+      "category": "System and Information Integrity",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-19/si-19-4"
+    }
+  ],
+  "dynamodb_tables_kms_cmk_encryption_enabled": [
+    {
+      "control": "SI-19(4)",
+      "description": "Removal, Masking, Encryption, Hashing, or Replacement of Direct Identifiers",
+      "category": "System and Information Integrity",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-19/si-19-4"
+    }
+  ],
+  "ec2_ebs_volume_encryption": [
+    {
+      "control": "SI-19(4)",
+      "description": "Removal, Masking, Encryption, Hashing, or Replacement of Direct Identifiers",
+      "category": "System and Information Integrity",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-19/si-19-4"
+    }
+  ],
+  "ec2_ebs_default_encryption": [
+    {
+      "control": "SI-19(4)",
+      "description": "Removal, Masking, Encryption, Hashing, or Replacement of Direct Identifiers",
+      "category": "System and Information Integrity",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-19/si-19-4"
+    }
+  ],
+  "efs_encryption_at_rest_enabled": [
+    {
+      "control": "SI-19(4)",
+      "description": "Removal, Masking, Encryption, Hashing, or Replacement of Direct Identifiers",
+      "category": "System and Information Integrity",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-19/si-19-4"
+    }
+  ],
+  "opensearch_service_domains_encryption_at_rest_enabled": [
+    {
+      "control": "SI-19(4)",
+      "description": "Removal, Masking, Encryption, Hashing, or Replacement of Direct Identifiers",
+      "category": "System and Information Integrity",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-19/si-19-4"
+    }
+  ],
+  "cloudwatch_log_group_kms_encryption_enabled": [
+    {
+      "control": "SI-19(4)",
+      "description": "Removal, Masking, Encryption, Hashing, or Replacement of Direct Identifiers",
+      "category": "System and Information Integrity",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-19/si-19-4"
+    },
+    {
+      "control": "CC.7.3",
+      "description": "CC7.3 The entity evaluates security events to determine whether they could or have resulted in a failure of the entity to meet its objectives (security incidents) and, if so, takes actions to prevent or address such failures",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "10.3",
+      "standard": "PCI_DSS 4.0",
+      "category": "Regularly Monitor and Test Networks",
+      "description": "Audit logs are protected from destruction and unauthorized modifications",
+      "controlLink": ""
+    },
+    {
+      "control": "10.5.2",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Regularly Monitor and Test Networks",
+      "description": "Protect audit trail files from unauthorized changes",
+      "controlLink": ""
+    }
+  ],
+  "rds_instance_storage_encrypted": [
+    {
+      "control": "SI-19(4)",
+      "description": "Removal, Masking, Encryption, Hashing, or Replacement of Direct Identifiers",
+      "category": "System and Information Integrity",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-19/si-19-4"
+    }
+  ],
+  "s3_bucket_default_encryption": [
+    {
+      "control": "SI-19(4)",
+      "description": "Removal, Masking, Encryption, Hashing, or Replacement of Direct Identifiers",
+      "category": "System and Information Integrity",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-19/si-19-4"
+    }
+  ],
+  "sagemaker_notebook_instance_encryption_enabled": [
+    {
+      "control": "SI-19(4)",
+      "description": "Removal, Masking, Encryption, Hashing, or Replacement of Direct Identifiers",
+      "category": "System and Information Integrity",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-19/si-19-4"
+    }
+  ],
+  "sns_topics_kms_encryption_at_rest_enabled": [
+    {
+      "control": "SC-28(1)",
+      "description": "Cryptographic Protection",
+      "category": "System and Communications Protection",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-28/sc-28-1"
+    },
+    {
+      "control": "4.1",
+      "standard": "PCI_DSS 4.0",
+      "category": "Protect Cardholder Data with Strong Cryptography During Transmission Over Open, Public Networks",
+      "description": "Processes and mechanisms for protecting cardholder data with strong cryptography during transmission over open, public networks are defined and documented.",
+      "controlLink": ""
+    },
+    {
+      "control": "4.1",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Protect Cardholder Data with Strong Cryptography During Transmission Over Open, Public Networks",
+      "description": "Use strong encryption and security protocols to protect sensitive cardholder data during transmission over open, public networks",
+      "controlLink": ""
+    }
+  ],
+  "opensearch_service_domains_cloudwatch_logging_enabled": [
+    {
+      "control": "AU-10",
+      "description": "Non-repudiation",
+      "category": "Audit and Accountability",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/au/au-10"
+    },
+    {
+      "control": "10.2",
+      "standard": "PCI_DSS 4.0",
+      "category": "Regularly Monitor and Test Networks",
+      "description": "Audit logs are implemented to support the detection of anomalies and suspicious activity, and the forensic analysis of events",
+      "controlLink": ""
+    }
+  ],
+  "elbv2_deletion_protection": [
+    {
+      "control": "SC-22",
+      "description": "Architecture and Provisioning for Name/Address Resolution Service",
+      "category": "System and Communications Protection",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-22"
+    }
+  ],
+  "rds_instance_deletion_protection": [
+    {
+      "control": "SI-13(5)",
+      "description": "Failover Capability",
+      "category": "System and Information Integrity",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-13/si-13-5"
+    },
+    {
+      "control": "CC.C.1.1",
+      "description": "C1.1 The entity identifies and maintains confidential information to meet the entity\u2019s objectives related to confidentiality",
+      "category": "CCC1.0 - Additional Criterial for Confidentiality",
+      "standard": "SOC2",
+      "controlLink": ""
+    }
+  ],
+  "ec2_instance_managed_by_ssm": [
+    {
+      "control": "CC.3.2",
+      "description": "CC3.2 COSO Principle 7: The entity identifies risks to the achievement of its objectives across the entity and analyzes risks as a basis for determining how the risks should be managed",
+      "category": "CC3.0 - Common Criteria Related to Risk Assessment",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.7.1",
+      "description": "CC7.1 To meet its objectives, the entity uses detection and monitoring procedures to identify (1) changes to configurations that result in the introduction of new vulnerabilities, and (2) susceptibilities to newly discovered vulnerabilities",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    }
+  ],
+  "ec2_instance_older_than_specific_days": [
+    {
+      "control": "CM-8(6)",
+      "description": "Assessed Configurations and Approved Deviations",
+      "category": "Configuration Management",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/cm/cm-8/cm-8-6"
+    }
+  ],
+  "ssm_managed_compliant_patching": [
+    {
+      "control": "CC.3.2",
+      "description": "CC3.2 COSO Principle 7: The entity identifies risks to the achievement of its objectives across the entity and analyzes risks as a basis for determining how the risks should be managed",
+      "category": "CC3.0 - Common Criteria Related to Risk Assessment",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.3.2",
+      "description": "CC3.2 COSO Principle 7: The entity identifies risks to the achievement of its objectives across the entity and analyzes risks as a basis for determining how the risks should be managed",
+      "category": "CC3.0 - Common Criteria Related to Risk Assessment",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.7.1",
+      "description": "CC7.1 To meet its objectives, the entity uses detection and monitoring procedures to identify (1) changes to configurations that result in the introduction of new vulnerabilities, and (2) susceptibilities to newly discovered vulnerabilities",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "6.3.3",
+      "standard": "PCI_DSS 4.0",
+      "category": "Maintain a Vulnerability Management Program",
+      "description": "All system components are protected from known vulnerabilities by installing applicable security patches/updates",
+      "controlLink": ""
+    },
+    {
+      "control": "6.2",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Maintain a Vulnerability Management Program",
+      "description": "Ensure that all system components and software are protected from known vulnerabilities by installing the applicable security patches provided by the manufacturer. Install critical security patches within a month",
+      "controlLink": ""
+    }
+  ],
+  "kms_cmk_rotation_enabled": [
+    {
+      "control": "SC-12(6)",
+      "description": "Physical Control of Keys",
+      "category": "System and Communications Protection",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-12/sc-12-6"
+    },
+    {
+      "control": "3.6",
+      "standard": "PCI_DSS 4.0",
+      "category": "Protect Account Data",
+      "description": "Cryptographic keys used to protect stored account data are secured.",
+      "controlLink": ""
+    },
+    {
+      "control": "3.5",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Protect Account Data",
+      "description": "Create and implement procedures to protect keys used to protect stored cardholder data against disclosure and misuse",
+      "controlLink": ""
+    }
+  ],
+  "rds_instance_multi_az": [
+    {
+      "control": "SI-13(5)",
+      "description": "Failover Capability",
+      "category": "System and Information Integrity",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-13/si-13-5"
+    }
+  ],
+  "efs_have_backup_enabled": [
+    {
+      "control": "SI-13(5)",
+      "description": "Failover Capability",
+      "category": "System and Information Integrity",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-13/si-13-5"
+    },
+    {
+      "control": "CC.7.4",
+      "description": "CC7.4 The entity responds to identified security incidents by executing a defined incident response program to understand, contain, remediate, and communicate security incidents, as appropriate",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.7.4",
+      "description": "CC7.4 The entity responds to identified security incidents by executing a defined incident response program to understand, contain, remediate, and communicate security incidents, as appropriate",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.A.1.2",
+      "description": "A1.2 The entity authorizes, designs, develops or acquires, implements, operates, approves, maintains, and monitors environmental protections, software, data back-up processes, and recovery infrastructure to meet its objectives",
+      "category": "CCA1.0 - Additional Criterial for Availability",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.A.1.2",
+      "description": "A1.2 The entity authorizes, designs, develops or acquires, implements, operates, approves, maintains, and monitors environmental protections, software, data back-up processes, and recovery infrastructure to meet its objectives",
+      "category": "CCA1.0 - Additional Criterial for Availability",
+      "standard": "SOC2",
+      "controlLink": ""
+    }
+  ],
+  "rds_instance_backup_enabled": [
+    {
+      "control": "SI-13(5)",
+      "description": "Failover Capability",
+      "category": "System and Information Integrity",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-13/si-13-5"
+    },
+    {
+      "control": "CC.7.4",
+      "description": "CC7.4 The entity responds to identified security incidents by executing a defined incident response program to understand, contain, remediate, and communicate security incidents, as appropriate",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.7.4",
+      "description": "CC7.4 The entity responds to identified security incidents by executing a defined incident response program to understand, contain, remediate, and communicate security incidents, as appropriate",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.7.4",
+      "description": "CC7.4 The entity responds to identified security incidents by executing a defined incident response program to understand, contain, remediate, and communicate security incidents, as appropriate",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.A.1.2",
+      "description": "A1.2 The entity authorizes, designs, develops or acquires, implements, operates, approves, maintains, and monitors environmental protections, software, data back-up processes, and recovery infrastructure to meet its objectives",
+      "category": "CCA1.0 - Additional Criterial for Availability",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.A.1.2",
+      "description": "A1.2 The entity authorizes, designs, develops or acquires, implements, operates, approves, maintains, and monitors environmental protections, software, data back-up processes, and recovery infrastructure to meet its objectives",
+      "category": "CCA1.0 - Additional Criterial for Availability",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.A.1.2",
+      "description": "A1.2 The entity authorizes, designs, develops or acquires, implements, operates, approves, maintains, and monitors environmental protections, software, data back-up processes, and recovery infrastructure to meet its objectives",
+      "category": "CCA1.0 - Additional Criterial for Availability",
+      "standard": "SOC2",
+      "controlLink": ""
+    }
+  ],
+  "redshift_cluster_automated_snapshot": [
+    {
+      "control": "SI-13(5)",
+      "description": "Failover Capability",
+      "category": "System and Information Integrity",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-13/si-13-5"
+    },
+    {
+      "control": "CC.7.4",
+      "description": "CC7.4 The entity responds to identified security incidents by executing a defined incident response program to understand, contain, remediate, and communicate security incidents, as appropriate",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.A.1.2",
+      "description": "A1.2 The entity authorizes, designs, develops or acquires, implements, operates, approves, maintains, and monitors environmental protections, software, data back-up processes, and recovery infrastructure to meet its objectives",
+      "category": "CCA1.0 - Additional Criterial for Availability",
+      "standard": "SOC2",
+      "controlLink": ""
+    }
+  ],
+  "dynamodb_tables_pitr_enabled": [
+    {
+      "control": "SI-13(5)",
+      "description": "Failover Capability",
+      "category": "System and Information Integrity",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-13/si-13-5"
+    },
+    {
+      "control": "CC.7.4",
+      "description": "CC7.4 The entity responds to identified security incidents by executing a defined incident response program to understand, contain, remediate, and communicate security incidents, as appropriate",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.7.4",
+      "description": "CC7.4 The entity responds to identified security incidents by executing a defined incident response program to understand, contain, remediate, and communicate security incidents, as appropriate",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.A.1.2",
+      "description": "A1.2 The entity authorizes, designs, develops or acquires, implements, operates, approves, maintains, and monitors environmental protections, software, data back-up processes, and recovery infrastructure to meet its objectives",
+      "category": "CCA1.0 - Additional Criterial for Availability",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.A.1.2",
+      "description": "A1.2 The entity authorizes, designs, develops or acquires, implements, operates, approves, maintains, and monitors environmental protections, software, data back-up processes, and recovery infrastructure to meet its objectives",
+      "category": "CCA1.0 - Additional Criterial for Availability",
+      "standard": "SOC2",
+      "controlLink": ""
+    }
+  ],
+  "guardduty_no_high_severity_findings": [
+    {
+      "control": "CC.3.2",
+      "description": "CC3.2 COSO Principle 7: The entity identifies risks to the achievement of its objectives across the entity and analyzes risks as a basis for determining how the risks should be managed",
+      "category": "CC3.0 - Common Criteria Related to Risk Assessment",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.4.2",
+      "description": "CC4.2 COSO Principle 17: The entity evaluates and communicates internal control deficiencies in a timely manner to those parties responsible for taking corrective action, including senior management and the board of directors, as appropriate",
+      "category": "CC4.0 - Monitoring Activities",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.7.3",
+      "description": "CC7.3 The entity evaluates security events to determine whether they could or have resulted in a failure of the entity to meet its objectives (security incidents) and, if so, takes actions to prevent or address such failures",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.7.4",
+      "description": "CC7.4 The entity responds to identified security incidents by executing a defined incident response program to understand, contain, remediate, and communicate security incidents, as appropriate",
+      "category": "CC7.0 - System Operations",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "6.3",
+      "standard": "PCI_DSS 4.0",
+      "category": "Maintain a Vulnerability Management Program",
+      "description": "Security vulnerabilities are identified and addressed",
+      "controlLink": ""
+    },
+    {
+      "control": "6.2",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Maintain a Vulnerability Management Program",
+      "description": "Ensure that all system components and software are protected from known vulnerabilities by installing the applicable security patches provided by the manufacturer. Install critical security patches within a month",
+      "controlLink": ""
+    }
+  ],
+  "acm_certificates_expiration_check": [
+    {
+      "control": "SC-7(16)",
+      "description": "Prevent Discovery of System Components",
+      "category": "System and Communications Protection",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-7/sc-7-16"
+    },
+    {
+      "control": "CC.6.7",
+      "description": "CC6.7 The entity restricts the transmission, movement, and removal of information to authorized internal and external users and processes, and protects it during transmission, movement, or removal to meet the entity\u2019s objectives",
+      "category": "CC6.0 - Logical and Physical Access",
+      "standard": "SOC2",
+      "controlLink": ""
+    }
+  ],
+  "elbv2_insecure_ssl_ciphers": [
+    {
+      "control": "SC-23(5)",
+      "description": "Allowed Certificate Authorities",
+      "category": "System and Communications Protection",
+      "standard": "NIST-800-53-Revision-5",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-23/sc-23-5"
+    },
+    {
+      "control": "4.1",
+      "standard": "PCI_DSS 4.0",
+      "category": "Protect Cardholder Data with Strong Cryptography During Transmission Over Open, Public Networks",
+      "description": "Processes and mechanisms for protecting cardholder data with strong cryptography during transmission over open, public networks are defined and documented.",
+      "controlLink": ""
+    },
+    {
+      "control": "4.1",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Protect Cardholder Data with Strong Cryptography During Transmission Over Open, Public Networks",
+      "description": "Use strong encryption and security protocols to protect sensitive cardholder data during transmission over open, public networks",
+      "controlLink": ""
+    }
+  ],
+  "config_recorder_all_regions_enabled": [
+    {
+      "control": "CC.2.1",
+      "description": "CC2.1 COSO Principle 13: The entity obtains or generates and uses relevant, quality information to support the functioning of internal control",
+      "category": "CC2.0 - Common Criteria Related to Communication and Information",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.3.1",
+      "description": "CC3.1 COSO Principle 6: The entity specifies objectives with sufficient clarity to enable the identification and assessment of risks relating to objectives",
+      "category": "CC3.0 - Common Criteria Related to Risk Assessment",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.3.4",
+      "description": "CC3.4 COSO Principle 9: The entity identifies and assesses changes that could significantly impact the system of internal control",
+      "category": "CC3.0 - Common Criteria Related to Risk Assessment",
+      "standard": "SOC2",
+      "controlLink": ""
+    },
+    {
+      "control": "CC.8.1",
+      "description": "CC8.1 The entity authorizes, designs, develops or acquires, configures, documents, tests, approves, and implements changes to infrastructure, data, software, and procedures to meet its objectives",
+      "category": "CC8.0 - Change Management",
+      "standard": "SOC2",
+      "controlLink": ""
+    }
+  ],
+  "CKV_GCP_36": [
+    {
+      "control": "SC-7(9)",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "System and Communications Protection",
+      "description": "Restrict Threatening Outgoing Communications Traffic",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-7/sc-7-9"
+    },
+    {
+      "control": "CC6.6",
+      "standard": "SOC2",
+      "category": "CC6.0 - Logical and Physical Access",
+      "description": "CC6.6 The entity implements logical access security measures to protect against threats from sources outside its system boundaries",
+      "controlLink": ""
+    },
+    {
+      "control": "A.9.4.1",
+      "standard": "ISO27001:2022",
+      "category": "Access Control",
+      "description": "Information Access Restriction",
+      "controlLink": ""
+    },
+    {
+      "control": "1.4.3",
+      "standard": "PCI_DSS 4.0",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Anti-spoofing measures are implemented to detect and block forged source IP addresses from entering the trusted network.",
+      "controlLink": ""
+    },
+    {
+      "control": "1.3",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Restrict direct global access to any system component of the cardholder data medium over the internet",
+      "controlLink": ""
+    }
+  ],
+  "CKV_GCP_15": [
+    {
+      "control": "SC-7(9)",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "System and Communications Protection",
+      "description": "Restrict Threatening Outgoing Communications Traffic",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-7/sc-7-9"
+    },
+    {
+      "control": "CC6.6",
+      "standard": "SOC2",
+      "category": "CC6.0 - Logical and Physical Access",
+      "description": "CC6.6 The entity implements logical access security measures to protect against threats from sources outside its system boundaries",
+      "controlLink": ""
+    },
+    {
+      "control": "A.9.4.1",
+      "standard": "ISO27001:2022",
+      "category": "Access Control",
+      "description": "Information Access Restriction",
+      "controlLink": ""
+    },
+    {
+      "control": "1.4",
+      "standard": "PCI_DSS 4.0",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Network connections between trusted and untrusted networks are controlled",
+      "controlLink": ""
+    },
+    {
+      "control": "1.3",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Restrict direct global access to any system component of the cardholder data medium over the internet",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AZURE_10": [
+    {
+      "control": "SC-7(9)",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "System and Communications Protection",
+      "description": "Restrict Threatening Outgoing Communications Traffic",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-7/sc-7-9"
+    },
+    {
+      "control": "CC6.6",
+      "standard": "SOC2",
+      "category": "CC6.0 - Logical and Physical Access",
+      "description": "CC6.6 The entity implements logical access security measures to protect against threats from sources outside its system boundaries",
+      "controlLink": ""
+    },
+    {
+      "control": "A.9.4.1",
+      "standard": "ISO27001:2022",
+      "category": "Access Control",
+      "description": "Information Access Restriction",
+      "controlLink": ""
+    },
+    {
+      "control": "1.4",
+      "standard": "PCI_DSS 4.0",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Network connections between trusted and untrusted networks are controlled",
+      "controlLink": ""
+    },
+    {
+      "control": "1.3",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Restrict direct global access to any system component of the cardholder data medium over the internet",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AZURE_9": [
+    {
+      "control": "SC-7(9)",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "System and Communications Protection",
+      "description": "Restrict Threatening Outgoing Communications Traffic",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-7/sc-7-9"
+    },
+    {
+      "control": "CC6.6",
+      "standard": "SOC2",
+      "category": "CC6.0 - Logical and Physical Access",
+      "description": "CC6.6 The entity implements logical access security measures to protect against threats from sources outside its system boundaries",
+      "controlLink": ""
+    },
+    {
+      "control": "A.9.4.1",
+      "standard": "ISO27001:2022",
+      "category": "Access Control",
+      "description": "Information Access Restriction",
+      "controlLink": ""
+    },
+    {
+      "control": "1.4",
+      "standard": "PCI_DSS 4.0",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Network connections between trusted and untrusted networks are controlled",
+      "controlLink": ""
+    },
+    {
+      "control": "1.3",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Restrict direct global access to any system component of the cardholder data medium over the internet",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AZURE_38": [
+    {
+      "control": "SI-7(8)",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "System and Information Integrity",
+      "description": "Auditing Capability for Significant Events",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/si/si-7/si-7-8"
+    },
+    {
+      "control": "A.12.4.1",
+      "standard": "ISO27001:2022",
+      "category": "Operational Procedures and Responsibilities",
+      "description": "Event Logging",
+      "controlLink": ""
+    },
+    {
+      "control": "10.2",
+      "standard": "PCI_DSS 4.0",
+      "category": "Regularly Monitor and Test Networks",
+      "description": "Audit logs are implemented to support the detection of anomalies and suspicious activity, and the forensic analysis of events",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AZURE_40": [
+    {
+      "control": "CM-6",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "Configuration Management",
+      "description": "Configuration Settings",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/cm/cm-6"
+    },
+    {
+      "control": "3.6",
+      "standard": "PCI_DSS 4.0",
+      "category": "Protect Account Data",
+      "description": "Cryptographic keys used to protect stored account data are secured.",
+      "controlLink": ""
+    },
+    {
+      "control": "3.5",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Protect Account Data",
+      "description": "Create and implement procedures to protect keys used to protect stored cardholder data against disclosure and misuse",
+      "controlLink": ""
+    }
+  ],
+  "CKV_AZURE_41": [
+    {
+      "control": "CM-6",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "Configuration Management",
+      "description": "Configuration Settings",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/cm/cm-6"
+    },
+    {
+      "control": "3.6",
+      "standard": "PCI_DSS 4.0",
+      "category": "Protect Account Data",
+      "description": "Cryptographic keys used to protect stored account data are secured.",
+      "controlLink": ""
+    },
+    {
+      "control": "3.5",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Protect Account Data",
+      "description": "Create and implement procedures to protect keys used to protect stored cardholder data against disclosure and misuse",
+      "controlLink": ""
+    }
+  ],
+  "CKV_GCP_2": [
+    {
+      "control": "SC-7",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "System and Communications Protection",
+      "description": "Boundary Protection",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-7"
+    },
+    {
+      "control": "CC6.6",
+      "standard": "SOC2",
+      "category": "CC6.0 - Logical and Physical Access",
+      "description": "CC6.6 The entity implements logical access security measures to protect against threats from sources outside its system boundaries",
+      "controlLink": ""
+    },
+    {
+      "control": "A.9.4.1",
+      "standard": "ISO27001:2022",
+      "category": "Access Control",
+      "description": "Information Access Restriction",
+      "controlLink": ""
+    },
+    {
+      "control": "1.4",
+      "standard": "PCI_DSS 4.0",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Network connections between trusted and untrusted networks are controlled",
+      "controlLink": ""
+    },
+    {
+      "control": "1.3",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Restrict direct global access to any system component of the cardholder data medium over the internet",
+      "controlLink": ""
+    }
+  ],
+  "CKV_GCP_3": [
+    {
+      "control": "SC-7",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "System and Communications Protection",
+      "description": "Boundary Protection",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-7"
+    },
+    {
+      "control": "CC6.6",
+      "standard": "SOC2",
+      "category": "CC6.0 - Logical and Physical Access",
+      "description": "CC6.6 The entity implements logical access security measures to protect against threats from sources outside its system boundaries",
+      "controlLink": ""
+    },
+    {
+      "control": "A.9.4.1",
+      "standard": "ISO27001:2022",
+      "category": "Access Control",
+      "description": "Information Access Restriction",
+      "controlLink": ""
+    },
+    {
+      "control": "1.4",
+      "standard": "PCI_DSS 4.0",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Network connections between trusted and untrusted networks are controlled",
+      "controlLink": ""
+    },
+    {
+      "control": "1.3",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Restrict direct global access to any system component of the cardholder data medium over the internet",
+      "controlLink": ""
+    }
+  ],
+  "CKV_GCP_28": [
+    {
+      "control": "SC-7",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "System and Communications Protection",
+      "description": "Boundary Protection",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-7"
+    },
+    {
+      "control": "CC6.6",
+      "standard": "SOC2",
+      "category": "CC6.0 - Logical and Physical Access",
+      "description": "CC6.6 The entity implements logical access security measures to protect against threats from sources outside its system boundaries",
+      "controlLink": ""
+    },
+    {
+      "control": "A.9.4.1",
+      "standard": "ISO27001:2022",
+      "category": "Access Control",
+      "description": "Information Access Restriction",
+      "controlLink": ""
+    },
+    {
+      "control": "1.4",
+      "standard": "PCI_DSS 4.0",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Network connections between trusted and untrusted networks are controlled",
+      "controlLink": ""
+    },
+    {
+      "control": "1.3",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Build and Maintain a Secure Network and Systems",
+      "description": "Restrict direct global access to any system component of the cardholder data medium over the internet",
+      "controlLink": ""
+    }
+  ],
+  "CKV_DOCKER_3": [
+    {
+      "control": "AC-3(13)",
+      "standard": "NIST-800-53-Revision-5",
+      "category": "Access Control",
+      "description": "Attribute-based Access Control",
+      "controlLink": "https://csf.tools/reference/nist-sp-800-53/r5/ac/ac-3/ac-3-13"
+    },
+    {
+      "control": "CC6.3",
+      "standard": "SOC2",
+      "category": "CC6.0 - Logical and Physical Access",
+      "description": "CC6.3 The entity authorizes, modifies, or removes access to data, software, functions, and other protected information assets based on roles, responsibilities, or the system design and changes, giving consideration to the concepts of least privilege and segregation of duties, to meet the entity\u2019s objectives",
+      "controlLink": ""
+    },
+    {
+      "control": "A.9.2.3",
+      "standard": "ISO27001:2022",
+      "category": "Access Control",
+      "description": "Management of Privileged Access Rights",
+      "controlLink": ""
+    },
+    {
+      "control": "7.2.5",
+      "standard": "PCI_DSS 4.0",
+      "category": "Restrict Access to System Components and Cardholder Data",
+      "description": "All application and system accounts and related access privileges are assigned and managed",
+      "controlLink": ""
+    },
+    {
+      "control": "7.1.4",
+      "standard": "PCI_DSS 3.2.1",
+      "category": "Restrict Access to System Components and Cardholder Data",
+      "description": "Request documented approval from the competent parties that indicate the required privileges",
+      "controlLink": ""
+    },
+    {
+      "control": "4.1",
+      "standard": "CIS Docker Benchmark v1.6.0",
+      "category": "Container Images and Build File Configuration",
+      "description": "Ensure that a user for the container has been created",
+      "controlLink": ""
+    }
+  ],
+  "CKV_DOCKER_2": [
+    {
+      "control": "4.6",
+      "standard": "CIS Docker Benchmark v1.6.0",
+      "category": "Container Images and Build File Configuration",
+      "description": "Ensure that HEALTHCHECK instructions have been added to container images",
+      "controlLink": ""
+    }
+  ],
+  "CKV_DOCKER_5": [
+    {
+      "control": "4.7",
+      "standard": "CIS Docker Benchmark v1.6.0",
+      "category": "Container Images and Build File Configuration",
+      "description": "Ensure update instructions are not used alone in Dockerfiles",
+      "controlLink": ""
+    }
+  ],
+  "CKV_DOCKER_4": [
+    {
+      "control": "4.9",
+      "standard": "CIS Docker Benchmark v1.6.0",
+      "category": "Container Images and Build File Configuration",
+      "description": "Ensure COPY is used instead of ADD in Dockerfile",
+      "controlLink": ""
+    }
+  ],
+  "AVD-DS-0002": [
+    {
+      "control": "4.1",
+      "standard": "CIS Docker Benchmark v1.6.0",
+      "category": "Container Images and Build File Configuration",
+      "description": "Ensure that a user for the container has been created",
+      "controlLink": ""
+    }
+  ],
+  "AVD-DS-0026": [
+    {
+      "control": "4.6",
+      "standard": "CIS Docker Benchmark v1.6.0",
+      "category": "Container Images and Build File Configuration",
+      "description": "Ensure that HEALTHCHECK instructions have been added to container images",
+      "controlLink": ""
+    }
+  ],
+  "AVD-DS-0005": [
+    {
+      "control": "4.9",
+      "standard": "CIS Docker Benchmark v1.6.0",
+      "category": "Container Images and Build File Configuration",
+      "description": "Ensure COPY is used instead of ADD in Dockerfile",
+      "controlLink": ""
+    }
+  ],
+  "AVD-DS-0017": [
+    {
+      "control": "4.7",
+      "standard": "CIS Docker Benchmark v1.6.0",
+      "category": "Container Images and Build File Configuration",
+      "description": "Ensure update instructions are not used alone in Dockerfiles",
+      "controlLink": ""
+    }
+  ]
+}
