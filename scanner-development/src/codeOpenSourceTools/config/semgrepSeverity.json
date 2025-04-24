@@ -1,0 +1,12 @@
+{
+  "jsonVersion": "1.00",
+  "usage": "semgrep config for severity",
+  "toolName": "semgrep",
+  "severity": [
+    {
+      "id": "iac.kubectl-proxy-exposed",
+      "severity": "critical",
+      "description": "OX rule"
+    }
+  ]
+}

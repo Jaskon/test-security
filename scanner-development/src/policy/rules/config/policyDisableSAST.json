@@ -1,0 +1,45 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "policy for approved SAST being disabled",
+  "policyId": "oxPolicy_disableSast_1",
+  "ruleId": "oxRule_disableSast_1",
+  "exclusionCategory": "general",
+  "name": "The approved static analyzer (SAST) should always be enabled",
+  "categoryId": "sectools",
+  "groupId": "",
+  "catId": 10,
+  "system": "SAST",
+  "description": "The approved SAST (Static Application Security Testing) application should always be enabled for the code repository.",
+  "detailedDescription": "SAST (Static Application Security Testing) applications are the most basic type of security vulnerability detection applications that an organization should use. From SQL injections to cross-site scripting SAST applications are a basic requirement to stop easily preventable issues from making their way to production.",
+  "severity": 3,
+  "selected": true,
+  "functionName": "policyDisableSAST",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "securityTools",
+      "label": "SAST",
+      "tooltip": "Please select one or more approved SAST applications for your policy.",
+      "type": "stringArray",
+      "range": ["Checkmarx", "CxSAST", "CodeQL", "ESLint"],
+      "multiSelect": true,
+      "value": ["Checkmarx", "CxSAST", "CodeQL", "ESLint"],
+      "visible": true
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "files",
+      "type": "code_repo"
+    },
+    {
+      "id": "rsc_2",
+      "name": "users",
+      "type": "code_repo"
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 5
+}

@@ -1,0 +1,56 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "Protected branches should not be bypassed",
+  "policyId": "oxPolicy_dspm_ProtectedBranchShouldNotBeBypassed",
+  "ruleId": "oxRule_dspm_ProtectedBranchShouldNotBeBypassed",
+  "exclusionCategory": "user",
+  "name": "Protected branches should not be bypassed",
+  "categoryId": "3",
+  "groupId": "",
+  "catId": 3,
+  "system": "Repo",
+  "order": 21,
+  "description": "Repositories should enable branch protection, requiring all code changes to be reviewed. Allowing users to bypass this should be done temporarily or in extremely rare cases.",
+  "detailedDescription": "Code reviews are considered one of the best ways to limit bugs, and malicious code pushes by compromised source control accounts. This is why most compliance standards, such as SOC2, PCI-DSS, and ISO27001, require all code changes to be reviewed. To enforce this, users should not be able to bypass the review requirement.",
+  "severity": 2,
+  "selected": true,
+  "functionName": "policyProtectedBranchShouldNotBeBypassed",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "UncheckBothOrOne",
+      "label": "Choose an available fix for a violation",
+      "tooltip": "Pick between the options of available fixes for violation",
+      "type": "stringArray",
+      "range": [
+        "Remove both of the bypassing options",
+        "Remove the option of bypassed required pull requests",
+        "Remove the option of dismissed pull requests reviews"
+      ],
+      "multiSelect": false,
+      "value": "Remove both of the bypassing options",
+      "visible": true
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "branchSettings",
+      "type": "code_repo"
+    },
+    {
+      "id": "rsc_2",
+      "name": "users",
+      "type": "code_repo"
+    },
+    {
+      "id": "rsc_3",
+      "name": "allUsers",
+      "type": "code_repo",
+      "global": true
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 1
+}

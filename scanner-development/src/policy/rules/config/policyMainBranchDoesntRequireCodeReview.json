@@ -1,0 +1,78 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "Repo should have branch protection with required code reviews ",
+  "policyId": "oxPolicy_dspm_MainBranchNoCodeReview",
+  "ruleId": "oxRule_dspm_MainBranchNoCodeReview",
+  "exclusionCategory": "general",
+  "name": "Repo should have branch protection with required code reviews",
+  "categoryId": "3",
+  "groupId": "",
+  "catId": 3,
+  "system": "Repo",
+  "description": "Repositories should have branch protection enabled requiring all code changes to be reviewed. This means disabling Push events and requiring Pull/Merge Requests to have code reviews.",
+  "detailedDescription": "Code reviews are considered to be one of the best ways to limit bugs and malicious code pushes by compromised source control accounts. This is why most compliance standards such as SOC2, PCI-DSS, and ISO27001 require all code changes to be reviewed. To enforce this, push events should be disabled and Pull/Merge Requests should require a review/approval.",
+  "severity": 3,
+  "selected": true,
+  "functionName": "policyMainBranchDoesntRequireCodeReview",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "compliantWith",
+      "label": "Organization must remain compliant with SOC2 or PCI-DSS or ISO27001",
+      "tooltip": "choose if the organization is compliant with SOC2 or PCI-DSS or ISO27001",
+      "type": "boolean",
+      "range": [],
+      "multiSelect": false,
+      "value": true,
+      "visible": false
+    },
+    {
+      "id": "arg_2",
+      "name": "allowedSelfReviewsForMergeRequests",
+      "label": "Self reviews for Merge Requests are allowed",
+      "tooltip": "choose if self reviews for merge requests are allowed",
+      "type": "boolean",
+      "range": [],
+      "multiSelect": false,
+      "value": false,
+      "visible": false
+    },
+    {
+      "id": "arg_3",
+      "name": "minBP",
+      "label": "Ignore Business Priority Less Than",
+      "tooltip": "Ignore repos with Business Priority less than the number entered",
+      "type": "number",
+      "range": [1, 99],
+      "multiSelect": false,
+      "value": 70,
+      "visible": true
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "branches",
+      "type": "code_repo"
+    },
+    {
+      "id": "rsc_2",
+      "name": "branchSettings",
+      "type": "code_repo"
+    },
+    {
+      "id": "rsc_3",
+      "name": "users",
+      "type": "code_repo"
+    },
+    {
+      "id": "rsc_4",
+      "name": "allUsers",
+      "type": "code_repo",
+      "global": true
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 3
+}

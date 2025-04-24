@@ -1,0 +1,1746 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "runs": [
+    {
+      "artifacts": [
+        {
+          "length": -1,
+          "location": {
+            "uri": "output_101"
+          }
+        },
+        {
+          "length": -1,
+          "location": {
+            "uri": "output_103"
+          }
+        },
+        {
+          "length": -1,
+          "location": {
+            "uri": "output_104"
+          }
+        },
+        {
+          "length": -1,
+          "location": {
+            "uri": "output_105"
+          }
+        },
+        {
+          "length": -1,
+          "location": {
+            "uri": "output_106"
+          }
+        },
+        {
+          "length": -1,
+          "location": {
+            "uri": "output_107"
+          }
+        },
+        {
+          "length": -1,
+          "location": {
+            "uri": "output_201"
+          }
+        },
+        {
+          "length": -1,
+          "location": {
+            "uri": "output_203"
+          }
+        },
+        {
+          "length": -1,
+          "location": {
+            "uri": "output_204"
+          }
+        },
+        {
+          "length": -1,
+          "location": {
+            "uri": "output_205"
+          }
+        },
+        {
+          "length": -1,
+          "location": {
+            "uri": "output_206"
+          }
+        },
+        {
+          "length": -1,
+          "location": {
+            "uri": "output_207"
+          }
+        },
+        {
+          "length": -1,
+          "location": {
+            "uri": "output_301"
+          }
+        },
+        {
+          "length": -1,
+          "location": {
+            "uri": "output_303"
+          }
+        },
+        {
+          "length": -1,
+          "location": {
+            "uri": "output_304"
+          }
+        },
+        {
+          "length": -1,
+          "location": {
+            "uri": "output_305"
+          }
+        },
+        {
+          "length": -1,
+          "location": {
+            "uri": "output_306"
+          }
+        },
+        {
+          "length": -1,
+          "location": {
+            "uri": "output_307"
+          }
+        }
+      ],
+      "results": [
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "output_101"
+                },
+                "region": {
+                  "endLine": 39,
+                  "snippet": {
+                    "text": "\u003cservice\u003e\n\t\t\t\t\t\t\u003cname\u003eWEB\u003c/name\u003e\n\t\t\t\t\t\t\u003cvrf\u003emsg-backbone\u003c/vrf\u003e\n\t\t\t\t\t\t\u003clisten-port\u003e80\u003c/listen-port\u003e\n\t\t\t\t\t\t\u003cenabled\u003efalse\u003c/enabled\u003e"
+                  },
+                  "startLine": 39
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "The Solace vendor packages only the necessary software that needs to run the broker."
+          },
+          "ruleId": "intercept.cc.audit.policy.101: SFW.T01 - API config check",
+          "ruleIndex": 0
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "output_103"
+                },
+                "region": {
+                  "endLine": 39,
+                  "snippet": {
+                    "text": "\u003cservice\u003e\n\t\t\t\t\t\t\u003cname\u003eWEB\u003c/name\u003e\n\t\t\t\t\t\t\u003cvrf\u003emsg-backbone\u003c/vrf\u003e\n\t\t\t\t\t\t\u003clisten-port\u003e80\u003c/listen-port\u003e\n\t\t\t\t\t\t\u003cenabled\u003efalse\u003c/enabled\u003e\n\t\t\t\t\t\t\u003clisten-port-operational-status\u003eDown\u003c/listen-port-operational-status\u003e\n\t\t\t\t\t\t\u003cweb-url-suffix\u003e\u003c/web-url-suffix\u003e\n\t\t\t\t\t\t\u003cssl\u003e\n\t\t\t\t\t\t\t\u003clisten-port\u003e443\u003c/listen-port\u003e\n\t\t\t\t\t\t\t\u003clisten-port-operational-status\u003eDown\u003c/listen-port-operational-status\u003e"
+                  },
+                  "startLine": 39
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "TIP Rule Description"
+          },
+          "ruleId": "intercept.cc.audit.policy.103: SFW.T05 - API config check",
+          "ruleIndex": 1
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "output_104"
+                },
+                "region": {
+                  "endLine": 5,
+                  "snippet": {
+                    "text": "\u003callow-tls-version\u003e\n\t\t\t\t\t\u003cblock-tls-1.0\u003etrue\u003c/block-tls-1.0\u003e\n\t\t\t\t\t\u003cblock-tls-1.1\u003etrue\u003c/block-tls-1.1\u003e\n\t\t\t\t\t\u003cblock-tls-1.2\u003efalse\u003c/block-tls-1.2\u003e\n\t\t\t\t\t\u003cversion\u003e1.2\u003c/version\u003e\n\t\t\t\t\u003c/allow-tls-version\u003e"
+                  },
+                  "startLine": 5
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "TIP Rule Description"
+          },
+          "ruleId": "intercept.cc.audit.policy.104: SFW.T06 - API config check",
+          "ruleIndex": 2
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "output_105"
+                },
+                "region": {
+                  "endLine": 1738,
+                  "snippet": {
+                    "text": "\u003cevent-thresholds\u003e\n\t\t\t\t\t\t\t\u003cname\u003econnections-service\u003c/name\u003e\n\t\t\t\t\t\t\t\u003cset-percentage\u003e80\u003c/set-percentage\u003e"
+                  },
+                  "startLine": 1738
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "TIP Rule Description"
+          },
+          "ruleId": "intercept.cc.audit.policy.105: APL.T01 - API config check",
+          "ruleIndex": 3
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "output_105"
+                },
+                "region": {
+                  "endLine": 1743,
+                  "snippet": {
+                    "text": "\u003cevent-thresholds\u003e\n\t\t\t\t\t\t\t\u003cname\u003econnections-service-smf\u003c/name\u003e\n\t\t\t\t\t\t\t\u003cset-percentage\u003e80\u003c/set-percentage\u003e"
+                  },
+                  "startLine": 1743
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "TIP Rule Description"
+          },
+          "ruleId": "intercept.cc.audit.policy.105: APL.T01 - API config check",
+          "ruleIndex": 3
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "output_105"
+                },
+                "region": {
+                  "endLine": 1748,
+                  "snippet": {
+                    "text": "\u003cevent-thresholds\u003e\n\t\t\t\t\t\t\t\u003cname\u003econnections-service-rest-outgoing\u003c/name\u003e\n\t\t\t\t\t\t\t\u003cset-percentage\u003e80\u003c/set-percentage\u003e"
+                  },
+                  "startLine": 1748
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "TIP Rule Description"
+          },
+          "ruleId": "intercept.cc.audit.policy.105: APL.T01 - API config check",
+          "ruleIndex": 3
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "output_105"
+                },
+                "region": {
+                  "endLine": 1753,
+                  "snippet": {
+                    "text": "\u003cevent-thresholds\u003e\n\t\t\t\t\t\t\t\u003cname\u003essl-connections\u003c/name\u003e\n\t\t\t\t\t\t\t\u003cset-percentage\u003e80\u003c/set-percentage\u003e"
+                  },
+                  "startLine": 1753
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "TIP Rule Description"
+          },
+          "ruleId": "intercept.cc.audit.policy.105: APL.T01 - API config check",
+          "ruleIndex": 3
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "output_106"
+                },
+                "region": {
+                  "endLine": 13,
+                  "snippet": {
+                    "text": "Signature Algorithm: sha256WithRSAEncryption"
+                  },
+                  "startLine": 13
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "TIP Rule Description"
+          },
+          "ruleId": "intercept.cc.audit.policy.106: APL.T05 - API config check",
+          "ruleIndex": 4
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "output_107"
+                },
+                "region": {
+                  "endLine": 9,
+                  "snippet": {
+                    "text": "\u003cclient-connect\u003e\n\t\t\t\t\t\t\t\u003callow-default-action\u003etrue\u003c/allow-default-action\u003e"
+                  },
+                  "startLine": 9
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "TIP Rule Description"
+          },
+          "ruleId": "intercept.cc.audit.policy.107: APL.T09 - API config check",
+          "ruleIndex": 5
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "output_107"
+                },
+                "region": {
+                  "endLine": 14,
+                  "snippet": {
+                    "text": "\u003cpublish-topic\u003e\n\t\t\t\t\t\t\t\u003callow-default-action\u003efalse\u003c/allow-default-action\u003e"
+                  },
+                  "startLine": 14
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "TIP Rule Description"
+          },
+          "ruleId": "intercept.cc.audit.policy.107: APL.T09 - API config check",
+          "ruleIndex": 5
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "output_107"
+                },
+                "region": {
+                  "endLine": 26,
+                  "snippet": {
+                    "text": "\u003csubscribe-topic\u003e\n\t\t\t\t\t\t\t\u003callow-default-action\u003efalse\u003c/allow-default-action\u003e"
+                  },
+                  "startLine": 26
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "TIP Rule Description"
+          },
+          "ruleId": "intercept.cc.audit.policy.107: APL.T09 - API config check",
+          "ruleIndex": 5
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "output_201"
+                },
+                "region": {
+                  "endLine": 39,
+                  "snippet": {
+                    "text": "\u003cservice\u003e\n\t\t\t\t\t\t\u003cname\u003eWEB\u003c/name\u003e\n\t\t\t\t\t\t\u003cvrf\u003emsg-backbone\u003c/vrf\u003e\n\t\t\t\t\t\t\u003clisten-port\u003e80\u003c/listen-port\u003e\n\t\t\t\t\t\t\u003cenabled\u003efalse\u003c/enabled\u003e"
+                  },
+                  "startLine": 39
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "The Solace vendor packages only the necessary software that needs to run the broker."
+          },
+          "ruleId": "intercept.cc.audit.policy.201: SFW.T01 - API config check",
+          "ruleIndex": 6
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "output_203"
+                },
+                "region": {
+                  "endLine": 39,
+                  "snippet": {
+                    "text": "\u003cservice\u003e\n\t\t\t\t\t\t\u003cname\u003eWEB\u003c/name\u003e\n\t\t\t\t\t\t\u003cvrf\u003emsg-backbone\u003c/vrf\u003e\n\t\t\t\t\t\t\u003clisten-port\u003e80\u003c/listen-port\u003e\n\t\t\t\t\t\t\u003cenabled\u003efalse\u003c/enabled\u003e\n\t\t\t\t\t\t\u003clisten-port-operational-status\u003eDown\u003c/listen-port-operational-status\u003e\n\t\t\t\t\t\t\u003cweb-url-suffix\u003e\u003c/web-url-suffix\u003e\n\t\t\t\t\t\t\u003cssl\u003e\n\t\t\t\t\t\t\t\u003clisten-port\u003e443\u003c/listen-port\u003e\n\t\t\t\t\t\t\t\u003clisten-port-operational-status\u003eDown\u003c/listen-port-operational-status\u003e"
+                  },
+                  "startLine": 39
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "TIP Rule Description"
+          },
+          "ruleId": "intercept.cc.audit.policy.203: SFW.T05 - API config check",
+          "ruleIndex": 7
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "output_204"
+                },
+                "region": {
+                  "endLine": 5,
+                  "snippet": {
+                    "text": "\u003callow-tls-version\u003e\n\t\t\t\t\t\u003cblock-tls-1.0\u003etrue\u003c/block-tls-1.0\u003e\n\t\t\t\t\t\u003cblock-tls-1.1\u003etrue\u003c/block-tls-1.1\u003e\n\t\t\t\t\t\u003cblock-tls-1.2\u003efalse\u003c/block-tls-1.2\u003e\n\t\t\t\t\t\u003cversion\u003e1.2\u003c/version\u003e\n\t\t\t\t\u003c/allow-tls-version\u003e"
+                  },
+                  "startLine": 5
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "TIP Rule Description"
+          },
+          "ruleId": "intercept.cc.audit.policy.204: SFW.T06 - API config check",
+          "ruleIndex": 8
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "output_205"
+                },
+                "region": {
+                  "endLine": 1738,
+                  "snippet": {
+                    "text": "\u003cevent-thresholds\u003e\n\t\t\t\t\t\t\t\u003cname\u003econnections-service\u003c/name\u003e\n\t\t\t\t\t\t\t\u003cset-percentage\u003e80\u003c/set-percentage\u003e"
+                  },
+                  "startLine": 1738
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "TIP Rule Description"
+          },
+          "ruleId": "intercept.cc.audit.policy.205: APL.T01 - API config check",
+          "ruleIndex": 9
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "output_205"
+                },
+                "region": {
+                  "endLine": 1743,
+                  "snippet": {
+                    "text": "\u003cevent-thresholds\u003e\n\t\t\t\t\t\t\t\u003cname\u003econnections-service-smf\u003c/name\u003e\n\t\t\t\t\t\t\t\u003cset-percentage\u003e80\u003c/set-percentage\u003e"
+                  },
+                  "startLine": 1743
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "TIP Rule Description"
+          },
+          "ruleId": "intercept.cc.audit.policy.205: APL.T01 - API config check",
+          "ruleIndex": 9
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "output_205"
+                },
+                "region": {
+                  "endLine": 1748,
+                  "snippet": {
+                    "text": "\u003cevent-thresholds\u003e\n\t\t\t\t\t\t\t\u003cname\u003econnections-service-rest-outgoing\u003c/name\u003e\n\t\t\t\t\t\t\t\u003cset-percentage\u003e80\u003c/set-percentage\u003e"
+                  },
+                  "startLine": 1748
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "TIP Rule Description"
+          },
+          "ruleId": "intercept.cc.audit.policy.205: APL.T01 - API config check",
+          "ruleIndex": 9
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "output_205"
+                },
+                "region": {
+                  "endLine": 1753,
+                  "snippet": {
+                    "text": "\u003cevent-thresholds\u003e\n\t\t\t\t\t\t\t\u003cname\u003essl-connections\u003c/name\u003e\n\t\t\t\t\t\t\t\u003cset-percentage\u003e80\u003c/set-percentage\u003e"
+                  },
+                  "startLine": 1753
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "TIP Rule Description"
+          },
+          "ruleId": "intercept.cc.audit.policy.205: APL.T01 - API config check",
+          "ruleIndex": 9
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "output_206"
+                },
+                "region": {
+                  "endLine": 13,
+                  "snippet": {
+                    "text": "Signature Algorithm: sha256WithRSAEncryption"
+                  },
+                  "startLine": 13
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "TIP Rule Description"
+          },
+          "ruleId": "intercept.cc.audit.policy.206: APL.T05 - API config check",
+          "ruleIndex": 10
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "output_207"
+                },
+                "region": {
+                  "endLine": 9,
+                  "snippet": {
+                    "text": "\u003cclient-connect\u003e\n\t\t\t\t\t\t\t\u003callow-default-action\u003etrue\u003c/allow-default-action\u003e"
+                  },
+                  "startLine": 9
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "TIP Rule Description"
+          },
+          "ruleId": "intercept.cc.audit.policy.207: APL.T09 - API config check",
+          "ruleIndex": 11
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "output_207"
+                },
+                "region": {
+                  "endLine": 14,
+                  "snippet": {
+                    "text": "\u003cpublish-topic\u003e\n\t\t\t\t\t\t\t\u003callow-default-action\u003efalse\u003c/allow-default-action\u003e"
+                  },
+                  "startLine": 14
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "TIP Rule Description"
+          },
+          "ruleId": "intercept.cc.audit.policy.207: APL.T09 - API config check",
+          "ruleIndex": 11
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "output_207"
+                },
+                "region": {
+                  "endLine": 26,
+                  "snippet": {
+                    "text": "\u003csubscribe-topic\u003e\n\t\t\t\t\t\t\t\u003callow-default-action\u003efalse\u003c/allow-default-action\u003e"
+                  },
+                  "startLine": 26
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "TIP Rule Description"
+          },
+          "ruleId": "intercept.cc.audit.policy.207: APL.T09 - API config check",
+          "ruleIndex": 11
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "output_301"
+                },
+                "region": {
+                  "endLine": 39,
+                  "snippet": {
+                    "text": "\u003cservice\u003e\n\t\t\t\t\t\t\u003cname\u003eWEB\u003c/name\u003e\n\t\t\t\t\t\t\u003cvrf\u003emsg-backbone\u003c/vrf\u003e\n\t\t\t\t\t\t\u003clisten-port\u003e80\u003c/listen-port\u003e\n\t\t\t\t\t\t\u003cenabled\u003efalse\u003c/enabled\u003e"
+                  },
+                  "startLine": 39
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "The Solace vendor packages only the necessary software that needs to run the broker."
+          },
+          "ruleId": "intercept.cc.audit.policy.301: SFW.T01 - API config check",
+          "ruleIndex": 12
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "output_303"
+                },
+                "region": {
+                  "endLine": 39,
+                  "snippet": {
+                    "text": "\u003cservice\u003e\n\t\t\t\t\t\t\u003cname\u003eWEB\u003c/name\u003e\n\t\t\t\t\t\t\u003cvrf\u003emsg-backbone\u003c/vrf\u003e\n\t\t\t\t\t\t\u003clisten-port\u003e80\u003c/listen-port\u003e\n\t\t\t\t\t\t\u003cenabled\u003efalse\u003c/enabled\u003e\n\t\t\t\t\t\t\u003clisten-port-operational-status\u003eDown\u003c/listen-port-operational-status\u003e\n\t\t\t\t\t\t\u003cweb-url-suffix\u003e\u003c/web-url-suffix\u003e\n\t\t\t\t\t\t\u003cssl\u003e\n\t\t\t\t\t\t\t\u003clisten-port\u003e443\u003c/listen-port\u003e\n\t\t\t\t\t\t\t\u003clisten-port-operational-status\u003eDown\u003c/listen-port-operational-status\u003e"
+                  },
+                  "startLine": 39
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "TIP Rule Description"
+          },
+          "ruleId": "intercept.cc.audit.policy.303: SFW.T05 - API config check",
+          "ruleIndex": 13
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "output_304"
+                },
+                "region": {
+                  "endLine": 5,
+                  "snippet": {
+                    "text": "\u003callow-tls-version\u003e\n\t\t\t\t\t\u003cblock-tls-1.0\u003etrue\u003c/block-tls-1.0\u003e\n\t\t\t\t\t\u003cblock-tls-1.1\u003etrue\u003c/block-tls-1.1\u003e\n\t\t\t\t\t\u003cblock-tls-1.2\u003efalse\u003c/block-tls-1.2\u003e\n\t\t\t\t\t\u003cversion\u003e1.2\u003c/version\u003e\n\t\t\t\t\u003c/allow-tls-version\u003e"
+                  },
+                  "startLine": 5
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "TIP Rule Description"
+          },
+          "ruleId": "intercept.cc.audit.policy.304: SFW.T06 - API config check",
+          "ruleIndex": 14
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "output_305"
+                },
+                "region": {
+                  "endLine": 1738,
+                  "snippet": {
+                    "text": "\u003cevent-thresholds\u003e\n\t\t\t\t\t\t\t\u003cname\u003econnections-service\u003c/name\u003e\n\t\t\t\t\t\t\t\u003cset-percentage\u003e80\u003c/set-percentage\u003e"
+                  },
+                  "startLine": 1738
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "TIP Rule Description"
+          },
+          "ruleId": "intercept.cc.audit.policy.305: APL.T01 - API config check",
+          "ruleIndex": 15
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "output_305"
+                },
+                "region": {
+                  "endLine": 1743,
+                  "snippet": {
+                    "text": "\u003cevent-thresholds\u003e\n\t\t\t\t\t\t\t\u003cname\u003econnections-service-smf\u003c/name\u003e\n\t\t\t\t\t\t\t\u003cset-percentage\u003e80\u003c/set-percentage\u003e"
+                  },
+                  "startLine": 1743
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "TIP Rule Description"
+          },
+          "ruleId": "intercept.cc.audit.policy.305: APL.T01 - API config check",
+          "ruleIndex": 15
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "output_305"
+                },
+                "region": {
+                  "endLine": 1748,
+                  "snippet": {
+                    "text": "\u003cevent-thresholds\u003e\n\t\t\t\t\t\t\t\u003cname\u003econnections-service-rest-outgoing\u003c/name\u003e\n\t\t\t\t\t\t\t\u003cset-percentage\u003e80\u003c/set-percentage\u003e"
+                  },
+                  "startLine": 1748
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "TIP Rule Description"
+          },
+          "ruleId": "intercept.cc.audit.policy.305: APL.T01 - API config check",
+          "ruleIndex": 15
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "output_305"
+                },
+                "region": {
+                  "endLine": 1753,
+                  "snippet": {
+                    "text": "\u003cevent-thresholds\u003e\n\t\t\t\t\t\t\t\u003cname\u003essl-connections\u003c/name\u003e\n\t\t\t\t\t\t\t\u003cset-percentage\u003e80\u003c/set-percentage\u003e"
+                  },
+                  "startLine": 1753
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "TIP Rule Description"
+          },
+          "ruleId": "intercept.cc.audit.policy.305: APL.T01 - API config check",
+          "ruleIndex": 15
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "output_306"
+                },
+                "region": {
+                  "endLine": 13,
+                  "snippet": {
+                    "text": "Signature Algorithm: sha256WithRSAEncryption"
+                  },
+                  "startLine": 13
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "TIP Rule Description"
+          },
+          "ruleId": "intercept.cc.audit.policy.306: APL.T05 - API config check",
+          "ruleIndex": 16
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "output_307"
+                },
+                "region": {
+                  "endLine": 9,
+                  "snippet": {
+                    "text": "\u003cclient-connect\u003e\n\t\t\t\t\t\t\t\u003callow-default-action\u003etrue\u003c/allow-default-action\u003e"
+                  },
+                  "startLine": 9
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "TIP Rule Description"
+          },
+          "ruleId": "intercept.cc.audit.policy.307: APL.T09 - API config check",
+          "ruleIndex": 17
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "output_307"
+                },
+                "region": {
+                  "endLine": 14,
+                  "snippet": {
+                    "text": "\u003cpublish-topic\u003e\n\t\t\t\t\t\t\t\u003callow-default-action\u003efalse\u003c/allow-default-action\u003e"
+                  },
+                  "startLine": 14
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "TIP Rule Description"
+          },
+          "ruleId": "intercept.cc.audit.policy.307: APL.T09 - API config check",
+          "ruleIndex": 17
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "output_307"
+                },
+                "region": {
+                  "endLine": 26,
+                  "snippet": {
+                    "text": "\u003csubscribe-topic\u003e\n\t\t\t\t\t\t\t\u003callow-default-action\u003efalse\u003c/allow-default-action\u003e"
+                  },
+                  "startLine": 26
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "TIP Rule Description"
+          },
+          "ruleId": "intercept.cc.audit.policy.307: APL.T09 - API config check",
+          "ruleIndex": 17
+        }
+      ],
+      "tool": {
+        "driver": {
+          "informationUri": "https://intercept.cc",
+          "name": "intercept",
+          "rules": [
+            {
+              "help": {
+                "markdown": "# INTERCEPT.CC",
+                "text": ""
+              },
+              "helpUri": "https://intercept.cc",
+              "id": "intercept.cc.audit.policy.101: SFW.T01 - API config check",
+              "properties": {
+                "impact": "Misconfiguration or omission",
+                "resolution": ""
+              },
+              "shortDescription": {
+                "text": "The Solace vendor packages only the necessary software that needs to run the broker."
+              }
+            },
+            {
+              "help": {
+                "markdown": "# INTERCEPT.CC",
+                "text": ""
+              },
+              "helpUri": "https://intercept.cc",
+              "id": "intercept.cc.audit.policy.103: SFW.T05 - API config check",
+              "properties": {
+                "impact": "Misconfiguration or omission",
+                "resolution": ""
+              },
+              "shortDescription": {
+                "text": "TIP Rule Description"
+              }
+            },
+            {
+              "help": {
+                "markdown": "# INTERCEPT.CC",
+                "text": ""
+              },
+              "helpUri": "https://intercept.cc",
+              "id": "intercept.cc.audit.policy.104: SFW.T06 - API config check",
+              "properties": {
+                "impact": "Misconfiguration or omission",
+                "resolution": ""
+              },
+              "shortDescription": {
+                "text": "TIP Rule Description"
+              }
+            },
+            {
+              "help": {
+                "markdown": "# INTERCEPT.CC",
+                "text": ""
+              },
+              "helpUri": "https://intercept.cc",
+              "id": "intercept.cc.audit.policy.105: APL.T01 - API config check",
+              "properties": {
+                "impact": "Misconfiguration or omission",
+                "resolution": ""
+              },
+              "shortDescription": {
+                "text": "TIP Rule Description"
+              }
+            },
+            {
+              "help": {
+                "markdown": "# INTERCEPT.CC",
+                "text": ""
+              },
+              "helpUri": "https://intercept.cc",
+              "id": "intercept.cc.audit.policy.106: APL.T05 - API config check",
+              "properties": {
+                "impact": "Misconfiguration or omission",
+                "resolution": ""
+              },
+              "shortDescription": {
+                "text": "TIP Rule Description"
+              }
+            },
+            {
+              "help": {
+                "markdown": "# INTERCEPT.CC",
+                "text": ""
+              },
+              "helpUri": "https://intercept.cc",
+              "id": "intercept.cc.audit.policy.107: APL.T09 - API config check",
+              "properties": {
+                "impact": "Misconfiguration or omission",
+                "resolution": ""
+              },
+              "shortDescription": {
+                "text": "TIP Rule Description"
+              }
+            },
+            {
+              "help": {
+                "markdown": "# INTERCEPT.CC",
+                "text": ""
+              },
+              "helpUri": "https://intercept.cc",
+              "id": "intercept.cc.audit.policy.201: SFW.T01 - API config check",
+              "properties": {
+                "impact": "Misconfiguration or omission",
+                "resolution": ""
+              },
+              "shortDescription": {
+                "text": "The Solace vendor packages only the necessary software that needs to run the broker."
+              }
+            },
+            {
+              "help": {
+                "markdown": "# INTERCEPT.CC",
+                "text": ""
+              },
+              "helpUri": "https://intercept.cc",
+              "id": "intercept.cc.audit.policy.203: SFW.T05 - API config check",
+              "properties": {
+                "impact": "Misconfiguration or omission",
+                "resolution": ""
+              },
+              "shortDescription": {
+                "text": "TIP Rule Description"
+              }
+            },
+            {
+              "help": {
+                "markdown": "# INTERCEPT.CC",
+                "text": ""
+              },
+              "helpUri": "https://intercept.cc",
+              "id": "intercept.cc.audit.policy.204: SFW.T06 - API config check",
+              "properties": {
+                "impact": "Misconfiguration or omission",
+                "resolution": ""
+              },
+              "shortDescription": {
+                "text": "TIP Rule Description"
+              }
+            },
+            {
+              "help": {
+                "markdown": "# INTERCEPT.CC",
+                "text": ""
+              },
+              "helpUri": "https://intercept.cc",
+              "id": "intercept.cc.audit.policy.205: APL.T01 - API config check",
+              "properties": {
+                "impact": "Misconfiguration or omission",
+                "resolution": ""
+              },
+              "shortDescription": {
+                "text": "TIP Rule Description"
+              }
+            },
+            {
+              "help": {
+                "markdown": "# INTERCEPT.CC",
+                "text": ""
+              },
+              "helpUri": "https://intercept.cc",
+              "id": "intercept.cc.audit.policy.206: APL.T05 - API config check",
+              "properties": {
+                "impact": "Misconfiguration or omission",
+                "resolution": ""
+              },
+              "shortDescription": {
+                "text": "TIP Rule Description"
+              }
+            },
+            {
+              "help": {
+                "markdown": "# INTERCEPT.CC",
+                "text": ""
+              },
+              "helpUri": "https://intercept.cc",
+              "id": "intercept.cc.audit.policy.207: APL.T09 - API config check",
+              "properties": {
+                "impact": "Misconfiguration or omission",
+                "resolution": ""
+              },
+              "shortDescription": {
+                "text": "TIP Rule Description"
+              }
+            },
+            {
+              "help": {
+                "markdown": "# INTERCEPT.CC",
+                "text": ""
+              },
+              "helpUri": "https://intercept.cc",
+              "id": "intercept.cc.audit.policy.301: SFW.T01 - API config check",
+              "properties": {
+                "impact": "Misconfiguration or omission",
+                "resolution": ""
+              },
+              "shortDescription": {
+                "text": "The Solace vendor packages only the necessary software that needs to run the broker."
+              }
+            },
+            {
+              "help": {
+                "markdown": "# INTERCEPT.CC",
+                "text": ""
+              },
+              "helpUri": "https://intercept.cc",
+              "id": "intercept.cc.audit.policy.303: SFW.T05 - API config check",
+              "properties": {
+                "impact": "Misconfiguration or omission",
+                "resolution": ""
+              },
+              "shortDescription": {
+                "text": "TIP Rule Description"
+              }
+            },
+            {
+              "help": {
+                "markdown": "# INTERCEPT.CC",
+                "text": ""
+              },
+              "helpUri": "https://intercept.cc",
+              "id": "intercept.cc.audit.policy.304: SFW.T06 - API config check",
+              "properties": {
+                "impact": "Misconfiguration or omission",
+                "resolution": ""
+              },
+              "shortDescription": {
+                "text": "TIP Rule Description"
+              }
+            },
+            {
+              "help": {
+                "markdown": "# INTERCEPT.CC",
+                "text": ""
+              },
+              "helpUri": "https://intercept.cc",
+              "id": "intercept.cc.audit.policy.305: APL.T01 - API config check",
+              "properties": {
+                "impact": "Misconfiguration or omission",
+                "resolution": ""
+              },
+              "shortDescription": {
+                "text": "TIP Rule Description"
+              }
+            },
+            {
+              "help": {
+                "markdown": "# INTERCEPT.CC",
+                "text": ""
+              },
+              "helpUri": "https://intercept.cc",
+              "id": "intercept.cc.audit.policy.306: APL.T05 - API config check",
+              "properties": {
+                "impact": "Misconfiguration or omission",
+                "resolution": ""
+              },
+              "shortDescription": {
+                "text": "TIP Rule Description"
+              }
+            },
+            {
+              "help": {
+                "markdown": "# INTERCEPT.CC",
+                "text": ""
+              },
+              "helpUri": "https://intercept.cc",
+              "id": "intercept.cc.audit.policy.307: APL.T09 - API config check",
+              "properties": {
+                "impact": "Misconfiguration or omission",
+                "resolution": ""
+              },
+              "shortDescription": {
+                "text": "TIP Rule Description"
+              }
+            }
+          ],
+          "semanticVersion": "v1.5.5"
+        }
+      }
+    },
+    {
+      "artifacts": [
+        {
+          "length": -1,
+          "location": {
+            "uri": "17fffdd62960678d06bfc3c064df40bcef5ded4054a5f139111783a88027b495"
+          }
+        },
+        {
+          "length": -1,
+          "location": {
+            "uri": "e1ae150b545281f4abb42bd157f70d0ed84b4cc1f66de7cc10841794f5509566"
+          }
+        },
+        {
+          "length": -1,
+          "location": {
+            "uri": "0d6eb364c2c91b448919bdf0ee60c5b9ad07539aabf35f9507cf8889c891f8d3"
+          }
+        },
+        {
+          "length": -1,
+          "location": {
+            "uri": "231e449f38d88e4c056df214c09263fe18e5b7366cd421a0e8fb80e3dfc7a7d2"
+          }
+        },
+        {
+          "length": -1,
+          "location": {
+            "uri": "6f47e6029abfac715bae497cc902be34d72ee7d68271c65f2b3df4259b68cd44"
+          }
+        },
+        {
+          "length": -1,
+          "location": {
+            "uri": "f892b357e0c33860215bf1ac26f8a627f40393ae1d8577f231cf075a8ac0f38a"
+          }
+        }
+      ],
+      "results": [
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "output_102"
+                },
+                "region": {
+                  "endLine": 0,
+                  "snippet": {
+                    "text": "NOT FOUND"
+                  },
+                  "startLine": 0
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "TIP Rule Description"
+          },
+          "ruleId": "intercept.cc.api.policy.102: SFW.T04 - API CONFIG CHECK",
+          "ruleIndex": 1
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "output_108"
+                },
+                "region": {
+                  "endLine": 0,
+                  "snippet": {
+                    "text": "NOT FOUND"
+                  },
+                  "startLine": 0
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "TIP Rule Description"
+          },
+          "ruleId": "intercept.cc.api.policy.108: APL.T33 - API CONFIG CHECK",
+          "ruleIndex": 7
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "output_202"
+                },
+                "region": {
+                  "endLine": 0,
+                  "snippet": {
+                    "text": "NOT FOUND"
+                  },
+                  "startLine": 0
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "TIP Rule Description"
+          },
+          "ruleId": "intercept.cc.api.policy.202: SFW.T04 - API CONFIG CHECK",
+          "ruleIndex": 9
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "output_208"
+                },
+                "region": {
+                  "endLine": 0,
+                  "snippet": {
+                    "text": "NOT FOUND"
+                  },
+                  "startLine": 0
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "TIP Rule Description"
+          },
+          "ruleId": "intercept.cc.api.policy.208: APL.T33 - API CONFIG CHECK",
+          "ruleIndex": 15
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "output_302"
+                },
+                "region": {
+                  "endLine": 0,
+                  "snippet": {
+                    "text": "NOT FOUND"
+                  },
+                  "startLine": 0
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "TIP Rule Description"
+          },
+          "ruleId": "intercept.cc.api.policy.302: SFW.T04 - API CONFIG CHECK",
+          "ruleIndex": 17
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "output_308"
+                },
+                "region": {
+                  "endLine": 0,
+                  "snippet": {
+                    "text": "NOT FOUND"
+                  },
+                  "startLine": 0
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "TIP Rule Description"
+          },
+          "ruleId": "intercept.cc.api.policy.308: APL.T33 - API CONFIG CHECK",
+          "ruleIndex": 23
+        }
+      ],
+      "tool": {
+        "driver": {
+          "informationUri": "https://intercept.cc",
+          "name": "intercept",
+          "rules": [
+            {
+              "help": {
+                "markdown": "# INTERCEPT.CC",
+                "text": ""
+              },
+              "helpUri": "https://intercept.cc",
+              "id": "intercept.cc.api.policy.101: SFW.T01 - API CONFIG CHECK",
+              "properties": {
+                "impact": "Misconfiguration or omission",
+                "resolution": ""
+              },
+              "shortDescription": {
+                "text": "The Solace vendor packages only the necessary software that needs to run the broker."
+              }
+            },
+            {
+              "help": {
+                "markdown": "# INTERCEPT.CC",
+                "text": ""
+              },
+              "helpUri": "https://intercept.cc",
+              "id": "intercept.cc.api.policy.102: SFW.T04 - API CONFIG CHECK",
+              "properties": {
+                "impact": "Misconfiguration or omission",
+                "resolution": ""
+              },
+              "shortDescription": {
+                "text": "TIP Rule Description"
+              }
+            },
+            {
+              "help": {
+                "markdown": "# INTERCEPT.CC",
+                "text": ""
+              },
+              "helpUri": "https://intercept.cc",
+              "id": "intercept.cc.api.policy.103: SFW.T05 - API CONFIG CHECK",
+              "properties": {
+                "impact": "Misconfiguration or omission",
+                "resolution": ""
+              },
+              "shortDescription": {
+                "text": "TIP Rule Description"
+              }
+            },
+            {
+              "help": {
+                "markdown": "# INTERCEPT.CC",
+                "text": ""
+              },
+              "helpUri": "https://intercept.cc",
+              "id": "intercept.cc.api.policy.104: SFW.T06 - API CONFIG CHECK",
+              "properties": {
+                "impact": "Misconfiguration or omission",
+                "resolution": ""
+              },
+              "shortDescription": {
+                "text": "TIP Rule Description"
+              }
+            },
+            {
+              "help": {
+                "markdown": "# INTERCEPT.CC",
+                "text": ""
+              },
+              "helpUri": "https://intercept.cc",
+              "id": "intercept.cc.api.policy.105: APL.T01 - API CONFIG CHECK",
+              "properties": {
+                "impact": "Misconfiguration or omission",
+                "resolution": ""
+              },
+              "shortDescription": {
+                "text": "TIP Rule Description"
+              }
+            },
+            {
+              "help": {
+                "markdown": "# INTERCEPT.CC",
+                "text": ""
+              },
+              "helpUri": "https://intercept.cc",
+              "id": "intercept.cc.api.policy.106: APL.T05 - API CONFIG CHECK",
+              "properties": {
+                "impact": "Misconfiguration or omission",
+                "resolution": ""
+              },
+              "shortDescription": {
+                "text": "TIP Rule Description"
+              }
+            },
+            {
+              "help": {
+                "markdown": "# INTERCEPT.CC",
+                "text": ""
+              },
+              "helpUri": "https://intercept.cc",
+              "id": "intercept.cc.api.policy.107: APL.T09 - API CONFIG CHECK",
+              "properties": {
+                "impact": "Misconfiguration or omission",
+                "resolution": ""
+              },
+              "shortDescription": {
+                "text": "TIP Rule Description"
+              }
+            },
+            {
+              "help": {
+                "markdown": "# INTERCEPT.CC",
+                "text": ""
+              },
+              "helpUri": "https://intercept.cc",
+              "id": "intercept.cc.api.policy.108: APL.T33 - API CONFIG CHECK",
+              "properties": {
+                "impact": "Misconfiguration or omission",
+                "resolution": ""
+              },
+              "shortDescription": {
+                "text": "TIP Rule Description"
+              }
+            },
+            {
+              "help": {
+                "markdown": "# INTERCEPT.CC",
+                "text": ""
+              },
+              "helpUri": "https://intercept.cc",
+              "id": "intercept.cc.api.policy.201: SFW.T01 - API CONFIG CHECK",
+              "properties": {
+                "impact": "Misconfiguration or omission",
+                "resolution": ""
+              },
+              "shortDescription": {
+                "text": "The Solace vendor packages only the necessary software that needs to run the broker."
+              }
+            },
+            {
+              "help": {
+                "markdown": "# INTERCEPT.CC",
+                "text": ""
+              },
+              "helpUri": "https://intercept.cc",
+              "id": "intercept.cc.api.policy.202: SFW.T04 - API CONFIG CHECK",
+              "properties": {
+                "impact": "Misconfiguration or omission",
+                "resolution": ""
+              },
+              "shortDescription": {
+                "text": "TIP Rule Description"
+              }
+            },
+            {
+              "help": {
+                "markdown": "# INTERCEPT.CC",
+                "text": ""
+              },
+              "helpUri": "https://intercept.cc",
+              "id": "intercept.cc.api.policy.203: SFW.T05 - API CONFIG CHECK",
+              "properties": {
+                "impact": "Misconfiguration or omission",
+                "resolution": ""
+              },
+              "shortDescription": {
+                "text": "TIP Rule Description"
+              }
+            },
+            {
+              "help": {
+                "markdown": "# INTERCEPT.CC",
+                "text": ""
+              },
+              "helpUri": "https://intercept.cc",
+              "id": "intercept.cc.api.policy.204: SFW.T06 - API CONFIG CHECK",
+              "properties": {
+                "impact": "Misconfiguration or omission",
+                "resolution": ""
+              },
+              "shortDescription": {
+                "text": "TIP Rule Description"
+              }
+            },
+            {
+              "help": {
+                "markdown": "# INTERCEPT.CC",
+                "text": ""
+              },
+              "helpUri": "https://intercept.cc",
+              "id": "intercept.cc.api.policy.205: APL.T01 - API CONFIG CHECK",
+              "properties": {
+                "impact": "Misconfiguration or omission",
+                "resolution": ""
+              },
+              "shortDescription": {
+                "text": "TIP Rule Description"
+              }
+            },
+            {
+              "help": {
+                "markdown": "# INTERCEPT.CC",
+                "text": ""
+              },
+              "helpUri": "https://intercept.cc",
+              "id": "intercept.cc.api.policy.206: APL.T05 - API CONFIG CHECK",
+              "properties": {
+                "impact": "Misconfiguration or omission",
+                "resolution": ""
+              },
+              "shortDescription": {
+                "text": "TIP Rule Description"
+              }
+            },
+            {
+              "help": {
+                "markdown": "# INTERCEPT.CC",
+                "text": ""
+              },
+              "helpUri": "https://intercept.cc",
+              "id": "intercept.cc.api.policy.207: APL.T09 - API CONFIG CHECK",
+              "properties": {
+                "impact": "Misconfiguration or omission",
+                "resolution": ""
+              },
+              "shortDescription": {
+                "text": "TIP Rule Description"
+              }
+            },
+            {
+              "help": {
+                "markdown": "# INTERCEPT.CC",
+                "text": ""
+              },
+              "helpUri": "https://intercept.cc",
+              "id": "intercept.cc.api.policy.208: APL.T33 - API CONFIG CHECK",
+              "properties": {
+                "impact": "Misconfiguration or omission",
+                "resolution": ""
+              },
+              "shortDescription": {
+                "text": "TIP Rule Description"
+              }
+            },
+            {
+              "help": {
+                "markdown": "# INTERCEPT.CC",
+                "text": ""
+              },
+              "helpUri": "https://intercept.cc",
+              "id": "intercept.cc.api.policy.301: SFW.T01 - API CONFIG CHECK",
+              "properties": {
+                "impact": "Misconfiguration or omission",
+                "resolution": ""
+              },
+              "shortDescription": {
+                "text": "The Solace vendor packages only the necessary software that needs to run the broker."
+              }
+            },
+            {
+              "help": {
+                "markdown": "# INTERCEPT.CC",
+                "text": ""
+              },
+              "helpUri": "https://intercept.cc",
+              "id": "intercept.cc.api.policy.302: SFW.T04 - API CONFIG CHECK",
+              "properties": {
+                "impact": "Misconfiguration or omission",
+                "resolution": ""
+              },
+              "shortDescription": {
+                "text": "TIP Rule Description"
+              }
+            },
+            {
+              "help": {
+                "markdown": "# INTERCEPT.CC",
+                "text": ""
+              },
+              "helpUri": "https://intercept.cc",
+              "id": "intercept.cc.api.policy.303: SFW.T05 - API CONFIG CHECK",
+              "properties": {
+                "impact": "Misconfiguration or omission",
+                "resolution": ""
+              },
+              "shortDescription": {
+                "text": "TIP Rule Description"
+              }
+            },
+            {
+              "help": {
+                "markdown": "# INTERCEPT.CC",
+                "text": ""
+              },
+              "helpUri": "https://intercept.cc",
+              "id": "intercept.cc.api.policy.304: SFW.T06 - API CONFIG CHECK",
+              "properties": {
+                "impact": "Misconfiguration or omission",
+                "resolution": ""
+              },
+              "shortDescription": {
+                "text": "TIP Rule Description"
+              }
+            },
+            {
+              "help": {
+                "markdown": "# INTERCEPT.CC",
+                "text": ""
+              },
+              "helpUri": "https://intercept.cc",
+              "id": "intercept.cc.api.policy.305: APL.T01 - API CONFIG CHECK",
+              "properties": {
+                "impact": "Misconfiguration or omission",
+                "resolution": ""
+              },
+              "shortDescription": {
+                "text": "TIP Rule Description"
+              }
+            },
+            {
+              "help": {
+                "markdown": "# INTERCEPT.CC",
+                "text": ""
+              },
+              "helpUri": "https://intercept.cc",
+              "id": "intercept.cc.api.policy.306: APL.T05 - API CONFIG CHECK",
+              "properties": {
+                "impact": "Misconfiguration or omission",
+                "resolution": ""
+              },
+              "shortDescription": {
+                "text": "TIP Rule Description"
+              }
+            },
+            {
+              "help": {
+                "markdown": "# INTERCEPT.CC",
+                "text": ""
+              },
+              "helpUri": "https://intercept.cc",
+              "id": "intercept.cc.api.policy.307: APL.T09 - API CONFIG CHECK",
+              "properties": {
+                "impact": "Misconfiguration or omission",
+                "resolution": ""
+              },
+              "shortDescription": {
+                "text": "TIP Rule Description"
+              }
+            },
+            {
+              "help": {
+                "markdown": "# INTERCEPT.CC",
+                "text": ""
+              },
+              "helpUri": "https://intercept.cc",
+              "id": "intercept.cc.api.policy.308: APL.T33 - API CONFIG CHECK",
+              "properties": {
+                "impact": "Misconfiguration or omission",
+                "resolution": ""
+              },
+              "shortDescription": {
+                "text": "TIP Rule Description"
+              }
+            }
+          ],
+          "semanticVersion": "v1.5.5"
+        }
+      }
+    }
+  ]
+}

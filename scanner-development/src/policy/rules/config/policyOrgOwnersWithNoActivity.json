@@ -1,0 +1,48 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "Organization owners with no admin activity should not have owner access.",
+  "policyId": "oxPolicy_dspm_OrgOwnersWithNoActivity",
+  "ruleId": "oxRule_dspm_OrgOwnersWithNoActivity",
+  "exclusionCategory": "user",
+  "name": "Organization owners with no admin activity should not have owner access",
+  "categoryId": "3",
+  "groupId": "",
+  "catId": 3,
+  "system": "Repo",
+  "order": 9,
+  "description": "Organization or first-level group owners/admins should maintain admin activity in order to retain organizational admin access.",
+  "detailedDescription": "An owner has the authority to delete your repository and manage all users' accounts. An owner who is no longer employed or no longer has access to the organization should be removed. It is best practice to decrease the attack surface of your assets by limiting the number of users with administrative permissions.",
+  "severity": 3,
+  "selected": true,
+  "functionName": "policyOrgOwnersWithNoActivity",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "monthsSinceActivity",
+      "label": "Months Since Activity",
+      "tooltip": "Choose how many months since the last activity will trigger a violation.",
+      "type": "number",
+      "range": [0, 6],
+      "multiSelect": false,
+      "value": 0,
+      "visible": true
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "allUsers",
+      "type": "code_repo",
+      "global": true
+    },
+    {
+      "id": "rsc_2",
+      "name": "auditLog",
+      "type": "code_repo",
+      "global": true
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 1
+}

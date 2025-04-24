@@ -1,0 +1,91 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "Bots should not be repo admins",
+  "policyId": "oxPolicy_policyBotNoRepoAdmin_1",
+  "ruleId": "oxRule_policyBotNoRepoAdmin_1",
+  "exclusionCategory": "general",
+  "name": "Bots should not be repo admins",
+  "categoryId": "3",
+  "groupId": "",
+  "catId": 3,
+  "system": "Repo",
+  "description": "Bot users are not real users of your organization or first-level group and as such may pose a great security risk if their account gets compromised. They should be admins of a repo in exceptional cases.",
+  "detailedDescription": "Bot users are not real users of your organization or first-level group. A best practice is to limit the access time and permissions they have to a repository. Given that no real user is behind a bot, a compromise of a bot may go undetected for a large period of time.",
+  "severity": 3,
+  "selected": true,
+  "functionName": "policyBotNoRepoAdmin",
+  "args": [
+    {
+      "id": "ox_1",
+      "name": "botSubStrings",
+      "label": "Bot Identification Strings",
+      "tooltip": "Strings that will be used to identify bots in your organization",
+      "type": "stringArray",
+      "range": [],
+      "multiSelect": false,
+      "value": [
+        "bot",
+        "auto",
+        "test",
+        "circleci",
+        "jenkins",
+        "drone",
+        "travis",
+        "teamcity",
+        "gitlab",
+        "github",
+        "bitbucket",
+        "azure",
+        "aws",
+        "pal",
+        "dor",
+        "niv"
+      ],
+      "visible": true
+    },
+    {
+      "id": "ox_2",
+      "name": "ignoreIfAdminActivity",
+      "label": "Ignore if admin activity seen",
+      "tooltip": "This will ignore all bots that have known admin activity. Note: This setting will be ignored if Audit Log permissions are not available",
+      "type": "boolean",
+      "range": [],
+      "multiSelect": false,
+      "value": false,
+      "visible": true
+    },
+    {
+      "id": "arg_3",
+      "name": "baselineCount",
+      "label": "Ignore if user is admin in multiple repos",
+      "tooltip": "This will ignore all bots that are admins of more than the selected number of repos",
+      "type": "number",
+      "range": [0, 100000],
+      "multiSelect": false,
+      "value": 10,
+      "visible": true
+    }
+  ],
+  "resources": [
+    {
+      "id": "ox_1",
+      "name": "allUsers",
+      "type": "code_repo",
+      "global": true
+    },
+    {
+      "id": "ox_2",
+      "name": "users",
+      "type": "code_repo"
+    },
+    {
+      "id": "ox_3",
+      "name": "auditLog",
+      "type": "code_repo",
+      "global": true
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 1
+}

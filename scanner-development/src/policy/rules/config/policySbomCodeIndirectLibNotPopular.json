@@ -1,0 +1,73 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "policy for libraries indirectly referenced in code that have few interested users",
+  "policyId": "oxPolicy_sbomDownloadsIndirect_1",
+  "ruleId": "oxRule_sbomDownloadsIndirect_1",
+  "exclusionCategory": "sbom",
+  "name": "Open source indirectly referenced in code should be widely used",
+  "categoryId": "SBOM",
+  "groupId": "",
+  "catId": 7,
+  "system": "SBOM",
+  "description": "Utilizing libraries that have very few users downloading or interested may be risky.",
+  "detailedDescription": "Open source libraries with a large number of users are libraries that are more likely to be stable. This makes them preferable to use from a security perspective.",
+  "severity": 1,
+  "selected": true,
+  "functionName": "policySbomCodeLibNotPopular",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "type",
+      "label": "type",
+      "tooltip": "",
+      "type": "string",
+      "range": "",
+      "multiSelect": true,
+      "value": "indirect",
+      "visible": false
+    },
+    {
+      "id": "arg_2",
+      "name": "interested",
+      "label": "Stars count",
+      "tooltip": "Minimum number of stars. Policy violation occurs only when all arguments (forks, stars, downloads if available) are violated.",
+      "type": "number",
+      "range": [1, 1000000],
+      "multiSelect": false,
+      "value": 10,
+      "visible": true
+    },
+    {
+      "id": "arg_3",
+      "name": "downloads",
+      "label": "Downloads count",
+      "tooltip": "Minimum number of downloads. Policy violation occurs only when all arguments (forks, stars, downloads if available) are violated.",
+      "type": "number",
+      "range": [1, 1000000],
+      "multiSelect": false,
+      "value": 100,
+      "visible": true
+    },
+    {
+      "id": "arg_4",
+      "name": "forks",
+      "label": "Forks count",
+      "tooltip": "Minimum number of forks. Policy violation occurs only when all arguments (forks, stars, downloads if available) are violated.",
+      "type": "number",
+      "range": [1, 1000000],
+      "multiSelect": false,
+      "value": 3,
+      "visible": true
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "sbom",
+      "type": "code_repo"
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 3
+}

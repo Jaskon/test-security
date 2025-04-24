@@ -1,0 +1,43 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "PII embedded in code",
+  "policyId": "oxPolicy_policyPiiHardcoded_1",
+  "ruleId": "oxRule_policyPiiHardcoded_1",
+  "exclusionCategory": "secrets",
+  "name": "PII embedded in code",
+  "categoryId": "secret",
+  "catId": 5,
+  "order": 99,
+  "system": "Repo",
+  "description": "PII embedded in code",
+  "detailedDescription": "PII embedded in code",
+  "severity": 3,
+  "selected": true,
+  "notes": [],
+  "category": "SecretScan",
+  "functionName": "policySecurityScanNew",
+  "displayIssueSeverity": 0,
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "scanType",
+      "label": "Scan Type",
+      "tooltip": "Choose one or more static security engines to generate the policy for.",
+      "type": "stringArray",
+      "range": ["Secrets", "SAST", "SCA", "IaC"],
+      "multiSelect": false,
+      "value": "Secrets",
+      "visible": false
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "securityEvents",
+      "type": "code_repo"
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 0
+}

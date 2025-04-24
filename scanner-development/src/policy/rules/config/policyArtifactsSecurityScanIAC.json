@@ -1,0 +1,51 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "policy for any type of static security Scan by Severity",
+  "policyId": "oxPolicy_artifacts_securityScanIAC_11",
+  "ruleId": "oxRule_artifacts_securityScanIAC_1",
+  "exclusionCategory": "container",
+  "name": "Container misconfiguration and compliance issues should not occur",
+  "categoryId": "containerScan",
+  "order": 1,
+  "catId": 12,
+  "system": "Container Scan",
+  "description": "Containers are typically executable parts of your application running on-prem or in the cloud. Therefore, container misconfigurations and compliance issues can introduce security vulnerabilities with severe business impacts.",
+  "detailedDescription": "Containers are a significant component of executing SAAS applications. Container base images, potential security misconfigurations, and container security at runtime related to users, networks, file systems, etc., can all lead to security vulnerabilities. Identifying these is extremely important.",
+  "severity": 4,
+  "selected": true,
+  "displayIssueSeverity": 0,
+  "functionName": "policySecurityScanSCA",
+  "category": "ContainerSecurity",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "scanType",
+      "label": "Scan Type",
+      "tooltip": "",
+      "type": "stringArray",
+      "range": ["SCA", "ArtifactsSCA", "ArtifactsIAC"],
+      "multiSelect": false,
+      "value": "ArtifactsIAC",
+      "visible": false
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "securityEvents",
+      "type": "artifactory"
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 2,
+  "compliance": [
+    {
+      "standard": "SOC2",
+      "control": "CC3.2",
+      "description": "The entity identifies risks to the achievement of its objectives across the entity and analyzes risks as a basis for determining how the risks should be managed",
+      "category": "Security",
+      "controlLink": ""
+    }
+  ]
+}

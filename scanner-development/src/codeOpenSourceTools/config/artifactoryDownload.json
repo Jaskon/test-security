@@ -1,0 +1,40 @@
+{
+  "jsonVersion": "1.00",
+  "usage": "elaborate the way we execute each security tool",
+  "tools": [
+    {
+      "name": "Skopeo",
+      "oxToolName": "Skopeo",
+      "nameForExternalService": "Skopeo",
+      "command": "",
+      "monoRepoCommand": "",
+      "onPrem": "",
+      "onPremMonoRepo": "",
+      "localSshToolName": "",
+      "USERNAME": "",
+      "APIKEY": "",
+      "HOSTURL": "",
+      "REPONAME": "",
+      "OUTPUTPATH": "",
+      "injectToCommand": "",
+      "fileNameAutomaticallyCreated": "false",
+      "fileNameOutput": "artifactdownload.tar",
+      "critical": false,
+      "env_sqs_url": "SKOPEO_SQS_URL",
+      "env_redis_url": "SKOPEO_QUEUE_KEY",
+      "severityConfigName": "",
+      "envPort": "OX_SKOPEO_PORT",
+      "envHost": "OX_SKOPEO_HOST",
+      "defaultSeverity": "low",
+      "defaultType": "sbom",
+      "supportedTypes": ["sbom"],
+      "dynamicIdentifyType": false,
+      "timeout": 900000,
+      "scanGitHistory": false,
+      "disableByOx": false,
+      "pullingFromDisk": false,
+      "enableAlways": true,
+      "type": "artifactoryDownload"
+    }
+  ]
+}

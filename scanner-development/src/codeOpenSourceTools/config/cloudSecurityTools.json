@@ -1,0 +1,35 @@
+{
+  "jsonVersion": "1.00",
+  "usage": "elaborate the way we execute each security tool",
+  "tools": [
+    {
+      "name": "Prowler",
+      "oxToolName": "OX Cloud Security",
+      "nameForExternalService": "prowler",
+      "command": "python /src/oxwrapper.py --base64 --tool prowler --cmd AWS_ACCESS_KEY_ID={KEY} AWS_SECRET_ACCESS_KEY={SECRET} AWS_SESSION_TOKEN={SESSION} prowler -o {MAPDIR} -b -F {ID} -c {ID} -M json-asff",
+      "localSshToolName": "python /src/oxwrapper.py --base64 --tool prowler --cmd AWS_ACCESS_KEY_ID={KEY} AWS_SECRET_ACCESS_KEY={SECRET} AWS_SESSION_TOKEN={SESSION} prowler -o {MAPDIR} -b -F {ID} -c {ID} -M json",
+      "monoRepoCommand": "python /src/oxwrapper.py --base64 --tool prowler --cmd AWS_ACCESS_KEY_ID={KEY} AWS_SECRET_ACCESS_KEY={SECRET} AWS_SESSION_TOKEN={SESSION} prowler -o {MAPDIR} -b -F {ID} -c {ID} -M json-asff",
+      "onPrem": "python /src/oxwrapper.py --base64 --tool prowler --cmd AWS_ACCESS_KEY_ID={KEY} AWS_SECRET_ACCESS_KEY={SECRET} AWS_SESSION_TOKEN={SESSION} prowler -o {MAPDIR} -b -F {ID} -c {ID} -M json-asff",
+      "onPremMonoRepo": "python /src/oxwrapper.py --base64 --tool prowler --cmd AWS_ACCESS_KEY_ID={KEY} AWS_SECRET_ACCESS_KEY={SECRET} AWS_SESSION_TOKEN={SESSION} prowler -o {MAPDIR} -b -F {ID} -c {ID} -M json-asff",
+      "injectToCommand": "",
+      "critical": false,
+      "fileNameOutput": "prowler.json",
+      "env_sqs_url": "PROWLER_SQS_URL",
+      "env_redis_url": "PROWLER_QUEUE_KEY",
+      "envPort": "OX_PROWLER_PORT",
+      "envHost": "OX_PROWLER_HOST",
+      "severityConfigName": "prowlerSeverity.json",
+      "defaultSeverity": "low",
+      "defaultType": "cspm",
+      "supportedTypes": ["cspm"],
+      "dynamicIdentifyType": false,
+      "timeout": 900000,
+      "scanGitHistory": false,
+      "disableByOx": false,
+      "pullingFromDisk": false,
+      "fileNameAutomaticallyCreated": "true",
+      "enableAlways": false,
+      "type": "cloud"
+    }
+  ]
+}

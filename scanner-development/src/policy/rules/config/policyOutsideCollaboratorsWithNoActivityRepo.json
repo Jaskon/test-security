@@ -1,0 +1,46 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "Outside collaborators with no activity should be removed.",
+  "policyId": "oxPolicy_dspm_OutsideCollaboratorsWithNoActivityRepo",
+  "ruleId": "oxRule_dspm_OutsideCollaboratorsWithNoActivityRepo",
+  "exclusionCategory": "user",
+  "name": "Outside collaborators with no activity should be removed",
+  "categoryId": "3",
+  "groupId": "",
+  "catId": 3,
+  "system": "Repo",
+  "description": "Outside collaborators are not members of your organization or first-level group and may pose a greater security risk. Removing all access to a repo is recommended if they are not working on it.",
+  "detailedDescription": "Outside collaborators are not members of your organization or first-level group. A best practice is to limit the access time and permissions they have to a repository. An outside collaborator who has access to a repo and has not made any changes for a long time should probably have their access removed. This way, a compromise of the outside collaborator’s account will limit the potential risk to your repository.",
+  "severity": 3,
+  "selected": true,
+  "functionName": "policyOutsideCollaboratorsWithNoActivityRepo",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "monthsSinceActivity",
+      "label": "Months Since Activity",
+      "tooltip": "Choose how many months since the last activity will trigger a violation.",
+      "type": "number",
+      "range": [0, 1000],
+      "multiSelect": false,
+      "value": 0,
+      "visible": true
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "users",
+      "type": "code_repo"
+    },
+    {
+      "id": "rsc_2",
+      "name": "allUsers",
+      "type": "code_repo",
+      "global": true
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 1
+}

@@ -1,0 +1,41 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "policy for no approved SCA",
+  "policyId": "oxPolicy_noScaaaaa_1",
+  "ruleId": "oxRule_noScaaaaa_1",
+  "exclusionCategory": "general",
+  "name": "The Open Source Scanner (SCA) is not part of the repo CI/CD pipeline",
+  "categoryId": "sectools",
+  "groupId": "",
+  "catId": 10,
+  "system": "SCA",
+  "description": "Code repository should be scanned by an approved SCA (Software Composition Analysis) application.",
+  "detailedDescription": "The vast majority of cloud applications written today contain some set of external dependencies. Security issues in these dependencies can make applications using them insecure. The Log4J crisis is one example of this. SCA (Software Composition Analysis) scanning is the most basic way of determining if an application is using vulnerable dependencies.",
+  "severity": 4,
+  "selected": true,
+  "functionName": "policyAllowForkingPrivateRepos",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "bp",
+      "label": "Ignore Business Priority Less Than",
+      "tooltip": "Ignore repos with Business Priority less than the number entered.",
+      "type": "number",
+      "range": [1, 99],
+      "multiSelect": false,
+      "value": 25,
+      "visible": true
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "allPublicRepos",
+      "type": "code_repo",
+      "global": true
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 6
+}

@@ -1,0 +1,122 @@
+{
+  "jsonVersion": "1.00",
+  "usage": "devskim config for severity",
+  "toolName": "devskim",
+  "severity": [
+    {
+      "id": "DS187371",
+      "severity": "medium",
+      "description": "week chipper algo"
+    },
+    {
+      "id": "DS148264",
+      "severity": "low",
+      "description": "Use cryptographic random numbers generators for anything even close to a security function"
+    },
+    {
+      "id": "DS196098",
+      "severity": "medium",
+      "description": "week hash"
+    },
+    {
+      "id": "DS196098",
+      "severity": "medium",
+      "description": "week hash"
+    },
+    {
+      "id": "DS126186",
+      "severity": "low",
+      "description": "certificate extend info"
+    },
+    {
+      "id": "DS101155",
+      "severity": "low",
+      "description": "certificate extend info"
+    },
+    {
+      "id": "DS130822",
+      "severity": "low",
+      "description": "certificate extend info"
+    },
+    {
+      "id": "DS152094",
+      "severity": "low",
+      "description": "certificate extend info"
+    },
+    {
+      "id": "DS149435",
+      "severity": "medium",
+      "description": "Do not seed randomness based on system time or a static value"
+    },
+    {
+      "id": "DS197836",
+      "severity": "low",
+      "description": "Do not take the hash of low-entropy content."
+    },
+    {
+      "id": "DS106863",
+      "severity": "low",
+      "description": "Do not use the DES symmetric block cipher"
+    },
+    {
+      "id": "DS440000",
+      "severity": "low",
+      "description": "SSL/TLS Configuration Guidance"
+    },
+    {
+      "id": "DS187371",
+      "severity": "low",
+      "description": "A weak cipher mode of operation was used"
+    },
+    {
+      "id": "DS125134",
+      "severity": "low",
+      "description": "NODE_TLS_REJECT_UNAUTHORIZED"
+    },
+    {
+      "id": "DS175862",
+      "severity": "low",
+      "description": "mcrypt_get_iv_size"
+    },
+    {
+      "id": "DS144886",
+      "severity": "high",
+      "description": "An HTTP-based URL without TLS was detected"
+    },
+    {
+      "id": "DS113853",
+      "severity": "high",
+      "description": "lower from critical"
+    },
+    {
+      "id": "DS109501",
+      "severity": "medium",
+      "description": "The 3DES cipher was found, which is only secure if three independent keys are used."
+    },
+    {
+      "id": "DS168931",
+      "severity": "low",
+      "description": "A potentially weak hashing algorithm was used."
+    },
+    {
+      "id": "DS128420",
+      "severity": "medium",
+      "description": "md4"
+    },
+    {
+      "id": "DS163877",
+      "severity": "high",
+      "description": "When using $_GET/POST/COOKIE values via echo, failure to  encode the values will lead to Cross Site Scription (XSS), where a malicious party can inject script into the webpage."
+    },
+    {
+      "id": "DS154189",
+      "severity": "high",
+      "description": "These functions are historically error-prone and have been associated with a significant number of vulnerabilities. Most of these functions have safer alternatives, such as replacing 'strcpy' with 'strlcpy' or 'strcpy_s'."
+    },
+    {
+      "id": "DS144886",
+      "severity": "medium",
+      "description": "$_REQUEST combines POST, GET, and cookie values in one array, making it easy for an attacker to modify a POST or cookie value by instead putting it in a GET and sending the URL to the victim"
+    }
+  ]
+}

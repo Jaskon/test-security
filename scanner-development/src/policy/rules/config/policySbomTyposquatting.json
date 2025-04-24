@@ -1,0 +1,45 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "policy for libraries indirectly referenced in code utilizing company approved licenses",
+  "policyId": "oxPolicy_typosquatting_1",
+  "ruleId": "oxRule_typosquatting_1",
+  "exclusionCategory": "sbom",
+  "name": "Typosquatting dependencies should not be used",
+  "categoryId": "SBOM",
+  "groupId": "",
+  "catId": 7,
+  "system": "SBOM",
+  "description": "Utilizing libraries with unauthorized licenses may open a company up to copyright infringement.",
+  "detailedDescription": "Using unauthorized libraries based on their licenses may require your project to be open sourced or lead to copyright infringement. A U.S. Federal court has ruled that an open-source license is an enforceable contract.",
+  "severity": 1,
+  "selected": true,
+  "functionName": "policySbomTyposquatting",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "ignoreInternalPackageScopes",
+      "label": "Ignore internal package scopes",
+      "tooltip": "Ignore internal package scopes",
+      "type": "stringArray",
+      "range": [],
+      "multiSelect": false,
+      "value": [],
+      "visible": true
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "securityEvents",
+      "type": "code_repo"
+    },
+    {
+      "id": "rsc_2",
+      "name": "sbom",
+      "type": "code_repo"
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 7
+}

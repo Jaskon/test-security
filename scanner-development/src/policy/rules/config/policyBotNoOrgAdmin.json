@@ -1,0 +1,64 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "Bot users should not be org owners",
+  "policyId": "oxPolicy_policyBotNoOrgAdmin_1",
+  "ruleId": "oxRule_policyBotNoOrgAdmin_1",
+  "exclusionCategory": "general",
+  "name": "Bot users should not be org owners",
+  "categoryId": "3",
+  "groupId": "",
+  "catId": 3,
+  "system": "Repo",
+  "description": "Organization or first-level group owners/admins should not be bots.",
+  "detailedDescription": "An organization or first-level group admin/owner has the authority to create, edit, delete repositories and manage permissions and access to repositories. A compromise of an admin/owner account can be devastating as a result. Given that no real user is behind a bot, a compromise of a bot may go undetected for a large period of time. Therefore, in order to reduce the attack surface it is recommended to revoke the owner permissions from bot users.",
+  "severity": 3,
+  "selected": true,
+  "functionName": "policyBotNoOrgAdmin",
+  "args": [
+    {
+      "id": "ox_1",
+      "name": "botSubStrings",
+      "label": "Bot Identification Strings",
+      "tooltip": "Strings that will be used to identify bots in your organization",
+      "type": "stringArray",
+      "range": [],
+      "multiSelect": false,
+      "value": [
+        "bot",
+        "auto",
+        "test",
+        "circleci",
+        "jenkins",
+        "drone",
+        "travis",
+        "teamcity",
+        "gitlab",
+        "github",
+        "bitbucket",
+        "azure",
+        "aws",
+        "dor",
+        "eyal",
+        "pal",
+        "sivan"
+      ],
+      "visible": true
+    }
+  ],
+  "resources": [
+    {
+      "id": "ox_1",
+      "name": "allUsers",
+      "type": "code_repo",
+      "global": true
+    },
+    {
+      "id": "ox_2",
+      "name": "users",
+      "type": "code_repo"
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 1
+}

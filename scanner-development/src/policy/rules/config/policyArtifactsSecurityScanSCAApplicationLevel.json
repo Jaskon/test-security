@@ -1,0 +1,43 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "Open Source  vulnerabilities should not exist in containers",
+  "policyId": "oxPolicy_securityScan_221",
+  "ruleId": "oxRule_securityScan_201",
+  "exclusionCategory": "general",
+  "name": "Open Source  vulnerabilities should not exist in containers",
+  "categoryId": "containerScan",
+  "catId": 12,
+  "system": "Container Scan",
+  "order": 6,
+  "description": "Containers have become an integral part of modern software development and deployment due to their ability to package applications and their dependencies into a single, portable, and efficient unit. Neglecting to scan containers for known vulnerabilities in used open source libraries can expose an organization to avoidable security risks.",
+  "detailedDescription": "Containers often make use of open-source libraries, which may contain known vulnerabilities. Failing to scan these containers can lead to exploitable security gaps, potentially resulting in unauthorized access, data breaches, and overall system compromise. As containerization and open-source usage become more prevalent, such vulnerabilities' risk and potential impact increase.",
+  "severity": 2,
+  "selected": true,
+  "functionName": "policySecurityScanSCA",
+  "category": "ContainerSecurity",
+  "displayIssueSeverity": 0,
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "scanType",
+      "label": "Scan Type",
+      "tooltip": "",
+      "type": "stringArray",
+      "range": ["SCA", "ArtifactsSCA", "ArtifactsIAC"],
+      "multiSelect": false,
+      "value": "ArtifactsSCA",
+      "visible": false
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "securityEvents",
+      "type": "artifactory"
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "isPipeline": true,
+  "version": 14
+}

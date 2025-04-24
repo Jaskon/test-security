@@ -1,0 +1,54 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "Workflows should be configured with the minimum permissions required",
+  "policyId": "oxPolicy_CICD_workflow_min_perm_settings_1",
+  "ruleId": "oxRule_CICD_workflow_min_perm_settings_1",
+  "exclusionCategory": "general",
+  "name": "Workflows should be configured with the minimum permissions required",
+  "categoryId": "cicd",
+  "groupId": "",
+  "catId": 25,
+  "order": 200,
+  "system": "Repo",
+  "description": "GitHub Workflows work with temporary tokens that if stolen can give attackers access to the repository and use this access to potentially bypass restrictions like requiring a reviewer. Minimizing the permissions that the workflow needs would limit the actions of a potential attacker.",
+  "detailedDescription": "In GitHub Actions before each job begins, GitHub fetches an installation access token for the job (GITHUB_TOKEN). The GITHUB_TOKEN expires when a job finishes or after a maximum of 24 hours. Ensure the GITHUB_TOKEN is configured with the least privileges to run your jobs. Any user with write access to your repository has read access to all secrets configured in your repository. Therefore, you should ensure that the credentials being used within workflows have the least privileges required.  ",
+  "severity": 2,
+  "selected": true,
+  "notes": ["This policy currently only applies to GitHub. "],
+  "functionName": "policyWorkflowMinPerm",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "RepoType",
+      "label": "Repo Visibility",
+      "tooltip": "Determine if this policy applies to public repos, private repos or both.",
+      "type": "stringArray",
+      "range": ["Private", "Public", "Private or Public"],
+      "multiSelect": false,
+      "value": "Private or Public",
+      "visible": true
+    },
+    {
+      "id": "arg_2",
+      "name": "dataSource",
+      "label": "",
+      "tooltip": "",
+      "type": "string",
+      "range": [],
+      "multiSelect": true,
+      "value": "api",
+      "visible": false
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "securityEvents",
+      "type": "code_repo"
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "ignoreMonoRepoChild": true,
+  "version": 0
+}

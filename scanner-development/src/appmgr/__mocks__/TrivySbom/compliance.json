@@ -1,0 +1,177 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "/Users/or/Documents/ox/temp/undefined/6a6b258d-814c-429b-96e2-e6d4aaafd729/download_artifactory/65a37b1f-ecc0-4e98-91a4-c9abb6a9bbb6/ororg1234_jfrog_io_default_docker_trivy/artifactdownload.tar",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "OS": {
+      "Family": "alpine",
+      "Name": "3.17.1"
+    },
+    "ImageID": "sha256:37f3799ce9ffb967f7768318c77ee18322ba010338b53631f9efb607a2fc64c9",
+    "DiffIDs": [
+      "sha256:0a24540c1e5a47e5a8116c43151cb45c985f7a65afe5d4d65127d9c6fea2ffcf",
+      "sha256:501a03b53b681c7b2c441c188f10f372c81371def17258e25efdafe8e1730a8d",
+      "sha256:75d59e4a79e85f83c4eba738124ac528eb469a15a0bb5b53b61690a1854051f2",
+      "sha256:c18c4d3d846245f2f145a212fea20b6f26a01dd15e982e96cc6e1bae561df12c"
+    ],
+    "ImageConfig": {
+      "architecture": "arm64",
+      "created": "2023-02-10T01:16:58.81786336Z",
+      "history": [
+        {
+          "created": "2023-01-09T17:04:48.933428479Z",
+          "created_by": "/bin/sh -c #(nop) ADD file:3080f19f39259a4b77cc53975de0184c78d4335ceb9ffb77a2838d0539ad6f85 in / "
+        },
+        {
+          "created": "2023-01-09T17:04:49.11141026Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-02-10T01:16:57.934956166Z",
+          "created_by": "RUN /bin/sh -c apk --no-cache add ca-certificates git # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-02-10T01:16:58.797817178Z",
+          "created_by": "COPY trivy /usr/local/bin/trivy # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-02-10T01:16:58.81786336Z",
+          "created_by": "COPY contrib/*.tpl contrib/ # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-02-10T01:16:58.81786336Z",
+          "created_by": "ENTRYPOINT [\"trivy\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:0a24540c1e5a47e5a8116c43151cb45c985f7a65afe5d4d65127d9c6fea2ffcf",
+          "sha256:501a03b53b681c7b2c441c188f10f372c81371def17258e25efdafe8e1730a8d",
+          "sha256:75d59e4a79e85f83c4eba738124ac528eb469a15a0bb5b53b61690a1854051f2",
+          "sha256:c18c4d3d846245f2f145a212fea20b6f26a01dd15e982e96cc6e1bae561df12c"
+        ]
+      },
+      "config": {
+        "Entrypoint": ["trivy"],
+        "Env": ["PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"],
+        "Labels": {
+          "org.opencontainers.image.created": "2023-02-10T00:20:29Z",
+          "org.opencontainers.image.description": "A Fast Vulnerability Scanner for Containers",
+          "org.opencontainers.image.documentation": "https://aquasecurity.github.io/trivy/v0.37.2/",
+          "org.opencontainers.image.revision": "12b563b9749afbc41790a2461984802a3d6a2f82",
+          "org.opencontainers.image.source": "https://github.com/aquasecurity/trivy",
+          "org.opencontainers.image.title": "trivy",
+          "org.opencontainers.image.url": "https://www.aquasec.com/products/trivy/",
+          "org.opencontainers.image.vendor": "Aqua Security",
+          "org.opencontainers.image.version": "0.37.2"
+        }
+      }
+    }
+  },
+  "Results": [
+    {
+      "Target": "/Users/or/Documents/ox/temp/undefined/6a6b258d-814c-429b-96e2-e6d4aaafd729/download_artifactory/65a37b1f-ecc0-4e98-91a4-c9abb6a9bbb6/ororg1234_jfrog_io_default_docker_trivy/artifactdownload.tar",
+      "Class": "config",
+      "Type": "dockerfile",
+      "MisconfSummary": {
+        "Successes": 21,
+        "Failures": 3,
+        "Exceptions": 0
+      },
+      "Misconfigurations": [
+        {
+          "Type": "Dockerfile Security Check",
+          "ID": "DS002",
+          "AVDID": "AVD-DS-0002",
+          "Title": "Image user should not be 'root'",
+          "Description": "Running containers with 'root' user can lead to a container escape situation. It is a best practice to run containers as non-root users, which can be done by adding a 'USER' statement to the Dockerfile.",
+          "Message": "Specify at least 1 USER command in Dockerfile with non-root user as argument",
+          "Namespace": "builtin.dockerfile.DS002",
+          "Query": "data.builtin.dockerfile.DS002.deny",
+          "Resolution": "Add 'USER \u003cnon root user name\u003e' line to the Dockerfile",
+          "Severity": "HIGH",
+          "PrimaryURL": "https://avd.aquasec.com/misconfig/ds002",
+          "References": [
+            "https://docs.docker.com/develop/develop-images/dockerfile_best-practices/",
+            "https://avd.aquasec.com/misconfig/ds002"
+          ],
+          "Status": "FAIL",
+          "Layer": {},
+          "CauseMetadata": {
+            "Provider": "Dockerfile",
+            "Service": "general",
+            "Code": {
+              "Lines": null
+            }
+          }
+        },
+        {
+          "Type": "Dockerfile Security Check",
+          "ID": "DS005",
+          "AVDID": "AVD-DS-0005",
+          "Title": "ADD instead of COPY",
+          "Description": "You should use COPY instead of ADD unless you want to extract a tar file. Note that an ADD command will extract a tar file, which adds the risk of Zip-based vulnerabilities. Accordingly, it is advised to use a COPY command, which does not extract tar files.",
+          "Message": "Consider using 'COPY file:3080f19f39259a4b77cc53975de0184c78d4335ceb9ffb77a2838d0539ad6f85 in /' command instead of 'ADD file:3080f19f39259a4b77cc53975de0184c78d4335ceb9ffb77a2838d0539ad6f85 in /'",
+          "Namespace": "builtin.dockerfile.DS005",
+          "Query": "data.builtin.dockerfile.DS005.deny",
+          "Resolution": "Use COPY instead of ADD",
+          "Severity": "LOW",
+          "PrimaryURL": "https://avd.aquasec.com/misconfig/ds005",
+          "References": ["https://docs.docker.com/engine/reference/builder/#add", "https://avd.aquasec.com/misconfig/ds005"],
+          "Status": "FAIL",
+          "Layer": {},
+          "CauseMetadata": {
+            "Provider": "Dockerfile",
+            "Service": "general",
+            "StartLine": 1,
+            "EndLine": 1,
+            "Code": {
+              "Lines": [
+                {
+                  "Number": 1,
+                  "Content": "ADD file:3080f19f39259a4b77cc53975de0184c78d4335ceb9ffb77a2838d0539ad6f85 in /",
+                  "IsCause": true,
+                  "Annotation": "",
+                  "Truncated": false,
+                  "FirstCause": true,
+                  "LastCause": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "Type": "Dockerfile Security Check",
+          "ID": "DS026",
+          "AVDID": "AVD-DS-0026",
+          "Title": "No HEALTHCHECK defined",
+          "Description": "You shoud add HEALTHCHECK instruction in your docker container images to perform the health check on running containers.",
+          "Message": "Add HEALTHCHECK instruction in your Dockerfile",
+          "Namespace": "builtin.dockerfile.DS026",
+          "Query": "data.builtin.dockerfile.DS026.deny",
+          "Resolution": "Add HEALTHCHECK instruction in Dockerfile",
+          "Severity": "LOW",
+          "PrimaryURL": "https://avd.aquasec.com/misconfig/ds026",
+          "References": ["https://blog.aquasec.com/docker-security-best-practices", "https://avd.aquasec.com/misconfig/ds026"],
+          "Status": "FAIL",
+          "Layer": {},
+          "CauseMetadata": {
+            "Provider": "Dockerfile",
+            "Service": "general",
+            "Code": {
+              "Lines": null
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "policy for no approved SAST",
+  "policyId": "oxPolicy_noSast_1",
+  "ruleId": "oxRule_noSast_1",
+  "exclusionCategory": "general",
+  "name": "The Static Analysis Scan (SAST) is not part of the repo CI/CD pipeline",
+  "categoryId": "sectools",
+  "groupId": "",
+  "catId": 10,
+  "system": "SAST",
+  "description": "Code repository should be scanned by an approved SAST (Static Application Security Testing) application.",
+  "detailedDescription": "SAST (Static Application Security Testing) applications are the most basic type of security vulnerability detection applications that an organization should use. From SQL injections to cross-site scripting SAST applications are a basic requirement to stop easily preventable issues from making their way to production.",
+  "severity": 4,
+  "selected": true,
+  "functionName": "policyNoSAST",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "securityTools",
+      "label": "SAST",
+      "tooltip": "Please select one or more approved SAST applications for your policy.",
+      "type": "stringArray",
+      "range": ["Checkmarx", "CxSAST", "CodeQL", "ESLint"],
+      "multiSelect": true,
+      "value": ["Checkmarx", "CxSAST", "CodeQL", "ESLint"],
+      "visible": true
+    },
+    {
+      "id": "arg_2",
+      "name": "ignoreIfOXSastEnabled",
+      "label": "Ignore if OX SAST is enabled",
+      "tooltip": "Ignore if OX SAST is enabled.",
+      "type": "boolean",
+      "range": [],
+      "multiSelect": false,
+      "value": true,
+      "visible": true
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "files",
+      "type": "code_repo"
+    },
+    {
+      "id": "rsc_2",
+      "name": "users",
+      "type": "code_repo"
+    },
+    {
+      "id": "rsc_3",
+      "name": "allOrgsRepos",
+      "type": "code_repo",
+      "global": true
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 6
+}

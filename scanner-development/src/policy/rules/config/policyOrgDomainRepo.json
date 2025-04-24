@@ -1,0 +1,80 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "policy to ensure only users with emails from the orgs listed have access to the repo",
+  "policyId": "oxPolicy_OrgDomainCICD_1",
+  "ruleId": "oxRule_OrgDomainCICD_1",
+  "exclusionCategory": "user",
+  "name": "Access to repo should be limited to internal users",
+  "categoryId": "supplychain",
+  "groupId": "",
+  "catId": 3,
+  "system": "Repo",
+  "description": "Only authorized users from within the organization should have ongoing access to the repo.",
+  "detailedDescription": "External users having access to your repo greatly increases the risk of an account compromise. On compromise malicious actors will try to do a supply chain attack by introducing malicious code that will run as part of your app.",
+  "severity": 5,
+  "selected": true,
+  "functionName": "policyOrgDomainRepo",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "domains",
+      "label": "Email Domains (Suffix)",
+      "tooltip": "Choose the email domains that should have access to the build systems.",
+      "type": "stringArray",
+      "range": [],
+      "multiSelect": false,
+      "value": [],
+      "visible": true
+    },
+    {
+      "id": "arg_2",
+      "name": "alwaysRejectDomains",
+      "label": "Email Rejects (Suffix)",
+      "tooltip": "Choose the email domains that should never have access to the build systems.",
+      "type": "stringArray",
+      "range": [],
+      "multiSelect": false,
+      "value": [
+        "hotmail.*",
+        "gmail.*",
+        "yahoo.*",
+        "aol.*",
+        "outlook.*",
+        "msn.*",
+        "live.*",
+        "yandex.*",
+        "wanadoo.*",
+        "orange.*",
+        "comcast.*"
+      ],
+      "visible": false
+    },
+    {
+      "id": "arg_3",
+      "name": "repoType",
+      "label": "Repo Type",
+      "tooltip": "Choose if the policy applies to private, public or all repo types.",
+      "type": "stringArray",
+      "range": ["Private", "Public", "Private or Public"],
+      "multiSelect": false,
+      "value": ["Private or Public"],
+      "visible": true
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "users",
+      "type": "code_repo"
+    },
+    {
+      "id": "rsc_2",
+      "name": "users",
+      "type": "code_repo",
+      "global": true
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 7
+}

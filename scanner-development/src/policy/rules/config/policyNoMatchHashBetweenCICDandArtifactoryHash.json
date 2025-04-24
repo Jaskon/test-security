@@ -1,0 +1,40 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "policy should match build artifacts from artifactory",
+  "policyId": "oxPolicy_policy_build_artifacts_artifactory_3",
+  "ruleId": "oxRule_policy_build_artifacts_artifactory_3",
+  "exclusionCategory": "container",
+  "name": "Artifactory image should reference build artifact",
+  "categoryId": "supplychain",
+  "groupId": "",
+  "catId": 14,
+  "system": "Artifactory",
+  "description": "A file found in your artifactory was not matched to an an artifact from your build system via hash or name.",
+  "detailedDescription": "An image name in your artifactory not matched to a build artifact may indicate an attempt to compromise the cloud account. An unauthorized application may be running in your organization's cloud. A crypto miner is an example of this.",
+  "severity": 3,
+  "selected": false,
+  "functionName": "policyNoMatchHashBetweenCICDandRegistry",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "type",
+      "label": "type",
+      "tooltip": "Choose the type of the alert generated",
+      "type": "stringArray",
+      "range": ["hash", "name"],
+      "multiSelect": true,
+      "value": ["hash"],
+      "visible": false
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "registryImage",
+      "type": "artifactory"
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 3
+}

@@ -1,0 +1,40 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "policy new image version",
+  "policyId": "oxPolicy_policy_new_image_version_1",
+  "ruleId": "oxRule_policy_new_image_version_1",
+  "exclusionCategory": "general",
+  "name": "Cloud service should utilize the latest available image",
+  "categoryId": "supplychain",
+  "groupId": "",
+  "catId": 14,
+  "system": "Cloud",
+  "description": "A service running in your cloud should always have the latest version available in the registry.",
+  "detailedDescription": "A service running in your cloud should always have the latest version available in the registry.",
+  "severity": 2,
+  "selected": true,
+  "functionName": "policyRunTimeNotHaveLatestImageVersion",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "daysFrom",
+      "label": "Days Start",
+      "tooltip": "Define the number of days between the creation time of the image in the registry and deployment time",
+      "type": "number",
+      "range": [1, 10000],
+      "multiSelect": false,
+      "value": 30,
+      "visible": true
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "containerImage",
+      "type": "cloud"
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 6
+}

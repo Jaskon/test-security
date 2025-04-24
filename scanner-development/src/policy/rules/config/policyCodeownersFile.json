@@ -1,0 +1,89 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "Repo must have a CODEOWNERS file",
+  "policyId": "oxPolicy_policyCodeownersFile_1",
+  "ruleId": "oxRule_policyCodeownersFile_1",
+  "exclusionCategory": "general",
+  "name": "Repo must have a codeowners file",
+  "categoryId": "3",
+  "groupId": "",
+  "catId": 3,
+  "system": "Repo",
+  "description": "Repositories should have a CODEOWNERS file present so that the maintainers/reviewers for specific files can be automatically identified. In addition, users who should be reviewers can be automatically assigned to Pull Requests. ",
+  "detailedDescription": "If no License file is included as part of a repository, then it is assumed that the repository is not meant to be used or edited by anyone outside your organization. This is typically not what you would want for public repositories.",
+  "severity": 1,
+  "selected": true,
+  "functionName": "policyLicenseFile",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "RepoType",
+      "label": "Repo types applied by the policy",
+      "tooltip": "Choose if the policy applies to private, public, or all repo types",
+      "type": "stringArray",
+      "range": ["Private", "Public", "Private or Public"],
+      "multiSelect": false,
+      "value": "Private or Public",
+      "visible": true
+    },
+    {
+      "id": "arg_2",
+      "name": "licenseFileNames",
+      "label": "License File Names Identification Strings",
+      "tooltip": "License File names to search for",
+      "type": "stringArray",
+      "range": [],
+      "multiSelect": false,
+      "value": ["CODEOWNERS"],
+      "visible": false
+    },
+    {
+      "id": "arg_3",
+      "name": "branchProtection",
+      "label": "Branch Protection (Required Reviews)",
+      "tooltip": "Determine if the policy applies only to repos with branch protection turned on",
+      "type": "boolean",
+      "range": [],
+      "multiSelect": false,
+      "value": [true],
+      "visible": true
+    },
+    {
+      "id": "arg_4",
+      "name": "fileDisplayName",
+      "label": "",
+      "tooltip": "",
+      "type": "string",
+      "range": [],
+      "multiSelect": false,
+      "value": "CODEOWNERS",
+      "visible": false
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "branchSettings",
+      "type": "code_repo"
+    },
+    {
+      "id": "rsc_1",
+      "name": "files",
+      "type": "code_repo"
+    },
+    {
+      "id": "rsc_2",
+      "name": "allUsers",
+      "type": "code_repo",
+      "global": true
+    },
+    {
+      "id": "rsc_3",
+      "name": "users",
+      "type": "code_repo"
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 1
+}

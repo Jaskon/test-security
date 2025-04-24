@@ -1,0 +1,52 @@
+{
+  "cicdTools": [
+    {
+      "name": "Jenkins",
+      "regex": "Jenkinsfile"
+    },
+    {
+      "name": "TeamCity",
+      "regex": "\\.teamcity|teamcity\\.|/rest/vcs-root"
+    },
+    {
+      "name": "Buildkite",
+      "regex": "\\.buildkite"
+    },
+    {
+      "name": "GitLab CI/CD",
+      "regex": "\\.gitlab-ci.*\\.ya?ml"
+    },
+    {
+      "name": "Bitbucket Pipelines",
+      "regex": "bitbucket-pipelines.*\\.ya?ml"
+    },
+    {
+      "name": "Travis CI",
+      "regex": "\\.travis.*\\.ya?ml"
+    },
+    {
+      "name": "Circle CI",
+      "regex": "\\.CircleCI"
+    },
+    {
+      "name": "GitHub Actions",
+      "regex": "\\.github/workflows/.+\\.ya?ml"
+    },
+    {
+      "name": "Azure Pipelines",
+      "regex": "azure-pipelines?.*\\.ya?ml"
+    },
+    {
+      "name": "Cloud Build",
+      "regex": "cloudbuild.*\\.ya?ml"
+    },
+    {
+      "name": "Drone CI",
+      "regex": "\\.drone\\.ya?ml"
+    },
+    {
+      "name": "Generic",
+      "regex": "makefile|publish|build.yaml|deploy|build.yml"
+    }
+  ]
+}

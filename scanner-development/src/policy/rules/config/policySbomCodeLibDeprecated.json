@@ -1,0 +1,40 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "policy for libraries directly referenced in code that were deprecated",
+  "policyId": "oxPolicy_sbomDeprecated_1",
+  "ruleId": "oxRule_sbomDeprecated_1",
+  "exclusionCategory": "sbom",
+  "name": "Open source directly referenced in code should not be deprecated",
+  "categoryId": "SBOM",
+  "groupId": "",
+  "catId": 7,
+  "system": "SBOM",
+  "description": "Utilizing libraries that are deprecated may pose a serious security risk.",
+  "detailedDescription": "Utilizing libraries that are deprecated may involve high security risks as they are no longer maintained. Companies should look for alternatives if possible.",
+  "severity": 3,
+  "selected": true,
+  "functionName": "policySbomCodeLibDeprecated",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "type",
+      "label": "type",
+      "tooltip": "",
+      "type": "string",
+      "range": "",
+      "multiSelect": true,
+      "value": "direct",
+      "visible": false
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "sbom",
+      "type": "code_repo"
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 4
+}

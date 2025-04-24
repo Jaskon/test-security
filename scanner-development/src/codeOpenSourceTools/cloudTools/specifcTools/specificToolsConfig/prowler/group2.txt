@@ -1,0 +1,11 @@
+Listing...
+2.0 Logging - CIS only - [group2] ********************************** -  []
+2.1 [check21] Ensure CloudTrail is enabled in all regions - cloudtrail [High]
+2.2 [check22] Ensure CloudTrail log file validation is enabled - cloudtrail [Medium]
+2.3 [check23] Ensure the S3 bucket CloudTrail logs to is not publicly accessible - cloudtrail [Critical]
+2.4 [check24] Ensure CloudTrail trails are integrated with CloudWatch Logs - cloudtrail [Low]
+2.5 [check25] Ensure AWS Config is enabled in all regions - configservice [Medium]
+2.6 [check26] Ensure S3 bucket access logging is enabled on the CloudTrail S3 bucket - s3 [Medium]
+2.7 [check27] Ensure CloudTrail logs are encrypted at rest using KMS CMKs - cloudtrail [Medium]
+2.8 [check28] Ensure rotation for customer created KMS CMKs is enabled - kms [Medium]
+2.9 [check29] Ensure VPC Flow Logging is Enabled in all VPCs - vpc [Medium]

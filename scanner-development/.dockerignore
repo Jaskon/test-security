@@ -1,0 +1,16 @@
+node_modules/ 
+GitLabCheatSheet.txt
+.env
+.git
+pipeline
+.gitlab-ci.yml
+.idea
+README.md
+.dockerignore
+.gitignore
+Dockerfile*
+.vscode
+.husky
+.prettierignore
+jest.config.js
+tests

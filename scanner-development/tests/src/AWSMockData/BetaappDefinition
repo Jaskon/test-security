@@ -1,0 +1,348 @@
+{
+  "taskDefinition": {
+    "taskDefinitionArn": "arn:aws:ecs:eu-west-1:857809147732:task-definition/betaapp_fargate:10",
+    "containerDefinitions": [
+      {
+        "name": "redis",
+        "image": "redis:6.2.6-alpine",
+        "cpu": 0,
+        "portMappings": [
+          {
+            "containerPort": 6397,
+            "hostPort": 6397,
+            "protocol": "tcp"
+          }
+        ],
+        "essential": true,
+        "environment": [],
+        "mountPoints": [],
+        "volumesFrom": [],
+        "logConfiguration": {
+          "logDriver": "awslogs",
+          "options": {
+            "awslogs-group": "/ecs/betaapp",
+            "awslogs-region": "eu-west-1",
+            "awslogs-stream-prefix": "ecs"
+          }
+        }
+      },
+      {
+        "name": "oxparser",
+        "image": "857809147732.dkr.ecr.eu-west-1.amazonaws.com/oxparser:v23",
+        "cpu": 0,
+        "portMappings": [
+          {
+            "containerPort": 5004,
+            "hostPort": 5004,
+            "protocol": "tcp"
+          }
+        ],
+        "essential": true,
+        "environment": [],
+        "mountPoints": [],
+        "volumesFrom": [],
+        "logConfiguration": {
+          "logDriver": "awslogs",
+          "options": {
+            "awslogs-group": "/ecs/betaapp",
+            "awslogs-region": "eu-west-1",
+            "awslogs-stream-prefix": "ecs"
+          }
+        }
+      },
+      {
+        "name": "scanner",
+        "image": "857809147732.dkr.ecr.eu-west-1.amazonaws.com/scanner:v943",
+        "cpu": 0,
+        "portMappings": [
+          {
+            "containerPort": 5001,
+            "hostPort": 5001,
+            "protocol": "tcp"
+          }
+        ],
+        "essential": true,
+        "environment": [
+          {
+            "name": "AWS_MASTER_KMS_ARN",
+            "value": "arn:aws:kms:eu-west-1:857809147732:key/1c731844-5ab4-42a0-b1f0-b9dca3e7f3f9"
+          },
+          {
+            "name": "AWS_SQS_POLLING",
+            "value": "true"
+          },
+          {
+            "name": "DD_VERSION",
+            "value": "1.0.0"
+          },
+          {
+            "name": "AWS_SECRET_ACCESS_KEY",
+            "value": "redacted"
+          },
+          {
+            "name": "MONGO_USER",
+            "value": "reporter"
+          },
+          {
+            "name": "REDIS_PORT",
+            "value": "6379"
+          },
+          {
+            "name": "DD_SERVICE",
+            "value": "scanner"
+          },
+          {
+            "name": "PUBLISH_AWS_KINESIS_STREAM_NAME",
+            "value": "beta-tool-runner-scaleup"
+          },
+          {
+            "name": "DG_KEY",
+            "value": "redacted"
+          },
+          {
+            "name": "AWS_REGION",
+            "value": "eu-west-1"
+          },
+          {
+            "name": "SEMGREP_SQS_URL",
+            "value": "https://sqs.eu-west-1.amazonaws.com/857809147732/beta-semgrep"
+          },
+          {
+            "name": "CFNLINT_SQS_URL",
+            "value": "https://sqs.eu-west-1.amazonaws.com/857809147732/beta-cfnlint"
+          },
+          {
+            "name": "DEVSKIM_SQS_URL",
+            "value": "https://sqs.eu-west-1.amazonaws.com/857809147732/beta-devskim"
+          },
+          {
+            "name": "TRIVY_SQS_URL",
+            "value": "https://sqs.eu-west-1.amazonaws.com/857809147732/beta-trivy"
+          },
+          {
+            "name": "TOOL_MEGALINTER",
+            "value": "disabled"
+          },
+          {
+            "name": "JSON_LOGGING",
+            "value": "true"
+          },
+          {
+            "name": "AWS_KMS_ACCESS_KEY_ID",
+            "value": "redacted"
+          },
+          {
+            "name": "REGION",
+            "value": "eu-west-1"
+          },
+          {
+            "name": "TERRASCAN_SQS_URL",
+            "value": "https://sqs.eu-west-1.amazonaws.com/857809147732/beta-terrascan"
+          },
+          {
+            "name": "BITBUCKET_IDP_CLIENT_SECRET",
+            "value": "redacted"
+          },
+          {
+            "name": "DD_LOGS_INJECTION",
+            "value": "true"
+          },
+          {
+            "name": "NODE_ENV",
+            "value": "production"
+          },
+          {
+            "name": "CHECKOV_SQS_URL",
+            "value": "https://sqs.eu-west-1.amazonaws.com/857809147732/beta-checkov"
+          },
+          {
+            "name": "AWS_ACCESS_KEY",
+            "value": "redacted"
+          },
+          {
+            "name": "HADOLINT_SQS_URL",
+            "value": "https://sqs.eu-west-1.amazonaws.com/857809147732/beta-hadolint"
+          },
+          {
+            "name": "BANDIT_SQS_URL",
+            "value": "https://sqs.eu-west-1.amazonaws.com/857809147732/beta-bandit"
+          },
+          {
+            "name": "OX_SHARED_DATA",
+            "value": "/var/shared-data"
+          },
+          {
+            "name": "MONGO_PASS",
+            "value": "redacted"
+          },
+          {
+            "name": "MONGODB_AWS_ACCESS_KEY_ID",
+            "value": "redacted"
+          },
+          {
+            "name": "DG_KEY_ID",
+            "value": "46216573-7d43-4180-ac4f-a3305b957969"
+          },
+          {
+            "name": "MONGO_PORT",
+            "value": "27017"
+          },
+          {
+            "name": "MONGODB_CLUSTER",
+            "value": "cluster0.svwr7.mongodb.net"
+          },
+          {
+            "name": "OXPARSER_HOST",
+            "value": "127.0.0.1"
+          },
+          {
+            "name": "GITLEAKS_SQS_URL",
+            "value": "https://sqs.eu-west-1.amazonaws.com/857809147732/beta-gitleaks"
+          },
+          {
+            "name": "REDIS_HOST",
+            "value": "127.0.0.1"
+          },
+          {
+            "name": "SQS_QUEUE_URL",
+            "value": "https://sqs.eu-west-1.amazonaws.com/857809147732/beta-app-scanner.fifo"
+          },
+          {
+            "name": "MONGO_CONN",
+            "value": "atlas"
+          },
+          {
+            "name": "PROWLER_SQS_URL",
+            "value": "https://sqs.eu-west-1.amazonaws.com/857809147732/beta-prowler"
+          },
+          {
+            "name": "MONGO_HOST",
+            "value": "cluster0.svwr7.mongodb.net"
+          },
+          {
+            "name": "DD_AGENT_HOST",
+            "value": "127.0.0.1"
+          },
+          {
+            "name": "BITBUCKET_IDP_CLIENT_ID",
+            "value": "redacted"
+          },
+          {
+            "name": "DD_TRACE_AGENT_PORT",
+            "value": "8126"
+          },
+          {
+            "name": "MONGODB_AWS_SECRET_ACCESS_KEY",
+            "value": "redacted"
+          },
+          {
+            "name": "REPORT_BUCKET",
+            "value": "ox-poc-reports"
+          },
+          {
+            "name": "AWS_KINESIS_STREAM_NAME",
+            "value": "beta-tool-runner-done"
+          },
+          {
+            "name": "TFLINT_SQS_URL",
+            "value": "https://sqs.eu-west-1.amazonaws.com/857809147732/beta-tflint"
+          },
+          {
+            "name": "DD_ENV",
+            "value": "beta"
+          },
+          {
+            "name": "AWS_KMS_SECRET_ACCESS_KEY",
+            "value": "redacted"
+          },
+          {
+            "name": "OXPARSER_PORT",
+            "value": "5004"
+          }
+        ],
+        "mountPoints": [
+          {
+            "sourceVolume": "efs",
+            "containerPath": "/var/shared-data",
+            "readOnly": false
+          }
+        ],
+        "volumesFrom": [],
+        "logConfiguration": {
+          "logDriver": "awslogs",
+          "options": {
+            "awslogs-group": "/ecs/betaapp",
+            "awslogs-region": "eu-west-1",
+            "awslogs-stream-prefix": "ecs"
+          }
+        }
+      }
+    ],
+    "family": "betaapp_fargate",
+    "taskRoleArn": "arn:aws:iam::857809147732:role/betaapp",
+    "executionRoleArn": "arn:aws:iam::857809147732:role/ecsTaskExecutionRole",
+    "networkMode": "awsvpc",
+    "revision": 10,
+    "volumes": [
+      {
+        "name": "efs",
+        "efsVolumeConfiguration": {
+          "fileSystemId": "fs-07d0e24a8153ed93c",
+          "rootDirectory": "/",
+          "transitEncryption": "DISABLED",
+          "authorizationConfig": {
+            "iam": "DISABLED"
+          }
+        }
+      }
+    ],
+    "status": "ACTIVE",
+    "requiresAttributes": [
+      {
+        "name": "com.amazonaws.ecs.capability.logging-driver.awslogs"
+      },
+      {
+        "name": "ecs.capability.execution-role-awslogs"
+      },
+      {
+        "name": "ecs.capability.efsAuth"
+      },
+      {
+        "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
+      },
+      {
+        "name": "com.amazonaws.ecs.capability.ecr-auth"
+      },
+      {
+        "name": "ecs.capability.efs"
+      },
+      {
+        "name": "com.amazonaws.ecs.capability.task-iam-role"
+      },
+      {
+        "name": "com.amazonaws.ecs.capability.docker-remote-api.1.25"
+      },
+      {
+        "name": "ecs.capability.execution-role-ecr-pull"
+      },
+      {
+        "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+      },
+      {
+        "name": "ecs.capability.task-eni"
+      }
+    ],
+    "placementConstraints": [],
+    "compatibilities": [
+      "EC2",
+      "FARGATE"
+    ],
+    "requiresCompatibilities": [
+      "FARGATE"
+    ],
+    "cpu": "4096",
+    "memory": "16384",
+    "registeredAt": "2022-02-13T12:58:30.744Z",
+    "registeredBy": "arn:aws:iam::857809147732:user/ecr_poc"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "Repo should have a visible security policy ",
+  "policyId": "oxPolicy_policySecurityFile_1",
+  "ruleId": "oxRule_policySecurityFile_1",
+  "exclusionCategory": "general",
+  "name": "Repo should have a visible security policy ",
+  "categoryId": "3",
+  "groupId": "",
+  "catId": 3,
+  "system": "Repo",
+  "description": "Repositories should have a Security Policy file present so that users of the repo are aware of how to responsibly disclose any security vulnerabilities that they find. This is especially true for public repositories.",
+  "detailedDescription": "If no SECURITY.md file is included as part of a repository, then users may be discouraged to report vulnerabilities that they find in the code. This is typically not what you would want for public repositories.",
+  "severity": 3,
+  "selected": true,
+  "functionName": "policyLicenseFile",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "RepoType",
+      "label": "Repo Visibility",
+      "tooltip": "Determine if this policy applies to public repos, private repos or both.",
+      "type": "stringArray",
+      "range": ["Private", "Public", "Private or Public"],
+      "multiSelect": false,
+      "value": "Private or Public",
+      "visible": true
+    },
+    {
+      "id": "arg_2",
+      "name": "licenseFileNames",
+      "label": "License File Names Identification Strings",
+      "tooltip": "License File names to search for",
+      "type": "stringArray",
+      "range": [],
+      "multiSelect": false,
+      "value": ["SECURITY.md"],
+      "visible": false
+    },
+    {
+      "id": "arg_3",
+      "name": "fileDisplayName",
+      "label": "",
+      "tooltip": "",
+      "type": "string",
+      "range": [],
+      "multiSelect": false,
+      "value": "SECURITY",
+      "visible": false
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "files",
+      "type": "code_repo"
+    },
+    {
+      "id": "rsc_2",
+      "name": "allUsers",
+      "type": "code_repo",
+      "global": true
+    },
+    {
+      "id": "rsc_3",
+      "name": "users",
+      "type": "code_repo"
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 1
+}

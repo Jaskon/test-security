@@ -1,0 +1,46 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "Repository wikis should only be editable by project collaborators",
+  "policyId": "oxPolicy_policyEditableWiki_1",
+  "ruleId": "oxRule_policyEditableWiki_1",
+  "exclusionCategory": "general",
+  "name": "Repository wikis should only be editable by project collaborators",
+  "categoryId": "3",
+  "groupId": "",
+  "catId": 3,
+  "system": "Repo",
+  "description": "Public repository wikis that are editable by anyone allow attackers to put links to malware. Wikis should only be editable by repository collaborators.",
+  "detailedDescription": "Wikis for public repositories are used frequently to determine where to download the latest packages for a project. Providing edit access to anyone with a source control account provides threat actors with a method to point to their own projects hosting malicious binaries. This has already been seen in the wild.",
+  "severity": 4,
+  "selected": true,
+  "functionName": "policyOpenWiki",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "RepoType",
+      "label": "Repo Type",
+      "tooltip": "Choose if the policy applies to private, public, or all repo types.",
+      "type": "stringArray",
+      "range": ["Private", "Public", "Private or Public"],
+      "multiSelect": false,
+      "value": "Public",
+      "visible": false
+    }
+  ],
+  "resources": [
+    {
+      "id": "ox_1",
+      "name": "allUsers",
+      "type": "code_repo",
+      "global": true
+    },
+    {
+      "id": "ox_2",
+      "name": "users",
+      "type": "code_repo"
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 2
+}

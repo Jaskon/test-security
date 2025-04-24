@@ -1,0 +1,13 @@
+{
+  "name": "@oxappsec/scanner",
+  "version": "0.0.24",
+  "main": "package-index.js",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "winston": "^3.3.3",
+    "winston-daily-rotate-file": "^4.6.0"
+  }
+
+}

@@ -1,0 +1,18 @@
+{
+  "languages": {
+    "java": ["pom.xml", "build.gradle", "maven_install.json"],
+    "kotlin": ["build.gradle.kts", "Dependencies.kt"],
+    "swift": ["Package.swift", "Cartfile.resolved", "Podfile.lock", "Podfile", "Package.resolved"],
+    "ruby": ["gemfile.lock", "gemspec"],
+    "python": ["Pipfile.lock", "poetry.lock", "requirements.txt", "requirements.lock", "setup.py", "pyproject.toml", "pdm.lock"],
+    "jinja": ["Pipfile.lock", "poetry.lock", "requirements.txt", "requirements.lock"],
+    "php": ["composer.lock"],
+    "javascript": ["package-lock.json", "yarn.lock", "package.json", "pnpm-lock.yaml"],
+    "typescript": ["package-lock.json", "yarn.lock", "package.json", "pnpm-lock.yaml"],
+    "c#": ["packages.lock.json", "packages.config", ".csproj", ".deps.json"],
+    "go": ["go.sum", "go.mod"],
+    "Rust": ["Cargo.toml", "Cargo.lock"],
+    "Scala": ["build.sbt", "Dependencies.scala"],
+    "C": ["conan.lock", "spack.yaml", "spack.yml", "BUILD.bazel", "conanfile.txt", "conanfile.py", "CMakeLists.txt", "manifest.json"]
+  }
+}

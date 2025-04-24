@@ -1,0 +1,28 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "policy for libraries indirectly referenced in code utilizing company approved licenses",
+  "policyId": "oxPolicy_codeSbomLicensesIndirect_1111",
+  "ruleId": "oxRule_codeSbomLicensesIndirect_1111",
+  "exclusionCategory": "sbom",
+  "name": "Dependencies not being referenced in the code should be removed.",
+  "categoryId": "SBOM",
+  "groupId": "",
+  "catId": 7,
+  "system": "SBOM",
+  "description": "Utilizing libraries with unauthorized licenses may open a company up to copyright infringement.",
+  "detailedDescription": "Using unauthorized libraries based on their licenses may require your project to be open sourced or lead to copyright infringement. A U.S. Federal court has ruled that an open-source license is an enforceable contract.",
+  "severity": 1,
+  "selected": false,
+  "functionName": "policySbomCodeNoImportedLibs",
+  "args": [],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "sbom",
+      "type": "code_repo"
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 7
+}

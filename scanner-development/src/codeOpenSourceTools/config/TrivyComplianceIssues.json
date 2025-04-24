@@ -1,0 +1,322 @@
+{
+  "jsonVersion": "1.03",
+  "usage": "trivy compliance config",
+  "toolName": "trivy",
+  "Rules": [
+    {
+      "id": "AVD-AWS-0114",
+      "severity": "medium",
+      "summaryTitle": "AWS Least Privilege violation due to wildcard usage in IAM policy definition",
+      "Why does it matter?": "Avoid using wildcards in IAM policy definitions to ensure strict adherence to the principle of least privilege. Specifying exact permissions helps prevent unintended access to actions, resources, and principals, safeguarding your system against potential security threats.",
+      "How to fix": "The presence of wildcards in policy documents, especially for sensitive actions, should be rectified to enhance security.",
+      "eduVideoLink": "",
+      "skip": false
+    },
+    {
+      "id": "AVD-AWS-0125",
+      "severity": "low",
+      "summaryTitle": "AWS SAM X-Ray tracing is disabled",
+      "Why does it matter?": "X-Ray tracing for Serverless Application Model (SAM) functions is crucial for in-depth debugging and analysis, helping to efficiently identify and resolve issues, optimize performance, and enhance the reliability and maintainability of serverless applications.",
+      "How to fix": "Enable X-Ray tracing.",
+      "eduVideoLink": "",
+      "skip": false
+    },
+    {
+      "id": "AVD-DS-0001",
+      "severity": "low",
+      "summaryTitle": "Dockerfile has 'FROM' with the 'latest' version tag",
+      "Why does it matter?": "The 'FROM' statement uses the ':latest' tag, which points to the latest version of an image. Relying on ':latest' can lead to uncontrolled behavior when the image is updated, potentially introducing changes or issues beyond your control.",
+      "How to fix": "Instead of using ':latest', specify a specific version or tag in the 'FROM' statement to ensure predictability and stability. For example, 'FROM image-name:version'. This allows you to control which image version is used in your builds.",
+      "eduVideoLink": "",
+      "skip": false
+    },
+    {
+      "id": "AVD-DS-0002",
+      "severity": "low",
+      "summaryTitle": "Dockerfile has only a root user",
+      "Why does it matter?": "The container image uses the 'root' user, which can lead to security risks. Running processes with root privileges inside the container could potentially result in unauthorized access, privilege escalation, increased attack surface, and compromise of the containerized application.",
+      "How to fix": "Update the container image to use a non-root user whenever possible. Specify a non-root user in the Dockerfile or ensure that the base image used for building the container does not default to 'root'. This helps mitigate security risks and adheres to the principle of least privilege.",
+      "eduVideoLink": "https://www.youtube.com/watch?v=qUYSX7AyxQk",
+      "skip": false
+    },
+    {
+      "id": "AVD-DS-0004",
+      "severity": "low",
+      "summaryTitle": "Dockerfile does not restrict SSH usage",
+      "Why does it matter?": "Port 22 is commonly used for SSH. Exposing port 22 on Docker containers, can be exploited by attackers to gain unauthorized access to the container or host system.",
+      "How to fix": "Avoid exposing Port 22 in the container unless it is explicitly required. If SSH access is necessary, ensure that it is properly secured with strong authentication mechanisms, such as using SSH keys instead of passwords, and restrict access to authorized users only.",
+      "eduVideoLink": "",
+      "skip": false
+    },
+    {
+      "id": "AVD-DS-0005",
+      "severity": "low",
+      "summaryTitle": "Dockerfile has unsafe 'ADD' instruction",
+      "Why does it matter?": "Using 'ADD' instead of 'COPY' can introduce the risk of Zip-based vulnerabilities when extracting tar files. To avoid unnecessary risks, it is recommended to use 'COPY' for copying files unless there is a specific need to extract a tar file.",
+      "How to fix": "Replace 'ADD' commands with 'COPY' in the Dockerfile for regular file copying operations. If you need to extract a tar file, using 'ADD' is appropriate, but exercise caution and ensure the source is trustworthy.",
+      "eduVideoLink": "",
+      "skip": false
+    },
+    {
+      "id": "AVD-DS-0006",
+      "severity": "info",
+      "summaryTitle": "Dockerfile has unnecessary 'COPY --from' instruction",
+      "Why does it matter?": "The 'COPY --from' instruction is referring to the current image, which is not necessary and can cause confusion. It is better to use 'COPY' without the '--from' option when copying files within the same image.",
+      "How to fix": "Instead of using 'COPY --from', use a regular 'COPY' instruction to copy files within the same image. For example, 'COPY source-path destination-path'. This simplifies the Dockerfile and avoids unnecessary references to the current image.",
+      "eduVideoLink": "",
+      "skip": false
+    },
+    {
+      "id": "AVD-DS-0007",
+      "severity": "info",
+      "summaryTitle": "Dockerfile has multiple 'ENTRYPOINT' instructions",
+      "Why does it matter?": "Having multiple 'ENTRYPOINT' instructions in a Dockerfile can lead to confusion and unexpected behavior when running the container. Only the last 'ENTRYPOINT' instruction takes effect, overriding any previous ones.",
+      "How to fix": "Consolidate multiple 'ENTRYPOINT' instructions into a single one to define the default executable for the container. If different entry points are required, consider using 'CMD' to provide arguments that can be passed to the 'ENTRYPOINT' and be overridden when running the container.",
+      "eduVideoLink": "",
+      "skip": false
+    },
+    {
+      "id": "AVD-DS-0008",
+      "severity": "low",
+      "summaryTitle": "Dockerfile exposes UNIX ports outside the range 0-65535",
+      "Why does it matter?": "The container exposes UNIX ports outside the valid range of 0-65535, which is not supported and can lead to undefined behavior or errors in the container runtime.",
+      "How to fix": "Review the port configuration in the Dockerfile and ensure that only valid port numbers within the range 0-65535 are exposed. Correct any port configurations that fall outside this range.",
+      "eduVideoLink": "",
+      "skip": false
+    },
+    {
+      "id": "AVD-DS-0009",
+      "severity": "low",
+      "summaryTitle": "Dockerfile has 'WORKDIR' value with relative path",
+      "Why does it matter?": "Using relative paths for 'WORKDIR' can lead to ambiguity and potential issues, especially when working with complex directory structures. To ensure clarity and reliability, it is recommended to use absolute paths.",
+      "How to fix": "When setting the 'WORKDIR' in the Dockerfile, provide an absolute path instead of a relative one. For example, 'WORKDIR /absolute/path/to/directory'. This improves readability and helps prevent unexpected behavior.",
+      "eduVideoLink": "",
+      "skip": false
+    },
+    {
+      "id": "AVD-DS-0010",
+      "severity": "low",
+      "summaryTitle": "Dockerfile has 'RUN' with sudo",
+      "Why does it matter?": "Using 'sudo' with 'RUN' commands in Dockerfiles can lead to unpredictable behavior and potential security risks. It is not recommended to run commands with elevated privileges directly in the image build process.",
+      "How to fix": "Instead of using 'sudo' with 'RUN' commands, consider either using a base image that already has necessary permissions or adjusting the file permissions in the Dockerfile to allow non-root users to perform required tasks.",
+      "eduVideoLink": "",
+      "skip": false
+    },
+    {
+      "id": "AVD-DS-0011",
+      "severity": "low",
+      "summaryTitle": "Dockerfile COPY instruction with more than two arguments",
+      "Why does it matter?": "The 'COPY' instruction in the Dockerfile has more than two source arguments, and the last argument does not end with a slash (/). This could lead to unintended behavior during container image build and may cause unexpected issues in the deployed containers.",
+      "How to fix": "Ensure that the 'COPY' instruction in the Dockerfile has only two source arguments or end the last source argument with a slash (/) to indicate it is a directory.",
+      "eduVideoLink": "",
+      "skip": false
+    },
+    {
+      "id": "AVD-DS-0012",
+      "severity": "low",
+      "summaryTitle": "Dockerfile has duplicated 'FROM' aliases",
+      "Why does it matter?": "The 'FROM' alias specifies the base image for a build stage. Assigning a unique alias to each stage is crucial to avoid confusion and ensure the precise image selection.",
+      "How to fix": "Please ensure that each FROM statement has a unique alias to avoid unintended files or behaviors.",
+      "eduVideoLink": "",
+      "skip": false
+    },
+    {
+      "id": "AVD-DS-0013",
+      "severity": "info",
+      "summaryTitle": "Dockerfile has 'RUN cd ...' instruction",
+      "Why does it matter?": "Using 'RUN cd ... && do-something' instructions can make the Dockerfile hard to read, troubleshoot, and maintain. To improve clarity and maintainability, it is recommended to use 'WORKDIR' to set the working directory for subsequent commands.",
+      "How to fix": "Instead of using 'RUN cd ...', utilize 'WORKDIR' in the Dockerfile to set the working directory for following commands. For example, 'WORKDIR /path/to/directory'. This enhances the Dockerfile's readability and facilitates maintenance.",
+      "eduVideoLink": "",
+      "skip": false
+    },
+    {
+      "id": "AVD-DS-0014",
+      "severity": "info",
+      "summaryTitle": "Dockerfile is using both 'wget' and 'curl'",
+      "Why does it matter?": "The Dockerfile contains both 'wget' and 'curl' commands, which have the same effect of downloading files. Using both tools can lead to redundancy and unnecessary complexity.",
+      "How to fix": "Choose either 'wget' or 'curl' for file downloads in the Dockerfile and stick to one tool consistently. This streamlines the Dockerfile and improves readability.",
+      "eduVideoLink": "",
+      "skip": false
+    },
+    {
+      "id": "AVD-DS-0015",
+      "severity": "info",
+      "summaryTitle": "Dockerfile is not using 'yum clean all' to reduce image size",
+      "Why does it matter?": "The 'yum clean all' command is missing after using 'yum install', leading to cached package data being retained in the container image. This can increase the image size and potentially introduce unnecessary files.",
+      "How to fix": "After using 'yum' to install packages in the Dockerfile, add the 'yum clean all' command to clean cached package data. This helps reduce the image size and ensures a cleaner container build.",
+      "eduVideoLink": "",
+      "skip": false
+    },
+    {
+      "id": "AVD-DS-0016",
+      "severity": "info",
+      "summaryTitle": "Dockerfile has multiple 'CMD' instructions",
+      "Why does it matter?": "Having multiple 'CMD' instructions in a Dockerfile can lead to confusion and unexpected behavior when running the container. Only the last 'CMD' instruction takes effect, overriding any previous ones.",
+      "How to fix": "Consolidate multiple 'CMD' instructions into a single one to define the primary command for the container. If different commands are required, use 'ENTRYPOINT' to specify a default executable and use 'CMD' to provide arguments that can be overridden when running the container.",
+      "eduVideoLink": "",
+      "skip": false
+    },
+    {
+      "id": "AVD-DS-0017",
+      "severity": "medium",
+      "summaryTitle": "Dockerfile has unsafe standalone 'RUN update' instruction",
+      "Why does it matter?": "Adding update instructions in a single line on the Dockerfile will cause the update layer to be cached. When you then build any image later using the same instruction, this will cause the previously cached update layer to be used, potentially preventing any fresh updates from being applied to later builds.",
+      "How to fix": "Do not use OS package manager update instructions such as 'apt-get update' or 'yum update' either alone or in a single line in the Dockerfile.",
+      "eduVideoLink": "",
+      "skip": false
+    },
+    {
+      "id": "AVD-DS-0019",
+      "severity": "info",
+      "summaryTitle": "Dockerfile is not using 'dnf clean all' to reduce image size",
+      "Why does it matter?": "The 'dnf clean all' command is missing after package installation, leading to cached package data being retained in the container image. This can increase the image size and potentially introduce unnecessary files.",
+      "How to fix": "After using 'dnf' to install packages in the Dockerfile, add the 'dnf clean all' command to clean cached package data. This helps reduce the image size and ensures a cleaner container build.",
+      "eduVideoLink": "",
+      "skip": false
+    },
+    {
+      "id": "AVD-DS-0020",
+      "severity": "info",
+      "summaryTitle": "Dockerfile is not using 'zypper clean' to reduce image size",
+      "Why does it matter?": "The 'zypper clean' command is missing after running 'zypper' to install packages, leading to unneeded caches being retained in the container image. This can increase the image size and waste disk space.",
+      "How to fix": "After using 'zypper' to install packages in the Dockerfile, add the 'zypper clean' command to remove unneeded caches. This helps reduce the image size and improves the efficiency of the container build.",
+      "eduVideoLink": "",
+      "skip": false
+    },
+    {
+      "id": "AVD-DS-0021",
+      "severity": "low",
+      "summaryTitle": "DockerFile has 'apt-get' parameters that require manual input",
+      "Why does it matter?": "The 'apt-get' command does not use the '-y' flag, which prompts for manual user input during package installation. This can interrupt the container build process and cause issues in automated builds.",
+      "How to fix": "When using 'apt-get' to install packages in the Dockerfile, add the '-y' flag to automatically confirm package installation without user prompts. For example, 'apt-get install -y package-name'. This ensures smooth and uninterrupted container builds.",
+      "eduVideoLink": "",
+      "skip": false
+    },
+    {
+      "id": "AVD-DS-0022",
+      "severity": "low",
+      "summaryTitle": "Dockerfile has deprecated 'MAINTAINER' instruction",
+      "Why does it matter?": "Docker images can contain metadata information in the form of key-value pairs using LABEL instructions. One such metadata is the maintainer, which provides information about the person who maintains the Docker image. The MAINTAINER instruction was used earlier to specify this information, but it is now deprecated.",
+      "How to fix": "To ensure best practices for maintaining Docker images, the LABEL maintainer instruction should be used instead of the MAINTAINER instruction.",
+      "eduVideoLink": "",
+      "skip": false
+    },
+    {
+      "id": "AVD-DS-0023",
+      "severity": "info",
+      "summaryTitle": "Dockerfile has multiple 'HEALTHCHECK' instructions",
+      "Why does it matter?": "Having multiple 'HEALTHCHECK' instructions in a Dockerfile can lead to confusion and unexpected behavior. Only the last 'HEALTHCHECK' instruction takes effect, overriding any previous ones.",
+      "How to fix": "Consolidate multiple 'HEALTHCHECK' instructions into a single one to define the health check for the container. If different health check configurations are required, ensure that the final 'HEALTHCHECK' instruction is comprehensive and meets the application's needs.",
+      "eduVideoLink": "",
+      "skip": false
+    },
+    {
+      "id": "AVD-DS-0024",
+      "severity": "info",
+      "summaryTitle": "Dockerfile has unsafe 'apt-get dist-upgrade' instruction",
+      "Why does it matter?": "The 'apt-get dist-upgrade' command is used in the Dockerfile, which can upgrade packages to their latest (major) versions, potentially causing compatibility issues or unexpected behavior in the container. It is safer to use 'apt-get upgrade' to install updates without modifying the installed package major versions.",
+      "How to fix": "Replace 'apt-get dist-upgrade' with 'apt-get upgrade' in the Dockerfile to avoid package version upgrades that may introduce compatibility problems. Using 'apt-get upgrade' ensures security updates are applied without changing the package versions.",
+      "eduVideoLink": "",
+      "skip": false
+    },
+    {
+      "id": "AVD-DS-0025",
+      "severity": "info",
+      "summaryTitle": "Dockerfile is not using 'apk add' with '--no-cache' to reduce image size",
+      "Why does it matter?": "Using 'apk add' without the '--no-cache' option can lead to larger container images as package cached data is retained. Enabling '--no-cache' ensures that cached data is cleaned, reducing the overall image size.",
+      "How to fix": "When using 'apk add' in the Dockerfile to install packages, add the '--no-cache' option to remove cached data after installation. For example, 'apk add --no-cache package-name'. This helps optimize the container image size.",
+      "eduVideoLink": "",
+      "skip": false
+    },
+    {
+      "id": "AVD-DS-0026",
+      "severity": "info",
+      "summaryTitle": "Dockerfile has no healthcheck instruction",
+      "Why does it matter?": "A healthcheck is a command that allows a container to report its status to the Docker engine, indicating whether it is healthy or not. This is important for ensuring the availability and reliability of the application, as well as for detecting and responding to security incidents or attacks.",
+      "How to fix": "Add the HEALTHCHECK instruction to your Docker container images to ensure that health checks are executed against running containers.",
+      "eduVideoLink": "",
+      "skip": false
+    },
+    {
+      "id": "AVD-DS-0027",
+      "severity": "info",
+      "summaryTitle": "Dockerfile is not using 'microdnf clean all' to reduce image size",
+      "Why does it matter?": "The 'microdnf clean all' command is missing after package installation, leading to cached package data being retained in the container image. This can increase the image size and potentially introduce unnecessary files.",
+      "How to fix": "After using 'microdnf' to install packages in the Dockerfile, add the 'microdnf clean all' command to clean cached package data. This helps reduce the image size and ensures a cleaner container build.",
+      "eduVideoLink": "",
+      "skip": false
+    },
+    {
+      "id": "AVD-DS-0029",
+      "severity": "low",
+      "summaryTitle": "Dockerfile is not using '--no-install-recommends' with 'apt-get' instruction",
+      "Why does it matter?": "The 'apt-get' command is missing the '--no-install-recommends' option. Without it, installing packages with 'apt-get' may pull in recommended packages that are not strictly necessary. This can lead to larger and potentially less secure container images.",
+      "How to fix": "When using 'apt-get' to install packages in the Dockerfile, add the '--no-install-recommends' option to avoid installing recommended packages. This helps reduce image size and potential security risks.",
+      "eduVideoLink": "",
+      "skip": false
+    },
+    {
+      "id": "AVD-KSV-0001",
+      "severity": "low",
+      "summaryTitle": "Least Privilege violation as process can run as root",
+      "Why does it matter?": "If a process inside a container can elevate its privileges to run as root, it can potentially take over the entire container. Worse, if the container itself is running with high privileges on the host (e.g., with insecure configurations or permissions), this escalated process might exert influence over the host node, leading to a broader compromise.",
+      "How to fix": "",
+      "eduVideoLink": "",
+      "skip": false
+    },
+    {
+      "id": "AVD-KSV-0012",
+      "severity": "low",
+      "summaryTitle": "Least Privilege violation due to root user",
+      "Why does it matter?": "The container image uses the 'root' user, which can lead to security risks. Running processes with root privileges inside the container could potentially result in unauthorized access, privilege escalation, increased attack surface, and compromise of the containerized application.",
+      "How to fix": "",
+      "eduVideoLink": "https://www.youtube.com/watch?v=qUYSX7AyxQk",
+      "skip": false
+    },
+    {
+      "id": "AVD-KSV-0013",
+      "severity": "info",
+      "summaryTitle": "Best Practice: Use specific tags in 'FROM' statement",
+      "Why does it matter?": "The 'FROM' statement uses the ':latest' tag, which points to the latest version of an image. Relying on ':latest' can lead to uncontrolled behavior when the image is updated, potentially introducing changes or issues beyond your control.",
+      "How to fix": "",
+      "eduVideoLink": "",
+      "skip": false
+    },
+    {
+      "id": "AVD-KSV-0045",
+      "severity": "medium",
+      "summaryTitle": "Least Privilege violation in K8s roles due to wildcard verb usage",
+      "Why does it matter?": "In Kubernetes RBAC, verbs define the actions you're allowed to take on a resource. Common verbs include get, list, create, delete, etc. Using a wildcard verb means the role grants permission to perform any action on the specified resources, which can be a significant security risk.",
+      "How to fix": "Review your Kubernetes RBAC configurations, specifically roles and cluster roles. Ensure that no roles have wildcard verbs unless there's a very specific and justified use case. Adjust permissions to adhere to the principle of least privilege, granting only the permissions necessary for each role's responsibilities.",
+      "eduVideoLink": "",
+      "skip": false
+    },
+    {
+      "id": "AVD-KSV-0048",
+      "severity": "medium",
+      "summaryTitle": "Least Privilege violation in K8s workloads",
+      "Why does it matter?": "Permissions for managing Kubernetes workloads can lead to resource abuse, like cryptojacking, and risk privilege escalation in the cluster. The role found has overly broad permissions, which should be restricted to uphold security best practices.",
+      "How to fix": "",
+      "eduVideoLink": "",
+      "skip": false
+    },
+    {
+      "id": "AVD-KSV-0104",
+      "severity": "medium",
+      "summaryTitle": "Secure Computing Mode policies are disabled",
+      "Why does it matter?": "Seccomp is a Linux kernel feature that allows you to filter and restrict system calls that processes can make, adding an additional layer of security. Without Seccomp policies enforced, a program within the container can execute any system call, including those that might be risky or unnecessary for the application's operation.",
+      "How to fix": "",
+      "eduVideoLink": "",
+      "skip": false
+    },
+    {
+      "id": "AVD-KSV-0116",
+      "severity": "low",
+      "summaryTitle": "Least Privilege violation due to root GID",
+      "Why does it matter?": "The 'root group ID' (root GID) refers to a special group in Unix-like operating systems. In the context of containers and Kubernetes, if a container process runs with the root GID (even if it doesn't run as the root UID), there are potential security implications. Such a process might have broader file access permissions, especially if files or directories are group-writable by the root group.",
+      "How to fix": "",
+      "eduVideoLink": "",
+      "skip": false
+    }
+  ]
+}

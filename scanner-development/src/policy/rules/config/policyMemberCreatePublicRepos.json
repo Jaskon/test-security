@@ -1,0 +1,85 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "Outside collaborators should not be repo admins",
+  "policyId": "oxPolicy_member_create_public_repos_1",
+  "ruleId": "oxRule_policyMemberCreatePublicRepos_1",
+  "exclusionCategory": "user",
+  "name": "exposed organization repos",
+  "categoryId": "3",
+  "groupId": "",
+  "catId": 3,
+  "system": "Repo",
+  "description": "Outside collaborators are not members of your organization or first-level group and as such may pose a great security risk if their account gets compromised. They should be admins of a repo in very exceptional cases.",
+  "detailedDescription": "Outside collaborators are not members of your organization or first-level group. A best practice is to limit the access time and permissions they have to a repository. You may not be aware of a change in the status of an outside admin and also not immediately become aware if their account gets compromised. This is why it is safer to prevent them from having admin access.",
+  "severity": 1,
+  "selected": true,
+  "functionName": "policyMemberCreatePublicRepos",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "monthTime",
+      "label": "Ignore User Repos Older Than (Months)",
+      "tooltip": "Will ignore mentioning repos older than X Months.",
+      "type": "number",
+      "range": [1, 12],
+      "multiSelect": false,
+      "value": 36,
+      "visible": true
+    },
+    {
+      "id": "arg_2",
+      "name": "type",
+      "label": "",
+      "tooltip": "",
+      "type": "stringArray",
+      "range": ["fork", "public"],
+      "multiSelect": true,
+      "value": ["public"],
+      "visible": false
+    },
+    {
+      "id": "arg_3",
+      "name": "UsersToReportOn",
+      "label": "Users to report on",
+      "tooltip": "This will determine the organization users to report on",
+      "type": "stringArray",
+      "range": ["Owner", "Member", "Outside Collaborator", "Former Member"],
+      "multiSelect": true,
+      "value": ["Owner", "Member", "Outside Collaborator", "Former Member"],
+      "visible": true
+    },
+    {
+      "id": "arg_4",
+      "name": "MonitorTimeForFormerMembers",
+      "label": "Monitor time for former members (months)",
+      "tooltip": "Stops evaluating former members who left the company after the selected months ago",
+      "type": "number",
+      "range": [1, 12],
+      "multiSelect": false,
+      "value": 36,
+      "visible": false
+    },
+    {
+      "id": "arg_5",
+      "name": "IncludeForkedPublicRepos",
+      "label": "Include forked public repos",
+      "tooltip": "Tooltip: If the repo is forked (from another public repo by definition), then it is unlikely to contain proprietary data.",
+      "type": "boolean",
+      "range": [],
+      "multiSelect": false,
+      "value": true,
+      "visible": true
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "allPublicRepos",
+      "type": "code_repo",
+      "global": true
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 4
+}

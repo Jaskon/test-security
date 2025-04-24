@@ -1,0 +1,40 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "policy should match build artifacts",
+  "policyId": "oxPolicy_policy_build_artifacts_1",
+  "ruleId": "oxRule_policy_build_artifacts_1",
+  "exclusionCategory": "general",
+  "name": "Cloud image referencing build artifact must match by hash",
+  "categoryId": "supplychain",
+  "groupId": "",
+  "catId": 14,
+  "system": "Cloud",
+  "description": "A service running in your cloud was not matched to an artifact from your build system.",
+  "detailedDescription": "An image hash not matched to a build artifact may indicate a compromise of the cloud account. An unauthorized application may be running in your organization's cloud. A crypto miner is an example of this.",
+  "severity": 1,
+  "selected": true,
+  "functionName": "policyNoMatchHashBetweenCICDandRuntimeCloud",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "type",
+      "label": "type",
+      "tooltip": "Choose the type of the alert generated",
+      "type": "stringArray",
+      "range": ["hash", "name"],
+      "multiSelect": true,
+      "value": ["name"],
+      "visible": false
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "containerImage",
+      "type": "cloud"
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 5
+}

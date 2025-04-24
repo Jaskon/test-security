@@ -1,0 +1,52 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "Repo should have branch protection with required signed commits",
+  "policyId": "oxPolicy_dspm_RequireSignedCommits",
+  "ruleId": "oxRule_dspm_RequireSignedCommits",
+  "exclusionCategory": "general",
+  "name": "Protected branches should require signed commits",
+  "categoryId": "3",
+  "groupId": "",
+  "catId": 3,
+  "system": "Repo",
+  "order": 22,
+  "description": "Signing commits is a stronger guarantee that a commit was done by a developer.",
+  "detailedDescription": "Signing commits is needed because it is pretty easy to add anyone as the author of a commit. Git allows a committer to change the author of a commit easily. In the case of a signed commit, any change to the author will make the commit appear unsigned.",
+  "severity": 2,
+  "selected": true,
+  "functionName": "policyRequireSignedCommits",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "RepoType",
+      "label": "Repo Type",
+      "tooltip": "Choose if the policy applies to private, public or all repo types.",
+      "type": "stringArray",
+      "range": ["Private", "Public", "Private or Public"],
+      "multiSelect": false,
+      "value": "Private or Public",
+      "visible": true
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "branchSettings",
+      "type": "code_repo"
+    },
+    {
+      "id": "rsc_2",
+      "name": "users",
+      "type": "code_repo"
+    },
+    {
+      "id": "rsc_3",
+      "name": "allUsers",
+      "type": "code_repo",
+      "global": true
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 1
+}

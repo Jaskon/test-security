@@ -1,0 +1,53 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "Organizations should have more than one owner",
+  "policyId": "oxPolicy_dspm_MoreThanOneAdmin_1",
+  "ruleId": "oxRule_dspm_MoreThanOneAdmin_1",
+  "exclusionCategory": "user",
+  "name": "Organizations should have more than one owner",
+  "categoryId": "3",
+  "groupId": "",
+  "catId": 3,
+  "system": "Repo",
+  "description": "An organization or group should have more than one owner so access to the code is not jeopardized if the owner is not able to access their account.",
+  "detailedDescription": "An organization or group admin/owner has the authority to create, edit, delete repositories and manage permissions and access to repositories. If the organization or group has only 1 user then the ability to make changes or change security settings etc. may be lost if the sole owner is not available. Therefore, to reduce the attack surface it is recommended to have more than 1 admin/owner of an organization or group. ",
+  "severity": 2,
+  "selected": true,
+  "functionName": "policyDspmMoreThanOneAdmin",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "minUsers",
+      "label": "Min Users",
+      "tooltip": "No issue will be created if the number of users in the org or group is less than or equal to the entered value.",
+      "type": "number",
+      "range": [1, 10000],
+      "multiSelect": false,
+      "value": 1,
+      "visible": true
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "allUsers",
+      "type": "code_repo",
+      "global": true
+    },
+    {
+      "id": "rsc_2",
+      "name": "auditLog",
+      "type": "code_repo",
+      "global": true
+    },
+    {
+      "id": "rsc_3",
+      "name": "allPulls",
+      "type": "code_repo",
+      "global": true
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 8
+}

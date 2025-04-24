@@ -1,0 +1,3359 @@
+{
+  "jsonVersion": "1.00",
+  "usage": "Checkov config for severity",
+  "toolName": "checkov",
+  "severity": [
+    {
+      "id": "CKV_AWS_41",
+      "severity": "none",
+      "description": "handled by gitleaks"
+    },
+    {
+      "id": "CKV_GITLABCI_2",
+      "severity": "low",
+      "description": "Verified by Inbar"
+    },
+    {
+      "id": "CKV_SECRET_1",
+      "severity": "high",
+      "description": "Artifactory Credentials"
+    },
+    {
+      "id": "CKV_SECRET_2",
+      "severity": "high",
+      "description": "AWS Access Keys"
+    },
+    {
+      "id": "CKV_SECRET_3",
+      "severity": "high",
+      "description": "Azure Storage Account Access Keys"
+    },
+    {
+      "id": "CKV_SECRET_4",
+      "severity": "medium",
+      "description": "Basic Auth Credentials"
+    },
+
+    {
+      "id": "CKV_SECRET_5",
+      "severity": "high",
+      "description": "Cloudant Credentials"
+    },
+    {
+      "id": "CKV_SECRET_6",
+      "severity": "low",
+      "description": "Base64 High Entropy String"
+    },
+    {
+      "id": "CKV_SECRET_7",
+      "severity": "high",
+      "description": "IBM Cloud IAM Key"
+    },
+
+    {
+      "id": "CKV_SECRET_8",
+      "severity": "high",
+      "description": "IBM COS HMAC Credentials"
+    },
+
+    {
+      "id": "CKV_SECRET_9",
+      "severity": "high",
+      "description": "JSON Web Token"
+    },
+
+    {
+      "id": "CKV_SECRET_10",
+      "severity": "low",
+      "description": "Secret Keyword"
+    },
+    {
+      "id": "CKV_SECRET_11",
+      "severity": "low",
+      "description": "Mailchimp Access Key"
+    },
+    {
+      "id": "CKV_SECRET_12",
+      "severity": "high",
+      "description": "NPM Token"
+    },
+
+    {
+      "id": "CKV_SECRET_13",
+      "severity": "high",
+      "description": "Private Key"
+    },
+
+    {
+      "id": "CKV_SECRET_14",
+      "severity": "high",
+      "description": "Slack Token"
+    },
+    {
+      "id": "CKV_SECRET_15",
+      "severity": "medium",
+      "description": "SoftLayer Credentials"
+    },
+
+    {
+      "id": "CKV_SECRET_16",
+      "severity": "high",
+      "description": "Square OAuth Secret"
+    },
+    {
+      "id": "CKV_SECRET_17",
+      "severity": "high",
+      "description": "Stripe Access Key"
+    },
+
+    {
+      "id": "CKV_SECRET_18",
+      "severity": "medium",
+      "description": "Twilio API Key"
+    },
+    {
+      "id": "CKV_SECRET_19",
+      "severity": "low",
+      "description": "Hex High Entropy String"
+    },
+
+    {
+      "id": "CKV_K8S_1",
+      "severity": "medium",
+      "description": "Do not admit containers wishing to share host process ID namespace"
+    },
+
+    {
+      "id": "CKV_K8S_2",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_K8S_3",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_K8S_4",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_5",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_6",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_K8S_7",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_K8S_8",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_9",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_10",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_11",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_12",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_13",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_K8S_14",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_15",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_K8S_16",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_17",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_18",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_19",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_20",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_K8S_21",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_22",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_23",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_24",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_25",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_26",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_27",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_28",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_29",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_30",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_K8S_31",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_32",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_33",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_34",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_35",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_K8S_36",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_37",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_38",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_39",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_K8S_40",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_41",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_42",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_K8S_43",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_44",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_45",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_49",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_K8S_68",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_69",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_70",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_K8S_71",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_K8S_72",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_73",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_74",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_K8S_75",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_77",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_78",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_79",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_80",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_K8S_81",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_82",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_83",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_84",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_K8S_85",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_86",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_88",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_89",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_90",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_91",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_92",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_K8S_93",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_94",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_95",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_96",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_97",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_98",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_99",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_100",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_102",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_103",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_104",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_105",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_106",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_107",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_108",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_110",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_K8S_111",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_112",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_113",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_114",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_115",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_116",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_K8S_117",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_118",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_119",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_121",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_138",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_139",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_K8S_140",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_141",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_143",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_144",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_145",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_146",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_147",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_K8S_148",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_149",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_150",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_K8S_151",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_GIT_1",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_GIT_2",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV2_GCP_1",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV2_GCP_2",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV2_GCP_3",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV2_GCP_4",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV2_GCP_5",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV2_GCP_61",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV2_GCP_7",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_GCP_1",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_2",
+      "severity": "critical",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_3",
+      "severity": "critical",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_4",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_5",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_6",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_7",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_8",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_9",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_10",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_11",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_GCP_12",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_13",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_14",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_15",
+      "severity": "critical",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_16",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_17",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_18",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_19",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_20",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_21",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_22",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_23",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_24",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_GCP_25",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_26",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_27",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_28",
+      "severity": "critical",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_29",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_30",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_31",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_32",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_GCP_33",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_34",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_35",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_36",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_37",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_38",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_39",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_40",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_41",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_42",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_43",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_44",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_45",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_46",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_47",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_GCP_48",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_49",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_50",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_51",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_GCP_52",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_53",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_54",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_55",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_56",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_57",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_GCP_58",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_59",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_60",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_61",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_62",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_GCP_63",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_64",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_65",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_66",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_67",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_68",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_69",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_70",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_71",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_GCP_72",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_DOCKER_1",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_DOCKER_2",
+      "severity": "info",
+      "description": ""
+    },
+    {
+      "id": "CKV_DOCKER_3",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_DOCKER_4",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_DOCKER_5",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_DOCKER_6",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_DOCKER_7",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_DOCKER_8",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_DOCKER_9",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_DOCKER_10",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_DOCKER_11",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV2_DOCKER_1",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV2_AZURE_1",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV2_AZURE_2",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV2_AZURE_3",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV2_AZURE_4",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV2_AZURE_5",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV2_AZURE_6",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV2_AZURE_7",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV2_AZURE_8",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV2_AZURE_9",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV2_AZURE_10",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV2_AZURE_11",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV2_AZURE_12",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV2_AZURE_13",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV2_AZURE_14",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV2_AZURE_15",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV2_AZURE_16",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV2_AZURE_17",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV2_AZURE_18",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV2_AZURE_19",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV2_AZURE_20",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV2_AZURE_21",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV2_AZURE_22",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV2_AZURE_23",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV2_AZURE_24",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV2_AZURE_25",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV2_AZURE_26",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AZURE_1",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_2",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_3",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_4",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_5",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_6",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_7",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_8",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_9",
+      "severity": "critical",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_10",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_11",
+      "severity": "critical",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_12",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_13",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_14",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_15",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_16",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_17",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_18",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_19",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_20",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_21",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_22",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_23",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_24",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_25",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_26",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_27",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_28",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_29",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_30",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_31",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_32",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_33",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_34",
+      "severity": "critical",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_35",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_36",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_37",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_38",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_39",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_40",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_41",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_42",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_43",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_44",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_45",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_46",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_47",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_48",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_49",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_50",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_52",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AZURE_53",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_54",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_55",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_56",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_57",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_58",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_59",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_60",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AZURE_61",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_62",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_63",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_64",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_65",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_66",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AZURE_67",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_68",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_69",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_70",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_71",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AZURE_72",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_73",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_74",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_75",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_76",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_77",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_78",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_79",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_80",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AZURE_81",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_82",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_83",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_84",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_85",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_86",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_87",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_88",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_89",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AZURE_90",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AZURE_91",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AZURE_92",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AZURE_93",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AZURE_94",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AZURE_95",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AZURE_96",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AZURE_97",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AZURE_98",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AZURE_99",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AZURE_100",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AZURE_101",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AZURE_102",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AZURE_103",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AZURE_104",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AZURE_105",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AZURE_106",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AZURE_107",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AZURE_108",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AZURE_109",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_110",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_111",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AZURE_112",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_113",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_114",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_115",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_116",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_117",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_118",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_119",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AZURE_120",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AZURE_121",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AZURE_122",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AZURE_123",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AZURE_124",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AZURE_125",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AZURE_126",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AZURE_127",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AZURE_128",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AZURE_129",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AZURE_130",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AZURE_131",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AZURE_132",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV2_AWS_1",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV2_AWS_2",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV2_AWS_3",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV2_AWS_4",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV2_AWS_5",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV2_AWS_6",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV2_AWS_7",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV2_AWS_8",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV2_AWS_9",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV2_AWS_10",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV2_AWS_11",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV2_AWS_12",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV2_AWS_13",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV2_AWS_14",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV2_AWS_15",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV2_AWS_16",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV2_AWS_17",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV2_AWS_18",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV2_AWS_19",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV2_AWS_20",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV2_AWS_21",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV2_AWS_22",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV2_AWS_23",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV2_AWS_25",
+      "severity": "critical",
+      "description": ""
+    },
+
+    {
+      "id": "CKV2_AWS_26",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV2_AWS_27",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV2_AWS_28",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV2_AWS_29",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV2_AWS_30",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV2_AWS_31",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV2_AWS_32",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_1",
+      "severity": "critical",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_2",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_3",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_4",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_5",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_6",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_7",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_8",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_9",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_10",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_11",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_12",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_13",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_14",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_15",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_16",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_17",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_18",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_19",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_20",
+      "severity": "critical",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_21",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_22",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_23",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_24",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_25",
+      "severity": "critical",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_26",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_27",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_28",
+      "severity": "medium",
+      "description": "DynamoDB Point-In-Time Recovery"
+    },
+
+    {
+      "id": "CKV_AWS_29",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_30",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_31",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_32",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_33",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_34",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_35",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_36",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_37",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_38",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_39",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_40",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_AWS_42",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_43",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_44",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_45",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_46",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_47",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_48",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_49",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_50",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_51",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_53",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_54",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_55",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_56",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_57",
+      "severity": "critical",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_58",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_59",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_60",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_61",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_62",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_63",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_64",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_65",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_66",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_67",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_68",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_69",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_70",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_71",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_72",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_73",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_74",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_75",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_76",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_77",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_78",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_79",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_80",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_81",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_82",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_83",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_84",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_85",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_86",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_87",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_88",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_89",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_90",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_91",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_92",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_92",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_93",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_94",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_96",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_97",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_98",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_99",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_AWS_100",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_101",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_AWS_102",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_AWS_103",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_AWS_104",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AWS_105",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_AWS_106",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_AWS_107",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AWS_108",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AWS_109",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AWS_110",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_111",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AWS_112",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_AWS_114",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AWS_115",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AWS_116",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AWS_117",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AWS_118",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AWS_119",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AWS_120",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_122",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_AWS_123",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AWS_124",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AWS_126",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_AWS_127",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_AWS_128",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AWS_129",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AWS_130",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_131",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_AWS_132",
+      "severity": "high",
+      "description": ""
+    },
+    {
+      "id": "CKV_AWS_133",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_AWS_134",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AWS_135",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AWS_136",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AWS_137",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AWS_138",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AWS_139",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AWS_140",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_141",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AWS_142",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AWS_143",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AWS_144",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AWS_145",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AWS_146",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_AWS_147",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_AWS_148",
+      "severity": "low",
+      "description": ""
+    },
+    {
+      "id": "CKV_AWS_149",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_AWS_150",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_AWS_151",
+      "severity": "high",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_152",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_153",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_154",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_155",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_156",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_157",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_158",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_159",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_160",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_161",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_162",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_164",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_165",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_166",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_167",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_168",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_169",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_170",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_171",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_172",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_173",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_174",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_175",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_176",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_177",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_178",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_179",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_180",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_181",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_182",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_183",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_184",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_185",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_186",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_187",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_188",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_189",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_190",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_AWS_191",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_OPENAPI_1",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_OPENAPI_2",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_OPENAPI_3",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_OPENAPI_4",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_OPENAPI_5",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_OPENAPI_6",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_OPENAPI_7",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_OPENAPI_8",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_OPENAPI_9",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_OPENAPI_10",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_OPENAPI_11",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_OPENAPI_12",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_OPENAPI_13",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_OPENAPI_14",
+      "severity": "medium",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_OPENAPI_15",
+      "severity": "medium",
+      "description": ""
+    },
+    {
+      "id": "CKV_OPENAPI_16",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_OPENAPI_17",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_OPENAPI_18",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_OPENAPI_19",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_OPENAPI_20",
+      "severity": "low",
+      "description": ""
+    },
+
+    {
+      "id": "CKV_OPENAPI_21",
+      "severity": "low",
+      "description": ""
+    }
+  ]
+}

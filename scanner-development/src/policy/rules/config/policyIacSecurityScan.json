@@ -1,0 +1,58 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "policy for any type of static security Scan by Severity",
+  "policyId": "oxPolicy_securityScan_55",
+  "ruleId": "oxRule_securityScan_55",
+  "exclusionCategory": "iac",
+  "name": "IaC issue",
+  "categoryId": "iac",
+  "catId": 8,
+  "system": "IaC",
+  "order": 1,
+  "description": "IaC (Infrastructure as Code) issues can lead to infrastructural vulnerabilities, making it crucial to detect and rectify them for a secure and resilient cloud environment.",
+  "detailedDescription": "Infrastructure as Code (IaC) has revolutionized how infrastructure is provisioned and managed, but it also introduces potential risks if not correctly configured or maintained. Misconfigurations in IaC can lead to a wide range of security and operational issues, from unauthorized access to resource inefficiencies. As cloud environments become more intricate, addressing these IaC issues is of utmost importance.",
+  "selected": true,
+  "functionName": "policySecurityScanNew",
+  "displayIssueSeverity": 0,
+  "category": "IaC",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "scanType",
+      "label": "Scan Type",
+      "tooltip": "Choose one or more static security engines to generate the policy for.",
+      "type": "stringArray",
+      "range": ["Secrets", "SAST", "SCA", "IaC"],
+      "multiSelect": false,
+      "value": "IaC",
+      "visible": false
+    },
+    {
+      "id": "arg_2",
+      "name": "ignoreBusinessPriority",
+      "label": "Ignore Application Business Priority for severity calculation",
+      "tooltip": "If enabled the severity of an issue will not be affected by the Application Business Priority",
+      "type": "boolean",
+      "range": [],
+      "multiSelect": false,
+      "value": false,
+      "visible": true
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "securityEvents",
+      "type": "code_repo"
+    },
+    {
+      "id": "rsc_2",
+      "name": "securityEvents",
+      "type": "external"
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "isGenericSeverityPolicy": true,
+  "version": 9
+}

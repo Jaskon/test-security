@@ -1,0 +1,7 @@
+update-notifier=false
+
+@oxappsec:registry=https://us-npm.pkg.dev/oxappsec/oxappsecnpm/
+//us-npm.pkg.dev/oxappsec/oxappsecnpm/:username=_json_key_base64
+//us-npm.pkg.dev/oxappsec/oxappsecnpm/:email=not.valid@email.com
+//us-npm.pkg.dev/oxappsec/oxappsecnpm/:always-auth=true
+//us-npm.pkg.dev/oxappsec/oxappsecnpm/:_password=

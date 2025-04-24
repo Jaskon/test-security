@@ -1,0 +1,53 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "Repo admins with no activity should not have admin access.",
+  "policyId": "oxPolicy_dspm_RepoAdminsWithNoActivity",
+  "ruleId": "oxRule_dspm_RepoAdminsWithNoActivity",
+  "exclusionCategory": "user",
+  "name": "Repo admins with no activity should not have admin access",
+  "categoryId": "3",
+  "groupId": "",
+  "catId": 3,
+  "system": "Repo",
+  "order": 44,
+  "description": "Repository admins who are not organization/group owners should maintain admin or dev activity in order to retain repo admin access. This policy will ignore admins who are organization/group owners.",
+  "detailedDescription": "An admin has the authority to delete your repository and manage repository user access. An admin who is no longer employed or no longer has access to the organization should be removed. It is best practice to decrease the attack surface of your assets by limiting the number of users with administrative permissions. ",
+  "severity": 3,
+  "selected": true,
+  "functionName": "policyRepoAdminsWithNoActivity",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "monthsSinceActivity",
+      "label": "Months Since Activity",
+      "tooltip": "Choose how many months since the last activity will trigger a violation.",
+      "type": "number",
+      "range": [0, 1000],
+      "multiSelect": false,
+      "value": 0,
+      "visible": true
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "auditLog",
+      "type": "code_repo",
+      "global": true
+    },
+    {
+      "id": "rsc_2",
+      "name": "users",
+      "type": "code_repo"
+    },
+    {
+      "id": "rsc_3",
+      "name": "allUsers",
+      "type": "code_repo",
+      "global": true
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 1
+}

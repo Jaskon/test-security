@@ -1,0 +1,74 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "Repo should not have too many admins",
+  "policyId": "oxPolicy_dspm_RepoMaxAdmins_1",
+  "ruleId": "oxRule_dspm_RepoMaxAdmins_1",
+  "exclusionCategory": "user",
+  "name": "Repo should not have too many admins",
+  "categoryId": "3",
+  "groupId": "",
+  "catId": 3,
+  "system": "Repo",
+  "description": "Reduce the number of admins a repository has to limit the damage of potential compromises of accounts.  ",
+  "detailedDescription": "A repository admin has the authority to edit repositories and manage permissions and access to repositories. A compromise of an admin account can be problematic as a result. Therefore, in order to reduce the attack surface it is recommended to reduce the number of admins of a repository.  ",
+  "severity": 2,
+  "selected": true,
+  "functionName": "policyDspmRepoMaxAdmins",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "minAdmins",
+      "label": "Min Admins",
+      "tooltip": "No issue will be created if the number of admins is less than or equal to the value entered.",
+      "type": "number",
+      "range": [1, 1000],
+      "multiSelect": false,
+      "value": 1,
+      "visible": true
+    },
+    {
+      "id": "arg_2",
+      "name": "minAdminsPercentage",
+      "label": "Min Admin Percent",
+      "tooltip": "No issue will be created if the percentage of admins is less than or equal to the value entered.",
+      "type": "number",
+      "range": [1, 99],
+      "multiSelect": false,
+      "value": 1,
+      "visible": true
+    },
+    {
+      "id": "arg_2",
+      "name": "ignoreOwners",
+      "label": "Ignore Owners",
+      "tooltip": "Choose if Org/Group owners who by default are repo admins will be ignored",
+      "type": "boolean",
+      "range": [],
+      "multiSelect": false,
+      "value": false,
+      "visible": true
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "users",
+      "type": "code_repo"
+    },
+    {
+      "id": "rsc_2",
+      "name": "allUsers",
+      "type": "code_repo",
+      "global": true
+    },
+    {
+      "id": "rsc_3",
+      "name": "allPulls",
+      "type": "code_repo",
+      "global": true
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 8
+}

@@ -1,0 +1,46 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "policy for any type of static security Scan by Severity",
+  "policyId": "oxPolicy_securityScan_120",
+  "ruleId": "oxRule_securityScan_11",
+  "exclusionCategory": "sca",
+  "name": "severity open source (SCA) alerts should not occur",
+  "categoryId": "sca",
+  "groupId": "sca",
+  "catId": 6,
+  "system": "SCA",
+  "description": "severity SCA (Software Composition Analysis) issues should not be present.",
+  "detailedDescription": "The vast majority of cloud applications written today contain some set of external dependencies. Security issues in these dependencies can make applications using them insecure. The Log4J crisis is one example of this. SCA (Software Composition Analysis) scanning is the most basic way of determining if an application is using vulnerable dependencies.",
+  "severity": 3,
+  "selected": false,
+  "displayIssueSeverity": 0,
+  "functionName": "policySecurityScanSCA",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "scanType",
+      "label": "Scan Type",
+      "tooltip": "",
+      "type": "stringArray",
+      "range": ["SCA", "ArtifactsSCA", "ArtifactsIAC"],
+      "multiSelect": false,
+      "value": "SCA",
+      "visible": false
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "securityEvents",
+      "type": "code_repo"
+    },
+    {
+      "id": "rsc_2",
+      "name": "securityEvents",
+      "type": "external"
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 4
+}

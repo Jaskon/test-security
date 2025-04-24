@@ -1,0 +1,30 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "CI/CD General",
+  "policyId": "oxPolicy_CICD_general_1",
+  "ruleId": "oxRule_CICD_general_1",
+  "exclusionCategory": "general",
+  "name": "CI/CD General",
+  "categoryId": "cicd",
+  "groupId": "",
+  "catId": 25,
+  "order": 99,
+  "system": "Repo",
+  "description": "general desc",
+  "detailedDescription": "general detailed desc",
+  "severity": 4,
+  "selected": true,
+  "notes": ["This policy currently only applies to GitHub. "],
+  "functionName": "policyGeneralCICD",
+  "args": [],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "securityEvents",
+      "type": "code_repo"
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 0
+}

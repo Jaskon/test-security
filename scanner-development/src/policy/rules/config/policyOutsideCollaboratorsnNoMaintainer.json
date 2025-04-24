@@ -1,0 +1,52 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "Outside collaborators should not be repo maintainer",
+  "policyId": "oxPolicy_outside_collaborators_no_maintainer_1",
+  "ruleId": "oxRule_outside_collaborators_no_maintainer_1",
+  "exclusionCategory": "user",
+  "name": "Outside collaborators should not be repo maintainer",
+  "categoryId": "3",
+  "groupId": "",
+  "catId": 3,
+  "system": "Repo",
+  "description": "Outside collaborators are not members of your organization or first-level group and as such may pose a great security risk if their account gets compromised. They should be maintainers of a repo in very exceptional cases.",
+  "detailedDescription": "Outside collaborators are not members of your organization or first-level group. A best practice is to limit the access time and permissions they have to a repository. You may not be aware of a change in the status of an outside maintainer and also not immediately become aware if their account gets compromised. This is why it is safer to prevent them from having maintainer access.",
+  "severity": 3,
+  "selected": true,
+  "functionName": "policyOutsideCollaboratorsnNoAdmin",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "type",
+      "label": "",
+      "tooltip": "",
+      "type": "stringArray",
+      "range": ["maintainer", "admin"],
+      "multiSelect": true,
+      "value": ["maintainer"],
+      "visible": false
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "users",
+      "type": "code_repo"
+    },
+    {
+      "id": "rsc_2",
+      "name": "auditLog",
+      "type": "code_repo",
+      "global": true
+    },
+    {
+      "id": "rsc_3",
+      "name": "allPulls",
+      "type": "code_repo",
+      "global": true
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 3
+}

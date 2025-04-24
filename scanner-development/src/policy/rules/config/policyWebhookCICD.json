@@ -1,0 +1,55 @@
+{
+  "jsonVersion": "8.00",
+  "usage": "Policy that ensures all SCM push operations will trigger CI/CD job",
+  "name": "Every code push should trigger a CI/CD job",
+  "policyId": "oxPolicy__WebhookCICD_1",
+  "ruleId": "oxRule_WebhookCICD_1",
+  "exclusionCategory": "general",
+  "categoryId": "cicd",
+  "groupId": "",
+  "catId": 25,
+  "system": "CI/CD",
+  "description": "Every code push should have an associated CI/CD job triggered.",
+  "detailedDescription": "Pushed code that is not being analyzed by your CI/CD jobs may indicate that code is being delivered straight to production. This means that testing and security vulnerability analysis may not be occurring before deploying to production.",
+  "severity": 2,
+  "selected": true,
+  "functionName": "policyWebhookCICD",
+  "args": [
+    {
+      "id": "arg_1",
+      "name": "cicd",
+      "label": "CI/CD",
+      "tooltip": "Please check why all commits does not triger CI/CD job?",
+      "type": "stringArray",
+      "range": ["Yes", "No"],
+      "multiSelect": false,
+      "value": "yes",
+      "visible": false
+    }
+  ],
+  "resources": [
+    {
+      "id": "rsc_1",
+      "name": "repositories",
+      "type": "citool"
+    },
+    {
+      "id": "rsc_2",
+      "name": "jobs",
+      "type": "citool"
+    },
+    {
+      "id": "rsc_3",
+      "name": "webhooks",
+      "type": "code_repo"
+    },
+    {
+      "id": "rsc_4",
+      "name": "users",
+      "type": "code_repo"
+    }
+  ],
+  "exclusions": [],
+  "appInclusions": [],
+  "version": 5
+}

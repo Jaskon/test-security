@@ -1,0 +1,16 @@
+{
+  "metadata": {
+    "type": "generic",
+    "version": "2",
+    "target": ["michelle-niv-org/al1", "michelle-niv-org/al2"],
+    "runs": [
+      {
+        "command": "audit",
+        "arguments": "",
+        "sarif": "intercept.audit.sarif.json"
+      }
+    ]
+  },
+  "policy_file": "LS0tCgpCYW5uZXI6IHwKCiAgfCBERVZFTE9QTUVOVCBQb2xpY3kgYXMgQ29kZSBTdGF0aWMgQW5hbHlzaXMgQXVkaXRpbmcKICAKClJ1bGVzOgoKICAtIG5hbWU6IEFzc3VyZSBkZXZlbG9wbWVudCBkYXRhYmFzZSBlbmRwb2ludAogICAgaWQ6IDEKICAgIGRlc2NyaXB0aW9uOiBJbiBkZXZlbG9wbWVudCBvbmx5IE5PTlBST0QgZGF0YWJhc2Ugc2hvdWxkIGJlIHVzZWQKICAgIGVycm9yOiBUaGlzIHZpb2xhdGlvbiB3aWxsIGJlIHJldmlld2VkIGFuZCB3aWxsIHBvdGVudGlhbGx5IHByZXZlbnQgU3RhZ2UyIC8gU3RhZ2UzIFNJQSBDbG91ZCBTZWN1cml0eSBhcHByb3ZhbAogICAgdHlwZTogYXNzdXJlCiAgICBzb2x1dGlvbjogIlN3aXRjaCB0byBkZXZlbG9wbWVudCBkYXRhYmFzZSBlbmRwb2ludHMiCiAgICBlbnZpcm9ubWVudDogZGV2L3N0YWdpbmcvcHJvZHVjdGlvbgogICAgZmF0YWw6IGZhbHNlCiAgICBlbmZvcmNlbWVudDogZmFsc2UKICAgIG91dHB1dGpzb246IHRydWUKICAgIHBhdHRlcm5zOgogICAgICAtIFxzKmhvc3Rccyo6XHMqJ2RldmVsb3BtZW50LmRiLmV4YW1wbGUuY29tJ1xzKgoKICAtIG5hbWU6IFNjYW4gQVVESVQgbG9nIGZvciBjcml0aWNhbCAKICAgIGlkOiAyCiAgICBkZXNjcmlwdGlvbjogSW4gcHJvZHVjdGlvbiBDUklUSUNBTCBldmVudHMgc2hvdWxkIG5vdCBvY2NvdXIgCiAgICBlcnJvcjogVGhpcyB2aW9sYXRpb24gd2lsbCBiZSByZXZpZXdlZCBhbmQgd2lsbCBwb3RlbnRpYWxseSBwcmV2ZW50IFN0YWdlMiAvIFN0YWdlMyBTSUEgQ2xvdWQgU2VjdXJpdHkgYXBwcm92YWwKICAgIHR5cGU6IHNjYW4KICAgIHNvbHV0aW9uOiAiVHNob290IGFuZCBmaXggdGhlIENSSVRJQ0FMIGF1ZGl0IGV2ZW50cyAiCiAgICBlbnZpcm9ubWVudDogZGV2L3N0YWdpbmcvcHJvZHVjdGlvbgogICAgZmF0YWw6IGZhbHNlCiAgICBlbmZvcmNlbWVudDogZmFsc2UKICAgIG91dHB1dGpzb246IHRydWUKICAgIHBhdHRlcm5zOgogICAgICAtIFxzKlxbQ1JJVElDQUxcXVxzKgoKCgpFeGl0Q3JpdGljYWw6IENyaXRpY2FsIGlycmVndWxhcml0aWVzIGZvdW5kIG9uIHlvdXIgY29kZQpFeGl0V2FybmluZzogSXJyZWd1bGFyaXRpZXMgZm91bmQgb24geW91ciBjb2RlCkV4aXRDbGVhbjogQWxsIGdvb2QK",
+  "ignore_file": "c2VhcmNoX3JlZ2V4DQpwb2xpY3kvDQpjb25maWcueWFtbA=="
+}

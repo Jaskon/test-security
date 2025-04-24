@@ -1,0 +1,168 @@
+{
+  "type": "policyCommitReviewCount",
+
+  "policyRarePusherVeteranReviews": [
+    { "header": "Title", "key": "title", "href": "link" },
+    { "header": "SHA", "key": "sha", "href": "link" },
+    { "header": "Type", "key": "pushType" },
+    { "header": "Merged by", "key": "mergedBy" },
+    { "header": "Reviewers", "key": "reviewers" },
+    { "header": "Files changed", "key": "fileCount" },
+    { "header": "Date", "key": "date", "tooltip": "date", "type": "date" }
+  ],
+  "policyOrgDomainRepo": [
+    { "header": "User", "key": "user" },
+    { "header": "Email", "key": "email" },
+    { "header": "PR/Push count", "key": "pullRequestsCount" },
+    {
+      "header": "Last access date",
+      "key": "lastAccess",
+      "tooltip": "lastAccess",
+      "type": "date"
+    }
+  ],
+  "policySbomLicenses": [
+    { "header": "Image", "key": "imageName" },
+    { "header": "Tag", "key": "imageTag" },
+    { "header": "SHA256", "key": "imageSha256" },
+    {
+      "header": "Library",
+      "key": "Name"
+    },
+    { "header": "Version ", "key": "version" },
+    { "header": "Licenses ", "key": "licenses" }
+  ],
+  "policySecurityScan": [
+    {
+      "header": "File",
+      "key": "fileName",
+      "href": "fileUri",
+      "tooltip": "fileUri"
+    },
+    { "header": "Match", "key": "match" },
+    {
+      "header": "Commit By",
+      "key": "commitBy"
+    },
+    { "header": "Title", "key": "title", "href": "link" },
+    { "header": "Type", "key": "pushType" },
+    { "header": "Merged by", "key": "mergedBy" },
+    { "header": "Reviewers", "key": "reviewers" },
+    {
+      "header": "Commit Date",
+      "key": "date",
+      "href": "commitLink",
+      "type": "date",
+      "tooltip": "date"
+    }
+  ],
+  "webhooksReputation": [
+    { "header": "URL", "key": "url", "href": "link" },
+    { "header": "Events", "key": "events", "tooltip": "allEvents" },
+    { "header": "VT reputaion", "key": "reputation", "href": "vtLink" }
+  ],
+  "policyWebhookNoSSL": [
+    { "header": "URL", "key": "url", "href": "link" },
+    { "header": "Events", "key": "events", "tooltip": "allEvents" }
+  ],
+  "policyWebhookNoSecrets": [
+    { "header": "URL", "key": "url", "href": "link" },
+    { "header": "Events", "key": "events", "tooltip": "allEvents" }
+  ],
+  "policyRemoveWriteAccessRepo": [
+    { "header": "User", "key": "user", "tooltip": "username" },
+    { "header": "Access", "key": "accessLevel" },
+    {
+      "header": "Created at",
+      "key": "createdAt",
+      "type": "date",
+      "tooltip": "date"
+    },
+    {
+      "header": "Last access date",
+      "key": "lastAccess",
+      "type": "date",
+      "tooltip": "date"
+    }
+  ],
+  "policyCloudSecurityScan": [
+    { "header": "Cloud resource", "key": "resource" },
+    { "header": "Service", "key": "service" },
+    { "header": "Region", "key": "region" },
+    { "header": "Account Name", "key": "accountName" }
+  ],
+  "policyCloudSecuritySecretScan": [
+    { "header": "Cloud resource", "key": "resource", "href": "link" },
+    { "header": "Service", "key": "service" },
+    { "header": "Match", "key": "secret" },
+    { "header": "Region", "key": "region" },
+    { "header": "Account Name", "key": "accountName" }
+  ],
+  "policyNoMatchHashBetweenCICDandArtifactory": [
+    { "header": "Image", "key": "image", "href": "link" },
+    { "header": "Tag", "key": "tag" },
+    { "header": "SHA256", "key": "sha256" },
+    { "header": "Size (MB)", "key": "size" },
+    { "header": "Storage Region", "key": "region" },
+    { "header": "Upload At", "key": "pushedAt" }
+  ],
+  "policyTicketResolutionTime": [
+    {
+      "header": "File",
+      "key": "fileName",
+      "href": "fileUri",
+      "tooltip": "fileUri"
+    },
+    { "header": "open ticket days", "key": "daysOpen" },
+    { "header": "Match", "key": "match" },
+    {
+      "header": "Commit By",
+      "key": "commitBy"
+    },
+    { "header": "Title", "key": "title", "href": "link" },
+    { "header": "Type", "key": "pushType" },
+    { "header": "Merged by", "key": "mergedBy" },
+    { "header": "Reviewers", "key": "reviewers" },
+    {
+      "header": "Commit Date",
+      "key": "date",
+      "href": "commitLink",
+      "type": "date",
+      "tooltip": "date"
+    }
+  ],
+
+  "policySecurityContainerScan": [
+    { "header": "Image", "key": "image" },
+    { "header": "SHA", "key": "sha" },
+    { "header": "Tag", "key": "tag" },
+    { "header": "Image version", "key": "dockerVer" },
+    { "header": "OS", "key": "os" },
+    {
+      "header": "Created At",
+      "key": "imageCreatedAt"
+    },
+    { "header": "Pkgs number", "key": "pkgCount" },
+    {
+      "header": "Binaries number",
+      "key": "binariesCount"
+    }
+  ],
+  "policySecuritySecretsContainerScan": [
+    { "header": "File Path", "key": "filePath" },
+    { "header": "Image", "key": "image" },
+    { "header": "SHA", "key": "sha" },
+    { "header": "Tag", "key": "tag" },
+    { "header": "Image version", "key": "dockerVer" },
+    { "header": "OS", "key": "os" },
+    {
+      "header": "Created At",
+      "key": "imageCreatedAt"
+    },
+    { "header": "Pkgs number", "key": "pkgCount" },
+    {
+      "header": "Binaries number",
+      "key": "binariesCount"
+    }
+  ]
+}
