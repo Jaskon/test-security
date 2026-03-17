@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "drda"
+version = "0.1.0"
+description = ""
+authors = ["Eyal Paz <eyal@ox.security>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+levenshtein = "0.21.1"
+paramiko = "3.2.0"
+pandas = "^2"
+flask = "^2.3.2"
+pyyaml = "^6.0"
+requests = ">=2.1.0,<2.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
